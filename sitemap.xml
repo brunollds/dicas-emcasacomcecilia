@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- URL principal do subdomínio -->
+  <url>
+    <loc>https://dicas.emcasacomcecilia.com/</loc>
+    <lastmod>2025-05-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Adicione abaixo outros URLs importantes (ex: categorias, posts de blog, páginas de conteúdo) -->
+</urlset> 

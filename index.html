@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self' https://dicas.emcasacomcecilia.com https://emcasacomcecilia.com; 
+        script-src 'self' https://www.googletagmanager.com https://cdnjs.cloudflare.com 'unsafe-inline'; 
+        connect-src 'self' https://www.google-analytics.com; 
+        style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; 
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; 
+        img-src 'self' data: https://*.emcasacomcecilia.com https://*.akamaized.net https://*.shopee.com.br https://*.amazonaws.com;
+    ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra as melhores indicações de produtos para sua casa, cozinha, sala e muito mais! Compare preços entre Amazon, Shopee, Mercado Livre e Magazine Luiza com links de afiliados.">
+    <meta name="keywords" content="produtos para casa, comparação de preços, afiliados, compras online, em casa com cecilia, dicas">
+    <meta name="author" content="Em Casa com Cecília">
+    <meta name="version" content="1.1.2">
+    <meta name="last-updated" content="2025-05-11">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Indicações de Produtos - Em Casa com Cecília">
+    <meta property="og:description" content="Descubra as melhores indicações de produtos para sua casa, cozinha, sala e muito mais! Compare preços entre Amazon, Shopee, Mercado Livre e Magazine Luiza com links de afiliados.">
+    <meta property="og:image" content="https://dicas.emcasacomcecilia.com/images/logo.png">
+    <meta property="og:url" content="https://dicas.emcasacomcecilia.com">
+    <meta property="og:type" content="website">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Indicações de Produtos - Em Casa com Cecília">
+    <meta name="twitter:description" content="Descubra as melhores indicações de produtos para sua casa, cozinha, sala e muito mais! Compare preços entre Amazon, Shopee, Mercado Livre e Magazine Luiza com links de afiliados.">
+    <meta name="twitter:image" content="https://dicas.emcasacomcecilia.com/images/logo.png">
+    <title>Indicações de Produtos - Em Casa com Cecília</title>
+    <base href="/">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDLH63KJMP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LDLH63KJMP'); 
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-logo">
+                <img src="/images/logo.png" alt="Logotipo Em Casa com Cecília" class="site-logo">
+                <h1 class="header-title">Indicações de Produtos - Em Casa com Cecília</h1>
+            </div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="omnisearch" class="search-bar__input" placeholder="Procure nas Minhas inDICAS." aria-label="Pesquisar produtos indicados">
+                    <button id="clear-search" class="clear-search-btn" aria-label="Limpar busca">✕</button>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-nav-links">
+                    <a href="https://emcasacomcecilia.com" target="_blank" rel="noopener noreferrer" class="header-nav-btn home-btn" aria-label="Ir para a Página Principal">
+                        <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="nav-text">Página Principal</span>
+                    </a>
+                    <a href="https://emcasacomcecilia.com/analises-e-reviews" target="_blank" rel="noopener noreferrer" class="header-nav-btn reviews-btn" aria-label="Ir para Análises de Produtos">
+                        <span class="nav-icon"><i class="fa-solid fa-book"></i></span>
+                        <span class="nav-text">Análises</span> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <button class="prev-category-btn" aria-label="Categorias anteriores"><i class="fas fa-chevron-left"></i></button>
+        <div class="category-links">
+            <a href="#" data-category="all" class="active">Todos</a>
+            <a href="#" data-category="alimentos">Alimentos</a>
+            <a href="#" data-category="banheiro">Banheiro</a>
+            <a href="#" data-category="casa-inteligente">Casa Inteligente</a>
+            <a href="#" data-category="cozinha">Cozinha</a>
+            <a href="#" data-category="criancas">Crianças</a>
+            <a href="#" data-category="cuidado-pessoal">Cuidado Pessoal</a>
+            <a href="#" data-category="lavanderia">Lavanderia</a>
+            <a href="#" data-category="outros">Outros</a>
+            <a href="#" data-category="quarto">Quarto</a>
+            <a href="#" data-category="sala-de-estar">Sala de Estar</a>
+            <a href="#" data-category="tecnologia">Tecnologia</a>
+            <a href="#" data-category="vestuario">Vestuário</a>
+        </div>
+        <button class="next-category-btn" aria-label="Próximas categorias"><i class="fas fa-chevron-right"></i></button>
+    </nav>
+
+    <div class="container">
+        <span id="results-count">Carregando produtos...</span>
+        <div id="products-list"></div>
+        <div id="no-results" class="no-results"> 
+            <p id="no-results-message"></p>
+            <div id="category-suggestions"></div> 
+        </div>
+    </div>
+
+    <footer class="affiliate-disclaimer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <h2 class="footer-title">Em Casa com Cecília</h2>
+                    <p class="footer-subtitle">Receitas fáceis que dão certo</p>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:contato@emcasacomcecilia.com" class="footer-contact-email">contato@emcasacomcecilia.com</a>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/emcasacomcecilia" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/emcasacomcecilia" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@emcasacomcecilia" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.twitter.com/emcasacecilia" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://kwai-video.com/u/@emcasacomcecilia/mC0Sb8TC" target="_blank" aria-label="Kwai"><i class="fa-solid fa-k"></i></a>
+                        <a href="https://open.spotify.com/user/emcasacomcecilia" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-subtitle"><strong>Atenção:</strong> Os preços listados podem não estar atualizados em tempo real. Verifique sempre o preço final no site da loja.</p>
+            <p class="footer-subtitle">Este site contém links de afiliados. Ao comprar através deles, podemos receber uma pequena comissão, sem custo extra para você. Obrigado pelo apoio!</p>
+            <div class="footer-links">
+                <a href="https://emcasacomcecilia.com/politica-de-privacidade" target="_blank">Política de Privacidade</a>
+                <a href="https://emcasacomcecilia.com/termos-de-uso" target="_blank">Termos de Uso</a>
+            </div>
+            <p class="footer-copyright">© 2025 Em Casa com Cecilia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+  
+    <script src="/utils.js" defer></script> 
+    <script type="module" src="/scripts.js"></script> 
+
+</body>
+</html>

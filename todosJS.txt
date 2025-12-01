@@ -1,0 +1,998 @@
+========== domUtils.js ==========
+
+/**
+ * domUtils.js - Funções de utilidade para manipulação do DOM
+ * Versão: 1.1.0
+ * Última atualização: 03/05/2023
+ * Autor: Em Casa com Cecília
+ * 
+ * Este arquivo contém funções utilitárias para criar, manipular e exibir
+ * elementos do DOM relacionados aos produtos na página.
+ */
+
+/**
+ * Sanitiza uma URL para evitar injeção de código malicioso
+ * @param {string} url - URL a ser sanitizada
+ * @return {string} URL sanitizada ou # se inválida
+ */
+export function sanitizeUrl(url) {
+    if (typeof url !== 'string') return '#';
+    return url.trim();
+}
+
+/**
+ * Sanitiza o caminho de uma imagem e fornece fallback quando necessário
+ * @param {string} path - Caminho da imagem a ser sanitizado
+ * @return {string} Caminho sanitizado ou imagem de fallback
+ */
+export function sanitizeImagePath(path) {
+    if (typeof path !== 'string' || !path) return './images/fallback.png';
+    if (path.startsWith('/')) {
+        path = path.substring(1);
+    }
+    if (!path.startsWith('./') && !path.startsWith('http')) {
+        return './' + path;
+    }
+    return path;
+}
+
+/**
+ * Formata uma data no padrão YYYY-MM-DD para DD/MM/YYYY
+ * @param {string} dateStr - String de data no formato YYYY-MM-DD
+ * @return {string} Data formatada ou mensagem de erro
+ */
+export function formatDate(dateStr) {
+    if (!dateStr || typeof dateStr !== 'string') return 'Data não disponível';
+    try {
+        const [year, month, day] = dateStr.split('-');
+        return `${day}/${month}/${year}`;
+    } catch (e) {
+        console.error('Erro ao formatar data:', e);
+        return 'Data não disponível';
+    }
+}
+
+/**
+ * Converte um slug de categoria para nome formatado
+ * @param {string} category - Slug da categoria (ex: "casa-inteligente")
+ * @return {string} Nome formatado da categoria (ex: "Casa Inteligente")
+ */
+export function getCategoryName(category) {
+    if (category === 'all') return 'Todas as Categorias';
+    return category
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+export function createProductElement(product) {
+    console.log("Criando elemento para produto:", product.name);
+    
+    const article = document.createElement('article');
+    article.classList.add('product');
+    article.setAttribute('data-category', product.category || 'outros');
+    article.setAttribute('data-date', product.date || '1970-01-01');
+    article.setAttribute('data-product-name', product.name || 'produto-sem-nome');
+    
+    let lowestPrice = Infinity;
+    if (product.prices && Object.keys(product.prices).length > 0) {
+        for (const store in product.prices) {
+            const price = parseFloat(product.prices[store].price || 0);
+            if (price > 0 && price < lowestPrice) {
+                lowestPrice = price;
+            }
+        }
+    }
+    article.setAttribute('data-lowest-price', isFinite(lowestPrice) ? lowestPrice : 0);
+
+    const closeBtn = document.createElement('button');
+    closeBtn.classList.add('close-highlight-btn');
+    closeBtn.innerHTML = '✕';
+    closeBtn.setAttribute('aria-label', 'Fechar destaque do produto');
+    article.appendChild(closeBtn);
+
+    const metaDiv = document.createElement('div');
+    metaDiv.classList.add('product-meta');
+
+    const categoryTag = document.createElement('div');
+    categoryTag.classList.add('category-tag');
+    categoryTag.textContent = getCategoryName(product.category || 'outros');
+    categoryTag.setAttribute('data-category', product.category || 'outros');
+    metaDiv.appendChild(categoryTag);
+
+    const dateUpdated = document.createElement('div');
+    dateUpdated.classList.add('date-updated');
+    dateUpdated.textContent = `Atualizado em: ${formatDate(product.date)}`;
+    metaDiv.appendChild(dateUpdated);
+
+    article.appendChild(metaDiv);
+
+    const topDiv = document.createElement('div');
+    topDiv.classList.add('product-top');
+
+    const imageDiv = document.createElement('div');
+    imageDiv.classList.add('product-image');
+    const img = document.createElement('img');
+    img.src = sanitizeImagePath(product.image);
+    img.alt = `Imagem do produto: ${product.name || 'Produto sem nome'}`;
+    img.width = 120;
+    img.height = 90;
+    img.setAttribute('loading', 'lazy');
+    img.onerror = function() { 
+        console.log(`Erro ao carregar imagem: ${product.image}`); 
+        this.src = './images/fallback.png'; 
+        this.alt = 'Imagem não disponível'; 
+    };
+    imageDiv.appendChild(img);
+    topDiv.appendChild(imageDiv);
+
+    const detailsDiv = document.createElement('div');
+    detailsDiv.classList.add('product-details');
+
+    const h3 = document.createElement('h3');
+    h3.textContent = product.name || 'Produto sem nome';
+    detailsDiv.appendChild(h3);
+
+    const pricesDiv = document.createElement('div');
+    pricesDiv.classList.add('prices');
+    
+    console.log(`Preços para ${product.name}:`, product.prices);
+    
+    if (product.prices && Object.keys(product.prices).length > 0) {
+        for (const [store, info] of Object.entries(product.prices)) {
+            const a = document.createElement('a');
+            a.href = sanitizeUrl(info.link);
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            a.classList.add('affiliate-link');
+            a.setAttribute('data-store', store);
+            a.setAttribute('data-product', product.name || 'produto');
+            a.setAttribute('aria-label', `Comprar ${product.name || 'produto'} na ${store} por R$ ${(info.price || 0).toFixed(2)}`);
+
+            const logoImg = document.createElement('img');
+            logoImg.src = sanitizeImagePath(info.logo);
+            logoImg.alt = `Logo da loja ${store}`;
+            logoImg.classList.add('store-logo');
+            logoImg.width = 20;
+            logoImg.height = 20;
+            logoImg.setAttribute('loading', 'lazy');
+            logoImg.onerror = function() { 
+                console.log(`Erro ao carregar logo da loja: ${this.src}`);
+                this.src = './images/fallback.png';
+                this.style.display = 'inline-block';
+                this.alt = 'Logo não disponível'; 
+            };
+            a.appendChild(logoImg);
+            logoImg.style.display = 'inline-block';
+            logoImg.style.visibility = 'visible';
+            logoImg.crossOrigin = 'anonymous';
+
+            const priceSpan = document.createElement('span');
+            priceSpan.textContent = ` R$ ${(info.price || 0).toFixed(2)}`;
+            a.appendChild(priceSpan);
+            
+            pricesDiv.appendChild(a);
+            
+            console.log(`Adicionado preço da loja ${store}: R$ ${(info.price || 0).toFixed(2)}`);
+        }
+
+        const prices = [...pricesDiv.querySelectorAll('a')];
+        if (prices.length > 0) {
+            if (prices.length === 1) {
+                prices[0].classList.add('lowest-price');
+                
+                // Adicionar o ícone "+" após o preço mais baixo
+                const plusIcon = document.createElement('div');
+                plusIcon.classList.add('plus-icon');
+                plusIcon.setAttribute('aria-label', 'Ver mais opções');
+                plusIcon.innerHTML = '<i class="fa-solid fa-square-plus"></i>';
+                prices[0].parentNode.insertBefore(plusIcon, prices[0].nextSibling);
+            } else {
+                let menor = prices.reduce((prev, cur) => {
+                    const pricePrev = parseFloat(cur.textContent.replace(/[^\d,]/g, '').replace(',', '.'));
+                    const priceCur = parseFloat(prev.textContent.replace(/[^\d,]/g, '').replace(',', '.'));
+                    return pricePrev < priceCur ? cur : prev;
+                });
+                menor.classList.add('lowest-price');
+                
+                // Adicionar o ícone "+" após o preço mais baixo
+                const plusIcon = document.createElement('div');
+                plusIcon.classList.add('plus-icon');
+                plusIcon.setAttribute('aria-label', 'Ver mais opções');
+                plusIcon.innerHTML = '<i class="fa-solid fa-square-plus"></i>';
+                menor.parentNode.insertBefore(plusIcon, menor.nextSibling);
+            }
+        }
+
+    } else {
+        console.warn(`Produto ${product.name} não tem preços definidos`);
+        const noPrice = document.createElement('p');
+        noPrice.textContent = 'Preços não disponíveis';
+        noPrice.style.color = '#a0a0a0';
+        pricesDiv.appendChild(noPrice);
+    }
+    
+    detailsDiv.appendChild(pricesDiv);
+
+    const linksDiv = document.createElement('div');
+    linksDiv.classList.add('links');
+    if (product.links?.youtube) {
+        const a = document.createElement('a');
+        a.href = sanitizeUrl(product.links.youtube);
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.classList.add('youtube-icon', 'youtube-link');
+        a.setAttribute('data-product', product.name || 'produto');
+        a.setAttribute('aria-label', 'Vídeo no YouTube');
+
+        // Substituir a imagem do YouTube por ícone do Font Awesome
+        const youtubeIcon = document.createElement('i');
+        youtubeIcon.classList.add('fa-brands', 'fa-square-youtube');
+        a.appendChild(youtubeIcon);
+
+        const youtubeText = document.createElement('span');
+        youtubeText.textContent = 'YouTube';
+        a.appendChild(youtubeText);
+        
+        linksDiv.appendChild(a);
+    }
+    if (product.links?.review) {
+        const a = document.createElement('a');
+        a.href = sanitizeUrl(product.links.review);
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.classList.add('review-link');
+        a.setAttribute('data-product', product.name || 'produto');
+        a.setAttribute('aria-label', 'Review do produto');
+
+        const reviewIcon = document.createElement('img');
+        reviewIcon.src = './images/logos/review.png';
+        reviewIcon.alt = 'Ícone de Review';
+        reviewIcon.classList.add('review-logo');
+        reviewIcon.width = 16;
+        reviewIcon.height = 16;
+        reviewIcon.setAttribute('loading', 'lazy');
+        reviewIcon.onerror = function() { 
+            this.src = './images/fallback.png'; 
+            this.alt = 'Ícone de Review não disponível'; 
+        };
+        a.appendChild(reviewIcon);
+
+        const reviewText = document.createElement('span');
+        reviewText.textContent = 'Review';
+        a.appendChild(reviewText);
+        
+        linksDiv.appendChild(a);
+    }
+    detailsDiv.appendChild(linksDiv);
+
+    const shareDiv = document.createElement('div');
+    shareDiv.classList.add('share-actions');
+    shareDiv.innerHTML = `
+        <span>Compartilhe:</span>
+        <button class="copy-link-btn" aria-label="Copiar link do produto"><i class="fa-solid fa-link"></i></button>
+        <a class="whatsapp-share-btn" aria-label="Enviar pelo WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="twitter-share-btn" aria-label="Compartilhar no Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a class="facebook-share-btn" aria-label="Compartilhar no Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+        <a class="pinterest-share-btn" aria-label="Compartilhar no Pinterest" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest"></i></a>
+        <a class="telegram-share-btn" aria-label="Compartilhar no Telegram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a>
+    `;
+    detailsDiv.appendChild(shareDiv);
+
+    topDiv.appendChild(detailsDiv);
+    article.appendChild(topDiv);
+
+    return article;
+}
+
+export function manageProductVisibility(productsToShow, container) {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+    
+    productsToShow.forEach(product => {
+        const clone = product.cloneNode(true);
+        clone.style.display = 'flex';
+        container.appendChild(clone);
+    });
+}
+
+
+========== filtering.js ==========
+
+/**
+ * filtering.js - Funções de filtragem e ordenação de produtos
+ * Versão: 1.1.0
+ * Última atualização: 03/05/2023
+ * Autor: Em Casa com Cecília
+ * 
+ * Este arquivo contém funções para filtrar e ordenar produtos
+ * com base em categorias, termos de busca e critérios de ordenação.
+ */
+
+/**
+ * Filtra uma lista de produtos com base na categoria e termo de busca
+ * @param {Array} products - Lista de elementos DOM representando produtos
+ * @param {string} category - Categoria para filtrar ('all' para todas)
+ * @param {string} searchTerm - Termo de busca para filtrar produtos
+ * @return {Array} Lista filtrada de produtos
+ */
+export function filterProducts(products, category, searchTerm) {
+    return products.filter(product => {
+        const matchesCategory = category === 'all' || product.dataset.category === category;
+        const matchesSearch = !searchTerm || 
+            product.querySelector('h3').textContent.toLowerCase().includes(searchTerm.toLowerCase());
+        return matchesCategory && matchesSearch;
+    });
+}
+
+/**
+ * Ordena uma lista de produtos conforme critério especificado
+ * @param {Array} products - Lista de elementos DOM representando produtos
+ * @param {string} sortValue - Critério de ordenação (atualmente não utilizado)
+ * @return {Array} Lista ordenada de produtos
+ */
+export function sortProducts(products, sortValue) {
+    // Retorna uma cópia para evitar mutação do array original
+    return [...products];
+}
+
+
+========== scripts.js ==========
+
+/**
+ * scripts.js - Script principal do site de showcase de produtos
+ * Versão: 1.1.2
+ * Última atualização: 11/05/2025
+ * Autor: Em Casa com Cecília
+ * 
+ * Este arquivo contém a lógica principal do site, incluindo:
+ * - Carregamento de dados de produtos
+ * - Filtragem e exibição de produtos
+ * - Funcionalidade de pesquisa
+ * - Interatividade dos cards de produtos
+ * - Navegação por categorias
+ * - Detecção de bloqueadores de anúncios
+ */
+
+import { createProductElement, manageProductVisibility, getCategoryName } from './domUtils.js';
+import { filterProducts, sortProducts } from './filtering.js';
+import { initializeState, updateState } from './stateManager.js';
+
+// Correção para problemas de carregamento de imagens em navegadores específicos
+if (navigator.userAgent.indexOf('Chrome') > -1 || navigator.userAgent.indexOf('Opera') > -1) {
+    window.addEventListener('load', () => {
+        document.querySelectorAll('.store-logo, .youtube-logo, .review-logo').forEach(img => {
+            const currentSrc = img.src;
+            img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+            setTimeout(() => { img.src = currentSrc + '?v=' + Date.now(); }, 10);
+        });
+    });
+}
+
+// Solução específica para o Microsoft Edge
+if (navigator.userAgent.indexOf('Edg') > -1) {
+    document.documentElement.classList.add('edge-browser');
+    const style = document.createElement('style');
+    style.textContent = `
+        .edge-browser .store-logo, 
+        .edge-browser .youtube-logo, 
+        .edge-browser .review-logo {
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: inline-block !important;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+/**
+ * Função de debounce para limitar a frequência de execução de uma função
+ * @param {Function} func - Função a ser executada após o delay
+ * @param {number} wait - Tempo de espera em milissegundos
+ * @return {Function} Função com debounce aplicado
+ */
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+async function initializeProducts() {
+    try {
+        const products = await loadProductsData();
+        if (!products || products.length === 0) {
+            console.error('Nenhum produto encontrado');
+            return;
+        }
+
+        const container = document.getElementById('products-list');
+        if (!container) {
+            console.error('Container de produtos não encontrado');
+            return;
+        }
+
+        // Limpar container existente
+        container.innerHTML = '';
+
+        // Criar elementos para cada produto
+        products.forEach(product => {
+            const productElement = createProductElement(product);
+            container.appendChild(productElement);
+            
+            // Adicionar evento de clique
+            productElement.addEventListener('click', function(e) {
+                if (!e.target.closest('a') && !e.target.closest('button')) {
+                    handleProductClick(this);
+                }
+            });
+        });
+
+        // Inicializar observador de interseção
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Observar cada produto
+        document.querySelectorAll('.product').forEach(product => {
+            observer.observe(product);
+        });
+
+        // Atualizar contagem de produtos
+        updateProductCount(products.length);
+        
+        // Inicializar os elementos de produto para uso em updateProducts
+        window.productElements = Array.from(document.querySelectorAll('.product'));
+
+    } catch (error) {
+        console.error('Erro ao inicializar produtos:', error);
+    }
+}
+
+// Função auxiliar para atualizar a contagem de produtos
+function updateProductCount(count) {
+    const countElement = document.getElementById('results-count');
+    if (countElement) {
+        countElement.textContent = `${count} produtos encontrados`;
+    }
+}
+
+// Inicialização da aplicação
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        // Definir elementos globais para acesso em todas as funções
+        window.elements = {
+            searchInput: document.getElementById('omnisearch'),
+            clearSearchBtn: document.getElementById('clear-search'),
+            sortSelect: document.getElementById('sort-select'),
+            categoryLinks: document.querySelectorAll('.category-links a'),
+            prevCategoryBtn: document.querySelector('.prev-category-btn'),
+            nextCategoryBtn: document.querySelector('.next-category-btn'),
+            productsList: document.getElementById('products-list'),
+            resultsCount: document.getElementById('results-count'),
+            noResults: document.getElementById('no-results'),
+            noResultsMessage: document.getElementById('no-results-message'),
+            categorySuggestions: document.getElementById('category-suggestions')
+        };
+
+        // Inicializar estado global
+        window.state = initializeState(window.elements);
+        
+        // Inicializar produtos
+        window.productElements = [];
+        await initializeProducts();
+
+        // Configurar event listeners
+        if (window.elements.searchInput) {
+            window.elements.searchInput.addEventListener('input', debounce((e) => {
+                handleSearch(e.target.value, window.state);
+            }, 300));
+        }
+
+        if (window.elements.clearSearchBtn) {
+            window.elements.clearSearchBtn.addEventListener('click', () => {
+                window.elements.searchInput.value = '';
+                handleSearch('', window.state);
+            });
+        }
+
+        if (window.elements.sortSelect) {
+            window.elements.sortSelect.addEventListener('change', (e) => {
+                handleSort(e.target.value, window.state);
+            });
+        }
+
+        // Event listeners para categorias
+        window.elements.categoryLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                handleCategoryClick(e.target, window.state);
+            });
+        });
+
+        // Event listeners para navegação de categorias
+        if (window.elements.prevCategoryBtn) {
+            window.elements.prevCategoryBtn.addEventListener('click', () => {
+                handleCategoryNavigation('prev', window.state);
+            });
+        }
+
+        if (window.elements.nextCategoryBtn) {
+            window.elements.nextCategoryBtn.addEventListener('click', () => {
+                handleCategoryNavigation('next', window.state);
+            });
+        }
+
+        // Atualizar visibilidade dos botões de navegação
+        updateButtonVisibility();
+
+    } catch (error) {
+        console.error('Erro ao inicializar a aplicação:', error);
+    }
+});
+
+function handleCategoryClick(target, state) {
+    const category = target.getAttribute('data-category');
+    if (!category) return;
+    
+    console.log('Categoria clicada:', category);
+    
+    // Atualizar a categoria selecionada no estado
+    window.state.selectedCategory = category;
+    
+    // Atualizar a classe ativa no menu de categorias
+    window.elements.categoryLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+    target.classList.add('active');
+    
+    // Atualizar a lista de produtos
+    updateProducts();
+}
+
+function handleProductClick(product) {
+    console.log('Produto clicado:', product);
+    
+    // Remover qualquer destaque existente e overlay
+    closeHighlight();
+    
+    // Criar overlay para o fundo
+    const overlay = document.createElement('div');
+    overlay.classList.add('product-overlay');
+    overlay.classList.add('active');
+    document.body.appendChild(overlay);
+    
+    // Clonar o produto para o modo destaque
+    const clone = product.cloneNode(true);
+    clone.classList.add('highlighted');
+    document.body.appendChild(clone);
+    
+    // Impedir scroll do body
+    document.body.style.overflow = 'hidden';
+    
+    // Adicionar evento de clique ao overlay para fechar
+    overlay.addEventListener('click', closeHighlight);
+    
+    // Adicionar evento de clique ao botão de fechar
+    const closeBtn = clone.querySelector('.close-highlight-btn');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeHighlight();
+        });
+    }
+}
+
+function updateButtonVisibility() {
+    const container = window.elements.categoryLinks;
+    const scrollLeft = container.scrollLeft;
+    const scrollWidth = container.scrollWidth;
+    const clientWidth = container.clientWidth;
+    const isMobile = window.innerWidth <= 768;
+    
+    if (!isMobile) {
+        window.elements.prevCategoryBtn.style.display = scrollLeft > 10 ? 'flex' : 'none';
+        window.elements.nextCategoryBtn.style.display = 
+            scrollLeft + clientWidth < scrollWidth - 10 ? 'flex' : 'none';
+    }
+}
+
+function updateProducts() {
+    console.log('Atualizando produtos...');
+    console.log('Categoria selecionada:', window.state.selectedCategory);
+    console.log('Termo de busca:', window.state.searchTerm);
+
+    // Obter todos os produtos
+    const allProducts = document.querySelectorAll('.product');
+    window.productElements = Array.from(allProducts);
+    
+    // Filtrar produtos por categoria e termo de busca
+    const matchedProductsInCategory = window.productElements.filter(product => {
+        const productCategory = product.getAttribute('data-category');
+        const productName = product.querySelector('h3').textContent.toLowerCase();
+        
+        const matchesCategory = window.state.selectedCategory === 'all' || 
+                               productCategory === window.state.selectedCategory;
+        const matchesSearch = !window.state.searchTerm || 
+                             productName.includes(window.state.searchTerm.toLowerCase());
+        
+        return matchesCategory && matchesSearch;
+    });
+    
+    // Filtrar produtos que correspondem ao termo de busca em qualquer categoria
+    const matchedProductsOverall = window.productElements.filter(product => {
+        const productName = product.querySelector('h3').textContent.toLowerCase();
+        return !window.state.searchTerm || productName.includes(window.state.searchTerm.toLowerCase());
+    });
+
+    console.log('Produtos na categoria filtrada:', matchedProductsInCategory.length);
+    console.log('Produtos totais com termo de busca:', matchedProductsOverall.length);
+
+    // Mostrar produtos filtrados
+    window.productElements.forEach(product => {
+        product.style.display = 'none';
+    });
+    
+    matchedProductsInCategory.forEach(product => {
+        product.style.display = 'flex';
+    });
+
+    // Atualizar contagem de resultados
+    const visibleCountInCategory = matchedProductsInCategory.length;
+    const categoryName = getCategoryName(window.state.selectedCategory);
+    window.elements.resultsCount.textContent = 
+        `Encontrados: ${visibleCountInCategory} produto${visibleCountInCategory !== 1 ? 's' : ''} na categoria "${categoryName}"`;
+
+    // Mostrar mensagem de "nenhum resultado" se necessário
+    if (visibleCountInCategory === 0 && window.state.searchTerm) {
+        if (matchedProductsOverall.length > 0) {
+            window.elements.noResultsMessage.textContent = 
+                `Não encontramos "${window.state.searchTerm}" na categoria "${categoryName}".`;
+            window.elements.categorySuggestions.innerHTML = 
+                '<p class="other-category-message">Encontramos os seguintes itens em outras categorias:</p>';
+            
+            const suggestionsList = document.createElement('div');
+            suggestionsList.classList.add('suggestions-list');
+            
+            // Mostrar produtos de outras categorias que correspondem à busca
+            const productsOutsideCategory = matchedProductsOverall.filter(
+                product => !matchedProductsInCategory.includes(product)
+            );
+            
+            productsOutsideCategory.forEach(product => {
+                const clone = product.cloneNode(true);
+                clone.style.display = 'flex';
+                suggestionsList.appendChild(clone);
+            });
+            
+            window.elements.categorySuggestions.appendChild(suggestionsList);
+            window.elements.noResults.classList.add('visible');
+        } else {
+            window.elements.noResultsMessage.textContent = 
+                `Nenhum produto encontrado para "${window.state.searchTerm}".`;
+            window.elements.categorySuggestions.innerHTML = '';
+            window.elements.noResults.classList.add('visible');
+        }
+    } else if (visibleCountInCategory === 0 && window.state.selectedCategory !== 'all') {
+        window.elements.noResultsMessage.textContent = 
+            `Nenhum produto encontrado na categoria "${categoryName}".`;
+        window.elements.categorySuggestions.innerHTML = '';
+        window.elements.noResults.classList.add('visible');
+    } else {
+        window.elements.noResults.classList.remove('visible');
+        window.elements.categorySuggestions.innerHTML = '';
+    }
+
+    // Adicionar evento de clique aos produtos
+    document.querySelectorAll('.product').forEach(product => {
+        // Remover handler existente se houver
+        if (product._clickHandler) {
+            product.removeEventListener('click', product._clickHandler);
+        }
+        
+        // Criar novo handler de clique
+        product._clickHandler = function(e) {
+            // Verificar se o clique não foi em um link ou botão
+            if (!e.target.closest('a') && !e.target.closest('button')) {
+                handleProductClick(product);
+            }
+        };
+        
+        // Adicionar o handler de clique
+        product.addEventListener('click', product._clickHandler);
+    });
+}
+
+function closeHighlight() {
+    // Remover overlay
+    const overlay = document.querySelector('.product-overlay');
+    if (overlay) {
+        overlay.remove();
+    }
+    
+    // Remover produto destacado
+    const highlighted = document.querySelector('.product.highlighted');
+    if (highlighted) {
+        highlighted.remove();
+    }
+    
+    // Restaurar scroll do body
+    document.body.style.overflow = '';
+}
+
+function handleSearch(term, state) {
+    window.state.searchTerm = term;
+    updateProducts();
+}
+
+function handleSort(value, state) {
+    window.state.sortValue = value;
+    updateProducts();
+}
+
+function handleCategoryNavigation(direction, state) {
+    const container = window.elements.categoryLinks;
+    const scrollAmount = 200;
+
+    if (direction === 'prev') {
+        container.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    } else if (direction === 'next') {
+        container.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    updateButtonVisibility();
+}
+
+function handleCopyLink(e) {
+    e.preventDefault();
+    const shareUrl = e.target.getAttribute('href');
+    navigator.clipboard.writeText(shareUrl).then(() => {
+        alert('Link copiado para a área de transferência!');
+    }).catch(err => {
+        console.error('Erro ao copiar o link:', err);
+        alert('Erro ao copiar o link. Tente novamente.');
+    });
+}
+
+function handleWhatsAppShare(e) {
+    e.preventDefault();
+    const shareUrl = e.target.getAttribute('href');
+    const productName = e.target.getAttribute('data-product-name');
+    const whatsappMessage = `Confira este produto: ${productName} - ${shareUrl}`;
+    const whatsappBtn = e.target;
+    whatsappBtn.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappMessage)}`;
+}
+
+function handleTwitterShare(e) {
+    e.preventDefault();
+    const shareUrl = e.target.getAttribute('href');
+    const productName = e.target.getAttribute('data-product-name');
+    const twitterMessage = `Confira este produto: ${productName} - ${shareUrl}`;
+    const twitterBtn = e.target;
+    twitterBtn.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterMessage)}`;
+}
+
+function handleFacebookShare(e) {
+    e.preventDefault();
+    const shareUrl = e.target.getAttribute('href');
+    const productName = e.target.getAttribute('data-product-name');
+    const facebookMessage = `Confira este produto: ${productName} - ${shareUrl}`;
+    const facebookBtn = e.target;
+    facebookBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(facebookMessage)}`;
+}
+
+function handlePinterestShare(e) {
+    e.preventDefault();
+    const shareUrl = e.target.getAttribute('href');
+    const productName = e.target.getAttribute('data-product-name');
+    const pinterestMessage = `Confira este produto: ${productName} - ${shareUrl}`;
+    const pinterestBtn = e.target;
+    pinterestBtn.href = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(shareUrl)}&description=${encodeURIComponent(pinterestMessage)}`;
+}
+
+function handleTelegramShare(e) {
+    e.preventDefault();
+    const shareUrl = e.target.getAttribute('href');
+    const productName = e.target.getAttribute('data-product-name');
+    const telegramMessage = `Confira este produto: ${productName} - ${shareUrl}`;
+    const telegramBtn = e.target;
+    telegramBtn.href = `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(telegramMessage)}`;
+}
+
+async function loadProductsData() {
+    const possiblePaths = [
+        'data/products.json',
+        '/data/products.json',
+        './data/products.json',
+        '../data/products.json',
+    ];
+
+    let data = null;
+    let lastError = null;
+
+    for (const path of possiblePaths) {
+        try {
+            console.log(`Tentando carregar produtos de ${path}...`);
+            const response = await fetch(path, { cache: 'no-store' });
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            data = await response.json();
+            console.log(`Produtos carregados com sucesso de ${path}`);
+            break;
+        } catch (error) {
+            console.warn(`Erro ao carregar de ${path}:`, error.message);
+            lastError = error;
+        }
+    }
+
+    if (data) {
+        return data;
+    } else {
+        console.error('Falha ao carregar produtos de todos os caminhos testados:', lastError?.message || 'Erro desconhecido');
+        console.log('Usando produtos de exemplo para debug.');
+        return [
+            {
+                name: "Produto de exemplo para debug",
+                category: "outros",
+                date: "2025-04-01",
+                image: "images/fallback.png",
+                prices: {
+                    "Amazon": {
+                        price: 99.90,
+                        link: "https://amazon.com.br",
+                        logo: "images/logos/amazon.png"
+                    },
+                    "Mercado Livre": {
+                        price: 89.90,
+                        link: "https://mercadolivre.com.br",
+                        logo: "images/logos/mercadolivre.png"
+                    }
+                },
+                links: {
+                    youtube: "https://youtube.com",
+                    review: "https://emcasacomcecilia.com"
+                }
+            },
+            {
+                name: "Outro produto de exemplo",
+                category: "cozinha",
+                date: "2025-04-10",
+                image: "images/fallback.png",
+                prices: {
+                    "Shopee": {
+                        price: 79.90,
+                        link: "https://shopee.com.br",
+                        logo: "images/logos/shopee.png"
+                    }
+                }
+            }
+        ];
+    }
+}
+
+// Export functions for testing
+export {
+    handleProductClick,
+    updateButtonVisibility
+};
+
+
+========== stateManager.js ==========
+
+/**
+ * stateManager.js - Gerenciamento de estado da aplicação
+ * Versão: 1.1.2
+ * Última atualização: 11/05/2025
+ * Autor: Em Casa com Cecília
+ * 
+ * Este arquivo contém funções para gerenciar o estado global da aplicação,
+ * incluindo seleção de categorias, termos de busca e opções de ordenação.
+ */
+
+/**
+ * Inicializa o estado da aplicação com valores padrão
+ * @param {Object} elements - Referências aos elementos DOM importantes
+ * @return {Object} Objeto de estado inicial
+ */
+export function initializeState(elements) {
+    console.log('Inicializando estado...');
+    const state = {
+        selectedCategory: 'all',
+        searchTerm: '',
+        sortValue: 'default',
+        elements: elements
+    };
+
+    // Verificar se os elementos existem antes de atribuir valores
+    if (elements.searchInput) {
+        elements.searchInput.value = state.searchTerm;
+    } else {
+        console.warn('Elemento searchInput não encontrado');
+    }
+
+    if (elements.sortSelect) {
+        elements.sortSelect.value = state.sortValue;
+    } else {
+        console.warn('Elemento sortSelect não encontrado');
+    }
+
+    return state;
+}
+
+/**
+ * Atualiza o estado com novos valores
+ * @param {Object} state - Estado atual
+ * @param {Object} updates - Objeto com valores a serem atualizados
+ * @return {Object} Novo objeto de estado
+ */
+export function updateState(state, updates) {
+    console.log('Atualizando estado:', updates);
+    const newState = { ...state, ...updates };
+
+    // Atualizar o valor do input de busca se o searchTerm mudar
+    if (updates.searchTerm !== undefined && state.elements.searchInput) {
+        state.elements.searchInput.value = updates.searchTerm;
+    }
+
+    return newState;
+}
+
+
+========== utils.js ==========
+
+/**
+ * utils.js - Funções de utilidade gerais
+ * Versão: 1.1.0
+ * Última atualização: 03/05/2023
+ * Autor: Em Casa com Cecília
+ * 
+ * Funções de utilidade gerais para o site, incluindo debounce e eventos simulados.
+ */
+
+/**
+ * Função de debouncing para limitar chamadas frequentes
+ * Evita que uma função seja chamada várias vezes em um curto período de tempo
+ * Útil para eventos como digitação na barra de pesquisa
+ * 
+ * @param {Function} func - Função a ser executada após o delay
+ * @param {number} delay - Tempo de espera em milissegundos
+ * @return {Function} Função com debounce aplicado
+ */
+function debounce(func, delay) {
+    let timeoutId;
+    return function (...args) {
+        const context = this;
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => func.apply(context, args), delay);
+    };
+}
+
+/**
+ * Função para simular clique em eventos de teclado
+ * Usada para melhorar a acessibilidade, permitindo que usuários 
+ * usem Enter ou Espaço para interagir com elementos clicáveis
+ * 
+ * @param {HTMLElement} element - Elemento a receber o clique simulado
+ */
+function simulateClick(element) {
+    element.click();
+}
+
+

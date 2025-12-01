@@ -1,0 +1,820 @@
+xlsx-utils.js
+var gk_isXlsx = false;
+var gk_xlsxFileLookup = {};
+var gk_fileData = {};
+function filledCell(cell) {
+    return cell !== '' && cell != null;
+}
+function loadFileData(filename) {
+    if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+        try {
+            var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+            var firstSheetName = workbook.SheetNames[0];
+            var worksheet = workbook.Sheets[firstSheetName];
+            var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+            var filteredData = jsonData.filter(row => row.some(filledCell));
+            var headerRowIndex = filteredData.findIndex((row, index) =>
+                row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+            );
+            if (headerRowIndex === -1 || headerRowIndex > 25) {
+                headerRowIndex = 0;
+            }
+            var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex));
+            csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+            return csv;
+        } catch (e) {
+            console.error(e);
+            return "";
+        }
+    }
+    return gk_fileData[filename] || "";
+}
+
+utils.js
+// Função de debouncing para limitar chamadas frequentes
+// Evita que uma função seja chamada várias vezes em um curto período de tempo
+// Útil para eventos como digitação na barra de pesquisa
+function debounce(func, delay) {
+    let timeoutId;
+    return function (...args) {
+        const context = this;
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => func.apply(context, args), delay);
+    };
+}
+
+// Função para simular clique em eventos de teclado
+// Usada para melhorar a acessibilidade, permitindo que usuários usem Enter ou Espaço para interagir
+function simulateClick(element) {
+    element.click();
+}
+
+stateManager.js
+import { getCategoryName } from './domUtils.js';
+
+export function saveState(state) {
+    try {
+        localStorage.setItem('appState', JSON.stringify(state));
+    } catch (error) {
+        console.error('Erro ao salvar estado no localStorage:', error);
+    }
+}
+
+export function loadState() {
+    try {
+        const savedState = localStorage.getItem('appState');
+        return savedState ? JSON.parse(savedState) : {};
+    } catch (error) {
+        console.error('Erro ao carregar estado do localStorage:', error);
+        return {};
+    }
+}
+
+export function initializeState(elements) {
+    const savedState = loadState();
+    const state = {
+        selectedCategory: savedState.selectedCategory || 'all',
+        searchTerm: savedState.searchTerm || '',
+        sortValue: savedState.sortValue || 'date-desc',
+        productsPerPage: parseInt(savedState.productsPerPage) || 5,
+        currentPage: parseInt(savedState.currentPage) || 1
+    };
+
+    // Aplicar estado inicial
+    if (state.selectedCategory) {
+        elements.navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.dataset.category === state.selectedCategory) {
+                link.classList.add('active');
+            }
+        });
+    }
+    if (state.searchTerm) {
+        elements.searchInput.value = state.searchTerm;
+        elements.clearSearchBtn.style.display = state.searchTerm ? 'block' : 'none';
+    }
+    if (state.sortValue) {
+        elements.sortSelect.value = state.sortValue;
+    }
+    if (state.productsPerPage) {
+        elements.productsPerPageSelect.value = state.productsPerPage;
+    }
+
+    // Atualizar contagem inicial (antes de carregar produtos)
+    elements.resultsCount.textContent = `0 produtos encontrados na categoria "${getCategoryName(state.selectedCategory)}"`;
+
+    return state;
+}
+
+export function updateState(state, updates) {
+    const newState = { ...state, ...updates };
+    saveState(newState);
+    return newState;
+}
+
+search-toggle.js
+document.addEventListener('DOMContentLoaded', function() {
+    const searchToggleBtn = document.querySelector('.search-toggle-btn');
+    const searchBar = document.querySelector('.search-bar');
+    const searchCloseBtn = document.querySelector('.search-close-btn');
+    const searchInput = document.querySelector('.search-bar__input');
+
+    searchToggleBtn.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        const isExpanded = searchBar.classList.contains('active');
+        searchToggleBtn.setAttribute('aria-expanded', isExpanded);
+        if (isExpanded) {
+            searchInput.focus();
+        }
+    });
+
+    searchCloseBtn.addEventListener('click', function() {
+        searchBar.classList.remove('active');
+        searchToggleBtn.setAttribute('aria-expanded', 'false');
+        searchToggleBtn.focus();
+    });
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && searchBar.classList.contains('active')) {
+            searchBar.classList.remove('active');
+            searchToggleBtn.setAttribute('aria-expanded', 'false');
+            searchToggleBtn.focus();
+        }
+    });
+});
+
+import { createProductElement, manageProductVisibility, getCategoryName } from './domUtils.js';
+import { filterProducts, sortProducts } from './filtering.js';
+import { updatePagination } from './pagination.js';
+import { initializeState, updateState } from './stateManager.js';
+
+// Função debounce para evitar múltiplas chamadas rápidas
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM carregado, inicializando aplicação...');
+    // Seleção de elementos
+    const elements = {
+        productsList: document.getElementById('products-list'),
+        navLinks: document.querySelectorAll('nav a'),
+        searchInput: document.getElementById('omnisearch'),
+        clearSearchBtn: document.getElementById('clear-search'),
+        sortSelect: document.getElementById('sort-select'),
+        productsPerPageSelect: document.getElementById('products-per-page'),
+        resultsCount: document.getElementById('results-count'),
+        noResults: document.getElementById('no-results'),
+        noResultsMessage: document.getElementById('no-results-message'),
+        categorySuggestions: document.getElementById('category-suggestions'),
+        searchBar: document.querySelector('.search-bar'),
+        searchToggleBtn: document.querySelector('.search-toggle-btn')
+    };
+
+    let state = initializeState(elements);
+    let productElements = [];
+
+    // Função principal para atualizar os produtos
+    function updateProducts(newCurrentPage = state.currentPage) {
+        state.currentPage = newCurrentPage;
+
+        const matchedProductsInCategory = filterProducts(productElements, state.selectedCategory, state.searchTerm);
+        const matchedProductsOverall = filterProducts(productElements, 'all', state.searchTerm);
+
+        const sortedProductsInCategory = sortProducts(matchedProductsInCategory, state.sortValue);
+        const sortedProductsOutsideCategory = sortProducts(
+            matchedProductsOverall.filter(product => !matchedProductsInCategory.includes(product)),
+            state.sortValue
+        );
+
+        const startIndex = (state.currentPage - 1) * state.productsPerPage;
+        const endIndex = startIndex + state.productsPerPage;
+        const paginatedProducts = sortedProductsInCategory.slice(startIndex, endIndex);
+
+        manageProductVisibility(paginatedProducts, elements.productsList);
+
+        const visibleCountInCategory = sortedProductsInCategory.length;
+        elements.resultsCount.textContent = `${visibleCountInCategory} produto${visibleCountInCategory !== 1 ? 's' : ''} encontrado${visibleCountInCategory !== 1 ? 's' : ''} na categoria "${getCategoryName(state.selectedCategory)}"`;
+
+        if (visibleCountInCategory === 0 && state.searchTerm) {
+            if (matchedProductsOverall.length > 0) {
+                elements.noResultsMessage.textContent = `Não encontramos "${state.searchTerm}" na categoria "${getCategoryName(state.selectedCategory)}".`;
+                elements.categorySuggestions.innerHTML = '<p class="other-category-message">Encontramos os seguintes itens em outras categorias:</p>';
+                const suggestionsList = document.createElement('div');
+                suggestionsList.classList.add('suggestions-list');
+                manageProductVisibility(sortedProductsOutsideCategory, suggestionsList);
+                elements.categorySuggestions.appendChild(suggestionsList);
+                elements.noResults.classList.add('visible');
+            } else {
+                elements.noResultsMessage.textContent = `Nenhum produto encontrado para "${state.searchTerm}".`;
+                elements.categorySuggestions.innerHTML = '';
+                elements.noResults.classList.add('visible');
+            }
+        } else if (visibleCountInCategory === 0 && state.selectedCategory !== 'all') {
+            elements.noResultsMessage.textContent = `Nenhum produto encontrado na categoria "${getCategoryName(state.selectedCategory)}".`;
+            elements.categorySuggestions.innerHTML = '';
+            elements.noResults.classList.add('visible');
+        } else {
+            elements.noResults.classList.remove('visible');
+            elements.categorySuggestions.innerHTML = '';
+        }
+        state.currentPage = updatePagination(sortedProductsInCategory, state.currentPage, state.productsPerPage, updateProducts);
+        state = updateState(state, { currentPage: state.currentPage });
+    }
+
+    // Função para carregar dados com tentativas de caminhos alternativos
+    async function loadProductsData() {
+        const possiblePaths = [
+            'data/products.json',
+            '/data/products.json',
+            './data/products.json',
+            '../data/products.json',
+            // Se você estiver usando outro nome de arquivo ou caminho, adicione aqui
+        ];
+
+        let data = null;
+        let lastError = null;
+
+        for (const path of possiblePaths) {
+            try {
+                console.log(`Tentando carregar produtos de ${path}...`);
+                const response = await fetch(path);
+                if (response.ok) {
+                    data = await response.json();
+                    console.log(`Produtos carregados com sucesso de ${path}`);
+                    break;
+                }
+            } catch (error) {
+                console.warn(`Erro ao carregar de ${path}:`, error);
+                lastError = error;
+            }
+        }
+
+        if (data) {
+            return data;
+        } else {
+            // Se nenhum caminho funcionou, criar alguns produtos de exemplo para debug
+            console.error('Falha ao carregar produtos de todos os caminhos testados. Usando produtos de exemplo para debug.');
+            
+            // Dados de exemplo para debug
+            return [
+                {
+                    name: "Produto de exemplo para debug",
+                    category: "outros",
+                    date: "2025-04-01",
+                    image: "images/fallback.png",
+                    prices: {
+                        "Amazon": {
+                            price: 99.90,
+                            link: "https://amazon.com.br",
+                            logo: "images/logos/amazon.png"
+                        },
+                        "Mercado Livre": {
+                            price: 89.90,
+                            link: "https://mercadolivre.com.br",
+                            logo: "images/logos/mercadolivre.png"
+                        }
+                    },
+                    links: {
+                        youtube: "https://youtube.com",
+                        review: "https://emcasacomcecilia.com"
+                    }
+                },
+                {
+                    name: "Outro produto de exemplo",
+                    category: "cozinha",
+                    date: "2025-04-10",
+                    image: "images/fallback.png",
+                    prices: {
+                        "Shopee": {
+                            price: 79.90,
+                            link: "https://shopee.com.br",
+                            logo: "images/logos/shopee.png"
+                        }
+                    }
+                }
+            ];
+        }
+    }
+
+    // Carregar os dados dos produtos
+    loadProductsData()
+        .then(data => {
+            console.log(`${data.length} produtos carregados`);
+            
+            // Adiciona informação de depuração para cada produto
+            data.forEach((product, index) => {
+                console.log(`Produto ${index + 1}: ${product.name}`);
+                if (product.prices) {
+                    console.log(`  Lojas: ${Object.keys(product.prices).join(', ')}`);
+                } else {
+                    console.warn(`  Produto ${product.name} não tem preços definidos`);
+                }
+            });
+            
+            productElements = data.map(product => createProductElement(product));
+            productElements.forEach(element => {
+                element.style.display = 'none';
+                elements.productsList.appendChild(element);
+            });
+            updateProducts();
+        })
+        .catch(error => {
+            console.error('Erro final ao processar produtos:', error);
+            elements.productsList.innerHTML = `
+                <div class="error-message">
+                    <p>Desculpe, não foi possível carregar os produtos.</p>
+                    <p>Erro: ${error.message}</p>
+                    <p>Por favor, verifique se o arquivo data/products.json existe e está acessível.</p>
+                </div>
+            `;
+        });
+
+    // Função de busca com debounce
+    const debouncedUpdateProducts = debounce(() => {
+        state = updateState(state, { searchTerm: elements.searchInput.value, currentPage: 1 });
+        updateProducts();
+    }, 300);
+
+    // Função para fechar a barra de pesquisa no modo mobile
+    function closeSearchBar() {
+        if (window.innerWidth <= 768) {
+            elements.searchBar.classList.remove('active');
+            elements.searchToggleBtn.setAttribute('aria-expanded', 'false');
+            elements.searchToggleBtn.focus();
+        }
+    }
+
+    // Eventos
+    elements.navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            elements.navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            state = updateState(state, { selectedCategory: link.dataset.category, currentPage: 1 });
+            updateProducts();
+        });
+    });
+
+    elements.searchInput.addEventListener('input', () => {
+        elements.clearSearchBtn.style.display = elements.searchInput.value ? 'block' : 'none';
+        debouncedUpdateProducts();
+    });
+
+    elements.searchInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' && window.innerWidth <= 768) {
+            event.preventDefault();
+            closeSearchBar();
+        }
+    });
+
+    elements.clearSearchBtn.addEventListener('click', () => {
+        elements.searchInput.value = '';
+        elements.clearSearchBtn.style.display = 'none';
+        state = updateState(state, { searchTerm: '', currentPage: 1 });
+        updateProducts();
+        closeSearchBar();
+    });
+
+    // Fechar a barra de pesquisa ao clicar fora no modo mobile
+    document.addEventListener('click', (event) => {
+        const isClickInsideSearchBar = elements.searchBar.contains(event.target);
+        const isClickOnToggleBtn = elements.searchToggleBtn.contains(event.target);
+        const isSearchBarActive = elements.searchBar.classList.contains('active');
+
+        if (
+            !isClickInsideSearchBar &&
+            !isClickOnToggleBtn &&
+            isSearchBarActive &&
+            window.innerWidth <= 768
+        ) {
+            closeSearchBar();
+        }
+    });
+
+    elements.sortSelect.addEventListener('change', () => {
+        state = updateState(state, { sortValue: elements.sortSelect.value, currentPage: 1 });
+        updateProducts();
+    });
+
+    elements.productsPerPageSelect.addEventListener('change', () => {
+        state = updateState(state, { productsPerPage: parseInt(elements.productsPerPageSelect.value), currentPage: 1 });
+        updateProducts();
+    });
+});
+
+pagination.js
+export function updatePagination(filteredProducts, currentPage, productsPerPage, updateProductsCallback) {
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
+
+    const totalProducts = filteredProducts.length;
+    const totalPages = Math.ceil(totalProducts / productsPerPage);
+
+    if (currentPage > totalPages) {
+        currentPage = totalPages || 1;
+    }
+
+    const firstButton = document.createElement('button');
+    firstButton.textContent = '«';
+    firstButton.disabled = currentPage === 1;
+    firstButton.addEventListener('click', () => {
+        currentPage = 1;
+        updateProductsCallback(currentPage);
+    });
+    pagination.appendChild(firstButton);
+
+    const prevButton = document.createElement('button');
+    prevButton.textContent = 'Anterior';
+    prevButton.disabled = currentPage === 1;
+    prevButton.addEventListener('click', () => {
+        if (currentPage > 1) {
+            currentPage--;
+            updateProductsCallback(currentPage);
+        }
+    });
+    pagination.appendChild(prevButton);
+
+    const maxVisiblePages = 5;
+    let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+    startPage = Math.max(1, endPage - maxVisiblePages + 1);
+
+    for (let i = startPage; i <= endPage; i++) {
+        const pageButton = document.createElement('button');
+        pageButton.classList.add('page-number');
+        pageButton.textContent = i;
+        if (i === currentPage) {
+            pageButton.classList.add('active');
+            pageButton.disabled = true;
+        }
+        pageButton.addEventListener('click', () => {
+            currentPage = i;
+            updateProductsCallback(currentPage);
+        });
+        pagination.appendChild(pageButton);
+    }
+
+    const nextButton = document.createElement('button');
+    nextButton.textContent = 'Próximo';
+    nextButton.disabled = currentPage === totalPages || totalPages === 0;
+    nextButton.addEventListener('click', () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            updateProductsCallback(currentPage);
+        }
+    });
+    pagination.appendChild(nextButton);
+
+    const lastButton = document.createElement('button');
+    lastButton.textContent = '»';
+    lastButton.disabled = currentPage === totalPages || totalPages === 0;
+    lastButton.addEventListener('click', () => {
+        currentPage = totalPages;
+        updateProductsCallback(currentPage);
+    });
+    pagination.appendChild(lastButton);
+
+    const pageInfo = document.createElement('span');
+    pageInfo.classList.add('page-info');
+    pageInfo.textContent = `Página ${currentPage} de ${totalPages || 1}`;
+    pagination.appendChild(pageInfo);
+
+    return currentPage; // Retorna a página atual atualizada
+}
+
+
+filtering.js
+export function filterProducts(products, category = 'all', searchTerm = '') {
+    let filtered = products;
+    if (category !== 'all') {
+        filtered = filtered.filter(product => product.dataset.category === category);
+    }
+    if (searchTerm) {
+        filtered = filtered.filter(product => {
+            const productName = product.querySelector('h3').textContent.toLowerCase();
+            return productName.includes(searchTerm.toLowerCase().trim());
+        });
+    }
+    return filtered;
+}
+
+export function sortProducts(products, sortValue) {
+    const sortFunction = (a, b) => {
+        const dateA = new Date(a.dataset.date || '1970-01-01');
+        const dateB = new Date(b.dataset.date || '1970-01-01');
+        const priceA = parseFloat(a.dataset.lowestPrice || '0');
+        const priceB = parseFloat(b.dataset.lowestPrice || '0');
+
+        if (sortValue === 'date-desc') return dateB - dateA;
+        if (sortValue === 'date-asc') return dateA - dateB;
+        if (sortValue === 'price-asc') return priceA - priceB;
+        if (sortValue === 'price-desc') return priceB - priceA;
+        return 0;
+    };
+    return [...products].sort(sortFunction);
+}
+// Versão aprimorada do domUtils.js
+
+export function sanitizeUrl(url) {
+    if (typeof url !== 'string') return '#';
+    // Verificação básica de URL
+    return url.trim();
+}
+
+export function sanitizeImagePath(path) {
+    if (typeof path !== 'string' || !path) return './images/fallback.png';
+    
+    // Garante que o caminho tenha o prefixo correto
+    if (!path.startsWith('./') && !path.startsWith('/') && !path.startsWith('http')) {
+        return './' + path;
+    }
+    
+    return path;
+}
+
+export function formatDate(dateStr) {
+    if (!dateStr || typeof dateStr !== 'string') return 'Data não disponível';
+    try {
+        const [year, month, day] = dateStr.split('-');
+        return `${day}/${month}/${year}`;
+    } catch (e) {
+        console.error('Erro ao formatar data:', e);
+        return 'Data não disponível';
+    }
+}
+
+export function getCategoryName(category) {
+    if (category === 'all') return 'Todas as Categorias';
+    return category
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+export function createProductElement(product) {
+    console.log("Criando elemento para produto:", product.name);
+    
+    const article = document.createElement('article');
+    article.classList.add('product');
+    article.setAttribute('data-category', product.category || 'outros');
+    article.setAttribute('data-date', product.date || '1970-01-01');
+    
+    // Calcula o menor preço para ordenação
+    let lowestPrice = Infinity;
+    if (product.prices && Object.keys(product.prices).length > 0) {
+        for (const store in product.prices) {
+            const price = parseFloat(product.prices[store].price || 0);
+            if (price > 0 && price < lowestPrice) {
+                lowestPrice = price;
+            }
+        }
+    }
+    article.setAttribute('data-lowest-price', isFinite(lowestPrice) ? lowestPrice : 0);
+
+    const metaDiv = document.createElement('div');
+    metaDiv.classList.add('product-meta');
+
+    const categoryTag = document.createElement('div');
+    categoryTag.classList.add('category-tag');
+    categoryTag.textContent = getCategoryName(product.category || 'outros');
+    metaDiv.appendChild(categoryTag);
+
+    const dateUpdated = document.createElement('div');
+    dateUpdated.classList.add('date-updated');
+    dateUpdated.textContent = `Atualizado em: ${formatDate(product.date)}`;
+    metaDiv.appendChild(dateUpdated);
+
+    article.appendChild(metaDiv);
+
+    const topDiv = document.createElement('div');
+    topDiv.classList.add('product-top');
+
+    const imageDiv = document.createElement('div');
+    imageDiv.classList.add('product-image');
+    const img = document.createElement('img');
+    img.src = sanitizeImagePath(product.image);
+    img.alt = `Imagem do produto: ${product.name || 'Produto sem nome'}`;
+    img.width = 150;
+    img.height = 112;
+    img.setAttribute('loading', 'lazy');
+    img.onerror = function() { 
+        console.log(`Erro ao carregar imagem: ${product.image}`); 
+        this.src = './images/fallback.png'; 
+        this.alt = 'Imagem não disponível'; 
+    };
+    imageDiv.appendChild(img);
+    topDiv.appendChild(imageDiv);
+
+    const detailsDiv = document.createElement('div');
+    detailsDiv.classList.add('product-details');
+
+    const h3 = document.createElement('h3');
+    h3.textContent = product.name || 'Produto sem nome';
+    detailsDiv.appendChild(h3);
+
+    const pricesDiv = document.createElement('div');
+    pricesDiv.classList.add('prices');
+    
+    console.log(`Preços para ${product.name}:`, product.prices);
+    
+    if (product.prices && Object.keys(product.prices).length > 0) {
+        for (const [store, info] of Object.entries(product.prices)) {
+            const a = document.createElement('a');
+            a.href = sanitizeUrl(info.link);
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            a.classList.add('affiliate-link');
+            a.setAttribute('data-store', store);
+            a.setAttribute('data-product', product.name || 'produto');
+            a.setAttribute('aria-label', `Comprar ${product.name || 'produto'} na ${store} por R$ ${(info.price || 0).toFixed(2)}`);
+
+            const logoImg = document.createElement('img');
+            logoImg.src = sanitizeImagePath(info.logo);
+            logoImg.alt = `Logo da loja ${store}`;
+            logoImg.classList.add('store-logo');
+            logoImg.width = 48;
+            logoImg.height = 48;
+            logoImg.setAttribute('loading', 'lazy');
+            logoImg.onerror = function() { 
+                console.log(`Erro ao carregar logo da loja: ${this.src}`);
+                this.src = './images/fallback.png';
+                this.style.display = 'inline-block'; // Forçar exibição
+                this.alt = 'Logo não disponível'; 
+            };
+            a.appendChild(logoImg);
+
+            const priceSpan = document.createElement('span');
+            priceSpan.textContent = ` R$ ${(info.price || 0).toFixed(2)}`;
+            a.appendChild(priceSpan);
+            
+            pricesDiv.appendChild(a);
+            
+            console.log(`Adicionado preço da loja ${store}: R$ ${(info.price || 0).toFixed(2)}`);
+        }
+    } else {
+        console.warn(`Produto ${product.name} não tem preços definidos`);
+        const noPrice = document.createElement('p');
+        noPrice.textContent = 'Preços não disponíveis';
+        noPrice.style.color = '#a0a0a0';
+        pricesDiv.appendChild(noPrice);
+    }
+    
+    detailsDiv.appendChild(pricesDiv);
+
+    const linksDiv = document.createElement('div');
+    linksDiv.classList.add('links');
+    if (product.links?.youtube) {
+        const a = document.createElement('a');
+        a.href = sanitizeUrl(product.links.youtube);
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.classList.add('youtube-icon', 'youtube-link');
+        a.setAttribute('data-product', product.name || 'produto');
+        a.setAttribute('aria-label', 'Vídeo no YouTube');
+
+        const youtubeIcon = document.createElement('img');
+        youtubeIcon.src = './images/logos/youtube.png';
+        youtubeIcon.alt = 'Ícone do YouTube';
+        youtubeIcon.classList.add('youtube-logo');
+        youtubeIcon.width = 24;
+        youtubeIcon.height = 24;
+        youtubeIcon.setAttribute('loading', 'lazy');
+        youtubeIcon.onerror = function() { 
+            this.src = './images/fallback.png'; 
+            this.alt = 'Ícone do YouTube não disponível'; 
+        };
+        a.appendChild(youtubeIcon);
+
+        const youtubeText = document.createElement('span');
+        youtubeText.textContent = 'YouTube';
+        a.appendChild(youtubeText);
+        
+        linksDiv.appendChild(a);
+    }
+    if (product.links?.review) {
+        const a = document.createElement('a');
+        a.href = sanitizeUrl(product.links.review);
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.classList.add('review-link');
+        a.setAttribute('data-product', product.name || 'produto');
+        a.setAttribute('aria-label', 'Review do produto');
+
+        const reviewIcon = document.createElement('img');
+        reviewIcon.src = './images/logos/review.png';
+        reviewIcon.alt = 'Ícone de Review';
+        reviewIcon.classList.add('review-logo');
+        reviewIcon.width = 24;
+        reviewIcon.height = 24;
+        reviewIcon.setAttribute('loading', 'lazy');
+        reviewIcon.onerror = function() { 
+            this.src = './images/fallback.png'; 
+            this.alt = 'Ícone de Review não disponível'; 
+        };
+        a.appendChild(reviewIcon);
+
+        const reviewText = document.createElement('span');
+        reviewText.textContent = 'Review';
+        a.appendChild(reviewText);
+        
+        linksDiv.appendChild(a);
+    }
+    detailsDiv.appendChild(linksDiv);
+
+    topDiv.appendChild(detailsDiv);
+    article.appendChild(topDiv);
+
+    return article;
+}
+
+export function manageProductVisibility(productsToShow, container) {
+    // Limpa o container de forma segura
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+    
+    // Adiciona os produtos visíveis
+    productsToShow.forEach(product => {
+        const clone = product.cloneNode(true);
+        clone.style.display = 'flex';
+        container.appendChild(clone);
+    });
+}
+site-config.js
+// Configuração global do site
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Inicializando configurações do site...');
+    
+    // Verificar e corrigir caminhos base
+    const basePath = document.querySelector('base')?.href || window.location.href.split('/').slice(0, -1).join('/') + '/';
+    console.log('Base path do site:', basePath);
+    
+    // Forçar carregamento de recursos com caminhos absolutos
+    function fixResourcePaths() {
+        // Corrigir imagens
+        document.querySelectorAll('img[src^="images/"]').forEach(img => {
+            const originalSrc = img.getAttribute('src');
+            img.setAttribute('src', './' + originalSrc);
+            console.log('Corrigido caminho de imagem:', originalSrc, '->', './' + originalSrc);
+        });
+        
+        // Corrigir links CSS
+        document.querySelectorAll('link[rel="stylesheet"][href^="styles"]').forEach(link => {
+            const originalHref = link.getAttribute('href');
+            link.setAttribute('href', './' + originalHref);
+            console.log('Corrigido caminho de CSS:', originalHref, '->', './' + originalHref);
+        });
+    }
+    
+    // Detectar navegador e aplicar correções específicas
+    function applyBrowserSpecificFixes() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        console.log('User Agent:', userAgent);
+        
+        // Correções para Chrome, Firefox, etc.
+        if (userAgent.indexOf('chrome') > -1 && userAgent.indexOf('brave') === -1) {
+            console.log('Aplicando correções para Chrome...');
+            // Adicionar classe específica ao body
+            document.body.classList.add('chrome-browser');
+        } else if (userAgent.indexOf('firefox') > -1) {
+            console.log('Aplicando correções para Firefox...');
+            document.body.classList.add('firefox-browser');
+        } else if (userAgent.indexOf('safari') > -1 && userAgent.indexOf('chrome') === -1) {
+            console.log('Aplicando correções para Safari...');
+            document.body.classList.add('safari-browser');
+        }
+    }
+    
+    // Lidar com erros de carregamento de imagens
+    function setupImageErrorHandling() {
+        document.querySelectorAll('img').forEach(img => {
+            // Adicionar handler de erro global
+            img.addEventListener('error', function() {
+                console.warn('Erro ao carregar imagem:', this.src);
+                // Tentar novamente com caminho relativo diferente se não for uma URL completa
+                if (!this.src.startsWith('http') && !this.src.startsWith('data:')) {
+                    const newSrc = './images/fallback.png';
+                    console.log('Trocando para imagem fallback:', newSrc);
+                    this.src = newSrc;
+                }
+            });
+        });
+    }
+    
+    // Executar as correções
+    fixResourcePaths();
+    applyBrowserSpecificFixes();
+    setupImageErrorHandling();
+    
+    console.log('Configuração do site concluída');
+});
+

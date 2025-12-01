@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+ 
+# Sitemaps for domain and subdomains
+Sitemap: https://emcasacomcecilia.com/sitemap.xml
+Sitemap: https://damie.emcasacomcecilia.com/sitemap.xml
+Sitemap: https://dicas.emcasacomcecilia.com/sitemap.xml 

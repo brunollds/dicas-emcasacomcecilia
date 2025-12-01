@@ -1,0 +1,33 @@
+# Dependências
+node_modules/
+__pycache__/
+*.pyc
+
+# Build
+dist/
+
+# Logs
+*.log
+price_scraper.log
+
+# Backups e arquivos grandes
+backup/
+*.zip
+
+# PDFs de planejamento (não precisa versionar)
+*.pdf
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Ambiente
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Pasta Black Friday (temporária)
+Black Friday/

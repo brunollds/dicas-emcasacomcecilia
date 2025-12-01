@@ -1,0 +1,1752 @@
+[
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 325.0,
+    "name": "Panela de Pressão Elétrica Itatiaia Essencial 5l 900w 127v",
+    "image": "images/products/paneladepressaoitatiaia.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/43dZe8p",
+        "price": 422.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Mercado Livre": {
+        "link": "https://mercadolivre.com/sec/2EHaanB",
+        "price": 336.86,
+        "logo": "images/logos/ML.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/3LE9cuyIyU",
+        "price": 325.0,
+        "logo": "images/logos/shopee.png"
+      },
+      "Magazine Luiza": {
+        "link": "https://divulgador.magalu.com/1MZWqKx-",
+        "price": 227.46,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 153.9,
+    "name": "Panela De Arroz Elétrica Midi Itatiaia 1,5L 500W 127V",
+    "image": "images/products/arrozitatiaia.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42S6eJ8",
+        "price": 149.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Mercado Livre": {
+        "link": "https://mercadolivre.com/sec/2wh2a5L",
+        "price": 220.77,
+        "logo": "images/logos/ML.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/3qAQIanMqX",
+        "price": 153.9,
+        "logo": "images/logos/shopee.png"
+      },
+      "Magazine Luiza": {
+        "link": "https://divulgador.magalu.com/h7Pi_1BN",
+        "price": 339.0,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 559.9,
+    "name": "Fritadeira Airfryer Forno Itatiaia Oven 12l 1900w",
+    "image": "/images/products/ovenitatiaia.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4d9vzSl",
+        "price": 598.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Mercado Livre": {
+        "link": "https://mercadolivre.com/sec/2XtxnCi",
+        "price": 709.9,
+        "logo": "images/logos/ML.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/9pRdRymRAD",
+        "price": 68990.0,
+        "logo": "images/logos/shopee.png"
+      },
+      "Magazine Luiza": {
+        "link": "https://divulgador.magalu.com/YA1AVmv3",
+        "price": 630.57,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 43.0,
+    "name": "Batedeira Portátil de Mão Sem Fio USB",
+    "image": "/images/products/b59998eb899a9f04e8559055ba93f405.jpeg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42L0Nu1",
+        "price": 69.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/gD753sdLu",
+        "price": 44.0,
+        "logo": "images/logos/shopee.png"
+      },
+      "Mercado Livre": {
+        "link": "https://mercadolivre.com/sec/2mdDLsy",
+        "price": 95.9,
+        "logo": "images/logos/ML.png"
+      },
+      "Magazine Luiza": {
+        "link": "https://divulgador.magalu.com/Cl2TN0dg",
+        "price": 110.0,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "banheiro",
+    "date": "2025-05-16",
+    "lowestPrice": 12.16,
+    "name": "Raspador de Vidros Multiuso",
+    "image": "/images/products/90e35040d72693f585761c76b007c004.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/44dnsBN",
+        "price": 18.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/1g5eJI3uHM",
+        "price": 14.5,
+        "logo": "images/logos/shopee.png"
+      },
+      "Mercado Livre": {
+        "link": "https://mercadolivre.com/sec/2X8ngzN",
+        "price": 6.84,
+        "logo": "images/logos/ML.png"
+      },
+      "Magazine Luiza": {
+        "link": "https://divulgador.magalu.com/JXhhmemZ",
+        "price": 16.79,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {
+      "youtube": "https://youtube.com/shorts/5PD7DSv_BKM"
+    },
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 186.0,
+    "name": "Iogurteira Izumi",
+    "image": "/images/products/01f2a0cc637f9fe11ef00d8becccad68.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4lSkJnt",
+        "price": 190.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/8zsF3BEHsL",
+        "price": 194.9,
+        "logo": "images/logos/shopee.png"
+      },
+      "Mercado Livre": {
+        "link": "https://mercadolivre.com/sec/2LWX3ry",
+        "price": 205.7,
+        "logo": "images/logos/ML.png"
+      },
+      "Magazine Luiza": {
+        "link": "https://divulgador.magalu.com/jU_T2KPJ",
+        "price": 229.77,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 15.27,
+    "name": "Pegador de Silicone",
+    "image": "/images/products/3f20a26b79456f12c20249a71df56a74.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3RAQ3JL",
+        "price": 28.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/6AY3gMoVY6",
+        "price": 16.99,
+        "logo": "images/logos/shopee.png"
+      },
+      "Mercado Livre": {
+        "link": "https://mercadolivre.com/sec/2rYX8Th",
+        "price": 15.35,
+        "logo": "images/logos/ML.png"
+      },
+      "Magazine Luiza": {
+        "link": "https://divulgador.magalu.com/NDUIjVuQ",
+        "price": 21.76,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "sala-de-estar",
+    "date": "2025-05-16",
+    "lowestPrice": 39.0,
+    "name": "Mini Umidificador Ventilador Portátil",
+    "image": "/images/products/3ced87b6d5aa577bee416e8ee0cbebd7.jpeg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jUK4LY",
+        "price": 44.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4VPpj2QUhq",
+        "price": 45.76,
+        "logo": "images/logos/shopee.png"
+      },
+      "Mercado Livre": {
+        "link": "https://mercadolivre.com/sec/1LNpqvW",
+        "price": 78.9,
+        "logo": "images/logos/ML.png"
+      },
+      "Magazine Luiza": {
+        "link": "https://divulgador.magalu.com/f2us0tps",
+        "price": 57.56,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "outros",
+    "date": "2025-05-16",
+    "lowestPrice": 2299.0,
+    "name": "Ar Condicionado Samsung Windfree 12000btu",
+    "image": "/images/products/65add7e7eeb9895a3e116e6635f1c26c.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jWvymN",
+        "price": 2299.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/7Kk2IpuVWM",
+        "price": 2299.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "outros",
+    "date": "2025-05-16",
+    "lowestPrice": 615.9,
+    "name": "Extratora WAP Spot Cleaner W2",
+    "image": "/images/products/4f16c500796a0fe90cdc9bd163c07a07.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4lI3xky",
+        "price": 668.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4fjH7xzS40",
+        "price": 993.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 1889.0,
+    "name": "Forno Elétrico de Embutir EOS 72 Litros com Convecção e Porta de Vidro Espelhado 220V",
+    "image": "/images/products/be0c5e5fcd0c98f4491b3f9dd3829b77.jpeg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/44MCIWh",
+        "price": 1889.0,
+        "logo": "images/logos/amazon.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 1089.0,
+    "name": "Cooktop de Indução Quatro Bocas Eos Eci04ep 220v",
+    "image": "/images/products/c9df82a039b839924fcb6ac1a6b91901.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4cRPcOx",
+        "price": 1089.0,
+        "logo": "images/logos/amazon.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 8698.99,
+    "name": "Iphone 16 Pro Max 256GB",
+    "image": "/images/products/940b2ef119dd03ce8e394a856bb2a180.png",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4cWAEgA",
+        "price": 11199.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://amzn.to/4iGZEd3",
+        "price": 11259.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 2404.35,
+    "name": "Nintendo Switch OLED 64GB",
+    "image": "/images/products/c8eecffac99f532f1a755c7a30606ae9.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42MLml1",
+        "price": 2399.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/2fyCkyqNpb",
+        "price": 2489.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 2519.0,
+    "name": "Xbox Series S",
+    "image": "/images/products/680c4b6c5df53119ad1d78f2a797776f.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3YSVeZj",
+        "price": 2598.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/LaHypdLOr",
+        "price": 2519.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 5399.0,
+    "name": "Xbox Series X",
+    "image": "/images/products/ebb730e0e91fe3d504050f5f9785f072.png",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4lLA49n",
+        "price": 4849.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/40TaLckrMX",
+        "price": 5399.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 3499.0,
+    "name": "PlayStation 5 Digital Edition",
+    "image": "/images/products/360f5574248505d0efcc26bf2dc44626.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3RGzJHs",
+        "price": 750.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/7Kk2JvFq8Q",
+        "price": 3499.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 3384.27,
+    "name": "PS5 Slim Digital Edition",
+    "image": "/images/products/62a46a37202dec92af5b611b02e14b39.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jOMfjT",
+        "price": 3669.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4q2hLMC2OP",
+        "price": 3459.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 6299.0,
+    "name": "PlayStation 5 PRO",
+    "image": "/images/products/f9558c99e8464a9fb4a479584dc03891.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/437G5G0",
+        "price": 6649.0,
+        "logo": "images/logos/amazon.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 5800.0,
+    "name": "Steam Deck 64GB",
+    "image": "/images/products/6d3622834553ae44d20965f47cb0e78d.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4iGJWPd",
+        "price": 5877.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/xRaYs840",
+        "price": 5849.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "sala-de-estar",
+    "date": "2025-05-16",
+    "lowestPrice": 217.9,
+    "name": "Ventilador Coluna 50cm 180w WAP 127v",
+    "image": "/images/products/9d0921bf7963114755687aa0c0ede441.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jvhGjz",
+        "price": 237.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/60EejhxG2R",
+        "price": 229.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 729.9,
+    "name": "ICHEF Fritadeira Elétrica Airfryer Smart Vision 6L (220 Volts)",
+    "image": "/images/products/e0236ace4cb933e7ea5c6ea244176643.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3EvShXY",
+        "price": 799.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4fjH9IJoPJ",
+        "price": 729.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-12",
+    "lowestPrice": 1339.99,
+    "name": "Forno De Bancada Função Airfry Arno 5 Em 1 Elétrico 127v",
+    "image": "/images/products/fd1fe9731956d8d73ebc951b641958ec.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42w50mC",
+        "price": 849.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/9UoWuLEyHX",
+        "price": 1339.99,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 689.0,
+    "name": "Cafeteira Espresso EOS Latte Italiana Inox ECF05ECL 110V",
+    "image": "/images/products/114b93541b6682b3cb837e91a145ac49.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4lRStS2",
+        "price": 789.0,
+        "logo": "images/logos/amazon.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 925.97,
+    "name": "Coifa e Depurador de Parede EOS 60cm Premium Digital Touch ECO60PTD 110v",
+    "image": "/images/products/71c8153dbd31f1094c0553d692b7b3e5.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/44OE2bh",
+        "price": 998.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Magazine Luiza": {
+        "link": "",
+        "price": 925.97,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 399.0,
+    "name": "Multiprocessador PowerChop 1000 Philips Walita Preto 1000W + 6 acessórios inclusos - HR7304",
+    "image": "/images/products/d9e310efc12331b2ae3fe6d37502d8ba.png",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4cT1XZf",
+        "price": 399.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/xRb2kPUF",
+        "price": 498.78,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 509.9,
+    "name": "Echo Spot Ultima Geração",
+    "image": "/images/products/94fdb34d2b4b6a1a55da08f065cf1055.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42RJoQm",
+        "price": 1399.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/7Kk2KbKsAW",
+        "price": 509.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 375.0,
+    "name": "Echo Dot 5a Geração",
+    "image": "/images/products/7f9a1d229dae4b354e4c7762d4501b3c.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/44fhz71",
+        "price": 379.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/3fqjxuOouK",
+        "price": 499.9,
+        "logo": "images/logos/shopee.png"
+      },
+      "Magazine Luiza": {
+        "link": "",
+        "price": 375.0,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 290.0,
+    "name": "Echo Pop Ultima Geração",
+    "image": "/images/products/660be2ff3443beb8a95c48c006c552be.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4dcdKCd",
+        "price": 459.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/6AY4we7GeB",
+        "price": 290.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 2128.9,
+    "name": "Triturador de Alimento Tramontina",
+    "image": "/images/products/05fe0db050fbbc8cf2d23d8293b73114.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42xhWso",
+        "price": 1499.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/8pYq7fqAid",
+        "price": 2505.99,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "quarto",
+    "date": "2025-05-16",
+    "lowestPrice": 92.9,
+    "name": "Ventilador de Mesa Ultra 30cm 110v",
+    "image": "/images/products/0c3b71616f3f6cd8874a879a763e9253.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3YSJndI",
+        "price": 137.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/20iVzCiHDR",
+        "price": 112.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 3689.0,
+    "name": "Geladeira Panasonic Duplex Frost Free 435L Aço Escovado",
+    "image": "/images/products/c531866fba6e3ba5fe5ba827ecb337d7.png",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42LfahX",
+        "price": 3689.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Mercado Livre": {
+        "link": "",
+        "price": 4229.0,
+        "logo": "images/logos/ML.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4L6QliqQOB",
+        "price": 3709.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 61.9,
+    "name": "Interruptor Inteligente Wi-fi Nova Digital 1 Botão",
+    "image": "/images/products/f62a4c734cb4f8488109364680144ae7.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3YnzLaN",
+        "price": 72.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4fjHAOe3LV",
+        "price": 79.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 76.0,
+    "name": "Interruptor Inteligente Wi-fi Nova Digital 2 Botão",
+    "image": "/images/products/234ace250934fd5c0168a7b84c122391.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3Eu3ZSX",
+        "price": 72.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/3LDtZz4JsJ",
+        "price": 86.1,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 77.0,
+    "name": "Interruptor Inteligente Wi-fi Nova Digital 3 Botão",
+    "image": "/images/products/c68d6bff29a6fdf87a50d74128a44b91.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jyPNav",
+        "price": 84.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/1VmFOfNyQq",
+        "price": 87.72,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 78.0,
+    "name": "Interruptor Inteligente Wi-fi Nova Digital 4 Botão",
+    "image": "/images/products/859bbbf677a1c8a0d3c0aca01d5b82c0.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jQYrk6",
+        "price": 78.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/50M7ZAZQqh",
+        "price": 83.44,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 423.0,
+    "name": "Câmera de Vídeo Wi-Fi Full HD iM5 Intelbras",
+    "image": "/images/products/5de0a5f646dabc2b3539203035e81777.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42B8TXv",
+        "price": 417.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/5AfXlfckXN",
+        "price": 423.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 463.17,
+    "name": "Câmera Externa Inteligente iM7 Full Color Branco Intelbras",
+    "image": "/images/products/b89dc49bb36dce5a88567f9e61c7263b.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3RE4A7l",
+        "price": 552.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/6fULYWQDRJ",
+        "price": 539.9,
+        "logo": "images/logos/shopee.png"
+      },
+      "Magazine Luiza": {
+        "link": "",
+        "price": 463.17,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "outros",
+    "date": "2025-05-16",
+    "lowestPrice": 83.9,
+    "name": "Mangueira Para Jardim 30 Metros Com Esguicho 79172300 Tramontina",
+    "image": "/images/products/975ebd14b92c033c4586df770d8f9e5b.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3EImEud",
+        "price": 102.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/2LLMOcwhBb",
+        "price": 83.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "outros",
+    "date": "2025-05-16",
+    "lowestPrice": 389.0,
+    "name": "Lavadora de Alta Pressão EOS Max Pro 1750Psi 1600W ELP3500 110V",
+    "image": "/images/products/29ffaa66266a5d4708e4a2af1ca8d558.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jG4BEb",
+        "price": 389.0,
+        "logo": "images/logos/amazon.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 2089.78,
+    "name": "Lava-louças 15 Serviços Brastemp com Smart Sensor - BLF61AR 110v",
+    "image": "/images/products/b26fc7dc2e6a8bff457db472c99ae00a.png",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/44bm5n7",
+        "price": 4212.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/5pvEbkmJ8Q",
+        "price": 2089.78,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "lavanderia",
+    "date": "2025-05-16",
+    "lowestPrice": 1899.0,
+    "name": "Máquina de Lavar Consul 12 kg Branca com Dosagem Econômica e Ciclo Edredom - CWH12BB 110V",
+    "image": "/images/products/24e94c96d1c85cd67bb20fbd94b00893.png",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42Sk4ty",
+        "price": 1909.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/7zzjBmyqVw",
+        "price": 1899.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 1563.67,
+    "name": "Videoporteiro Wi-fi Allo wT7 Lite Preto/Prata Intelbras",
+    "image": "/images/products/ba670054b26601830e47a17893035fce.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4iJi7pp",
+        "price": 1800.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/3qAAEBLbmK",
+        "price": 1563.67,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 7699.0,
+    "name": "Tablet Samsung Galaxy Tab S10+",
+    "image": "/images/products/e31f79d21e811a544aa17af5ae3167c4.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4lXJsHe",
+        "price": 8389.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/gD8SlAMjs",
+        "price": 7984.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 7899.0,
+    "name": "Samsung S25 Ultra 512GB",
+    "image": "/images/products/18725c40ef77342f0a8e205547219dea.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jUnQJO",
+        "price": 2799.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/AKNdye1XHh",
+        "price": 7999.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 110.11,
+    "name": "Regua Energia 8 Transparente LCF Clamper",
+    "image": "/images/products/bcc125e2b8e062dfad8e6356d5b18d8b.png",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4iFjg10",
+        "price": 118.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/8UvznJThpK",
+        "price": 119.99,
+        "logo": "images/logos/shopee.png"
+      },
+      "Magazine Luiza": {
+        "link": "",
+        "price": 110.11,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 1306.93,
+    "name": "Monitor LG UltraWide™ - Tela IPS de 29\", 21:9, USB-C, 7Wx2 MaxxAudio®, sRGB 99%, 100Hz - 29WQ600B",
+    "image": "/images/products/06dca90d095f02810f3f413f3daf606b.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4lNBCjr",
+        "price": 1272.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4q2hQie1sa",
+        "price": 1516.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 2169.0,
+    "name": "Monitor LG 34'' UltraGear Curvo 34GP63A-B UltraWide (HDMI/Displayport/3440x1440)",
+    "image": "/images/products/0fb3ec6744e54cc3fa3ab171f27f2755.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4iFjCVo",
+        "price": 2799.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/5pvEcdybJN",
+        "price": 2169.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 262.0,
+    "name": "Frigideira Tramontina Grano em Aço Inox com Corpo Triplo e Cabo 30 cm 3,4 L",
+    "image": "/images/products/fe324aa616b8b1c2692301bff2be82b4.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3RFw50w",
+        "price": 325.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/2B1wG1NcP7",
+        "price": 360.69,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 319.9,
+    "name": "Oster Chaleira Digital Black 1,7L com Controle de Temperatura OCEL920 220V",
+    "image": "/images/products/4770d57e2945c36f488a21cf51e242ee.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4iDWWoz",
+        "price": 299.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/8fFQ04zl49",
+        "price": 489.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 189.9,
+    "name": "Panela Philco PPN24A Redstone com Tampa de Vidro 4,6L",
+    "image": "/images/products/e0366126fef69b8f7e56f62fab876014.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/44SEmpk",
+        "price": 189.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/1LSpGeQSoA",
+        "price": 249.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 159.9,
+    "name": "Panela Philco PPH240APR Redstone com Tampa de Vidro 2,7L",
+    "image": "/images/products/405a96e15ad042b9901d752a158d263e.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4iAsA6j",
+        "price": 234.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/8UvznrYG3j",
+        "price": 267.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 312.47,
+    "name": "Panela Sauté Grand Vermelha de 24cm Polishop",
+    "image": "/images/products/83d479a43bd611f4c4b3483d7eaf97c0.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4lSqUrC",
+        "price": 263.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/LaI4usvtD",
+        "price": 348.32,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 284.73,
+    "name": "ICHEF Polishop Panela Home Family Size Shark Series Azul de 24cm",
+    "image": "/images/products/0a91c7e413ed2b22e1d44f6d2c386b2b.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/44g47jo",
+        "price": 287.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/BGrseMrzX",
+        "price": 340.23,
+        "logo": "images/logos/shopee.png"
+      },
+      "Magazine Luiza": {
+        "link": "",
+        "price": 303.92,
+        "logo": "images/logos/magalu.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 111.6,
+    "name": "Jogo para Churrasco 12 Peças Vermelho Polywood - Tramontina",
+    "image": "/images/products/b7c0a6fe5214217d2bf2c8a6580c2e85.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/438ogqk",
+        "price": 147.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/BGrsnwpdH",
+        "price": 275.06,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "casa-inteligente",
+    "date": "2025-05-16",
+    "lowestPrice": 849.99,
+    "name": "Roteador Mesh DECO X-50 KIT 2",
+    "image": "/images/products/397da4c14ec1253c8f573d627c545d7a.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3EKTGdd",
+        "price": 829.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/7fMsocts1S",
+        "price": 999.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "outros",
+    "date": "2025-05-16",
+    "lowestPrice": 57.57,
+    "name": "Estante Modular 4 Prateleiras Pretas Agraplast 851",
+    "image": "/images/products/1340f00aed20e77e83671b19e35e2e49.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jG7HrN",
+        "price": 61.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/8KcZbtZD2G",
+        "price": 71.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "outros",
+    "date": "2025-05-16",
+    "lowestPrice": 799.9,
+    "name": "Estante aço cromado 5 prateleiras 90 x 45 x 180 cm - Duratec",
+    "image": "/images/products/c8da9d23fed1a484ab602740338e966d.jpeg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3RHtQts",
+        "price": 806.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/5pvEdQwPFJ",
+        "price": 799.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "outros",
+    "date": "2025-05-16",
+    "lowestPrice": 118.21,
+    "name": "Banco Escada Alumínio C/ 3 Degraus Agata",
+    "image": "/images/products/17e60d52877b87e50a5e33484ccc798b.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jUM2Mj",
+        "price": 118.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4An0eZTOC2",
+        "price": 211.25,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "alimentos",
+    "date": "2025-05-16",
+    "lowestPrice": 50.9,
+    "name": "Desmoldante Spray Unta Fácil Culinário Sem Glúten Forma Bolo 400ml",
+    "image": "/images/products/d1fe18f8da4e60b28894bd012bff3f1f.jpeg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jVIf1k",
+        "price": 52.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/7AQcEB63eH",
+        "price": 50.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 25.05,
+    "name": "Borrifador / Spray de Azeite 3 em 1 500ml",
+    "image": "/images/products/22e6eed4769324aa323578765de42973.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42T7QB4",
+        "price": 52.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/6AY52S7izd",
+        "price": 25.05,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "alimentos",
+    "date": "2025-05-16",
+    "lowestPrice": 29.9,
+    "name": "Maxi Goiabinha Bauducco",
+    "image": "/images/products/709295ce12be99fa7db08b3afe5e52b6.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/44eoH3F",
+        "price": 37.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/5fboRZqojc",
+        "price": 29.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 315.6,
+    "name": "Xícaras para Chá com Pires 4 Peças Birds de Porcelana 200ml Wolff",
+    "image": "/images/products/08672432f5505eb7d2e7d6e21179cd08.jpeg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4dcXOQ9",
+        "price": 334.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/9f7xD0HyGe",
+        "price": 315.6,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 225.24,
+    "name": "Conjunto 6 Xícaras de Café de Porcelana com Pires Fancy Branco 90ml Wolff",
+    "image": "/images/products/d8a661cf5a1785f16bc38d5c295ee2ca.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3GrZZmB",
+        "price": 207.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4L6QrGVZVJ",
+        "price": 449.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 279.9,
+    "name": "Panela de Pressão 7,6L Rochedo Segura Vermelha Fechamento Externo",
+    "image": "/images/products/f87e65cb56b15095ff5ede9e3bd3844f.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4cWRjkj",
+        "price": 356.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/30b3GrdprM",
+        "price": 279.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 189.9,
+    "name": "Panela de Pressão 4.5L Fechamento Externo Smart Rochedo Preta",
+    "image": "/images/products/51235385c40d72a0fa3d3d3628e7653e.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jZDGmF",
+        "price": 189.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/9pRNPT068N",
+        "price": 199.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 82.0,
+    "name": "Mini Impressora T02 Phomemo",
+    "image": "/images/products/0e8f5c1d598bbc4490570aad6f04e6ed.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4iF6UWU",
+        "price": 479.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/60EecZ0DYh",
+        "price": 82.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "lavanderia",
+    "date": "2025-05-16",
+    "lowestPrice": 469.9,
+    "name": "Secadora de Roupas Super Ciclo 8KG Silver 127V 28200-63979 Fischer",
+    "image": "/images/products/42365c6005e72e8906efe3649b4dff6b.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4jU4vsi",
+        "price": 489.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/9KV6oamu2o",
+        "price": 469.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-05-16",
+    "lowestPrice": 689.8,
+    "name": "Triturador manual de café C3 Timemore",
+    "image": "/images/products/f8ee4945812b503786068ec6c047ea33.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42W3qt7",
+        "price": 598.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/LaI66gdhz",
+        "price": 689.8,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "outros",
+    "date": "2025-05-03",
+    "lowestPrice": 21.99,
+    "name": "Carimbo de Privacidade",
+    "image": "/images/products/4db5782a79b3c0e1d730a8fa61078810.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3EMKoNL",
+        "price": 35.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/5VIOFfl47A",
+        "price": 21.99,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "alimentos",
+    "date": "2025-05-16",
+    "lowestPrice": 145.9,
+    "name": "Fabbri Cereja Silvestre em Calda Amarena 600g",
+    "image": "/images/products/9239a07c6cf1388d4baf5c7db4a1b598.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42HVxY0",
+        "price": 147.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/3LDtfiauIJ",
+        "price": 175.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "alimentos",
+    "date": "2025-04-29",
+    "lowestPrice": 28.9,
+    "name": "Paçoca Amendupã C/100 Rolha",
+    "image": "/images/products/5f7a261d71e207b9fd9411836dfde657.jpg",
+    "prices": {
+      "Shopee": {
+        "link": "https://s.shopee.com.br/5fboEDd1LI",
+        "price": 28.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {}
+  },
+  {
+    "category": "cozinha",
+    "date": "2025-04-29",
+    "lowestPrice": 10.0,
+    "name": "Escumadeira multiuso Silicone",
+    "image": "/images/products/ac281f6ff982a66669252d264e6ab6ba.jpg",
+    "prices": {
+      "Shopee": {
+        "link": "https://s.shopee.com.br/AUh3zP0QxZ",
+        "price": 10.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {}
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 340.0,
+    "name": "Projetor HY 320",
+    "image": "/images/products/9664009c99f2e345be8ee9427456b80d.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3GqyTw7",
+        "price": 373.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/7Kk2DmTdlJ",
+        "price": 464.94,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "outros",
+    "date": "2025-05-16",
+    "lowestPrice": 89.91,
+    "name": "Electrolux - Kit Potes de Plástico Hermético, 10 unidades",
+    "image": "/images/products/a24051319362edef4cef6236547eaff1.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/42T10eP",
+        "price": 99.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/2VemVaxmBW",
+        "price": 119.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "lavanderia",
+    "date": "2025-05-16",
+    "lowestPrice": 27.99,
+    "name": "Percarbonato de Sódio",
+    "image": "/images/products/18b66074688088485dcc02e640ef3ad5.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4cV3ZIm",
+        "price": 25.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/9UoWqxoiRg",
+        "price": 29.91,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "tecnologia",
+    "date": "2025-05-16",
+    "lowestPrice": 219.0,
+    "name": "R36S Console Portátil",
+    "image": "/images/products/3ce65c623e8f3cc037dba63a54de88f7.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4m6V3Uu",
+        "price": 299.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/30b37IKTqa",
+        "price": 219.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "alimentos",
+    "date": "2025-05-16",
+    "lowestPrice": 81.9,
+    "name": "Castanha de Caju 1kg",
+    "image": "/images/products/18d14b06031d3f6f620fd0a168841cb2.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/3YRJbvm",
+        "price": 84.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/5Kyxtprw37",
+        "price": 81.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "alimentos",
+    "date": "2025-05-16",
+    "lowestPrice": 118.0,
+    "name": "Amêndoa Defumada",
+    "image": "/images/products/6ebb264e49e881ef9c1c407582751b08.webp",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/434qVBs",
+        "price": 119.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/5VIO6YOVn8",
+        "price": 118.0,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  },
+  {
+    "category": "alimentos",
+    "date": "2025-05-16",
+    "lowestPrice": 256.57,
+    "name": "Pistache Cru S/ Casca 1kg",
+    "image": "/images/products/c8e5f3236588279757d197c8419e1c59.jpg",
+    "prices": {
+      "Amazon": {
+        "link": "https://amzn.to/4iCassE",
+        "price": 274.0,
+        "logo": "images/logos/amazon.png"
+      },
+      "Shopee": {
+        "link": "https://s.shopee.com.br/4L6QisdvOx",
+        "price": 280.9,
+        "logo": "images/logos/shopee.png"
+      }
+    },
+    "links": {},
+    "price_updated": true
+  }
+]
