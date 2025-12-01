@@ -34,3 +34,9 @@ Black Friday/
 
 # Arquivos extras
 Outros/
+
+# Dependências
+node_modules/
+
+# Build
+dist/
