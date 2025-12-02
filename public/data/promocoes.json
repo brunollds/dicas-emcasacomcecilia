@@ -1,0 +1,17 @@
+{
+    "promocoes": [
+      {
+        "id": 1733080000000,
+        "tipo": "promo",
+        "loja": "Amazon",
+        "produto": "🧪 Promoção de Teste - Airfryer Mondial 4L",
+        "preco": 199.90,
+        "precoAntigo": 349.90,
+        "info": "6x sem juros • Frete grátis",
+        "cupom": "TESTE10",
+        "link": "https://amzn.to/exemplo",
+        "destaque": true,
+        "timestamp": "2024-12-01T18:00:00.000Z"
+      }
+    ]
+  }

@@ -13,6 +13,7 @@
  * - Detecção de bloqueadores de anúncios
  */
 
+import { carregarPromocoes } from './promocoes.js';
 import { createProductElement, manageProductVisibility, getCategoryName } from './domUtils.js';
 import { filterProducts, sortProducts } from './filtering.js';
 import { initializeState, updateState } from './stateManager.js';
@@ -167,6 +168,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Inicializar produtos
         window.productElements = [];
         await initializeProducts();
+        // Inicializar produtos
+        
+        
+        // Carregar promoções ao vivo
+        carregarPromocoes();
+        
+       
         // Chamar highlightProductFromUrl após os produtos serem carregados
         highlightProductFromUrl();
 
