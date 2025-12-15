@@ -1,14 +1,28 @@
-// Carrega promoções do arquivo local
+// =====================================================
+// PROMOÇÕES AO VIVO - Em Casa com Cecília
+// Versão com popup estilo Promobit
+// =====================================================
+
+// Carrega promoções do arquivo local (GitHub) ou JSONBin
 const PROMOCOES_URL = '/data/promocoes.json';
-const LIMITE_INICIAL = 5;
 
+// Elementos do DOM
+const container = document.getElementById('promos-container');
+const searchInput = document.getElementById('searchInput');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const popupOverlay = document.getElementById('promoPopupOverlay');
+const popupContent = document.getElementById('popupContent');
+const popupClose = document.getElementById('popupClose');
+
+// Estado
 let todasPromocoes = [];
-let mostrandoTodas = false;
+let filtroAtual = 'todos';
 
-export async function carregarPromocoes() {
-    const container = document.getElementById('promocoes-container');
-    if (!container) return;
+// =====================================================
+// CARREGAR PROMOÇÕES
+// =====================================================
 
+async function carregarPromocoes() {
     try {
         const response = await fetch(PROMOCOES_URL);
         if (!response.ok) throw new Error('Erro ao carregar');
@@ -22,73 +36,88 @@ export async function carregarPromocoes() {
     } catch (error) {
         console.error('Erro:', error);
         container.innerHTML = `
-            <div class="promo-empty">
-                <p>Nenhuma promoção no momento.</p>
+            <div class="empty-state">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Erro ao carregar promoções.<br>Tente novamente mais tarde.</p>
             </div>
         `;
     }
 }
 
-function renderizarPromocoes() {
-    const container = document.getElementById('promocoes-container');
-    if (!container) return;
+// =====================================================
+// RENDERIZAR LISTA DE PROMOÇÕES
+// =====================================================
 
-    if (todasPromocoes.length === 0) {
+function renderizarPromocoes() {
+    const termoBusca = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    
+    let promosFiltradas = todasPromocoes.filter(promo => {
+        // Filtro por tipo
+        if (filtroAtual === 'promo' && promo.tipo === 'cupom') return false;
+        if (filtroAtual === 'cupom' && promo.tipo !== 'cupom') return false;
+
+        // Filtro por busca
+        if (termoBusca) {
+            const texto = [
+                promo.produto,
+                promo.loja,
+                promo.cupom,
+                promo.info,
+                promo.descricaoCupom,
+                promo.codigoCupom
+            ].filter(Boolean).join(' ').toLowerCase();
+            
+            return texto.includes(termoBusca);
+        }
+
+        return true;
+    });
+
+    if (promosFiltradas.length === 0) {
         container.innerHTML = `
-            <div class="promo-empty">
-                <p>Nenhuma promoção no momento. Volte em breve!</p>
+            <div class="empty-state">
+                <i class="fas fa-search"></i>
+                <p>${termoBusca ? 'Nenhuma promoção encontrada.' : 'Nenhuma promoção no momento.'}<br>Volte em breve!</p>
             </div>
         `;
         return;
     }
 
-    const promosMostrar = mostrandoTodas 
-        ? todasPromocoes 
-        : todasPromocoes.slice(0, LIMITE_INICIAL);
+    container.innerHTML = promosFiltradas.map((promo, index) => criarCardHTML(promo, index)).join('');
 
-    let html = promosMostrar.map(promo => criarCardHTML(promo)).join('');
-
-    if (!mostrandoTodas && todasPromocoes.length > LIMITE_INICIAL) {
-        html += `
-            <div class="ver-mais-container">
-                <button class="btn-ver-mais" onclick="window.mostrarTodasPromocoes()">
-                    Ver mais ${todasPromocoes.length - LIMITE_INICIAL} promoções
-                </button>
-            </div>
-        `;
-    }
-
-    container.innerHTML = html;
+    // Adicionar event listeners nos cards
+    document.querySelectorAll('.promo-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const index = parseInt(card.dataset.index);
+            const promo = promosFiltradas[index];
+            abrirPopup(promo);
+        });
+    });
 }
 
-function criarCardHTML(promo) {
+// =====================================================
+// CRIAR HTML DO CARD (COMPACTO)
+// =====================================================
+
+function criarCardHTML(promo, index) {
     const storeClass = promo.loja.toLowerCase().replace(/\s+/g, '-');
     const tempoAtras = calcularTempoAtras(promo.timestamp);
     const isCupom = promo.tipo === 'cupom';
 
     if (isCupom) {
-        const textoWhatsApp = `🏷️ CUPOM ${promo.loja.toUpperCase()}\n\n${promo.descricaoCupom}\n\n🏷️ Cupom: ${promo.codigoCupom}\n\n👉 ${promo.link}`;
-
         return `
-            <article class="promo-card">
-                <div class="promo-header">
-                    <span class="store-badge ${storeClass}">${promo.loja}</span>
-                    <span class="promo-time">${tempoAtras}</span>
+            <article class="promo-card cupom-card" data-index="${index}">
+                <div class="promo-image">
+                    <i class="fas fa-ticket-alt"></i>
                 </div>
-                <h3 class="promo-title" style="color: #ffc800;">🏷️ CUPOM</h3>
-                <p style="color: #e0e0e0; margin-bottom: 15px;">${promo.descricaoCupom}</p>
-                <div class="promo-cupom" onclick="copiarCupom('${promo.codigoCupom}')">
-                    <code>${promo.codigoCupom}</code>
-                    <span style="font-size: 0.8rem; opacity: 0.7;">📋 copiar</span>
+                <div class="promo-info">
+                    <span class="promo-store ${storeClass}">${promo.loja}</span>
+                    <h3 class="promo-title">🏷️ ${promo.descricaoCupom}</h3>
+                    <div class="promo-meta">
+                        <span class="promo-time"><i class="far fa-clock"></i> ${tempoAtras}</span>
+                    </div>
                 </div>
-                <div class="promo-actions">
-                    <a href="${promo.link}" target="_blank" class="btn-comprar" style="background: linear-gradient(90deg, #ffc800, #ffdb4d); color: #000;">
-                        USAR CUPOM
-                    </a>
-                    <button class="btn-share" onclick="compartilharWhatsApp(\`${textoWhatsApp.replace(/`/g, "'")}\`)">
-                        <i class="fab fa-whatsapp"></i>
-                    </button>
-                </div>
+                <button class="promo-btn cupom-btn">Ver Cupom</button>
             </article>
         `;
     }
@@ -96,44 +125,136 @@ function criarCardHTML(promo) {
     const temDesconto = promo.precoAntigo && promo.precoAntigo > promo.preco;
     const desconto = temDesconto ? Math.round((1 - promo.preco / promo.precoAntigo) * 100) : 0;
 
-    let textoWhatsApp = `🛒 ${promo.loja.toUpperCase()}\n\n${promo.produto}\n\n💲 R$ ${promo.preco.toFixed(2).replace('.', ',')}`;
-    if (temDesconto) {
-        textoWhatsApp += ` (era R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')} = -${desconto}%)`;
-    }
-    if (promo.info) textoWhatsApp += `\n${promo.info}`;
-    if (promo.cupom) textoWhatsApp += `\n🏷️ Cupom: ${promo.cupom}`;
-    textoWhatsApp += `\n\n👉 ${promo.link}`;
-
     return `
-        <article class="promo-card ${promo.destaque ? 'destaque' : ''}">
-            <div class="promo-header">
-                <span class="store-badge ${storeClass}">${promo.loja}</span>
-                <span class="promo-time">${tempoAtras}</span>
+        <article class="promo-card ${promo.destaque ? 'destaque' : ''}" data-index="${index}">
+            <div class="promo-image">
+                <i class="fas fa-shopping-bag"></i>
             </div>
-            <h3 class="promo-title">${promo.destaque ? '🔥 ' : ''}${promo.produto}</h3>
-            <div class="promo-price">
-                <span class="price-current">R$ ${promo.preco.toFixed(2).replace('.', ',')}</span>
-                ${temDesconto ? `<span class="price-old">R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}</span>` : ''}
-                ${desconto > 0 ? `<span class="price-discount">-${desconto}%</span>` : ''}
-            </div>
-            ${promo.info ? `<p class="promo-info">${promo.info}</p>` : ''}
-            ${promo.cupom ? `
-                <div class="promo-cupom" onclick="copiarCupom('${promo.cupom}')">
-                    <span>🏷️ Cupom:</span>
-                    <code>${promo.cupom}</code>
+            <div class="promo-info">
+                <span class="promo-store ${storeClass}">${promo.loja}</span>
+                <h3 class="promo-title">${promo.destaque ? '🔥 ' : ''}${promo.produto}</h3>
+                <div class="promo-meta">
+                    <span class="promo-time"><i class="far fa-clock"></i> ${tempoAtras}</span>
+                    ${promo.cupom ? '<span><i class="fas fa-tag"></i> Com cupom</span>' : ''}
                 </div>
-            ` : ''}
-            <div class="promo-actions">
-                <a href="${promo.link}" target="_blank" class="btn-comprar">
-                    ⚡ APROVEITAR OFERTA
-                </a>
-                <button class="btn-share" onclick="compartilharWhatsApp(\`${textoWhatsApp.replace(/`/g, "'")}\`)">
-                    <i class="fab fa-whatsapp"></i>
-                </button>
             </div>
+            <div class="promo-pricing">
+                <span class="promo-price">R$ ${promo.preco.toFixed(2).replace('.', ',')}</span>
+                ${temDesconto ? `<span class="promo-old-price">R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}</span>` : ''}
+                ${desconto > 0 ? `<span class="promo-discount">-${desconto}%</span>` : ''}
+            </div>
+            <button class="promo-btn">Ver Oferta</button>
         </article>
     `;
 }
+
+// =====================================================
+// POPUP
+// =====================================================
+
+function abrirPopup(promo) {
+    const isCupom = promo.tipo === 'cupom';
+    const storeClass = promo.loja.toLowerCase().replace(/\s+/g, '-');
+    
+    let html = '';
+
+    if (isCupom) {
+        // Popup de CUPOM
+        html = `
+            <div class="popup-header">
+                <span class="popup-store ${storeClass}">${promo.loja}</span>
+                <h3 class="popup-title">🏷️ ${promo.descricaoCupom}</h3>
+            </div>
+            
+            <div class="popup-cupom">
+                <p class="popup-cupom-label">Use o cupom abaixo:</p>
+                <div class="popup-cupom-code">
+                    <code>${promo.codigoCupom}</code>
+                    <button class="popup-cupom-copy" onclick="copiarCupom('${promo.codigoCupom}')">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                </div>
+            </div>
+            
+            <a href="${promo.link}" target="_blank" rel="noopener" class="popup-cta" onclick="fecharPopup()">
+                <i class="fas fa-external-link-alt"></i>
+                IR PARA ${promo.loja.toUpperCase()}
+            </a>
+            
+            <div class="popup-share">
+                <button class="popup-share-btn" onclick="copiarLink('${promo.link}')">
+                    <i class="fas fa-link"></i> Copiar link
+                </button>
+                <button class="popup-share-btn whatsapp" onclick="compartilharWhatsApp('cupom', ${JSON.stringify(promo).replace(/'/g, "\\'")})">
+                    <i class="fab fa-whatsapp"></i> Compartilhar
+                </button>
+            </div>
+        `;
+    } else {
+        // Popup de PROMOÇÃO
+        const temDesconto = promo.precoAntigo && promo.precoAntigo > promo.preco;
+        const desconto = temDesconto ? Math.round((1 - promo.preco / promo.precoAntigo) * 100) : 0;
+
+        html = `
+            <div class="popup-header">
+                <span class="popup-store ${storeClass}">${promo.loja}</span>
+                <h3 class="popup-title">${promo.produto}</h3>
+            </div>
+            
+            <div class="popup-price-section">
+                <span class="popup-price">R$ ${promo.preco.toFixed(2).replace('.', ',')}</span>
+                ${temDesconto ? `<span class="popup-old-price">R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}</span>` : ''}
+                ${desconto > 0 ? `<div class="popup-discount">-${desconto}% de desconto</div>` : ''}
+            </div>
+            
+            ${promo.cupom ? `
+                <div class="popup-cupom">
+                    <p class="popup-cupom-label">Use o cupom para garantir o desconto:</p>
+                    <div class="popup-cupom-code">
+                        <code>${promo.cupom}</code>
+                        <button class="popup-cupom-copy" onclick="copiarCupom('${promo.cupom}')">
+                            <i class="fas fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                </div>
+            ` : ''}
+            
+            ${promo.info ? `
+                <div class="popup-info">
+                    <i class="fas fa-info-circle"></i>
+                    ${promo.info}
+                </div>
+            ` : ''}
+            
+            <a href="${promo.link}" target="_blank" rel="noopener" class="popup-cta" onclick="fecharPopup()">
+                <i class="fas fa-shopping-cart"></i>
+                APROVEITAR OFERTA
+            </a>
+            
+            <div class="popup-share">
+                <button class="popup-share-btn" onclick="copiarLink('${promo.link}')">
+                    <i class="fas fa-link"></i> Copiar link
+                </button>
+                <button class="popup-share-btn whatsapp" onclick="compartilharWhatsApp('promo', ${JSON.stringify(promo).replace(/'/g, "\\'")})">
+                    <i class="fab fa-whatsapp"></i> Compartilhar
+                </button>
+            </div>
+        `;
+    }
+
+    popupContent.innerHTML = html;
+    popupOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function fecharPopup() {
+    popupOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// =====================================================
+// FUNÇÕES AUXILIARES
+// =====================================================
 
 function calcularTempoAtras(timestamp) {
     const agora = new Date();
@@ -143,22 +264,112 @@ function calcularTempoAtras(timestamp) {
     const diffHoras = Math.floor(diffMin / 60);
 
     if (diffMin < 1) return 'Agora';
-    if (diffMin < 60) return `Há ${diffMin} min`;
-    if (diffHoras < 24) return `Há ${diffHoras}h`;
-    return `Há ${Math.floor(diffHoras / 24)} dias`;
+    if (diffMin < 60) return `${diffMin} min`;
+    if (diffHoras < 24) return `${diffHoras}h`;
+    return `${Math.floor(diffHoras / 24)} dias`;
 }
 
+function mostrarToast(mensagem) {
+    // Remover toast existente
+    const existente = document.querySelector('.toast');
+    if (existente) existente.remove();
+
+    const toast = document.createElement('div');
+    toast.className = 'toast';
+    toast.textContent = mensagem;
+    document.body.appendChild(toast);
+
+    setTimeout(() => toast.classList.add('show'), 10);
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+    }, 2500);
+}
+
+// Funções globais
 window.copiarCupom = function(cupom) {
-    navigator.clipboard.writeText(cupom);
-    alert('Cupom copiado: ' + cupom);
+    navigator.clipboard.writeText(cupom).then(() => {
+        mostrarToast('✅ Cupom copiado: ' + cupom);
+    }).catch(() => {
+        mostrarToast('❌ Erro ao copiar');
+    });
 };
 
-window.compartilharWhatsApp = function(texto) {
+window.copiarLink = function(link) {
+    navigator.clipboard.writeText(link).then(() => {
+        mostrarToast('✅ Link copiado!');
+    }).catch(() => {
+        mostrarToast('❌ Erro ao copiar');
+    });
+};
+
+window.compartilharWhatsApp = function(tipo, promo) {
+    let texto = '';
+    
+    if (tipo === 'cupom') {
+        texto = `🏷️ CUPOM ${promo.loja.toUpperCase()}\n\n${promo.descricaoCupom}\n\n🏷️ Cupom: ${promo.codigoCupom}\n\n👉 ${promo.link}`;
+    } else {
+        texto = `🛒 ${promo.loja.toUpperCase()}\n\n${promo.produto}\n\n💲 R$ ${promo.preco.toFixed(2).replace('.', ',')}`;
+        if (promo.precoAntigo && promo.precoAntigo > promo.preco) {
+            const desconto = Math.round((1 - promo.preco / promo.precoAntigo) * 100);
+            texto += ` (era R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')} = -${desconto}%)`;
+        }
+        if (promo.info) texto += `\n${promo.info}`;
+        if (promo.cupom) texto += `\n🏷️ Cupom: ${promo.cupom}`;
+        texto += `\n\n👉 ${promo.link}`;
+    }
+
     const url = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(texto);
     window.open(url, '_blank');
 };
 
-window.mostrarTodasPromocoes = function() {
-    mostrandoTodas = true;
-    renderizarPromocoes();
-};
+window.fecharPopup = fecharPopup;
+
+// =====================================================
+// EVENT LISTENERS
+// =====================================================
+
+// Fechar popup
+if (popupClose) {
+    popupClose.addEventListener('click', fecharPopup);
+}
+
+if (popupOverlay) {
+    popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) fecharPopup();
+    });
+}
+
+// Fechar com ESC
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') fecharPopup();
+});
+
+// Busca
+if (searchInput) {
+    searchInput.addEventListener('input', () => {
+        renderizarPromocoes();
+    });
+}
+
+// Filtros
+if (filterButtons) {
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filtroAtual = btn.dataset.filter;
+            renderizarPromocoes();
+        });
+    });
+}
+
+// =====================================================
+// INICIALIZAÇÃO
+// =====================================================
+
+// Carregar promoções
+carregarPromocoes();
+
+// Atualizar a cada 2 minutos
+setInterval(carregarPromocoes, 120000);

@@ -2,150 +2,189 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self' https://dicas.emcasacomcecilia.com https://emcasacomcecilia.com; 
-        script-src 'self' https://www.googletagmanager.com https://cdnjs.cloudflare.com 'unsafe-inline'; 
-        connect-src 'self' https://www.google-analytics.com; 
-        style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; 
-        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; 
-        img-src 'self' data: https://*.emcasacomcecilia.com https://*.akamaized.net https://*.shopee.com.br https://*.amazonaws.com;
-    ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubra as melhores indicações de produtos para sua casa, cozinha, sala e muito mais! Compare preços entre Amazon, Shopee, Mercado Livre e Magazine Luiza com links de afiliados.">
-    <meta name="keywords" content="produtos para casa, comparação de preços, afiliados, compras online, em casa com cecilia, dicas">
-    <meta name="author" content="Em Casa com Cecília">
-    <meta name="version" content="1.1.2">
-    <meta name="last-updated" content="2025-05-11">
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Indicações de Produtos - Em Casa com Cecília">
-    <meta property="og:description" content="Descubra as melhores indicações de produtos para sua casa, cozinha, sala e muito mais! Compare preços entre Amazon, Shopee, Mercado Livre e Magazine Luiza com links de afiliados.">
+    <meta name="description" content="Promoções e ofertas ao vivo - Em Casa com Cecília. Cupons de desconto atualizados em tempo real!">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Promoções ao Vivo - Em Casa com Cecília">
+    <meta property="og:description" content="Promoções e cupons atualizados em tempo real! Amazon, Shopee, Mercado Livre e mais.">
     <meta property="og:image" content="https://dicas.emcasacomcecilia.com/images/logo.png">
     <meta property="og:url" content="https://dicas.emcasacomcecilia.com">
     <meta property="og:type" content="website">
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Indicações de Produtos - Em Casa com Cecília">
-    <meta name="twitter:description" content="Descubra as melhores indicações de produtos para sua casa, cozinha, sala e muito mais! Compare preços entre Amazon, Shopee, Mercado Livre e Magazine Luiza com links de afiliados.">
-    <meta name="twitter:image" content="https://dicas.emcasacomcecilia.com/images/logo.png">
-    <title>Indicações de Produtos - Em Casa com Cecília</title>
-    <base href="/">
+    
+    <title>Promoções ao Vivo - Em Casa com Cecília</title>
+    
     <link rel="icon" href="/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/src/promocoes.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDLH63KJMP"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-LDLH63KJMP'); 
-    </script>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-logo">
-                <img src="/images/logo.png" alt="Logotipo Em Casa com Cecília" class="site-logo">
-                <h1 class="header-title">Indicações de Produtos - Em Casa com Cecília</h1>
-            </div>
-            <div class="search-container">
-                <div class="search-bar">
-                    <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="omnisearch" class="search-bar__input" placeholder="Procure nas Minhas inDICAS." aria-label="Pesquisar produtos indicados">
-                    <button id="clear-search" class="clear-search-btn" aria-label="Limpar busca">✕</button>
+    <!-- CTA WhatsApp - Topo -->
+    <div class="top-bar">
+        <a href="https://chat.whatsapp.com/GwouQfaZMrj32j7pKOIZbQ" target="_blank" class="top-bar-cta">
+            <i class="fab fa-whatsapp"></i>
+            <span class="pulse-dot"></span>
+            <span>Receba as melhores promoções no WhatsApp!</span>
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+
+    <!-- Header Principal -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img src="/images/logo-icon.png" alt="Em Casa com Cecília">
+                <div class="logo-text">
+                    <span class="logo-title">Em Casa com Cecília</span>
+                    <span class="logo-subtitle">Promoções & Indicações</span>
                 </div>
+            </a>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar promoções...">
             </div>
-            <div class="header-right">
-                <div class="header-nav-links">
-                    <a href="https://emcasacomcecilia.com" target="_blank" rel="noopener noreferrer" class="header-nav-btn home-btn" aria-label="Ir para a Página Principal">
-                        <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
-                        <span class="nav-text">Página Principal</span>
-                    </a>
-                    <a href="https://emcasacomcecilia.com/analises-e-reviews" target="_blank" rel="noopener noreferrer" class="header-nav-btn reviews-btn" aria-label="Ir para Análises de Produtos">
-                        <span class="nav-icon"><i class="fa-solid fa-book"></i></span>
-                        <span class="nav-text">Análises</span> 
-                    </a>
-                </div>
+            <div class="header-actions">
+                <a href="https://emcasacomcecilia.com" target="_blank" class="header-btn">
+                    <i class="fas fa-home"></i>
+                    <span>Site Principal</span>
+                </a>
             </div>
         </div>
     </header>
-    
-    <nav>
-        <button class="prev-category-btn" aria-label="Categorias anteriores"><i class="fas fa-chevron-left"></i></button>
-        <div class="category-links">
-            <a href="#" data-category="all" class="active">Todos</a>
-            <a href="#" data-category="alimentos">Alimentos</a>
-            <a href="#" data-category="banheiro">Banheiro</a>
-            <a href="#" data-category="casa-inteligente">Casa Inteligente</a>
-            <a href="#" data-category="cozinha">Cozinha</a>
-            <a href="#" data-category="criancas">Crianças</a>
-            <a href="#" data-category="cuidado-pessoal">Cuidado Pessoal</a>
-            <a href="#" data-category="lavanderia">Lavanderia</a>
-            <a href="#" data-category="outros">Outros</a>
-            <a href="#" data-category="quarto">Quarto</a>
-            <a href="#" data-category="sala-de-estar">Sala de Estar</a>
-            <a href="#" data-category="tecnologia">Tecnologia</a>
-            <a href="#" data-category="vestuario">Vestuário</a>
+
+    <!-- Menu de Categorias -->
+    <nav class="categories-nav">
+        <div class="categories-container">
+            <a href="/" class="category-link active">
+                <i class="fas fa-fire"></i>
+                <span>Promoções</span>
+            </a>
+            <a href="/cozinha" class="category-link">
+                <i class="fas fa-utensils"></i>
+                <span>Cozinha</span>
+            </a>
+            <a href="/tecnologia" class="category-link">
+                <i class="fas fa-laptop"></i>
+                <span>Tecnologia</span>
+            </a>
+            <a href="/casa-inteligente" class="category-link">
+                <i class="fas fa-wifi"></i>
+                <span>Casa Inteligente</span>
+            </a>
+            <a href="/sala-de-estar" class="category-link">
+                <i class="fas fa-couch"></i>
+                <span>Sala de Estar</span>
+            </a>
+            <a href="/lavanderia" class="category-link">
+                <i class="fas fa-tshirt"></i>
+                <span>Lavanderia</span>
+            </a>
+            <a href="/banheiro" class="category-link">
+                <i class="fas fa-bath"></i>
+                <span>Banheiro</span>
+            </a>
+            <a href="/alimentos" class="category-link">
+                <i class="fas fa-apple-alt"></i>
+                <span>Alimentos & Bebidas</span>
+            </a>
+            <a href="/outros" class="category-link">
+                <i class="fas fa-box"></i>
+                <span>Outros</span>
+            </a>
+            <a href="/damie" class="category-link">
+                <i class="fas fa-star"></i>
+                <span>Damie</span>
+            </a>
         </div>
-        <button class="next-category-btn" aria-label="Próximas categorias"><i class="fas fa-chevron-right"></i></button>
     </nav>
-    <!-- Seção de Promoções ao Vivo -->
-    <section class="promocoes-section">
-        <div class="promocoes-header">
-            <h2>🔥 Promoções ao Vivo</h2>
-            <div class="live-badge">
-                <span class="pulse"></span>
-                ATUALIZANDO
-            </div>
-        </div>
-        <div class="promocoes-container" id="promocoes-container">
-            <div class="promo-loading">
-                <p>Carregando promoções...</p>
-            </div>
+
+    <!-- Banner (placeholder para futuro) -->
+    <section class="banner-section">
+        <div class="banner-placeholder">
+            <i class="fas fa-tags"></i>
+            <span>Promoções selecionadas para você!</span>
         </div>
     </section>
 
-    <div class="container">
-        <span id="results-count">Carregando produtos...</span>
-        <div id="products-list"></div>
-        <div id="no-results" class="no-results"> 
-            <p id="no-results-message"></p>
-            <div id="category-suggestions"></div> 
+    <!-- Promoções ao Vivo -->
+    <main class="main-content">
+        <section class="promos-section">
+            <div class="section-header">
+                <h2>
+                    <i class="fas fa-bolt"></i>
+                    Promoções ao Vivo
+                </h2>
+                <div class="live-indicator">
+                    <span class="pulse-dot"></span>
+                    <span>Atualizando</span>
+                </div>
+            </div>
+            
+            <div class="promos-filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="promo">Promoções</button>
+                <button class="filter-btn" data-filter="cupom">Cupons</button>
+            </div>
+
+            <div class="promos-list" id="promos-container">
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Carregando promoções...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Popup de Promoção -->
+    <div class="promo-popup-overlay" id="promoPopupOverlay">
+        <div class="promo-popup" id="promoPopup">
+            <button class="popup-close" id="popupClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="popup-content" id="popupContent">
+                <!-- Conteúdo preenchido via JS -->
+            </div>
         </div>
     </div>
 
-    <footer class="affiliate-disclaimer">
-        <div class="footer-content">
-            <div class="footer-top">
-                <div class="footer-left">
-                    <h2 class="footer-title">Em Casa com Cecília</h2>
-                    <p class="footer-subtitle">Receitas fáceis que dão certo</p>
-                </div>
-                <div class="footer-right">
-                    <a href="mailto:contato@emcasacomcecilia.com" class="footer-contact-email">contato@emcasacomcecilia.com</a>
-                    <div class="social-media">
-                        <a href="https://www.facebook.com/emcasacomcecilia" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/emcasacomcecilia" target="_blank" aria-label="Instagram"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="https://www.tiktok.com/@emcasacomcecilia" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.twitter.com/emcasacecilia" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://kwai-video.com/u/@emcasacomcecilia/mC0Sb8TC" target="_blank" aria-label="Kwai"><i class="fa-solid fa-k"></i></a>
-                        <a href="https://open.spotify.com/user/emcasacomcecilia" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
-                    </div>
-                </div>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/images/logo.png" alt="Em Casa com Cecília" class="footer-logo">
+                <p>Receitas fáceis que dão certo</p>
             </div>
-            <p class="footer-subtitle"><strong>Atenção:</strong> Os preços listados podem não estar atualizados em tempo real. Verifique sempre o preço final no site da loja.</p>
-            <p class="footer-subtitle">Este site contém links de afiliados. Ao comprar através deles, podemos receber uma pequena comissão, sem custo extra para você. Obrigado pelo apoio!</p>
             <div class="footer-links">
-                <a href="https://emcasacomcecilia.com/politica-de-privacidade" target="_blank">Política de Privacidade</a>
-                <a href="https://emcasacomcecilia.com/termos-de-uso" target="_blank">Termos de Uso</a>
+                <h4>Indicações</h4>
+                <a href="/cozinha">Cozinha</a>
+                <a href="/tecnologia">Tecnologia</a>
+                <a href="/casa-inteligente">Casa Inteligente</a>
+                <a href="/outros">Outros</a>
             </div>
-            <p class="footer-copyright">© 2025 Em Casa com Cecilia. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <a href="https://emcasacomcecilia.com" target="_blank">Site Principal</a>
+                <a href="https://emcasacomcecilia.com/analises-e-reviews" target="_blank">Análises</a>
+                <a href="https://chat.whatsapp.com/GwouQfaZMrj32j7pKOIZbQ" target="_blank">WhatsApp</a>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/emcasacomcecilia" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@emcasacomcecilia" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@emcasacomcecilia" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/emcasacomcecilia" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Este site contém links de afiliados. Ao comprar através deles, podemos receber uma pequena comissão.</p>
+            <p>© 2025 Em Casa com Cecília. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-  
-    <script type="module" src="/src/main.js"></script>
-
+    <script type="module" src="/src/promocoes.js"></script>
 </body>
 </html>

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produtos Damie com os melhores preços - Poltronas de Cinema, Sofás e Camas de alta qualidade. Ofertas exclusivas no Mercado Livre.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Damie - Poltronas de Cinema e Sofás | Em Casa com Cecília">
+    <meta property="og:description" content="Os melhores produtos Damie: Poltronas de Cinema, Sofás Reclináveis e Camas. Qualidade e conforto.">
+    <meta property="og:image" content="https://dicas.emcasacomcecilia.com/images/logo.png">
+    <meta property="og:url" content="https://dicas.emcasacomcecilia.com/damie">
+    <meta property="og:type" content="website">
+    
+    <title>Damie - Poltronas de Cinema e Sofás | Em Casa com Cecília</title>
+    
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    
+    <style>
+        /* ========== ESTILOS ESPECÍFICOS DAMIE ========== */
+        
+        /* Sub-banner da marca */
+        .brand-banner {
+            background: linear-gradient(135deg, var(--orange) 0%, var(--yellow) 50%, var(--green) 100%);
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .brand-banner h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .brand-banner p {
+            color: rgba(255,255,255,0.95);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .brand-banner .brand-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            border: 2px solid rgba(255,255,255,0.4);
+        }
+        
+        /* Info box */
+        .brand-info {
+            background: var(--bg-white);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px auto 30px;
+            max-width: 1000px;
+            border-left: 4px solid var(--orange);
+        }
+        
+        .brand-info h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .brand-info p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Grid de produtos - 2 colunas fixas */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            padding: 0;
+            max-width: 1000px;
+            margin: 0 auto 30px;
+        }
+        
+        @media (max-width: 600px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        
+        /* Card de produto */
+        .product-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 280px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        @media (max-width: 600px) {
+            .product-image {
+                height: 200px;
+            }
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        @media (max-width: 600px) {
+            .product-name {
+                font-size: 0.95rem;
+            }
+        }
+        
+        .product-price {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--green);
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            .product-price {
+                font-size: 1.3rem;
+            }
+        }
+        
+        .product-installment {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .product-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--orange);
+            color: #fff;
+            padding: 14px;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 15px;
+            border-radius: 10px;
+            transition: background 0.2s;
+        }
+        
+        @media (max-width: 600px) {
+            .product-cta {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        .product-card:hover .product-cta {
+            background: #d45500;
+        }
+        
+        /* Cards de categoria */
+        .category-card {
+            background: linear-gradient(135deg, var(--green) 0%, #1b8754 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            text-decoration: none;
+            display: block;
+            padding: 35px 25px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            border: 3px solid var(--orange);
+        }
+        
+        @media (max-width: 600px) {
+            .category-card {
+                padding: 25px 20px;
+            }
+        }
+        
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(32, 167, 101, 0.3);
+        }
+        
+        .category-card .icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .category-card .icon {
+                font-size: 3rem;
+                margin-bottom: 15px;
+            }
+        }
+        
+        .category-card h3 {
+            color: #fff;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .category-card h3 {
+                font-size: 1.1rem;
+            }
+        }
+        
+        .category-card p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .category-card p {
+                font-size: 0.85rem;
+                margin-bottom: 15px;
+            }
+        }
+        
+        .category-card .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--orange);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 600px) {
+            .category-card .cta-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* ========== POPUP EXPLICATIVO ========== */
+        .info-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            padding: 20px;
+        }
+        
+        .info-popup-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .info-popup-overlay.active .info-popup {
+            transform: scale(1);
+        }
+        
+        .info-popup h3 {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+        
+        .info-popup p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        /* Container do GIF/Vídeo */
+        .popup-media {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid var(--orange);
+        }
+        
+        .popup-media img,
+        .popup-media video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+        
+        /* Popup maior para acomodar GIF */
+        .info-popup {
+            background: #fff;
+            border-radius: 16px;
+            max-width: 550px;
+            width: 95%;
+            padding: 25px;
+            text-align: center;
+            transform: scale(0.9);
+            transition: transform 0.3s;
+            max-height: 95vh;
+            overflow-y: auto;
+        }
+        
+        .popup-media-placeholder {
+            padding: 40px 20px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+        
+        .popup-media-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--orange);
+        }
+        
+        .info-popup .highlight-box {
+            background: #fff3cd;
+            border: 2px solid var(--orange);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-popup .highlight-box p {
+            margin: 0;
+            color: #856404;
+            font-weight: 600;
+        }
+        
+        .info-popup .proceed-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--green);
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .info-popup .proceed-btn:hover {
+            background: #1b8754;
+            transform: scale(1.02);
+        }
+        
+        .info-popup .cancel-btn {
+            display: block;
+            margin-top: 15px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: underline;
+            background: none;
+            border: none;
+            width: 100%;
+        }
+        
+        /* Step visual */
+        .steps-visual {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .step-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--orange);
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        
+        .step-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        .step-text strong {
+            color: var(--text-primary);
+        }
+        
+        /* Footer */
+        .main-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+        
+        /* Section titles */
+        .section-title {
+            text-align: center;
+            margin: 20px 0 10px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            margin: 0 0 25px;
+            font-size: 0.95rem;
+        }
+        
+        /* Category link active state */
+        .category-link.active {
+            color: var(--orange);
+            border-bottom: 2px solid var(--orange);
+        }
+    </style>
+</head>
+<body>
+    <!-- CTA WhatsApp - Topo -->
+    <div class="top-bar">
+        <a href="https://chat.whatsapp.com/GwouQfaZMrj32j7pKOIZbQ" target="_blank" class="top-bar-cta">
+            <i class="fab fa-whatsapp"></i>
+            <span class="pulse-dot"></span>
+            <span>Receba as melhores promoções no WhatsApp!</span>
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+
+    <!-- Header Principal -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img src="/images/logo-icon.png" alt="Em Casa com Cecília">
+                <div class="logo-text">
+                    <span class="logo-title">Em Casa com Cecília</span>
+                    <span class="logo-subtitle">Promoções & Indicações</span>
+                </div>
+            </a>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar promoções...">
+            </div>
+            <div class="header-actions">
+                <a href="https://emcasacomcecilia.com" target="_blank" class="header-btn">
+                    <i class="fas fa-home"></i>
+                    <span>Site Principal</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav class="categories-nav">
+        <div class="categories-container">
+            <a href="/" class="category-link">
+                <i class="fas fa-fire"></i>
+                <span>Promoções</span>
+            </a>
+            <a href="/cozinha" class="category-link">
+                <i class="fas fa-utensils"></i>
+                <span>Cozinha</span>
+            </a>
+            <a href="/tecnologia" class="category-link">
+                <i class="fas fa-laptop"></i>
+                <span>Tecnologia</span>
+            </a>
+            <a href="/casa-inteligente" class="category-link">
+                <i class="fas fa-wifi"></i>
+                <span>Casa Inteligente</span>
+            </a>
+            <a href="/sala-de-estar" class="category-link">
+                <i class="fas fa-couch"></i>
+                <span>Sala de Estar</span>
+            </a>
+            <a href="/lavanderia" class="category-link">
+                <i class="fas fa-tshirt"></i>
+                <span>Lavanderia</span>
+            </a>
+            <a href="/banheiro" class="category-link">
+                <i class="fas fa-bath"></i>
+                <span>Banheiro</span>
+            </a>
+            <a href="/alimentos" class="category-link">
+                <i class="fas fa-apple-alt"></i>
+                <span>Alimentos & Bebidas</span>
+            </a>
+            <a href="/outros" class="category-link">
+                <i class="fas fa-box"></i>
+                <span>Outros</span>
+            </a>
+            <a href="/damie" class="category-link active">
+                <i class="fas fa-star"></i>
+                <span>Damie</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Sub-banner da marca -->
+    <section class="brand-banner">
+        <span class="brand-tag">LOJA OFICIAL</span>
+        <h1>Damie</h1>
+        <p>Poltronas de Cinema, Sofás Reclináveis e Camas de Alta Qualidade</p>
+    </section>
+    
+    <!-- Info box -->
+    <main class="main-content">
+        <div class="brand-info">
+            <h3>🛋️ Por que escolher Damie?</h3>
+            <p>A Damie é referência em poltronas reclináveis e sofás de alta qualidade. Com tecnologia Wall Save (apenas 10cm da parede), acabamento premium e garantia de fábrica. Todos os links direcionam para a loja oficial no Mercado Livre com frete grátis.</p>
+        </div>
+    
+    <!-- Produtos em destaque -->
+        <h2 class="section-title">Produtos em Destaque</h2>
+        <p class="section-subtitle">Clique para ver detalhes e comprar</p>
+        
+        <div class="products-grid">
+            <!-- Produto 1: Poltrona Manual Massagem Cinza -->
+            <a href="https://mercadolivre.com/sec/2r6p4vV" target="_blank" class="product-card">
+                <div class="product-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_812462-MLU77998868320_082024-F.webp" alt="Poltrona de Cinema Manual Massagem Cinza" onerror="this.src='https://via.placeholder.com/300x200/ff6600/ffffff?text=Poltrona+Damie'">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Poltrona de Cinema Reclinável Manual com Massagem Corino Cinza</div>
+                    <div class="product-price">R$ 3.490</div>
+                    <div class="product-installment">em até 10x de R$ 349</div>
+                    <div class="product-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Ver no Mercado Livre
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Produto 2: Poltrona Elevação Massagem Marrom -->
+            <a href="https://mercadolivre.com/sec/1MMBjQ4" target="_blank" class="product-card">
+                <div class="product-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_683751-MLA82132212849_012025-F.webp" alt="Poltrona Elevação Massagem Marrom" onerror="this.src='https://via.placeholder.com/300x200/ff6600/ffffff?text=Poltrona+Damie'">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Poltrona de Cinema Reclinável com Elevação e Massagem Suede Marrom</div>
+                    <div class="product-price">R$ 5.459</div>
+                    <div class="product-installment">em até 10x de R$ 545,90</div>
+                    <div class="product-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Ver no Mercado Livre
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Produto 3: Sofá 5 Lugares Cinema -->
+            <a href="https://mercadolivre.com/sec/1t1CsVw" target="_blank" class="product-card">
+                <div class="product-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_928945-MLB91895189170_092025-F-sofa-5-lugares-reclinavel-manual-linha-cinema-em-corino.webp" alt="Sofá 5 Lugares Cinema" onerror="this.src='https://via.placeholder.com/300x200/ff6600/ffffff?text=Sofa+Damie'">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Sofá 5 Lugares Reclinável Elétrico Linha Cinema Em Corino</div>
+                    <div class="product-price">R$ 17.847</div>
+                    <div class="product-installment">em até 10x de R$ 1.784,70</div>
+                    <div class="product-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Ver no Mercado Livre
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Produto 4: Sofá 3 Lugares Couro -->
+            <a href="https://mercadolivre.com/sec/2pKr2iU" target="_blank" class="product-card">
+                <div class="product-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_912700-MLB87176727662_072025-F-sofa-3-lugares-reclinavel-eletrico-cinema-em-couro-legitimo.webp" alt="Sofá 3 Lugares Couro" onerror="this.src='https://via.placeholder.com/300x200/ff6600/ffffff?text=Sofa+Damie'">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Sofá 3 Lugares Reclinável Elétrico Cinema Em Couro Legítimo</div>
+                    <div class="product-price">R$ 7.964</div>
+                    <div class="product-installment">em até 10x de R$ 796,40</div>
+                    <div class="product-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Ver no Mercado Livre
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Produto 5: Cama Queen Slim -->
+            <a href="https://mercadolivre.com/sec/1yefrA8" target="_blank" class="product-card">
+                <div class="product-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_628564-MLA95241117694_102025-F.webp" alt="Cama Queen Slim Bege" onerror="this.src='https://via.placeholder.com/300x200/ff6600/ffffff?text=Cama+Damie'">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Cama Queen Base Estofada Boucle Com Cabeceira Slim Bege</div>
+                    <div class="product-price">R$ 4.889</div>
+                    <div class="product-installment">em até 10x de R$ 488,90</div>
+                    <div class="product-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Ver no Mercado Livre
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Produto 6: Cama Queen Plus -->
+            <a href="https://mercadolivre.com/sec/2TfM3is" target="_blank" class="product-card">
+                <div class="product-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_836777-MLB85674206298_062025-F-cama-queen-base-estofada-boucle-com-cabeceira-plus-damie.webp" alt="Cama Queen Plus" onerror="this.src='https://via.placeholder.com/300x200/ff6600/ffffff?text=Cama+Damie'">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Cama Queen Base Estofada Boucle Com Cabeceira Plus</div>
+                    <div class="product-price">R$ 6.889</div>
+                    <div class="product-installment">em até 10x de R$ 688,90</div>
+                    <div class="product-cta">
+                        <i class="fas fa-external-link-alt"></i>
+                        Ver no Mercado Livre
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Card Categoria: Poltronas e Sofás -->
+            <div class="category-card" onclick="showCategoryPopup('poltronas')">
+                <div class="icon">🪑</div>
+                <h3>Mais Poltronas e Sofás</h3>
+                <p>+200 modelos de poltronas de cinema, sofás reclináveis e mais</p>
+                <div class="cta-btn">
+                    <i class="fas fa-arrow-right"></i>
+                    Ver Todos
+                </div>
+            </div>
+            
+            <!-- Card Categoria: Camas -->
+            <div class="category-card" onclick="showCategoryPopup('camas')">
+                <div class="icon">🛏️</div>
+                <h3>Mais Camas e Bases</h3>
+                <p>Camas Queen, King, bases estofadas e cabeceiras</p>
+                <div class="cta-btn">
+                    <i class="fas fa-arrow-right"></i>
+                    Ver Todos
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/images/logo.png" alt="Em Casa com Cecília" class="footer-logo">
+                <p>Receitas fáceis que dão certo</p>
+            </div>
+            <div class="footer-links">
+                <h4>Indicações</h4>
+                <a href="/cozinha">Cozinha</a>
+                <a href="/tecnologia">Tecnologia</a>
+                <a href="/casa-inteligente">Casa Inteligente</a>
+                <a href="/damie">Damie</a>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <a href="https://emcasacomcecilia.com" target="_blank">Site Principal</a>
+                <a href="https://emcasacomcecilia.com/analises-e-reviews" target="_blank">Análises</a>
+                <a href="https://chat.whatsapp.com/GwouQfaZMrj32j7pKOIZbQ" target="_blank">WhatsApp</a>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/emcasacomcecilia" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@emcasacomcecilia" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@emcasacomcecilia" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/emcasacomcecilia" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Este site contém links de afiliados. Ao comprar através deles, podemos receber uma pequena comissão.</p>
+            <p>© 2025 Em Casa com Cecília. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Popup Explicativo -->
+    <div class="info-popup-overlay" id="infoPopup">
+        <div class="info-popup">
+            <h3>📍 Atenção!</h3>
+            
+            <p>Você será direcionado para a loja oficial Damie no Mercado Livre.</p>
+            
+            <!-- Espaço para GIF/Vídeo -->
+            <div class="popup-media">
+                <img src="/images/damie-tutorial.gif" alt="Como navegar - clique em Mostrar mais">
+            </div>
+            
+            <div class="steps-visual">
+                <div class="step-item">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Abrirá uma página com informações da loja</span>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Role a página um pouco para baixo</span>
+                </div>
+                <div class="step-item">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Clique em <strong>"Mostrar mais"</strong></span>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <p>👉 Procure o botão "Mostrar mais" para ver todos os produtos!</p>
+            </div>
+            
+            <button class="proceed-btn" id="proceedBtn">
+                <i class="fas fa-check"></i>
+                Entendi, continuar
+            </button>
+            
+            <button class="cancel-btn" onclick="closePopup()">Cancelar</button>
+        </div>
+    </div>
+    
+    <script>
+        // Links das categorias
+        const categoryLinks = {
+            poltronas: 'https://mercadolivre.com/sec/2zB1urD',
+            camas: 'https://mercadolivre.com/sec/2PMZiB6'
+        };
+        
+        let currentCategory = null;
+        
+        function showCategoryPopup(category) {
+            currentCategory = category;
+            document.getElementById('infoPopup').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePopup() {
+            document.getElementById('infoPopup').classList.remove('active');
+            document.body.style.overflow = '';
+            currentCategory = null;
+        }
+        
+        // Botão de prosseguir
+        document.getElementById('proceedBtn').addEventListener('click', function() {
+            if (currentCategory && categoryLinks[currentCategory]) {
+                window.open(categoryLinks[currentCategory], '_blank');
+            }
+            closePopup();
+        });
+        
+        // Fechar popup clicando fora
+        document.getElementById('infoPopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePopup();
+            }
+        });
+        
+        // Fechar com ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePopup();
+            }
+        });
+    </script>
+</body>
+</html>

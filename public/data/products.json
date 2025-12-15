@@ -460,64 +460,6 @@
     "price_updated": true
   },
   {
-    "category": "tecnologia",
-    "date": "2025-07-30",
-    "lowestPrice": 3384.27,
-    "name": "PS5 Slim Digital Edition",
-    "image": "/images/products/62a46a37202dec92af5b611b02e14b39.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4jOMfjT",
-        "price": 3333.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/4q2hLMC2OP",
-        "price": 3459.0,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "tecnologia",
-    "date": "2025-07-30",
-    "lowestPrice": 6299.0,
-    "name": "PlayStation 5 PRO",
-    "image": "/images/products/f9558c99e8464a9fb4a479584dc03891.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/437G5G0",
-        "price": 6750.0,
-        "logo": "images/logos/amazon.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "tecnologia",
-    "date": "2025-07-30",
-    "lowestPrice": 5800.0,
-    "name": "Steam Deck 64GB",
-    "image": "/images/products/6d3622834553ae44d20965f47cb0e78d.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4iGJWPd",
-        "price": 5747.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/xRaYs840",
-        "price": 5849.0,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
     "category": "sala-de-estar",
     "date": "2025-11-01",
     "lowestPrice": 217.9,
@@ -532,27 +474,6 @@
       "Shopee": {
         "link": "https://s.shopee.com.br/60EejhxG2R",
         "price": 229.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "cozinha",
-    "date": "2025-11-01",
-    "lowestPrice": 729.9,
-    "name": "ICHEF Fritadeira Elétrica Airfryer Smart Vision 6L (220 Volts)",
-    "image": "/images/products/e0236ace4cb933e7ea5c6ea244176643.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/3EvShXY",
-        "price": 629.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/4fjH9IJoPJ",
-        "price": 729.9,
         "logo": "images/logos/shopee.png"
       }
     },
@@ -591,27 +512,6 @@
         "link": "https://amzn.to/4lRStS2",
         "price": 499.0,
         "logo": "images/logos/amazon.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "cozinha",
-    "date": "2025-07-30",
-    "lowestPrice": 925.97,
-    "name": "Coifa e Depurador de Parede EOS 60cm Premium Digital Touch ECO60PTD 110v",
-    "image": "/images/products/71c8153dbd31f1094c0553d692b7b3e5.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/44OE2bh",
-        "price": 999.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Magazine Luiza": {
-        "link": "",
-        "price": 925.97,
-        "logo": "images/logos/magalu.png"
       }
     },
     "links": {},
@@ -728,27 +628,6 @@
     "price_updated": true
   },
   {
-    "category": "quarto",
-    "date": "2025-11-01",
-    "lowestPrice": 92.9,
-    "name": "Ventilador de Mesa Ultra 30cm 110v",
-    "image": "/images/products/0c3b71616f3f6cd8874a879a763e9253.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/3YSJndI",
-        "price": 115.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/20iVzCiHDR",
-        "price": 112.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
     "category": "cozinha",
     "date": "2025-07-30",
     "lowestPrice": 3689.0,
@@ -777,27 +656,6 @@
   {
     "category": "casa-inteligente",
     "date": "2025-07-30",
-    "lowestPrice": 61.9,
-    "name": "Interruptor Inteligente Wi-fi Nova Digital 1 Botão",
-    "image": "/images/products/f62a4c734cb4f8488109364680144ae7.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/3YnzLaN",
-        "price": 66.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/4fjHAOe3LV",
-        "price": 79.0,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "casa-inteligente",
-    "date": "2025-07-30",
     "lowestPrice": 76.0,
     "name": "Interruptor Inteligente Wi-fi Nova Digital 2 Botão",
     "image": "/images/products/234ace250934fd5c0168a7b84c122391.jpg",
@@ -810,48 +668,6 @@
       "Shopee": {
         "link": "https://s.shopee.com.br/3LDtZz4JsJ",
         "price": 86.1,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "casa-inteligente",
-    "date": "2025-07-30",
-    "lowestPrice": 77.0,
-    "name": "Interruptor Inteligente Wi-fi Nova Digital 3 Botão",
-    "image": "/images/products/c68d6bff29a6fdf87a50d74128a44b91.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4jyPNav",
-        "price": 77.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/1VmFOfNyQq",
-        "price": 87.72,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "casa-inteligente",
-    "date": "2025-07-30",
-    "lowestPrice": 78.0,
-    "name": "Interruptor Inteligente Wi-fi Nova Digital 4 Botão",
-    "image": "/images/products/859bbbf677a1c8a0d3c0aca01d5b82c0.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4jQYrk6",
-        "price": 83.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/50M7ZAZQqh",
-        "price": 83.44,
         "logo": "images/logos/shopee.png"
       }
     },
@@ -1095,27 +911,6 @@
     "price_updated": true
   },
   {
-    "category": "tecnologia",
-    "date": "2025-07-30",
-    "lowestPrice": 2169.0,
-    "name": "Monitor LG 34'' UltraGear Curvo 34GP63A-B UltraWide (HDMI/Displayport/3440x1440)",
-    "image": "/images/products/0fb3ec6744e54cc3fa3ab171f27f2755.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4iFjCVo",
-        "price": 2229.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/5pvEcdybJN",
-        "price": 2169.0,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
     "category": "cozinha",
     "date": "2025-07-30",
     "lowestPrice": 262.0,
@@ -1158,96 +953,7 @@
     "price_updated": true
   },
   {
-    "category": "cozinha",
-    "date": "2025-11-01",
-    "lowestPrice": 189.9,
-    "name": "Panela Philco PPN24A Redstone com Tampa de Vidro 4,6L",
-    "image": "/images/products/e0366126fef69b8f7e56f62fab876014.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/44SEmpk",
-        "price": 230.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/1LSpGeQSoA",
-        "price": 249.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "cozinha",
-    "date": "2025-07-30",
-    "lowestPrice": 159.9,
-    "name": "Panela Philco PPH240APR Redstone com Tampa de Vidro 2,7L",
-    "image": "/images/products/405a96e15ad042b9901d752a158d263e.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4iAsA6j",
-        "price": 198.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/8UvznrYG3j",
-        "price": 267.0,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "cozinha",
-    "date": "2025-07-30",
-    "lowestPrice": 312.47,
-    "name": "Panela Sauté Grand Vermelha de 24cm Polishop",
-    "image": "/images/products/83d479a43bd611f4c4b3483d7eaf97c0.webp",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4lSqUrC",
-        "price": 290.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/LaI4usvtD",
-        "price": 348.32,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "cozinha",
-    "date": "2025-07-30",
-    "lowestPrice": 284.73,
-    "name": "ICHEF Polishop Panela Home Family Size Shark Series Azul de 24cm",
-    "image": "/images/products/0a91c7e413ed2b22e1d44f6d2c386b2b.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/44g47jo",
-        "price": 329.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/BGrseMrzX",
-        "price": 340.23,
-        "logo": "images/logos/shopee.png"
-      },
-      "Magazine Luiza": {
-        "link": "",
-        "price": 303.92,
-        "logo": "images/logos/magalu.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "cozinha",
+    "category": "sala-de-estar",
     "date": "2025-07-30",
     "lowestPrice": 111.6,
     "name": "Jogo para Churrasco 12 Peças Vermelho Polywood - Tramontina",
@@ -1394,27 +1100,6 @@
     "price_updated": true
   },
   {
-    "category": "alimentos",
-    "date": "2025-07-30",
-    "lowestPrice": 29.9,
-    "name": "Maxi Goiabinha Bauducco",
-    "image": "/images/products/709295ce12be99fa7db08b3afe5e52b6.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/44eoH3F",
-        "price": 23.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/5fboRZqojc",
-        "price": 29.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
     "category": "cozinha",
     "date": "2025-05-22",
     "lowestPrice": 315.6,
@@ -1450,69 +1135,6 @@
       "Shopee": {
         "link": "https://s.shopee.com.br/4L6QrGVZVJ",
         "price": 449.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "cozinha",
-    "date": "2025-05-22",
-    "lowestPrice": 279.9,
-    "name": "Panela de Pressão 7,6L Rochedo Segura Vermelha Fechamento Externo",
-    "image": "/images/products/f87e65cb56b15095ff5ede9e3bd3844f.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4cWRjkj",
-        "price": 304.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/30b3GrdprM",
-        "price": 279.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "cozinha",
-    "date": "2025-11-01",
-    "lowestPrice": 189.9,
-    "name": "Panela de Pressão 4.5L Fechamento Externo Smart Rochedo Preta",
-    "image": "/images/products/51235385c40d72a0fa3d3d3628e7653e.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4jZDGmF",
-        "price": 136.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/9pRNPT068N",
-        "price": 199.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "tecnologia",
-    "date": "2025-05-22",
-    "lowestPrice": 82.0,
-    "name": "Mini Impressora T02 Phomemo",
-    "image": "/images/products/0e8f5c1d598bbc4490570aad6f04e6ed.webp",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4iF6UWU",
-        "price": 478.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/60EecZ0DYh",
-        "price": 82.0,
         "logo": "images/logos/shopee.png"
       }
     },
@@ -1581,42 +1203,6 @@
     },
     "links": {},
     "price_updated": true
-  },
-  {
-    "category": "alimentos",
-    "date": "2025-07-30",
-    "lowestPrice": 145.9,
-    "name": "Fabbri Cereja Silvestre em Calda Amarena 600g",
-    "image": "/images/products/9239a07c6cf1388d4baf5c7db4a1b598.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/42HVxY0",
-        "price": 147.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/3LDtfiauIJ",
-        "price": 175.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "alimentos",
-    "date": "2025-04-29",
-    "lowestPrice": 28.9,
-    "name": "Paçoca Amendupã C/100 Rolha",
-    "image": "/images/products/5f7a261d71e207b9fd9411836dfde657.jpg",
-    "prices": {
-      "Shopee": {
-        "link": "https://s.shopee.com.br/5fboEDd1LI",
-        "price": 28.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {}
   },
   {
     "category": "cozinha",
@@ -1690,90 +1276,6 @@
       "Shopee": {
         "link": "https://s.shopee.com.br/9UoWqxoiRg",
         "price": 29.91,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "tecnologia",
-    "date": "2025-07-30",
-    "lowestPrice": 219.0,
-    "name": "R36S Console Portátil",
-    "image": "/images/products/3ce65c623e8f3cc037dba63a54de88f7.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4m6V3Uu",
-        "price": 240.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/30b37IKTqa",
-        "price": 219.0,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "alimentos",
-    "date": "2025-07-30",
-    "lowestPrice": 81.9,
-    "name": "Castanha de Caju 1kg",
-    "image": "/images/products/18d14b06031d3f6f620fd0a168841cb2.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/3YRJbvm",
-        "price": 83.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/5Kyxtprw37",
-        "price": 81.9,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "alimentos",
-    "date": "2025-07-30",
-    "lowestPrice": 118.0,
-    "name": "Amêndoa Defumada",
-    "image": "/images/products/6ebb264e49e881ef9c1c407582751b08.webp",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/434qVBs",
-        "price": 119.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/5VIO6YOVn8",
-        "price": 118.0,
-        "logo": "images/logos/shopee.png"
-      }
-    },
-    "links": {},
-    "price_updated": true
-  },
-  {
-    "category": "alimentos",
-    "date": "2025-05-22",
-    "lowestPrice": 256.57,
-    "name": "Pistache Cru S/ Casca 1kg",
-    "image": "/images/products/c8e5f3236588279757d197c8419e1c59.jpg",
-    "prices": {
-      "Amazon": {
-        "link": "https://amzn.to/4iCassE",
-        "price": 274.0,
-        "logo": "images/logos/amazon.png"
-      },
-      "Shopee": {
-        "link": "https://s.shopee.com.br/4L6QisdvOx",
-        "price": 280.9,
         "logo": "images/logos/shopee.png"
       }
     },

@@ -1,17 +1,51 @@
 {
-    "promocoes": [
-      {
-        "id": 1733080000000,
-        "tipo": "promo",
-        "loja": "Amazon",
-        "produto": "🧪 Promoção de Teste - Airfryer Mondial 4L",
-        "preco": 199.90,
-        "precoAntigo": 349.90,
-        "info": "6x sem juros • Frete grátis",
-        "cupom": "TESTE10",
-        "link": "https://amzn.to/exemplo",
-        "destaque": true,
-        "timestamp": "2024-12-01T18:00:00.000Z"
-      }
-    ]
-  }
+  "promocoes": [
+    {
+      "id": 1733080000000,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Airfryer Mondial 4L - 1500W com Timer",
+      "preco": 199.90,
+      "precoAntigo": 349.90,
+      "info": "6x sem juros • Frete grátis Prime",
+      "cupom": "NATAL10",
+      "link": "https://amzn.to/exemplo",
+      "destaque": true,
+      "timestamp": "2024-12-08T10:00:00.000Z"
+    },
+    {
+      "id": 1733080000001,
+      "tipo": "cupom",
+      "loja": "Shopee",
+      "descricaoCupom": "R$15 off em compras acima de R$100 em eletrônicos",
+      "codigoCupom": "NATAL15OFF",
+      "link": "https://shopee.com.br",
+      "timestamp": "2024-12-08T09:30:00.000Z"
+    },
+    {
+      "id": 1733080000002,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Echo Dot 5ª Geração com Alexa",
+      "preco": 249.00,
+      "precoAntigo": 399.00,
+      "info": "Parcelamento em até 10x",
+      "link": "https://mercadolivre.com.br",
+      "destaque": false,
+      "timestamp": "2024-12-08T08:00:00.000Z"
+    },
+    {
+      "id": 1733080000003,
+      "tipo": "promo",
+      "loja": "Magalu",
+      "produto": "Smart TV LG 50\" 4K UHD WebOS",
+      "preco": 1899.00,
+      "precoAntigo": 2499.00,
+      "info": "Cashback de R$100 no app",
+      "cupom": "TV100",
+      "link": "https://magazineluiza.com.br",
+      "destaque": true,
+      "timestamp": "2024-12-08T07:00:00.000Z"
+    }
+  ]
+}
