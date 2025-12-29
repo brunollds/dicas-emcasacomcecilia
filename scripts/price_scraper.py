@@ -1,291 +1,374 @@
-import json
+"""
+Scraper de Preços - Mercado Livre
+Em Casa com Cecília
+
+Extrai preço e imagem direto do HTML da página do produto.
+Funciona com URLs de catálogo (/p/MLB...) e anúncios normais.
+"""
+
 import requests
-from bs4 import BeautifulSoup
+import json
 import re
 import time
 import random
-import logging
-from datetime import datetime
 from pathlib import Path
-import argparse
+from datetime import datetime
 
-# Configuração de logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("price_scraper.log"),
-        logging.StreamHandler()
-    ]
-)
+# =====================================================
+# CONFIGURAÇÃO
+# =====================================================
 
-# Headers para simular um navegador e evitar bloqueios
-USER_AGENTS = [
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15',
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0'
-]
-
-# Configurações específicas para diferentes lojas
-STORE_CONFIGS = {
-    "Amazon": {
-        "price_selectors": [
-            "span.a-price-whole", 
-            "span.a-offscreen",
-            "span#priceblock_ourprice"
-        ],
-        "delay": (2, 5)  # Intervalo de delay em segundos (min, max)
-    },
-    "Mercado Livre": {
-        "price_selectors": [
-            "span.andes-money-amount__fraction",
-            "span.price-tag-fraction"
-        ],
-        "decimal_selectors": [
-            "span.andes-money-amount__cents",
-            "span.price-tag-cents"
-        ],
-        "delay": (1, 3)
-    },
-    "Shopee": {
-        "price_selectors": [
-            "div.pqTWkA",
-            "div._3n5NQx"
-        ],
-        "delay": (2, 4)
-    },
-    # Adicione mais configurações para outras lojas conforme necessário
-    "default": {
-        "price_selectors": ["span.price", "div.price", "p.price", ".product-price"],
-        "delay": (1, 3)
-    }
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+    'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Connection': 'keep-alive',
+    'Cache-Control': 'max-age=0',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Upgrade-Insecure-Requests': '1',
 }
 
-def get_random_user_agent():
-    """Retorna um User-Agent aleatório"""
-    return random.choice(USER_AGENTS)
+# Delay entre requisições (evitar bloqueio)
+# Use valores menores para teste, maiores para produção
+MIN_DELAY = 1
+MAX_DELAY = 2
 
-def extract_price(html_content, store_name):
-    """Extrai o preço do HTML baseado nas configurações da loja"""
-    soup = BeautifulSoup(html_content, 'html.parser')
-    
-    # Obter configuração da loja ou usar configuração padrão
-    store_config = STORE_CONFIGS.get(store_name, STORE_CONFIGS["default"])
-    
-    # Tentativa de extrair o preço usando os seletores configurados
-    price_text = None
-    decimal_text = "00"  # valor padrão para centavos
-    
-    # Tentar cada seletor até encontrar um preço
-    for selector in store_config["price_selectors"]:
-        price_element = soup.select_one(selector)
-        if price_element:
-            price_text = price_element.text.strip()
-            break
-    
-    # Se houver seletores específicos para decimais, tentar extraí-los
-    if "decimal_selectors" in store_config and price_text:
-        for selector in store_config["decimal_selectors"]:
-            decimal_element = soup.select_one(selector)
-            if decimal_element:
-                decimal_text = decimal_element.text.strip()
-                break
-    
-    # Se não encontrou preço por seletores específicos, tentar regex genérico
-    if not price_text:
-        price_pattern = r'R\$\s*(\d{1,3}(?:\.\d{3})*(?:,\d{2})?|\d+(?:,\d{2})?)'
-        matches = re.findall(price_pattern, html_content)
-        if matches:
-            price_text = matches[0]
-    
-    # Processar texto do preço encontrado
-    if price_text:
-        # Remover caracteres não numéricos
-        price_text = re.sub(r'[^\d,.]', '', price_text)
-        
-        # Se temos um formato com vírgula (brasileiro), converter para ponto
-        if ',' in price_text and '.' not in price_text:
-            price_text = price_text.replace(',', '.')
-        elif '.' in price_text and ',' in price_text:  # formato R$ 1.999,99
-            price_text = price_text.replace('.', '').replace(',', '.')
-        
-        # Se temos apenas a parte inteira e uma parte decimal separada
-        if ',' not in price_text and '.' not in price_text and decimal_text != "00":
-            price_text = f"{price_text}.{decimal_text}"
-            
-        try:
-            return float(price_text)
-        except ValueError:
-            logging.error(f"Não foi possível converter o preço '{price_text}' para float")
-    
-    return None
+# =====================================================
+# FUNÇÕES DE EXTRAÇÃO
+# =====================================================
 
-def scrape_price(url, store_name):
-    """Acessa a URL e extrai o preço"""
-    if not url.startswith(('http://', 'https://')):
-        logging.warning(f"URL inválida: {url}")
+def extrair_id_ml(url):
+    """Extrai ID do produto da URL"""
+    if not url:
         return None
     
-    headers = {
-        'User-Agent': get_random_user_agent(),
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language': 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3',
-        'Connection': 'keep-alive',
-        'Upgrade-Insecure-Requests': '1',
-        'Cache-Control': 'max-age=0',
-    }
+    # /p/MLB123456
+    match = re.search(r'/p/(MLB\d+)', url, re.IGNORECASE)
+    if match:
+        return match.group(1).upper()
     
-    try:
-        # Adicionar delay para evitar bloqueios
-        store_config = STORE_CONFIGS.get(store_name, STORE_CONFIGS["default"])
-        delay = random.uniform(*store_config["delay"])
-        time.sleep(delay)
-        
-        logging.info(f"Acessando {store_name}: {url}")
-        response = requests.get(url, headers=headers, timeout=15)
-        
-        if response.status_code == 200:
-            price = extract_price(response.text, store_name)
-            if price:
-                logging.info(f"Preço extraído de {store_name}: R$ {price:.2f}")
-                return price
-            else:
-                logging.warning(f"Não foi possível extrair o preço de {store_name} (URL: {url})")
-        else:
-            logging.error(f"Erro ao acessar {url}: Status code {response.status_code}")
-    
-    except requests.RequestException as e:
-        logging.error(f"Erro na requisição para {url}: {e}")
-    except Exception as e:
-        logging.error(f"Erro desconhecido ao acessar {url}: {e}")
+    # MLB-123456 ou MLB123456
+    match = re.search(r'(MLB)-?(\d+)', url, re.IGNORECASE)
+    if match:
+        return f"MLB{match.group(2)}"
     
     return None
 
-def load_products(json_file):
-    """Carrega os produtos do arquivo JSON"""
-    try:
-        with open(json_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except json.JSONDecodeError:
-        logging.error(f"Erro ao decodificar JSON do arquivo {json_file}")
-        return []
-    except Exception as e:
-        logging.error(f"Erro ao carregar o arquivo {json_file}: {e}")
-        return []
 
-def save_products(products, json_file, backup=True):
-    """Salva os produtos no arquivo JSON com opção de backup"""
-    if backup:
-        # Criar backup antes de salvar
-        backup_path = Path(f"{json_file}.backup-{datetime.now().strftime('%Y%m%d-%H%M%S')}")
-        try:
-            with open(json_file, 'r', encoding='utf-8') as src, open(backup_path, 'w', encoding='utf-8') as dst:
-                dst.write(src.read())
-            logging.info(f"Backup criado em {backup_path}")
-        except Exception as e:
-            logging.warning(f"Não foi possível criar backup: {e}")
+def scrape_produto_ml(url):
+    """
+    Faz scraping da página do produto e extrai dados.
+    
+    Retorna:
+    {
+        "titulo": str,
+        "preco": float,
+        "preco_original": float ou None,
+        "imagem": str,
+        "disponivel": bool,
+        "frete_gratis": bool,
+        "erro": str (se houver)
+    }
+    """
     
     try:
-        with open(json_file, 'w', encoding='utf-8') as f:
-            json.dump(products, f, ensure_ascii=False, indent=2)
-        logging.info(f"Arquivo {json_file} atualizado com sucesso")
-        return True
+        # Adiciona delay aleatório
+        time.sleep(random.uniform(MIN_DELAY, MAX_DELAY))
+        
+        # Headers mais completos
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+            'Connection': 'keep-alive',
+            'Cache-Control': 'max-age=0',
+            'Sec-Ch-Ua': '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+            'Sec-Ch-Ua-Mobile': '?0',
+            'Sec-Ch-Ua-Platform': '"Windows"',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'none',
+            'Sec-Fetch-User': '?1',
+            'Upgrade-Insecure-Requests': '1',
+        }
+        
+        # Criar sessão para manter cookies
+        session = requests.Session()
+        
+        response = session.get(url, headers=headers, timeout=30, allow_redirects=True)
+        
+        if response.status_code == 404:
+            return {"erro": "Produto não encontrado (404)"}
+        
+        if response.status_code != 200:
+            return {"erro": f"Status {response.status_code}"}
+        
+        html = response.text
+        resultado = {}
+        
+        # Debug: salvar HTML se não encontrar nada
+        with open('debug_ml.html', 'w', encoding='utf-8') as f:
+            f.write(html)
+        
+        # ===== TÍTULO =====
+        patterns_titulo = [
+            r'<h1[^>]*class="ui-pdp-title"[^>]*>([^<]+)</h1>',
+            r'"name"\s*:\s*"([^"]+)"',
+            r'<meta\s+property="og:title"\s+content="([^"]+)"',
+            r'<meta\s+name="twitter:title"\s+content="([^"]+)"',
+            r'<title>([^<|]+)',
+        ]
+        for pattern in patterns_titulo:
+            match = re.search(pattern, html, re.IGNORECASE)
+            if match:
+                titulo = match.group(1).strip()
+                titulo = re.sub(r'\s*\|\s*MercadoLivre.*$', '', titulo)
+                titulo = re.sub(r'\s*-\s*MercadoLivre.*$', '', titulo)
+                titulo = re.sub(r'\s*\|.*$', '', titulo)
+                if len(titulo) > 5:  # Evitar títulos muito curtos
+                    resultado['titulo'] = titulo
+                    break
+        
+        # ===== PREÇO =====
+        patterns_preco = [
+            # JSON-LD e dados estruturados
+            r'"price"\s*:\s*"?(\d+(?:\.\d+)?)"?',
+            r'"amount"\s*:\s*"?(\d+(?:\.\d+)?)"?',
+            r'"lowPrice"\s*:\s*"?(\d+(?:\.\d+)?)"?',
+            # Meta tags
+            r'<meta\s+itemprop="price"\s+content="(\d+(?:\.\d+)?)"',
+            r'<meta\s+property="product:price:amount"\s+content="(\d+(?:\.\d+)?)"',
+            # Elementos visuais
+            r'class="andes-money-amount__fraction"[^>]*>(\d+(?:[\.,]\d+)?)<',
+            r'<span[^>]*price[^>]*>R\$\s*([\d.,]+)</span>',
+            # Formato brasileiro no HTML
+            r'R\$\s*(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)',
+            r'R\$\s*(\d+(?:,\d{2})?)',
+        ]
+        
+        for pattern in patterns_preco:
+            matches = re.findall(pattern, html, re.IGNORECASE)
+            if matches:
+                for match in matches:
+                    try:
+                        # Limpar e converter
+                        preco_str = match if isinstance(match, str) else match[0]
+                        preco_str = preco_str.replace('.', '').replace(',', '.')
+                        preco = float(preco_str)
+                        # Validar range razoável
+                        if 0.01 < preco < 1000000:
+                            resultado['preco'] = preco
+                            break
+                    except:
+                        continue
+                if 'preco' in resultado:
+                    break
+        
+        # Preço original (riscado)
+        patterns_preco_original = [
+            r'"original_price"\s*:\s*"?(\d+(?:\.\d+)?)"?',
+            r'"regular_amount"\s*:\s*"?(\d+(?:\.\d+)?)"?',
+            r'"highPrice"\s*:\s*"?(\d+(?:\.\d+)?)"?',
+            r'<s[^>]*>R\$\s*([\d.,]+)</s>',
+            r'class="[^"]*price[^"]*through[^"]*"[^>]*>R\$\s*([\d.,]+)',
+        ]
+        
+        for pattern in patterns_preco_original:
+            match = re.search(pattern, html, re.IGNORECASE)
+            if match:
+                try:
+                    preco_str = match.group(1).replace('.', '').replace(',', '.')
+                    preco_original = float(preco_str)
+                    if preco_original > resultado.get('preco', 0):
+                        resultado['preco_original'] = preco_original
+                        break
+                except:
+                    continue
+        
+        # ===== IMAGEM =====
+        patterns_img = [
+            r'"(https://http2\.mlstatic\.com/D_NQ_NP_2X_[^"]+\.(?:jpg|webp|png))"',
+            r'"(https://http2\.mlstatic\.com/D_NQ_NP_[^"]+\.(?:jpg|webp|png))"',
+            r'"(https://http2\.mlstatic\.com/D_[^"]+\.(?:jpg|webp|png))"',
+            r'<meta\s+property="og:image"\s+content="([^"]+)"',
+            r'<meta\s+property="og:image:secure_url"\s+content="([^"]+)"',
+            r'"image"\s*:\s*"(https://[^"]+mlstatic[^"]+)"',
+            r'src="(https://[^"]*mlstatic\.com/[^"]+\.(?:jpg|webp|png))"',
+        ]
+        for pattern in patterns_img:
+            match = re.search(pattern, html)
+            if match:
+                imagem = match.group(1)
+                # Tentar versão de alta qualidade
+                imagem = re.sub(r'-[A-Z]\.', '-F.', imagem)
+                if 'mlstatic' in imagem:
+                    resultado['imagem'] = imagem
+                    break
+        
+        # ===== DISPONIBILIDADE =====
+        indisponivel = bool(
+            re.search(r'Este produto não está mais disponível', html, re.IGNORECASE) or
+            re.search(r'Produto indisponível', html, re.IGNORECASE) or
+            re.search(r'Este produto esgotou', html, re.IGNORECASE) or
+            re.search(r'no longer available', html, re.IGNORECASE)
+        )
+        resultado['disponivel'] = not indisponivel
+        
+        # ===== FRETE GRÁTIS =====
+        resultado['frete_gratis'] = bool(
+            re.search(r'Frete\s*gr[áa]tis', html, re.IGNORECASE) or
+            re.search(r'"free_shipping"\s*:\s*true', html, re.IGNORECASE) or
+            re.search(r'Envio\s*gr[áa]tis', html, re.IGNORECASE)
+        )
+        
+        # Validar se conseguiu o mínimo
+        if not resultado.get('preco') and not resultado.get('titulo'):
+            # Tentar detectar se é uma página de erro ou captcha
+            if 'captcha' in html.lower() or 'robot' in html.lower():
+                return {"erro": "Página bloqueada (captcha)"}
+            return {"erro": "Não consegui extrair dados da página"}
+        
+        return resultado
+        
+    except requests.exceptions.Timeout:
+        return {"erro": "Timeout na requisição"}
+    except requests.exceptions.RequestException as e:
+        return {"erro": f"Erro de conexão: {str(e)}"}
     except Exception as e:
-        logging.error(f"Erro ao salvar o arquivo {json_file}: {e}")
-        return False
+        return {"erro": f"Erro inesperado: {str(e)}"}
 
-def update_products_prices(products, dry_run=False):
-    """Atualiza os preços dos produtos"""
-    for i, product in enumerate(products):
-        logging.info(f"Processando produto ({i+1}/{len(products)}): {product.get('name', 'Sem nome')}")
-        
-        # Verificar se o produto tem informações de preços
-        if not product.get('prices'):
-            logging.warning(f"Produto {product.get('name', 'Sem nome')} não tem informações de preço")
-            continue
-        
-        updated = False
-        old_prices = {}
-        
-        # Para cada loja, tentar atualizar o preço
-        for store_name, store_info in product['prices'].items():
-            if not store_info.get('link'):
-                logging.warning(f"Link não encontrado para a loja {store_name}")
-                continue
-            
-            # Guardar preço atual para comparação
-            old_prices[store_name] = store_info.get('price')
-            
-            # Se não estamos em modo de simulação, fazer o scraping
-            if not dry_run:
-                new_price = scrape_price(store_info['link'], store_name)
-                
-                # Atualizar o preço se encontrado
-                if new_price is not None:
-                    store_info['price'] = new_price
-                    product['date'] = datetime.now().strftime('%Y-%m-%d')
-                    updated = True
-                    
-                    # Registrar alteração de preço
-                    old_price = old_prices[store_name]
-                    if old_price:
-                        diff = new_price - old_price
-                        diff_percent = (diff / old_price) * 100 if old_price else 0
-                        logging.info(f"Preço alterado em {store_name}: R$ {old_price:.2f} -> R$ {new_price:.2f} ({diff_percent:+.2f}%)")
-        
-        if updated:
-            # Calcular menor preço para atualizar no atributo data-lowest-price
-            lowest_price = float('inf')
-            for store_info in product['prices'].values():
-                price = store_info.get('price', 0)
-                if price and price < lowest_price:
-                    lowest_price = price
-            
-            # Adicionar uma flag para indicar que o preço foi atualizado
-            product['price_updated'] = True
-            
-            logging.info(f"Produto {product.get('name', 'Sem nome')} atualizado com sucesso")
-    
-    return products
 
-def main():
-    parser = argparse.ArgumentParser(description='Atualiza preços de produtos em arquivo JSON')
-    parser.add_argument('--input', '-i', default='data/products.json', help='Arquivo JSON de entrada')
-    parser.add_argument('--output', '-o', help='Arquivo JSON de saída (padrão: mesmo que entrada)')
-    parser.add_argument('--dry-run', '-d', action='store_true', help='Executa sem fazer alterações reais')
-    parser.add_argument('--no-backup', '-n', action='store_true', help='Não cria arquivo de backup')
+def atualizar_products_json(caminho_json, dry_run=False):
+    """
+    Atualiza preços e imagens dos produtos ML no products.json
     
-    args = parser.parse_args()
+    Args:
+        caminho_json: Caminho para o arquivo products.json
+        dry_run: Se True, não salva alterações (só mostra)
+    """
     
-    input_file = args.input
-    output_file = args.output or input_file
-    dry_run = args.dry_run
-    create_backup = not args.no_backup
+    caminho = Path(caminho_json)
     
-    if dry_run:
-        logging.info("Modo de simulação ativado, nenhuma alteração será salva")
-    
-    # Carregar produtos
-    logging.info(f"Carregando produtos de {input_file}")
-    products = load_products(input_file)
-    
-    if not products:
-        logging.error("Nenhum produto encontrado ou erro ao carregar o arquivo")
+    if not caminho.exists():
+        print(f"❌ Arquivo não encontrado: {caminho}")
         return
     
-    logging.info(f"Encontrados {len(products)} produtos para processamento")
+    with open(caminho, 'r', encoding='utf-8') as f:
+        produtos = json.load(f)
     
-    # Atualizar preços
-    updated_products = update_products_prices(products, dry_run)
+    print(f"📦 {len(produtos)} produtos encontrados")
+    print("=" * 60)
     
-    # Salvar alterações, se não estiver em modo de simulação
-    if not dry_run:
-        if save_products(updated_products, output_file, create_backup):
-            logging.info(f"Todos os produtos foram processados e salvos em {output_file}")
+    atualizados = 0
+    erros = 0
+    ignorados = 0
+    
+    for i, produto in enumerate(produtos):
+        nome = produto.get('name', 'Sem nome')[:40]
+        precos = produto.get('prices', {})
+        
+        # Verificar se tem link do ML
+        if 'Mercado Livre' not in precos:
+            ignorados += 1
+            continue
+        
+        link_ml = precos['Mercado Livre'].get('link', '')
+        if not link_ml:
+            ignorados += 1
+            continue
+        
+        print(f"\n[{i+1}/{len(produtos)}] {nome}...")
+        
+        # Fazer scraping
+        dados = scrape_produto_ml(link_ml)
+        
+        if 'erro' in dados:
+            print(f"   ❌ {dados['erro']}")
+            erros += 1
+            continue
+        
+        # Atualizar dados
+        alteracoes = []
+        
+        if dados.get('preco'):
+            preco_antigo = precos['Mercado Livre'].get('price')
+            preco_novo = dados['preco']
+            
+            if preco_antigo != preco_novo:
+                alteracoes.append(f"Preço: R${preco_antigo} → R${preco_novo}")
+                precos['Mercado Livre']['price'] = preco_novo
+        
+        if dados.get('imagem') and not produto.get('image'):
+            alteracoes.append(f"Imagem adicionada")
+            produto['image'] = dados['imagem']
+        
+        if alteracoes:
+            atualizados += 1
+            for alt in alteracoes:
+                print(f"   ✅ {alt}")
         else:
-            logging.error("Erro ao salvar as alterações")
-    else:
-        logging.info("Simulação concluída, nenhuma alteração foi salva")
+            print(f"   ⏸️ Sem alterações (R${precos['Mercado Livre'].get('price')})")
+    
+    print("\n" + "=" * 60)
+    print(f"📊 Resumo:")
+    print(f"   ✅ Atualizados: {atualizados}")
+    print(f"   ❌ Erros: {erros}")
+    print(f"   ⏭️ Ignorados (sem ML): {ignorados}")
+    
+    # Salvar
+    if not dry_run and atualizados > 0:
+        # Backup
+        backup_path = caminho.with_suffix(f'.json.backup-{datetime.now().strftime("%Y%m%d-%H%M%S")}')
+        with open(backup_path, 'w', encoding='utf-8') as f:
+            json.dump(produtos, f, ensure_ascii=False, indent=2)
+        print(f"\n💾 Backup salvo: {backup_path.name}")
+        
+        # Salvar atualizado
+        with open(caminho, 'w', encoding='utf-8') as f:
+            json.dump(produtos, f, ensure_ascii=False, indent=2)
+        print(f"💾 Arquivo atualizado: {caminho}")
+    elif dry_run:
+        print("\n⚠️ Modo dry-run: alterações não foram salvas")
+    
+    return {"atualizados": atualizados, "erros": erros, "ignorados": ignorados}
+
+
+# =====================================================
+# TESTE
+# =====================================================
 
 if __name__ == "__main__":
-    main()
+    print("=" * 60)
+    print("🛒 Scraper Mercado Livre - Em Casa com Cecília")
+    print("=" * 60)
+    
+    # Teste com URL real
+    url_teste = "https://www.mercadolivre.com.br/cafeteira-nespresso-essenza-mini-d30-automatica-preta-para-capsulas-monodose/p/MLB19112932"
+    
+    print(f"\n📍 Testando: {url_teste[:60]}...")
+    print("-" * 60)
+    
+    # Modo debug: salvar HTML
+    DEBUG_MODE = True
+    
+    dados = scrape_produto_ml(url_teste)
+    
+    if 'erro' not in dados:
+        print(f"✅ Título: {dados.get('titulo', 'N/A')[:50]}...")
+        print(f"💰 Preço: R$ {dados.get('preco', 'N/A')}")
+        if dados.get('preco_original'):
+            print(f"💰 Preço original: R$ {dados['preco_original']}")
+        print(f"🖼️ Imagem: {dados.get('imagem', 'N/A')[:60]}...")
+        print(f"📦 Disponível: {'Sim' if dados.get('disponivel') else 'Não'}")
+        print(f"🚚 Frete grátis: {'Sim' if dados.get('frete_gratis') else 'Não'}")
+    else:
+        print(f"❌ Erro: {dados['erro']}")
+        if DEBUG_MODE:
+            print("\n💡 Dica: Verifique se o arquivo 'debug_ml.html' foi criado")
+            print("   Abra no navegador para ver o que o ML está retornando")
+    
+    print("\n" + "=" * 60)

@@ -1,0 +1,39 @@
+ASSUNTO: Solicitação de Acesso à API de Afiliados Shopee - Em Casa com Cecília
+
+---
+
+Olá equipe Shopee,
+
+Meu nome é Cecília e sou criadora de conteúdo do canal "Em Casa com Cecília", focado em receitas, dicas para o lar e indicações de produtos.
+
+Gostaria de solicitar acesso à API de Afiliados da Shopee para integração com meu site de promoções: https://dicas.emcasacomcecilia.com
+
+**Informações da conta:**
+- Email cadastrado: contato.emcasacomcecilia@gmail.com
+- Site: https://dicas.emcasacomcecilia.com
+- Instagram: @emcasacomcecilia
+- YouTube: @emcasacomcecilia
+
+**Objetivo da integração:**
+- Exibir produtos da Shopee no site de dicas
+- Atualizar preços automaticamente
+- Mostrar imagens dos produtos
+- Comparar preços entre lojas para os seguidores
+
+**Uso pretendido:**
+- Frequência: 2 atualizações diárias (manhã e tarde)
+- Volume: Aproximadamente 50-100 produtos
+- Tipo: Apenas leitura (consulta de preços e dados)
+
+Aguardo retorno sobre os próximos passos para obter as credenciais da API.
+
+Atenciosamente,
+Cecília
+Em Casa com Cecília
+contato.emcasacomcecilia@gmail.com
+
+---
+
+ENVIAR PARA:
+- openplatform@shopee.com
+- OU acessar o painel de afiliados Shopee > Suporte > Solicitar API

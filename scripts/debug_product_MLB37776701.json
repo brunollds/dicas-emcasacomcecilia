@@ -1,0 +1,8 @@
+{
+  "product_id": "MLB37776701",
+  "debug": {
+    "visited": 1,
+    "max_depth": 2,
+    "note": "Sem buy_box_winner encontrado. Pode ser produto sem oferta ganhadora ou precisa selecionar variação específica."
+  }
+}

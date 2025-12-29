@@ -1,0 +1,18 @@
+# Adicione estas linhas ao seu .gitignore
+
+# Credenciais e tokens
+scripts/.env
+scripts/ml_tokens.json
+
+# Backups de JSON
+public/data/*.backup-*
+*.backup-*
+
+# Logs
+*.log
+data/logs/
+
+
+# Debug files
+debug_*.json
+
