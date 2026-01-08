@@ -527,7 +527,7 @@
             updateCategoryHeader(category);
             
             try {
-                const response = await fetch('/products.json');
+                const response = await fetch('/data/products.json');
                 const products = await response.json();
                 
                 // Filtrar por categoria

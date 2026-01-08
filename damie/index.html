@@ -517,49 +517,87 @@
 
     <!-- Menu de Categorias -->
     <nav class="categories-nav">
-        <div class="categories-container">
-            <a href="/" class="category-link">
-                <i class="fas fa-fire"></i>
-                <span>Promoções</span>
-            </a>
-            <a href="/cozinha" class="category-link">
-                <i class="fas fa-utensils"></i>
-                <span>Cozinha</span>
-            </a>
-            <a href="/tecnologia" class="category-link">
-                <i class="fas fa-laptop"></i>
-                <span>Tecnologia</span>
-            </a>
-            <a href="/casa-inteligente" class="category-link">
-                <i class="fas fa-wifi"></i>
-                <span>Casa Inteligente</span>
-            </a>
-            <a href="/sala-de-estar" class="category-link">
-                <i class="fas fa-couch"></i>
-                <span>Sala de Estar</span>
-            </a>
-            <a href="/lavanderia" class="category-link">
-                <i class="fas fa-tshirt"></i>
-                <span>Lavanderia</span>
-            </a>
-            <a href="/banheiro" class="category-link">
-                <i class="fas fa-bath"></i>
-                <span>Banheiro</span>
-            </a>
-            <a href="/alimentos" class="category-link">
-                <i class="fas fa-apple-alt"></i>
-                <span>Alimentos & Bebidas</span>
-            </a>
-            <a href="/outros" class="category-link">
-                <i class="fas fa-box"></i>
-                <span>Outros</span>
-            </a>
-            <a href="/damie" class="category-link active">
-                <i class="fas fa-star"></i>
-                <span>Damie</span>
-            </a>
+        <div class="categories-wrapper" id="categoriesWrapper">
+            <button class="categories-arrow left" id="scrollLeft">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="categories-container" id="categoriesContainer">
+                <a href="/" class="category-link featured">
+                    <i class="fas fa-fire"></i>
+                    <span>Promoções</span>
+                </a>
+                <a href="/damie/" class="category-link featured active">
+                    <i class="fas fa-star"></i>
+                    <span>Damie</span>
+                </a>
+                <div class="category-separator"></div>
+                <a href="/cozinha/" class="category-link">
+                    <i class="fas fa-utensils"></i>
+                    <span>Cozinha</span>
+                </a>
+                <a href="/tecnologia/" class="category-link">
+                    <i class="fas fa-laptop"></i>
+                    <span>Tecnologia</span>
+                </a>
+                <a href="/casa-inteligente/" class="category-link">
+                    <i class="fas fa-wifi"></i>
+                    <span>Casa Inteligente</span>
+                </a>
+                <a href="/sala-de-estar/" class="category-link">
+                    <i class="fas fa-couch"></i>
+                    <span>Sala de Estar</span>
+                </a>
+                <a href="/lavanderia/" class="category-link">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Lavanderia</span>
+                </a>
+                <a href="/banheiro/" class="category-link">
+                    <i class="fas fa-bath"></i>
+                    <span>Banheiro</span>
+                </a>
+                <a href="/alimentos/" class="category-link">
+                    <i class="fas fa-apple-alt"></i>
+                    <span>Alimentos</span>
+                </a>
+                <a href="/outros/" class="category-link">
+                    <i class="fas fa-box"></i>
+                    <span>Outros</span>
+                </a>
+            </div>
+            <button class="categories-arrow right" id="scrollRight">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
     </nav>
+    
+    <script>
+        // Navegação por setas nas categorias
+        (function() {
+            const container = document.getElementById('categoriesContainer');
+            const wrapper = document.getElementById('categoriesWrapper');
+            const leftBtn = document.getElementById('scrollLeft');
+            const rightBtn = document.getElementById('scrollRight');
+            
+            function checkOverflow() {
+                if (container.scrollWidth > container.clientWidth) {
+                    wrapper.classList.add('has-overflow');
+                } else {
+                    wrapper.classList.remove('has-overflow');
+                }
+            }
+            
+            leftBtn.addEventListener('click', () => {
+                container.scrollBy({ left: -200, behavior: 'smooth' });
+            });
+            
+            rightBtn.addEventListener('click', () => {
+                container.scrollBy({ left: 200, behavior: 'smooth' });
+            });
+            
+            checkOverflow();
+            window.addEventListener('resize', checkOverflow);
+        })();
+    </script>
 
     <!-- Sub-banner da marca -->
     <section class="brand-banner">

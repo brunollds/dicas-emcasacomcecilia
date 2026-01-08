@@ -197,29 +197,37 @@ a {
 .categories-nav {
     background: var(--bg-white);
     border-bottom: 1px solid var(--border);
+    padding: 0 20px;
     overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
 }
 
 .categories-nav::-webkit-scrollbar {
-    display: none;
+    display: none; /* Chrome/Safari */
 }
 
 .categories-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     gap: 5px;
-    padding: 0 20px;
-    min-width: max-content;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 10px;
+}
+
+.categories-container::-webkit-scrollbar {
+    display: none;
 }
 
 .category-link {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 15px 18px;
+    padding: 15px 20px;
     color: var(--text-medium);
     font-size: 0.9rem;
     font-weight: 500;

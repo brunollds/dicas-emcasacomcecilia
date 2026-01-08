@@ -1,10 +1,11 @@
 // =====================================================
 // PROMOÇÕES AO VIVO - Em Casa com Cecília
-// Versão com popup estilo Promobit
+// Versão com popup estilo Promobit + Busca Unificada
 // =====================================================
 
-// Carrega promoções do arquivo local (GitHub) ou JSONBin
+// URLs dos dados
 const PROMOCOES_URL = '/data/promocoes.json';
+const PRODUCTS_URL = '/data/products.json';
 
 // Elementos do DOM
 const container = document.getElementById('promos-container');
@@ -16,20 +17,43 @@ const popupClose = document.getElementById('popupClose');
 
 // Estado
 let todasPromocoes = [];
+let todosProdutos = [];
 let filtroAtual = 'todos';
 
+// Mapeamento de categorias para nomes legíveis
+const categoriasNomes = {
+    'cozinha': 'Cozinha',
+    'tecnologia': 'Tecnologia',
+    'casa-inteligente': 'Casa Inteligente',
+    'sala-de-estar': 'Sala de Estar',
+    'lavanderia': 'Lavanderia',
+    'banheiro': 'Banheiro',
+    'alimentos': 'Alimentos & Bebidas',
+    'outros': 'Outros'
+};
+
 // =====================================================
-// CARREGAR PROMOÇÕES
+// CARREGAR DADOS
 // =====================================================
 
 async function carregarPromocoes() {
     try {
+        // Carregar promoções
         const response = await fetch(PROMOCOES_URL);
-        if (!response.ok) throw new Error('Erro ao carregar');
-
+        if (!response.ok) throw new Error('Erro ao carregar promoções');
         const data = await response.json();
         todasPromocoes = data.promocoes || [];
         todasPromocoes.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+        // Carregar produtos (para busca unificada)
+        try {
+            const prodResponse = await fetch(PRODUCTS_URL);
+            if (prodResponse.ok) {
+                todosProdutos = await prodResponse.json();
+            }
+        } catch (e) {
+            console.log('Products.json não disponível');
+        }
 
         renderizarPromocoes();
 
@@ -42,6 +66,60 @@ async function carregarPromocoes() {
             </div>
         `;
     }
+}
+
+// =====================================================
+// BUSCAR EM PRODUTOS (CATEGORIAS)
+// =====================================================
+
+function buscarEmProdutos(termo) {
+    if (!termo || todosProdutos.length === 0) return {};
+    
+    const termoLower = termo.toLowerCase();
+    const resultadosPorCategoria = {};
+    
+    todosProdutos.forEach(produto => {
+        const textosProduto = [produto.name].filter(Boolean).join(' ').toLowerCase();
+        
+        if (textosProduto.includes(termoLower)) {
+            const cat = produto.category;
+            if (!resultadosPorCategoria[cat]) {
+                resultadosPorCategoria[cat] = 0;
+            }
+            resultadosPorCategoria[cat]++;
+        }
+    });
+    
+    return resultadosPorCategoria;
+}
+
+// =====================================================
+// CRIAR HTML DO BOX "ENCONTRAMOS TAMBÉM EM..."
+// =====================================================
+
+function criarBoxResultadosCategorias(resultados) {
+    const categorias = Object.entries(resultados);
+    if (categorias.length === 0) return '';
+    
+    const linksHTML = categorias.map(([cat, count]) => {
+        const nome = categoriasNomes[cat] || cat;
+        return `<a href="/${cat}/" class="search-category-link">
+            <i class="fas fa-arrow-right"></i>
+            ${nome} <span>(${count} produto${count > 1 ? 's' : ''})</span>
+        </a>`;
+    }).join('');
+    
+    return `
+        <div class="search-more-results">
+            <div class="search-more-header">
+                <i class="fas fa-box"></i>
+                <span>Encontramos também em:</span>
+            </div>
+            <div class="search-more-links">
+                ${linksHTML}
+            </div>
+        </div>
+    `;
 }
 
 // =====================================================
@@ -73,7 +151,11 @@ function renderizarPromocoes() {
         return true;
     });
 
-    if (promosFiltradas.length === 0) {
+    // Buscar também em produtos se houver termo de busca
+    const resultadosCategorias = termoBusca ? buscarEmProdutos(termoBusca) : {};
+    const temResultadosCategorias = Object.keys(resultadosCategorias).length > 0;
+
+    if (promosFiltradas.length === 0 && !temResultadosCategorias) {
         container.innerHTML = `
             <div class="empty-state">
                 <i class="fas fa-search"></i>
@@ -83,7 +165,26 @@ function renderizarPromocoes() {
         return;
     }
 
-    container.innerHTML = promosFiltradas.map((promo, index) => criarCardHTML(promo, index)).join('');
+    // Montar HTML
+    let html = '';
+    
+    if (promosFiltradas.length > 0) {
+        html = promosFiltradas.map((promo, index) => criarCardHTML(promo, index)).join('');
+    } else if (termoBusca) {
+        html = `
+            <div class="empty-state small">
+                <i class="fas fa-search"></i>
+                <p>Nenhuma promoção ativa para "${termoBusca}"</p>
+            </div>
+        `;
+    }
+    
+    // Adicionar box de resultados em categorias
+    if (temResultadosCategorias) {
+        html += criarBoxResultadosCategorias(resultadosCategorias);
+    }
+    
+    container.innerHTML = html;
 
     // Adicionar event listeners nos cards
     document.querySelectorAll('.promo-card').forEach(card => {
@@ -307,15 +408,36 @@ window.compartilharWhatsApp = function(tipo, promo) {
     let texto = '';
     
     if (tipo === 'cupom') {
-        texto = `🏷️ CUPOM ${promo.loja.toUpperCase()}\n\n${promo.descricaoCupom}\n\n🏷️ Cupom: ${promo.codigoCupom}\n\n👉 ${promo.link}`;
+        // Formato para cupom
+        texto = `🔥 CUPOM ${promo.loja.toUpperCase()}\n\n`;
+        texto += `${promo.descricaoCupom}\n\n`;
+        texto += `🎟️ Cupom: ${promo.codigoCupom}\n\n`;
+        texto += `👉 ${promo.link}`;
     } else {
-        texto = `🛒 ${promo.loja.toUpperCase()}\n\n${promo.produto}\n\n💲 R$ ${promo.preco.toFixed(2).replace('.', ',')}`;
+        // Formato para promoção
+        // Título com emoji 🔥 (sem nome da loja)
+        texto = `🔥 ${promo.produto}\n\n`;
+        
+        // Preço atual em negrito
+        texto += `💲 *R$ ${promo.preco.toFixed(2).replace('.', ',')}*`;
+        
+        // Preço antigo riscado (se houver)
         if (promo.precoAntigo && promo.precoAntigo > promo.preco) {
             const desconto = Math.round((1 - promo.preco / promo.precoAntigo) * 100);
-            texto += ` (era R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')} = -${desconto}%)`;
+            texto += ` ~De R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}~ (-${desconto}%)`;
         }
-        if (promo.info) texto += `\n${promo.info}`;
-        if (promo.cupom) texto += `\n🏷️ Cupom: ${promo.cupom}`;
+        
+        // Info extra (parcelamento, frete, etc)
+        if (promo.info) {
+            texto += `\n${promo.info}`;
+        }
+        
+        // Cupom (se houver)
+        if (promo.cupom) {
+            texto += `\n\n🎟️ Cupom: ${promo.cupom}`;
+        }
+        
+        // Link
         texto += `\n\n👉 ${promo.link}`;
     }
 
