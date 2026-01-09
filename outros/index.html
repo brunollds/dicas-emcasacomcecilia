@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produtos selecionados com os melhores preços - Em Casa com Cecília">
+    
+    <title>Categoria - Em Casa com Cecília</title>
+    
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    
+    <style>
+        /* ========== ESTILOS DA PÁGINA DE CATEGORIA ========== */
+        
+        /* Sub-banner da categoria */
+        .category-banner {
+            background: linear-gradient(135deg, var(--orange) 0%, var(--yellow) 50%, var(--green) 100%);
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .category-banner h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .category-banner p {
+            color: rgba(255,255,255,0.95);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .category-banner .category-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Main content */
+        .main-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px 40px;
+        }
+        
+        /* Grid de produtos */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        @media (max-width: 600px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        
+        /* Card de produto */
+        .product-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 220px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 15px;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-name {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .product-price-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--green);
+        }
+        
+        .product-price small {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+            display: block;
+        }
+        
+        /* Stores row */
+        .stores-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .store-btn {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            flex: 1;
+            min-width: 45%;
+            justify-content: center;
+        }
+        
+        .store-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .store-btn img {
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+        }
+        
+        .store-btn.amazon {
+            background: #ff9900;
+            color: #000;
+        }
+        
+        .store-btn.mercadolivre {
+            background: #ffe600;
+            color: #000;
+        }
+        
+        .store-btn.shopee {
+            background: #ee4d2d;
+            color: #fff;
+        }
+        
+        .store-btn.magalu {
+            background: #0086ff;
+            color: #fff;
+        }
+        
+        .store-btn.best {
+            position: relative;
+        }
+        
+        .store-btn.best::after {
+            content: '★';
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: var(--green);
+            color: #fff;
+            font-size: 0.6rem;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+        
+        .empty-state i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+        
+        .empty-state h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+        
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+        
+        .loading i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Contador de produtos */
+        .products-count {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+        
+        /* Category link active */
+        .category-link.active {
+            color: var(--orange);
+            border-bottom: 2px solid var(--orange);
+        }
+    </style>
+</head>
+<body>
+    <!-- CTA WhatsApp - Topo -->
+    <div class="top-bar">
+        <a href="https://chat.whatsapp.com/GwouQfaZMrj32j7pKOIZbQ" target="_blank" class="top-bar-cta">
+            <i class="fab fa-whatsapp"></i>
+            <span class="pulse-dot"></span>
+            <span>Receba as melhores promoções no WhatsApp!</span>
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+
+    <!-- Header Principal -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img src="/images/logo-icon.png" alt="Em Casa com Cecília">
+                <div class="logo-text">
+                    <span class="logo-title">Em Casa com Cecília</span>
+                    <span class="logo-subtitle">Promoções & Indicações</span>
+                </div>
+            </a>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar promoções...">
+            </div>
+            <div class="header-actions">
+                <a href="https://emcasacomcecilia.com" target="_blank" class="header-btn">
+                    <i class="fas fa-home"></i>
+                    <span>Site Principal</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <nav class="categories-nav">
+        <div class="categories-wrapper" id="categoriesWrapper">
+            <button class="categories-arrow left" id="scrollLeft">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="categories-container" id="categoriesContainer">
+                <a href="/" class="category-link featured" data-category="todos">
+                    <i class="fas fa-fire"></i>
+                    <span>Promoções</span>
+                </a>
+                <a href="/damie/" class="category-link featured" data-category="damie">
+                    <i class="fas fa-star"></i>
+                    <span>Damie</span>
+                </a>
+                <div class="category-separator"></div>
+                <a href="/cozinha/" class="category-link" data-category="cozinha">
+                    <i class="fas fa-utensils"></i>
+                    <span>Cozinha</span>
+                </a>
+                <a href="/tecnologia/" class="category-link" data-category="tecnologia">
+                    <i class="fas fa-laptop"></i>
+                    <span>Tecnologia</span>
+                </a>
+                <a href="/casa-inteligente/" class="category-link" data-category="casa-inteligente">
+                    <i class="fas fa-wifi"></i>
+                    <span>Casa Inteligente</span>
+                </a>
+                <a href="/sala-de-estar/" class="category-link" data-category="sala-de-estar">
+                    <i class="fas fa-couch"></i>
+                    <span>Sala de Estar</span>
+                </a>
+                <a href="/lavanderia/" class="category-link" data-category="lavanderia">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Lavanderia</span>
+                </a>
+                <a href="/banheiro/" class="category-link" data-category="banheiro">
+                    <i class="fas fa-bath"></i>
+                    <span>Banheiro</span>
+                </a>
+                <a href="/alimentos/" class="category-link" data-category="alimentos">
+                    <i class="fas fa-apple-alt"></i>
+                    <span>Alimentos</span>
+                </a>
+                <a href="/outros/" class="category-link" data-category="outros">
+                    <i class="fas fa-box"></i>
+                    <span>Outros</span>
+                </a>
+            </div>
+            <button class="categories-arrow right" id="scrollRight">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <script>
+        // Navegação por setas nas categorias
+        (function() {
+            const container = document.getElementById('categoriesContainer');
+            const wrapper = document.getElementById('categoriesWrapper');
+            const leftBtn = document.getElementById('scrollLeft');
+            const rightBtn = document.getElementById('scrollRight');
+            
+            function checkOverflow() {
+                if (container.scrollWidth > container.clientWidth) {
+                    wrapper.classList.add('has-overflow');
+                } else {
+                    wrapper.classList.remove('has-overflow');
+                }
+            }
+            
+            leftBtn.addEventListener('click', () => {
+                container.scrollBy({ left: -200, behavior: 'smooth' });
+            });
+            
+            rightBtn.addEventListener('click', () => {
+                container.scrollBy({ left: 200, behavior: 'smooth' });
+            });
+            
+            checkOverflow();
+            window.addEventListener('resize', checkOverflow);
+        })();
+    </script>
+
+    <!-- Banner da Categoria -->
+    <section class="category-banner">
+        <div class="category-icon" id="categoryIcon">🏠</div>
+        <h1 id="categoryTitle">Carregando...</h1>
+        <p id="categoryDescription">Produtos selecionados com os melhores preços</p>
+    </section>
+    
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <p class="products-count" id="productsCount"></p>
+        
+        <div class="products-grid" id="productsGrid">
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Carregando produtos...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="/images/logo.png" alt="Em Casa com Cecília" class="footer-logo">
+                <p>Receitas fáceis que dão certo</p>
+            </div>
+            <div class="footer-links">
+                <h4>Indicações</h4>
+                <a href="/cozinha">Cozinha</a>
+                <a href="/tecnologia">Tecnologia</a>
+                <a href="/casa-inteligente">Casa Inteligente</a>
+                <a href="/damie">Damie</a>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <a href="https://emcasacomcecilia.com" target="_blank">Site Principal</a>
+                <a href="https://emcasacomcecilia.com/analises-e-reviews" target="_blank">Análises</a>
+                <a href="https://chat.whatsapp.com/GwouQfaZMrj32j7pKOIZbQ" target="_blank">WhatsApp</a>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/emcasacomcecilia" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@emcasacomcecilia" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@emcasacomcecilia" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/emcasacomcecilia" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Este site contém links de afiliados. Ao comprar através deles, podemos receber uma pequena comissão.</p>
+            <p>© 2025 Em Casa com Cecília. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Configuração das categorias
+        const categoriesConfig = {
+            'cozinha': {
+                title: 'Cozinha',
+                icon: '🍳',
+                description: 'Eletrodomésticos, utensílios e tudo para sua cozinha'
+            },
+            'tecnologia': {
+                title: 'Tecnologia',
+                icon: '💻',
+                description: 'Gadgets, eletrônicos e equipamentos tecnológicos'
+            },
+            'casa-inteligente': {
+                title: 'Casa Inteligente',
+                icon: '🏠',
+                description: 'Automação, assistentes virtuais e dispositivos smart'
+            },
+            'sala-de-estar': {
+                title: 'Sala de Estar',
+                icon: '🛋️',
+                description: 'Móveis, decoração e conforto para sua sala'
+            },
+            'lavanderia': {
+                title: 'Lavanderia',
+                icon: '🧺',
+                description: 'Máquinas, produtos e organização para lavanderia'
+            },
+            'banheiro': {
+                title: 'Banheiro',
+                icon: '🚿',
+                description: 'Acessórios, organização e itens para banheiro'
+            },
+            'alimentos': {
+                title: 'Alimentos & Bebidas',
+                icon: '🍎',
+                description: 'Produtos alimentícios e bebidas selecionados'
+            },
+            'outros': {
+                title: 'Outros',
+                icon: '📦',
+                description: 'Produtos variados para toda a casa'
+            }
+        };
+
+        // Detectar categoria pela URL
+        function getCategoryFromURL() {
+            const path = 'outros'; // Categoria fixa
+            return path || 'todos';
+        }
+
+        // Atualizar header da categoria
+        function updateCategoryHeader(category) {
+            const config = categoriesConfig[category] || {
+                title: 'Produtos',
+                icon: '🏠',
+                description: 'Produtos selecionados com os melhores preços'
+            };
+            
+            document.getElementById('categoryIcon').textContent = config.icon;
+            document.getElementById('categoryTitle').textContent = config.title;
+            document.getElementById('categoryDescription').textContent = config.description;
+            document.title = `${config.title} - Em Casa com Cecília`;
+            
+            // Marcar link ativo no menu
+            document.querySelectorAll('.category-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.dataset.category === category) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Formatar preço
+        function formatPrice(price) {
+            return price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        // Encontrar menor preço
+        function findLowestPrice(prices) {
+            let lowest = Infinity;
+            let lowestStore = '';
+            
+            for (const [store, data] of Object.entries(prices)) {
+                if (data.price < lowest) {
+                    lowest = data.price;
+                    lowestStore = store;
+                }
+            }
+            
+            return { price: lowest, store: lowestStore };
+        }
+
+        // Gerar HTML do card de produto
+        function createProductCard(product) {
+            const lowest = findLowestPrice(product.prices);
+            
+            let storesHTML = '';
+            const storeClasses = {
+                'Amazon': 'amazon',
+                'Mercado Livre': 'mercadolivre',
+                'Shopee': 'shopee',
+                'Magazine Luiza': 'magalu'
+            };
+            
+            for (const [store, data] of Object.entries(product.prices)) {
+                const storeClass = storeClasses[store] || '';
+                const isBest = store === lowest.store ? 'best' : '';
+                storesHTML += `
+                    <a href="${data.link}" target="_blank" class="store-btn ${storeClass} ${isBest}">
+                        R$ ${formatPrice(data.price)}
+                    </a>
+                `;
+            }
+            
+            return `
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}" onerror="this.src='https://via.placeholder.com/300x200/f5f5f5/999?text=Produto'">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">${product.name}</div>
+                        <div class="product-price-row">
+                            <div class="product-price">
+                                R$ ${formatPrice(lowest.price)}
+                                <small>melhor preço em ${lowest.store}</small>
+                            </div>
+                        </div>
+                        <div class="stores-row">
+                            ${storesHTML}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Carregar e exibir produtos
+        async function loadProducts() {
+            const category = getCategoryFromURL();
+            updateCategoryHeader(category);
+            
+            try {
+                const response = await fetch('/data/products.json');
+                const products = await response.json();
+                
+                // Filtrar por categoria
+                const filtered = products.filter(p => p.category === category);
+                
+                const grid = document.getElementById('productsGrid');
+                const count = document.getElementById('productsCount');
+                
+                if (filtered.length === 0) {
+                    grid.innerHTML = `
+                        <div class="empty-state">
+                            <i class="fas fa-box-open"></i>
+                            <h2>Nenhum produto encontrado</h2>
+                            <p>Em breve adicionaremos produtos nesta categoria!</p>
+                            <a href="/" style="color: var(--orange); margin-top: 15px; display: inline-block;">
+                                ← Voltar para promoções
+                            </a>
+                        </div>
+                    `;
+                    count.textContent = '';
+                    return;
+                }
+                
+                count.textContent = `${filtered.length} produto${filtered.length > 1 ? 's' : ''} encontrado${filtered.length > 1 ? 's' : ''}`;
+                grid.innerHTML = filtered.map(createProductCard).join('');
+                
+            } catch (error) {
+                console.error('Erro ao carregar produtos:', error);
+                document.getElementById('productsGrid').innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h2>Erro ao carregar</h2>
+                        <p>Não foi possível carregar os produtos. Tente novamente.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', loadProducts);
+    </script>
+</body>
+</html>
