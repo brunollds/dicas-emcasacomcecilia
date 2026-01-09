@@ -17,7 +17,7 @@ export default defineConfig({
         lavanderia: resolve(__dirname, 'lavanderia/index.html'),
         banheiro: resolve(__dirname, 'banheiro/index.html'),
         alimentos: resolve(__dirname, 'alimentos/index.html'),
-        outros: resolve(__dirname, 'Outros/index.html'),
+        outros: resolve(__dirname, 'outros/index.html'),
         damie: resolve(__dirname, 'damie/index.html'),
       },
     },
