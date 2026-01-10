@@ -138,5 +138,8 @@ jobs:
           git add data/history/*.json || true
           
           # Só commita se tiver mudanças
-          git diff --staged --quiet || git commit -m "🤖 Promoções atualizadas [$(date +'%d/%m %H:%M')]"
-          git push
+          if ! git diff --staged --quiet; then
+            git commit -m "🤖 Promoções atualizadas [$(date +'%d/%m %H:%M')]"
+            git pull --rebase origin main
+            git push
+          fi

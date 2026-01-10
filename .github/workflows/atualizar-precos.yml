@@ -47,5 +47,8 @@ jobs:
           git add public/data/products.json
           
           # Só commita se tiver mudanças
-          git diff --staged --quiet || git commit -m "🤖 Preços atualizados [$(date +'%d/%m %H:%M')]"
-          git push
+          if ! git diff --staged --quiet; then
+            git commit -m "🤖 Preços atualizados [$(date +'%d/%m %H:%M')]"
+            git pull --rebase origin main
+            git push
+          fi
