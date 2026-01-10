@@ -6,10 +6,20 @@ INBOX_FILE = Path("data/inbox/unified.json")
 OUT_FILE = Path("data/inbox/ranked.json")
 
 # ======================================================
-# Configuração de Pesos e Filtros
+# 🔒 Lista de Lojas Permitidas (Suas Afiliações)
 # ======================================================
+# Se a loja não contiver uma dessas palavras, será descartada.
+ALLOWED_STORES = [
+    "amazon", 
+    "shopee", 
+    "mercado livre", "mercadolivre", 
+    "magalu", "magazine luiza", "magazine voce",
+    "aliexpress", 
+    "damie", 
+    "tiktok"
+]
 
-# Palavras que, se estiverem no título, BANEM a oferta
+# Palavras que banem o produto (acessórios inúteis, serviços)
 BLOCKLIST = [
     "capinha", "capa para", "película", "pelicula", 
     "cabo usb", "adaptador", "suporte para", 
@@ -19,18 +29,13 @@ BLOCKLIST = [
     "refil", "pulseira para"
 ]
 
-# Palavras que dão pontos extras (Interesse)
+# Palavras que dão pontos extras (Produtos de desejo)
 INTERESTS = [
     ("rtx", 50), ("iphone", 40), ("galaxy s", 30), 
     ("notebook", 30), ("ps5", 40), ("xbox", 30), 
     ("oled", 30), ("qled", 30), ("ar condicionado", 40),
-    ("lava e seca", 30), ("geladeira", 20)
-]
-
-# Lojas confiáveis (Pontos extras)
-TRUSTED_STORES = [
-    "amazon", "mercadolivre", "mercado livre", "magalu", 
-    "magazine luiza", "kabum", "terabyte", "pichau", "fast shop"
+    ("lava e seca", 30), ("geladeira", 20),
+    ("air fryer", 20), ("fritadeira", 20)
 ]
 
 def load_json(path):
@@ -42,84 +47,82 @@ def load_json(path):
 
 def calculate_score(item):
     score = 0
-    title = item.get("title", "").lower()
-    store = item.get("store", "").lower()
+    title = str(item.get("title", "")).lower()
+    store = str(item.get("store", "")).lower()
     price = item.get("price", 0)
 
-    # 1. Filtro de Bloqueio (Retorna -1 para descartar)
+    # 1. Filtro de Loja Permitida (CRÍTICO)
+    # Se a loja não estiver na lista permitida, tchau.
+    if not any(loja in store for loja in ALLOWED_STORES):
+        # Debug: Pode descomentar para ver o que está perdendo
+        # print(f"🚫 Loja não afiliada: {store}")
+        return -1
+
+    # 2. Filtro de Palavras Banidas
     for bad_word in BLOCKLIST:
         if bad_word in title:
             return -1
 
-    # 2. Pontos por Interesse
+    # 3. Pontuação Base
+    score = 50 # Começa com 50 se passou nos filtros
+
+    # 4. Bônus por Palavras-Chave
     for keyword, points in INTERESTS:
         if keyword in title:
             score += points
 
-    # 3. Pontos por Loja Confiável
-    if any(s in store for s in TRUSTED_STORES):
-        score += 10
-
-    # 4. Pontos por Histórico (Se disponível)
-    # Se for o menor preço da história, ganha MUITOS pontos
+    # 5. Bônus por Menor Preço Histórico (Se disponível)
     if item.get("is_lowest_price"):
-        score += 50
+        score += 30
     
-    # Se o preço atual for menor que a média histórica
-    avg = item.get("history_avg")
-    if avg and price < avg:
-        discount = ((avg - price) / avg) * 100 # % de desconto real
-        score += int(discount) # +1 ponto por % de desconto
-
-    # 5. Penalidade para preços muito baixos (provável erro ou acessório)
+    # 6. Penalidade para preços muito baixos (provável erro ou acessório não filtrado)
     if price < 10: 
         score -= 20
     
-    # 6. Penalidade para Marketplace desconhecido ou sem loja
-    if not store or store == "desconhecida":
-        score -= 10
-
     return score
 
 def rank_offers():
-    print("⚖️  Iniciando Ranking e Filtragem...")
+    print("⚖️  Iniciando Ranking (Filtro de Afiliação Ativo)...")
     items = load_json(INBOX_FILE)
     
     ranked_items = []
-    rejected = 0
+    rejected_store = 0
+    rejected_block = 0
 
     for item in items:
+        # Verifica loja antes de tudo para estatística
+        store_lower = str(item.get("store", "")).lower()
+        if not any(loja in store_lower for loja in ALLOWED_STORES):
+            rejected_store += 1
+            continue
+
         score = calculate_score(item)
         
         if score < 0:
-            rejected += 1
-            continue # Item banido
+            rejected_block += 1
+            continue 
             
-        # Adiciona score ao objeto para debug
         item["score"] = score
         
-        # Define etiquetas (Tags)
+        # Tags Visuais
         tags = []
         if item.get("is_lowest_price"): tags.append("🔥 Menor Preço")
-        if score > 80: tags.append("💎 Top Oferta")
-        if "frete grátis" in str(item).lower(): tags.append("🚚 Frete Grátis")
-        
+        if score >= 80: tags.append("💎 Top")
         item["tags"] = tags
+        
         ranked_items.append(item)
 
-    # Ordena: Maior Score -> Menor Preço
+    # Ordena
     ranked_items.sort(key=lambda x: (x["score"], -x["price"]), reverse=True)
 
     # Salva
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     OUT_FILE.write_text(json.dumps(ranked_items, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"📊 Processados: {len(items)}")
-    print(f"🚫 Rejeitados (Blocklist): {rejected}")
-    print(f"✅ Aprovados: {len(ranked_items)}")
-    print(f"🏆 Top 3 Ofertas:")
-    for i, item in enumerate(ranked_items[:3]):
-        print(f"   {i+1}. [{item['score']}pts] {item['title']} (R$ {item['price']})")
+    print(f"📊 Total Entrada: {len(items)}")
+    print(f"🚫 Rejeitados (Loja não afiliada): {rejected_store}")
+    print(f"🗑️ Rejeitados (Blocklist/Lixo): {rejected_block}")
+    print(f"✅ Aprovados para Rascunho: {len(ranked_items)}")
 
 if __name__ == "__main__":
     rank_offers()

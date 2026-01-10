@@ -462,99 +462,6 @@
             opacity: 1;
         }
 
-        /* Rascunho cards */
-        .rascunho-card {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 12px;
-        }
-
-        .rascunho-card:hover {
-            border-color: rgba(255,255,255,0.2);
-        }
-
-        .rascunho-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 10px;
-            margin-bottom: 8px;
-        }
-
-        .rascunho-title {
-            font-weight: 600;
-            font-size: 0.95rem;
-            flex: 1;
-            line-height: 1.3;
-        }
-
-        .rascunho-price {
-            color: #4ade80;
-            font-weight: 700;
-            font-size: 1rem;
-            white-space: nowrap;
-        }
-
-        .rascunho-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            font-size: 0.8rem;
-            opacity: 0.7;
-            margin-bottom: 12px;
-        }
-
-        .rascunho-meta span {
-            background: rgba(255,255,255,0.1);
-            padding: 3px 8px;
-            border-radius: 4px;
-        }
-
-        .rascunho-actions {
-            display: flex;
-            gap: 8px;
-        }
-
-        .rascunho-actions .btn {
-            flex: 1;
-            padding: 10px;
-            font-size: 0.85rem;
-        }
-
-        .btn-use {
-            background: linear-gradient(90deg, #ff0844 0%, #ff6b6b 100%);
-            color: #fff;
-        }
-
-        .btn-open {
-            background: rgba(255,255,255,0.1);
-            color: #fff;
-        }
-
-        .btn-open:hover {
-            background: rgba(255,255,255,0.2);
-        }
-
-        .btn-discard {
-            background: transparent;
-            color: #888;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .btn-discard:hover {
-            background: rgba(220,38,38,0.2);
-            border-color: #dc2626;
-            color: #dc2626;
-        }
-
-        .tempo-badge {
-            background: rgba(59, 130, 246, 0.3) !important;
-            color: #93c5fd !important;
-            font-weight: 600;
-        }
-
         /* Modal */
         .modal-overlay {
             display: none;
@@ -622,11 +529,12 @@
 
         <!-- Tabs -->
         <div class="tabs">
-            <button class="tab active" onclick="mudarTab('nova')">
-                <i class="fas fa-plus"></i> Nova
-            </button>
             <button class="tab" onclick="mudarTab('rascunhos')">
                 <i class="fas fa-inbox"></i> Rascunhos
+              </button>
+              
+            <button class="tab active" onclick="mudarTab('nova')">
+                <i class="fas fa-plus"></i> Nova
             </button>
             <button class="tab" onclick="mudarTab('lista')">
                 <i class="fas fa-list"></i> Lista
@@ -750,21 +658,6 @@
         </div>
 
         <!-- Tab: Lista de Promoções -->
-        <!-- Tab: Rascunhos (do pipeline editorial) -->
-        <div id="tab-rascunhos" class="tab-content">
-            <div class="status-bar">
-                <span><span class="count" id="totalRascunhos">0</span> rascunhos disponíveis</span>
-                <button class="refresh" onclick="carregarRascunhos()">
-                    <i class="fas fa-sync-alt"></i>
-                </button>
-            </div>
-
-            <div id="rascunhosList" class="promo-list">
-                <p style="text-align: center; opacity: 0.6;">Carregando rascunhos...</p>
-            </div>
-        </div>
-
-        <!-- Tab: Lista -->
         <div id="tab-lista" class="tab-content">
             <div class="status-bar">
                 <span><span class="count" id="totalPromos">0</span> promoções ativas</span>
@@ -772,6 +665,10 @@
                     <i class="fas fa-sync-alt"></i>
                 </button>
             </div>
+            <div id="tab-rascunhos" class="tab-content">
+  <div class="promo-list" id="rascunhosList"></div>
+</div>
+
 
             <div id="promoList" class="promo-list">
                 <p style="text-align: center; opacity: 0.6;">Carregando...</p>
@@ -823,7 +720,8 @@
             </a>
         </div>
     </div>
-
+    
+      
     <!-- Toast -->
     <div class="toast" id="toast"></div>
 
@@ -876,16 +774,21 @@
         function mudarTab(tab) {
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             event.target.closest('.tab').classList.add('active');
-            
-            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-            document.getElementById(`tab-${tab}`).classList.add('active');
 
-            if (tab === 'lista') {
-                carregarLista();
-            } else if (tab === 'rascunhos') {
-                carregarRascunhos();
-            }
+            document.querySelectorAll('.tab-content').forEach(c => {
+            c.classList.remove('active');
+            c.style.display = 'none'; // 🔴 GARANTE RESET
+        });
+
+            const alvo = document.getElementById(`tab-${tab}`);
+            alvo.classList.add('active');
+            alvo.style.display = 'block'; // 🔴 GARANTE VISIBILIDADE
+
+        if (tab === 'lista') carregarLista();
+        if (tab === 'rascunhos') carregarRascunhos();
         }
+
+
 
         // =====================================================
         // Tipo: Promoção ou Cupom
@@ -1095,6 +998,12 @@
                 mostrarToast('Configure o JSONBin primeiro! (aba Config)', 'error');
                 return;
             }
+
+            if (!link || link.trim() === '') {
+              alert('⚠️ Gere e cole o link afiliado antes de publicar.');
+                return;
+            }
+
 
             const btn = document.getElementById('btnPublicar');
             btn.disabled = true;
@@ -1347,212 +1256,95 @@
 
         // Inicializar
         atualizarPreview();
-
-        // =====================================================
-        // Rascunhos (pipeline editorial)
-        // =====================================================
-        let rascunhosData = [];
-        
-        // IDs já usados/descartados (persiste no localStorage)
-        let rascunhosUsados = JSON.parse(localStorage.getItem('rascunhosUsados') || '[]');
-
-        function tempoRelativo(dataStr) {
-            if (!dataStr) return '';
-            
-            const data = new Date(dataStr);
-            const agora = new Date();
-            const diffMs = agora - data;
-            const diffMin = Math.floor(diffMs / 60000);
-            const diffHoras = Math.floor(diffMin / 60);
-            const diffDias = Math.floor(diffHoras / 24);
-            
-            if (diffMin < 1) return 'agora';
-            if (diffMin < 60) return `${diffMin}m`;
-            if (diffHoras < 24) return `${diffHoras}h`;
-            if (diffDias < 7) return `${diffDias}d`;
-            return `${Math.floor(diffDias / 7)}sem`;
-        }
-
         async function carregarRascunhos() {
-            const container = document.getElementById('rascunhosList');
-            const total = document.getElementById('totalRascunhos');
+            console.log("🚀 carregarRascunhos iniciado");
 
-            try {
-                const response = await fetch('data/inbox/rascunhos.json');
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
+  const container = document.getElementById('rascunhosList');
+  if (!container) {
+    console.error("❌ #rascunhosList não encontrado");
+    return;
+  }
 
-                let dados = await response.json();
-                
-                // Filtrar os já usados/descartados
-                dados = dados.filter(item => !rascunhosUsados.includes(item.id));
-                
-                // Ordenar por tempo (mais recente primeiro)
-                dados.sort((a, b) => {
-                    const dataA = new Date(a.collected_at || a.editorial_checked_at || 0);
-                    const dataB = new Date(b.collected_at || b.editorial_checked_at || 0);
-                    return dataB - dataA;
-                });
-                
-                rascunhosData = dados;
-                total.textContent = rascunhosData.length;
+  let dados;
+  try {
+    const res = await fetch('/data/inbox/rascunhos.json');
+    dados = await res.json();
+  } catch (e) {
+    console.error("❌ Erro ao carregar rascunhos:", e);
+    container.innerHTML = "<p>Erro ao carregar rascunhos</p>";
+    return;
+  }
 
-                if (rascunhosData.length === 0) {
-                    container.innerHTML = '<p style="text-align: center; opacity: 0.6;">Nenhum rascunho disponível</p>';
-                    return;
-                }
+  console.log("📦 Rascunhos carregados:", dados.length);
 
-                container.innerHTML = rascunhosData.map((item, index) => {
-                    const titulo = item.title || '(sem título)';
-                    const preco = item.price ? `R$ ${item.price.toFixed(2).replace('.', ',')}` : item.price_text || '';
-                    const loja = item.store || '';
-                    const fonte = item.source || '';
-                    const tempo = tempoRelativo(item.collected_at || item.editorial_checked_at);
+  container.innerHTML = "";
 
-                    return `
-                        <div class="rascunho-card" data-id="${item.id}">
-                            <div class="rascunho-header">
-                                <span class="rascunho-title">${titulo}</span>
-                                <span class="rascunho-price">${preco}</span>
-                            </div>
-                            <div class="rascunho-meta">
-                                ${tempo ? `<span class="tempo-badge">🕐 ${tempo}</span>` : ''}
-                                ${loja ? `<span>🏪 ${loja}</span>` : ''}
-                                ${fonte ? `<span>📥 ${fonte}</span>` : ''}
-                            </div>
-                            <div class="rascunho-actions">
-                                <button class="btn btn-open" onclick="abrirRascunho('${item.id}')">
-                                    <i class="fas fa-external-link-alt"></i> Abrir
-                                </button>
-                                <button class="btn btn-use" onclick="usarRascunho('${item.id}')">
-                                    <i class="fas fa-check"></i> Usar
-                                </button>
-                                <button class="btn btn-discard" onclick="descartarRascunho('${item.id}')">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                    `;
-                }).join('');
+  if (!Array.isArray(dados) || dados.length === 0) {
+    container.innerHTML = "<p>Nenhum rascunho disponível</p>";
+    return;
+  }
 
-            } catch (error) {
-                console.error('Erro ao carregar rascunhos:', error);
-                container.innerHTML = `
-                    <p style="text-align: center; color: #f59e0b;">
-                        <i class="fas fa-exclamation-triangle"></i><br>
-                        Não foi possível carregar rascunhos<br>
-                        <small style="opacity: 0.7;">Verifique se o arquivo data/inbox/rascunhos.json existe</small>
-                    </p>
-                `;
-            }
-        }
+  dados.forEach((item, index) => {
+    try {
+      const div = document.createElement("div");
+      div.className = "promo-card";
 
-        function abrirRascunho(id) {
-            const item = rascunhosData.find(r => r.id === id);
-            if (item && item.url) {
-                window.open(item.url, '_blank');
-            } else {
-                mostrarToast('URL não disponível', 'error');
-            }
-        }
+      const titulo = item.title || "(sem título)";
+      const preco = item.price_text || "";
+      const loja = item.store || "";
+      const url = item.url || "#";
 
-        function marcarComoUsado(id) {
-            // Adicionar aos usados
-            if (!rascunhosUsados.includes(id)) {
-                rascunhosUsados.push(id);
-                localStorage.setItem('rascunhosUsados', JSON.stringify(rascunhosUsados));
-            }
-            
-            // Remover da lista atual
-            rascunhosData = rascunhosData.filter(r => r.id !== id);
-            
-            // Remover card da UI com animação
-            const card = document.querySelector(`.rascunho-card[data-id="${id}"]`);
-            if (card) {
-                card.style.transition = 'all 0.3s ease';
-                card.style.opacity = '0';
-                card.style.transform = 'translateX(-100%)';
-                setTimeout(() => card.remove(), 300);
-            }
-            
-            // Atualizar contador
-            document.getElementById('totalRascunhos').textContent = rascunhosData.length;
-        }
+      div.innerHTML = `
+        <strong>${titulo}</strong><br>
+        ${preco} ${loja ? "— " + loja : ""}
+        <div style="margin-top:8px">
+          <button onclick="window.open('${url}', '_blank')">Abrir página</button>
+          <button onclick="usarRascunho('${item.id}')">Usar</button>
+        </div>
+      `;
 
-        function usarRascunho(id) {
-            const item = rascunhosData.find(r => r.id === id);
-            if (!item) {
-                mostrarToast('Rascunho não encontrado', 'error');
-                return;
-            }
+      container.appendChild(div);
+    } catch (err) {
+      console.error("❌ Erro ao renderizar item", index, item, err);
+    }
+  });
 
-            // Marcar como usado (remove da lista)
-            marcarComoUsado(id);
+  console.log("✅ Renderização de rascunhos concluída");
+}
+function usarRascunho(id) {
+  fetch('/data/inbox/rascunhos.json')
+    .then(r => r.json())
+    .then(items => {
+      const item = items.find(i => i.id === id);
+      if (!item) return;
 
-            // Mudar para tab Nova
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.querySelector('.tab').classList.add('active');
-            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-            document.getElementById('tab-nova').classList.add('active');
+      mudarTab('nova');
 
-            // Definir tipo como promoção
-            mudarTipo('promo');
+      // Preenche SOMENTE o que faz sentido
+      document.getElementById('produto').value = item.title || '';
+      document.getElementById('preco').value = item.price || '';
+      document.getElementById('loja').value = item.store || 'Outras';
 
-            // Preencher campos com dados do rascunho
-            document.getElementById('produto').value = item.title || '';
-            document.getElementById('preco').value = item.price || '';
-            
-            // Mapear loja
-            const lojaMap = {
-                'amazon': 'Amazon',
-                'mercado livre': 'Mercado Livre',
-                'mercadolivre': 'Mercado Livre',
-                'shopee': 'Shopee',
-                'magalu': 'Magazine Luiza',
-                'magazine luiza': 'Magazine Luiza',
-                'kabum': 'Kabum',
-                'aliexpress': 'Aliexpress'
-            };
-            const lojaLower = (item.store || '').toLowerCase();
-            document.getElementById('loja').value = lojaMap[lojaLower] || 'Outras';
+      // Info auxiliar (editável)
+      document.getElementById('info').value = item.price_text || '';
 
-            // Info auxiliar
-            if (item.price_text) {
-                document.getElementById('info').value = item.price_text;
-            }
+      // 🔴 Link NÃO é preenchido de propósito
+      window.open(item.url, '_blank');
 
-            // NÃO preencher link - deve ser manual (afiliado)
-            document.getElementById('link').value = '';
+      atualizarPreview();
+    });
+}
 
-            // Atualizar preview
-            atualizarPreview();
 
-            // Abrir URL do produto em nova aba para pegar link afiliado
-            if (item.url) {
-                window.open(item.url, '_blank');
-            }
-
-            mostrarToast('Rascunho carregado! Cole seu link afiliado.', 'success');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function descartarRascunho(id) {
-            if (!confirm('Descartar este rascunho?')) return;
-            
-            marcarComoUsado(id);
-            mostrarToast('Rascunho descartado', 'success');
-        }
-        
-        // Limpar histórico de usados (botão na aba config ou manual)
-        function limparRascunhosUsados() {
-            if (!confirm('Isso vai restaurar todos os rascunhos descartados. Continuar?')) return;
-            rascunhosUsados = [];
-            localStorage.removeItem('rascunhosUsados');
-            carregarRascunhos();
-            mostrarToast('Histórico limpo', 'success');
-        }
     </script>
+    <script>
+        console.log("🚀 ADMIN JS EXECUTADO");
+        
+        window.addEventListener('DOMContentLoaded', () => {
+          console.log("📦 DOM carregado");
+          carregarRascunhos();
+        });
+        </script>
+        
 </body>
 </html>

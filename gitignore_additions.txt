@@ -16,3 +16,11 @@ data/logs/
 # Debug files
 debug_*.json
 
+# Ignorar arquivos temporários de coleta (lixo)
+data/raw/*.json
+data/inbox/unified.json
+data/inbox/ranked.json
+
+# MAS manter o histórico e os rascunhos (memória)
+!data/history/prices.json
+!data/inbox/rascunhos.json

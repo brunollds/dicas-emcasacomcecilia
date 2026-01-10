@@ -1,267 +1,69 @@
-# 📦 Projeto Dicas
+# 📦 Projeto Dicas (Modo 2.0)
 
-Pipeline editorial para **coleta, curadoria e publicação de promoções**, com decisão final **humana** e foco em **preço real**, não apenas na fonte.
+Pipeline de Engenharia de Dados para **coleta, curadoria e publicação de promoções**.
+Focado em **preço real**, histórico confiável e decisão final **humana**.
 
---
+> 🚀 **Versão 2.0:** Migração completa para **Python + Playwright** com estratégias de *Smart Scroll* e *DOM Extraction* para contornar bloqueios modernos.
+
+---
 
 ## 🎯 Objetivo
+Criar um sistema de "Radar de Ofertas" que:
+1.  **Coleta** dados de múltiplas fontes (Pelando, Promobit, Gatry, Gafanho).
+2.  **Normaliza** os dados em um formato universal.
+3.  **Analisa** o histórico local para detectar descontos reais.
+4.  **Entrega** rascunhos prontos para um **Painel Admin**, onde um humano decide o que publicar.
 
-Criar um sistema confiável para:
-
-- Coletar promoções automaticamente de múltiplos sites
-- Normalizar e deduplicar dados
-- Avaliar se o preço realmente é uma boa oferta
-- Permitir curadoria humana antes da publicação
-- Publicar no site e apoiar postagem manual no WhatsApp
-
-> 🔑 **Princípio central:** nenhuma promoção é publicada automaticamente sem validação humana, por causa de links afiliados e critérios editoriais.
+> 🔑 **Princípio Central:** Nenhuma promoção vai pro ar sem aprovação humana (para inserção de link afiliado e validação editorial).
 
 ---
 
-## 🧠 Filosofia Editorial
+## 🏗️ Arquitetura do Pipeline
 
-- **Fonte não importa** (Pelando, Gatry, Promobit, etc.)
-- **Loja não tem peso diferenciado**
-- **Preço é o fator principal**
-- Histórico local é mais importante que preço “de tabela”
-- Link afiliado **sempre manual**
-- Publicação é uma decisão editorial, não algorítmica
+O fluxo de dados segue o caminho: **Raw -> Inbox -> History -> Ranking -> Admin**.
 
----
-
-## 🏗️ Arquitetura Geral
-
-O projeto é dividido em 4 camadas:
-
-1. **Ingestão** – coleta de dados
-2. **Processamento editorial** – normalização, ranking, histórico
-3. **Curadoria humana** – CLI + Admin HTML
-4. **Publicação** – site estático
-
----
-
-## 1️⃣ Ingestão de Dados
-
+### 1️⃣ Coleta (Ingestão)
 📁 `scripts/collectors/`
+Scripts robustos em **Playwright** que simulam navegação real.
+- **Estratégia:** "Smart Scroll" (rola a página até atingir meta de itens) + extração via DOM.
+- **Fontes:**
+  - `pelando_playwright.py`: Aba Recentes (Infinite Scroll).
+  - `promobit_playwright.py`: Limpeza de títulos e URLs.
+  - `gatry_playwright.py`: Clique físico no botão "Carregar mais" via JS.
+  - `gafanho_playwright.py`: Injeção no escopo Angular.
+- **Saída:** `data/raw/*.json`
 
-- Implementado em **Python + Playwright**
-- Usa DOM real (não APIs públicas)
-- Compatível com sites com JS pesado
+### 2️⃣ Normalização (Unificação V4)
+📁 `scripts/normalizers/unify.py`
+Transforma dados caóticos em um padrão limpo.
+- Resolve conflitos de chaves (`url` vs `link`, `title` vs `name`).
+- Gera **IDs Universais** (ex: `gatry-12345`) para evitar duplicatas.
+- Reconstrói URLs relativas e corrige preços.
+- **Saída:** `data/inbox/unified.json`
 
-### Fontes integradas
-
-- Pelando
-- Gatry
-- Promobit
-- Gafanho
-
-📦 Saída:
-```
-data/raw/*.json
-```
-
----
-
-## 2️⃣ Normalização e Deduplicação
-
-📁 `scripts/normalizers/`
-
-Responsável por:
-
-- Padronizar campos
-- Unificar todas as fontes
-- Eliminar duplicatas entre sites
-
-### Campos normalizados
-
-- `id`
-- `title`
-- `price`
-- `price_text`
-- `store`
-- `url`
-
-📦 Saída:
-```
-data/inbox/unified.json
-```
-
----
-
-## 3️⃣ Histórico de Preços
-
+### 3️⃣ Inteligência (Histórico e Ranking)
 📁 `scripts/history/price_history.py`
-
-Função:
-
-- Criar histórico **local** de preços
-- Registrar recorrência
-- Calcular mínimo e média
-
-📦 Dados:
-```
-data/history/prices.json
-```
-
-> Não depende de Google Shopping, Edge ou APIs externas.
-
----
-
-## 4️⃣ Ranking Editorial
+- Mantém um banco de dados local (`prices.json`) com a evolução de preço de cada ID.
+- Calcula: Mínimo Histórico, Média e Máxima.
 
 📁 `scripts/ranking/rank.py`
+- Aplica pontuação (Score 0-100) baseada em:
+  - Palavras-chave (ex: "RTX", "iPhone" ganham pontos).
+  - Menor preço histórico (Super bônus).
+  - Blocklist (ex: "capinha", "curso" são banidos).
+- **Saída:** `data/inbox/ranked.json`
 
-Características:
-
-- Fonte e loja não alteram score
-- Score baseado em:
-  - Preço
-  - Recorrência
-  - Histórico local
-  - Categoria (leve)
-
-📦 Saída:
-```
-data/inbox/ranked.json
-```
+### 4️⃣ Curadoria (Admin)
+📁 `admin.html` (Frontend) + `data/inbox/rascunhos.json` (Dados)
+- O script `apply_threshold.py` gera o arquivo de rascunhos.
+- O Admin lê esse arquivo e exibe cards prontos.
+- **Ação Humana:** Clicar em "Usar", inserir link afiliado e publicar.
 
 ---
 
-## 5️⃣ Limiar Editorial (Gate)
-
-📁 `scripts/editorial/apply_threshold.py`
-
-Separa automaticamente:
-
-- **Rascunhos** → vão para avaliação humana
-- **Rejeitados** → descartados
-
-📦 Saídas:
-```
-data/inbox/rascunhos.json
-data/inbox/rejeitados.json
-```
-
-⏱️ Política opcional:
-- Rascunhos expiram após 24h para evitar acúmulo
-
----
-
-## 6️⃣ CLI Editorial
-
-📁 `scripts/editorial/cli.py`
-
-Funções:
-
-- Listar promoções ranqueadas
-- Aprovar ou descartar
-- Preparar itens para publicação
-
-> ⚠️ CLI **não publica automaticamente**.
-
----
-
-## 7️⃣ Admin HTML (Curadoria Humana)
-
-📄 `admin.html`
-
-Papel central do projeto.
-
-### Funções
-
-- Visualizar promoções
-- Editar título, preço e texto
-- Copiar conteúdo para WhatsApp
-- Controlar o que já foi publicado
-
-### Regras importantes
-
-- ❌ Não publica sem link
-- 🔗 Link afiliado **sempre manual**
-- 🧭 Rascunho deve abrir a página do produto
-
-Tecnologia:
-- HTML + CSS + JS puro
-- Sem frameworks
-- Executado via:
-```bash
-python -m http.server
-```
-
----
-
-## 8️⃣ Publicação
-
-📁 `public/`
-
-### Arquivo central
-```
-public/data/products.json
-```
-
-- Fonte única do site público
-- Atualizado pelo admin
-
-### CI/CD
-
-📁 `.github/workflows/`
-
-- Publicação automática do site
-- Atualizações de preço
-
----
-
-## 🧰 Tecnologias Utilizadas
-
-### Backend
-- Python 3.13
-- Playwright
-- JSON como datastore
-
-### Frontend
-- HTML estático
-- CSS puro
-- JavaScript vanilla
-
-### Infra
-- GitHub Actions
-- Site estático
-
----
-
-## 🚧 Limitações Conhecidas
-
-- WhatsApp não permite automação direta
-- Admin HTML é legado e sensível a mudanças
-- UI não é reativa (decisão consciente)
-
----
-
-## 📍 Próximos Passos Seguros
-
-- Integrar rascunhos no admin **sem quebrar tabs existentes**
-- Criar adaptador JS isolado para rascunhos
-- Automatizar Telegram (opcional)
-
----
-
-## ✍️ Nota Final
-
-Este projeto **não é um bot de spam**.
-
-É uma **ferramenta editorial**, onde automação serve para **reduzir esforço**, não para substituir decisão humana.
-
----
-
-📌 Mantido com foco em controle, clareza e sustentabilidade editorial.
-
-
-## 🚀 Como Rodar o Pipeline de Coleta (Modo 2.0)
-
-Este projeto utiliza **Python + Playwright** para coletar ofertas. É necessário instalar as dependências antes.
+## 🚀 Como Rodar
 
 ### Pré-requisitos
 ```bash
 pip install playwright
 playwright install chromium
-

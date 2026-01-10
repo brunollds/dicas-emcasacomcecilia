@@ -32,11 +32,35 @@ Thumbs.db
 # Pasta Black Friday (temporária)
 Black Friday/
 
-# Arquivos extras
-Outros/
 
 # Dependências
 node_modules/
 
 # Build
 dist/
+
+# Adicione estas linhas ao seu .gitignore
+
+# Credenciais e tokens
+scripts/.env
+scripts/ml_tokens.json
+
+# Backups de JSON
+public/data/*.backup-*
+*.backup-*
+
+# Logs
+*.log
+data/logs/
+
+
+# Debug files
+
+# Ignorar arquivos temporários de coleta (lixo)
+data/raw/*.json
+data/inbox/unified.json
+data/inbox/ranked.json
+
+# MAS manter o histórico e os rascunhos (memória)
+!data/history/prices.json
+!data/inbox/rascunhos.json

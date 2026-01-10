@@ -115,11 +115,6 @@ AMAZON_ACCESS_KEY = os.getenv('AMAZON_ACCESS_KEY', '')
 AMAZON_SECRET_KEY = os.getenv('AMAZON_SECRET_KEY', '')
 AMAZON_PARTNER_TAG = os.getenv('AMAZON_PARTNER_TAG', '')
 
-# Shopee API
-SHOPEE_APP_ID = os.getenv('SHOPEE_APP_ID', '18366030282')
-SHOPEE_SECRET = os.getenv('SHOPEE_SECRET', '6O3BGLID65IBOKMCHQOXJ2TKJJDYVZ6R')
-SHOPEE_API_URL = "https://open-api.affiliate.shopee.com.br/graphql"
-
 
 # =====================================================
 # FUNÇÕES AUXILIARES
@@ -255,148 +250,88 @@ def scrape_mercadolivre(url):
 
 
 # =====================================================
-# SHOPEE API
+# SCRAPER SHOPEE
 # =====================================================
-
-def shopee_gerar_assinatura(app_id, timestamp, payload, secret):
-    """Gera assinatura SHA256 para API Shopee"""
-    base_string = f"{app_id}{timestamp}{payload}{secret}"
-    return hashlib.sha256(base_string.encode('utf-8')).hexdigest()
-
-
-def shopee_fazer_requisicao(query):
-    """Faz requisição GraphQL autenticada para a API Shopee"""
-    timestamp = int(time.time())
-    payload_dict = {"query": query}
-    payload = json.dumps(payload_dict, separators=(',', ':'))
-    
-    signature = shopee_gerar_assinatura(SHOPEE_APP_ID, timestamp, payload, SHOPEE_SECRET)
-    
-    headers = {
-        'Content-Type': 'application/json',
-        'Authorization': f'SHA256 Credential={SHOPEE_APP_ID}, Timestamp={timestamp}, Signature={signature}'
-    }
-    
-    response = requests.post(SHOPEE_API_URL, headers=headers, data=payload, timeout=30)
-    
-    try:
-        return response.json()
-    except:
-        return {"error": f"Resposta inválida: {response.text[:100]}"}
-
-
-def shopee_extrair_ids_da_url(url):
-    """
-    Extrai shop_id e item_id de uma URL Shopee.
-    Formatos:
-    - https://shopee.com.br/produto-i.123456.789012
-    - https://shopee.com.br/product/123456/789012
-    """
-    # Formato: produto-i.SHOPID.ITEMID
-    match = re.search(r'-i\.(\d+)\.(\d+)', url)
-    if match:
-        return match.group(1), match.group(2)
-    
-    # Formato: /product/SHOPID/ITEMID
-    match = re.search(r'/product/(\d+)/(\d+)', url)
-    if match:
-        return match.group(1), match.group(2)
-    
-    return None, None
-
-
-def shopee_buscar_produto(shop_id, item_id):
-    """Busca informações de um produto específico via API"""
-    query = '''
-    query {
-        productOfferV2(shopId: %s, itemId: %s, limit: 1) {
-            nodes {
-                productName
-                priceMin
-                priceMax
-                imageUrl
-                shopName
-                productLink
-                commissionRate
-            }
-        }
-    }
-    ''' % (shop_id, item_id)
-    
-    result = shopee_fazer_requisicao(query)
-    
-    if result.get('errors'):
-        return {"erro": str(result['errors'])}
-    
-    nodes = result.get('data', {}).get('productOfferV2', {}).get('nodes', [])
-    
-    if not nodes:
-        return {"erro": "Produto não encontrado na API Shopee"}
-    
-    item = nodes[0]
-    return {
-        "loja": "Shopee",
-        "titulo": item.get('productName', ''),
-        "preco": float(item.get('priceMin', 0)) if item.get('priceMin') else None,
-        "imagem": item.get('imageUrl', ''),
-        "shop_name": item.get('shopName', ''),
-        "disponivel": True,
-        "comissao": item.get('commissionRate', '')
-    }
-
-
-def shopee_gerar_link_afiliado(url):
-    """Gera link de afiliado para uma URL Shopee"""
-    query = '''
-    mutation {
-        generateShortLink(input: {originUrl: "%s", subIds: ["emcasacomcecilia"]}) {
-            shortLink
-        }
-    }
-    ''' % url
-    
-    result = shopee_fazer_requisicao(query)
-    
-    if result.get('errors'):
-        return None
-    
-    return result.get('data', {}).get('generateShortLink', {}).get('shortLink', '')
-
 
 def scrape_shopee(url):
     """
-    Busca dados da Shopee via API oficial.
-    Muito mais confiável que scraping!
+    Scraping da Shopee
+    NOTA: Shopee usa muito JavaScript e proteção anti-bot.
+    Recomendado usar API oficial quando disponível.
     """
+    store_config = STORE_CONFIGS["Shopee"]
+    
     try:
-        # Delay para rate limit
-        time.sleep(random.uniform(1, 2))
+        time.sleep(random.uniform(*store_config["delay"]))
         
-        # Extrair IDs da URL
-        shop_id, item_id = shopee_extrair_ids_da_url(url)
+        # Shopee tem problemas com redirects, usar timeout menor
+        response = requests.get(url, headers=get_headers(), timeout=10, allow_redirects=True)
         
-        if not shop_id or not item_id:
-            # Se não conseguir extrair IDs, tentar busca genérica
-            return {"erro": "Não foi possível extrair IDs da URL Shopee"}
+        if response.status_code != 200:
+            return {"erro": f"Status {response.status_code}"}
         
-        # Buscar produto via API
-        resultado = shopee_buscar_produto(shop_id, item_id)
+        html = response.text
+        soup = BeautifulSoup(html, 'html.parser')
+        resultado = {'loja': 'Shopee'}
         
-        if 'erro' in resultado:
-            return resultado
+        # Tentar seletores CSS
+        price_text = None
+        for selector in store_config["price_selectors"]:
+            elem = soup.select_one(selector)
+            if elem:
+                price_text = elem.text.strip()
+                break
         
-        # Tentar gerar link afiliado
-        link_afiliado = shopee_gerar_link_afiliado(url)
-        if link_afiliado:
-            resultado['link_afiliado'] = link_afiliado
+        # Fallback: regex para preço no HTML/JSON
+        if not price_text:
+            # Shopee armazena preço em centavos às vezes
+            match = re.search(r'"price"\s*:\s*(\d+)', html)
+            if match:
+                preco_raw = int(match.group(1))
+                # Se for muito alto, provavelmente está em centavos
+                if preco_raw > 100000:
+                    resultado['preco'] = preco_raw / 100000
+                else:
+                    resultado['preco'] = preco_raw
+        
+        if not resultado.get('preco') and price_text:
+            resultado['preco'] = parse_price(price_text)
+        
+        # Fallback: regex R$
+        if not resultado.get('preco'):
+            match = re.search(r'R\$\s*([\d.,]+)', html)
+            if match:
+                resultado['preco'] = parse_price(match.group(1))
+        
+        # Título
+        title_elem = soup.select_one('div.qaNIZv span')
+        if title_elem:
+            resultado['titulo'] = title_elem.text.strip()
+        else:
+            og_title = soup.select_one('meta[property="og:title"]')
+            if og_title:
+                resultado['titulo'] = og_title.get('content', '').split('|')[0].strip()
+        
+        # Imagem
+        og_image = soup.select_one('meta[property="og:image"]')
+        if og_image:
+            resultado['imagem'] = og_image.get('content', '')
+        
+        resultado['disponivel'] = True
         
         if not resultado.get('preco'):
-            return {"erro": "Preço não encontrado na API Shopee"}
+            return {"erro": "Preço não encontrado (Shopee requer API)"}
         
         return resultado
-        
+    
+    except requests.exceptions.Timeout:
+        return {"erro": "Timeout (Shopee bloqueou)"}
+    except requests.exceptions.SSLError:
+        return {"erro": "Erro SSL (Shopee bloqueou)"}
+    except requests.exceptions.ConnectionError:
+        return {"erro": "Conexão recusada (Shopee bloqueou)"}
     except Exception as e:
-        return {"erro": f"Erro API Shopee: {str(e)[:50]}"}
+        return {"erro": f"Erro: {str(e)[:50]}"}
 
 
 # =====================================================
@@ -701,8 +636,9 @@ def atualizar_products_json(caminho_json, dry_run=False, lojas=None):
     """
     
     if lojas is None:
-        # Shopee agora usa API oficial - funcionando!
-        lojas = ['Mercado Livre', 'Magazine Luiza', 'Amazon', 'Shopee']
+        # Shopee removida - usa muito JS e bloqueia scraping
+        # Recomendado usar API oficial quando disponível
+        lojas = ['Mercado Livre', 'Magazine Luiza', 'Amazon']
     
     caminho = Path(caminho_json)
     
