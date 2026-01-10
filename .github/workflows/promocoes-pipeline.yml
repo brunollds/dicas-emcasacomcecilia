@@ -1,0 +1,139 @@
+name: Pipeline de Promoções
+
+on:
+  schedule:
+    # A cada 4 horas (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # Permite disparar manualmente (botão no GitHub ou API)
+
+jobs:
+  coletar-promocoes:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: |
+          pip install playwright requests beautifulsoup4
+          playwright install chromium
+
+      - name: Criar pastas se não existirem
+        run: |
+          mkdir -p data/raw
+          mkdir -p data/inbox
+          mkdir -p data/history
+
+      - name: Coletor - Pelando
+        id: pelando
+        continue-on-error: true
+        run: |
+          cd scripts/collectors
+          python pelando_playwright.py 2>&1 | tee pelando.log
+          echo "status=$?" >> $GITHUB_OUTPUT
+
+      - name: Coletor - Promobit
+        id: promobit
+        continue-on-error: true
+        run: |
+          cd scripts/collectors
+          python promobit_playwright.py 2>&1 | tee promobit.log
+          echo "status=$?" >> $GITHUB_OUTPUT
+
+      - name: Coletor - Gatry
+        id: gatry
+        continue-on-error: true
+        run: |
+          cd scripts/collectors
+          python gatry_playwright.py 2>&1 | tee gatry.log
+          echo "status=$?" >> $GITHUB_OUTPUT
+
+      - name: Coletor - Gafanho
+        id: gafanho
+        continue-on-error: true
+        run: |
+          cd scripts/collectors
+          python gafanho_playwright.py 2>&1 | tee gafanho.log
+          echo "status=$?" >> $GITHUB_OUTPUT
+
+      - name: Unificação
+        run: |
+          python scripts/normalizers/unify.py
+
+      - name: Histórico de Preços
+        run: |
+          python scripts/history/price_history.py
+
+      - name: Ranking
+        run: |
+          python scripts/ranking/rank.py
+
+      - name: Gerar Rascunhos
+        run: |
+          python scripts/editorial/apply_threshold.py
+
+      - name: Gerar status.json
+        run: |
+          python << 'EOF'
+          import json
+          from datetime import datetime
+          from pathlib import Path
+          
+          status = {
+              "ultima_execucao": datetime.now().isoformat(),
+              "coletores": {},
+              "rascunhos_gerados": 0
+          }
+          
+          # Contar itens de cada coletor
+          raw_path = Path("data/raw")
+          for fonte in ["pelando", "promobit", "gatry", "gafanho"]:
+              arquivo = raw_path / f"{fonte}.json"
+              if arquivo.exists():
+                  try:
+                      with open(arquivo, 'r', encoding='utf-8') as f:
+                          dados = json.load(f)
+                          status["coletores"][fonte] = {
+                              "total": len(dados) if isinstance(dados, list) else 0,
+                              "erro": None
+                          }
+                  except Exception as e:
+                      status["coletores"][fonte] = {"total": 0, "erro": str(e)[:50]}
+              else:
+                  status["coletores"][fonte] = {"total": 0, "erro": "Arquivo não encontrado"}
+          
+          # Contar rascunhos gerados
+          rascunhos_path = Path("data/inbox/rascunhos.json")
+          if rascunhos_path.exists():
+              try:
+                  with open(rascunhos_path, 'r', encoding='utf-8') as f:
+                      rascunhos = json.load(f)
+                      status["rascunhos_gerados"] = len(rascunhos) if isinstance(rascunhos, list) else 0
+              except:
+                  pass
+          
+          # Salvar status
+          with open("data/inbox/status.json", 'w', encoding='utf-8') as f:
+              json.dump(status, f, ensure_ascii=False, indent=2)
+          
+          print(f"✅ Status gerado: {status['rascunhos_gerados']} rascunhos")
+          EOF
+
+      - name: Commit e Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add data/raw/*.json
+          git add data/inbox/*.json
+          git add data/history/*.json
+          
+          # Só commita se tiver mudanças
+          git diff --staged --quiet || git commit -m "🤖 Promoções atualizadas [$(date +'%d/%m %H:%M')]"
+          git push

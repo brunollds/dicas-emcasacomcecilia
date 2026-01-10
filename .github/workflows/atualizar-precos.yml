@@ -1,0 +1,48 @@
+name: Atualizar Preços do Catálogo
+
+on:
+  schedule:
+    # 3x ao dia: 09:00, 14:00, 19:00 BRT (12:00, 17:00, 22:00 UTC)
+    - cron: '0 12 * * *'
+    - cron: '0 17 * * *'
+    - cron: '0 22 * * *'
+  workflow_dispatch: # Permite rodar manualmente
+
+jobs:
+  atualizar-precos:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: |
+          pip install requests beautifulsoup4 python-dotenv
+
+      - name: Rodar Price Scraper
+        env:
+          AMAZON_ACCESS_KEY: ${{ secrets.AMAZON_ACCESS_KEY }}
+          AMAZON_SECRET_KEY: ${{ secrets.AMAZON_SECRET_KEY }}
+          AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
+          SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
+          SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
+        run: |
+          cd scripts/scrapers
+          python price_scraper_v2.py --update ../../public/data/products.json
+
+      - name: Commit e Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add public/data/products.json
+          
+          # Só commita se tiver mudanças
+          git diff --staged --quiet || git commit -m "🤖 Preços atualizados [$(date +'%d/%m %H:%M')]"
+          git push
