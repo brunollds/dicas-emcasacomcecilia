@@ -6,6 +6,9 @@ on:
     - cron: '0 */4 * * *'
   workflow_dispatch: # Permite disparar manualmente (botão no GitHub ou API)
 
+permissions:
+  contents: write
+
 jobs:
   coletar-promocoes:
     runs-on: ubuntu-latest
@@ -76,7 +79,7 @@ jobs:
 
       - name: Gerar Rascunhos
         run: |
-          python scripts/editorial/apply_threshold.py
+          python scripts/Editorial/apply_threshold.py
 
       - name: Gerar status.json
         run: |
@@ -130,9 +133,9 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add data/raw/*.json
-          git add data/inbox/*.json
-          git add data/history/*.json
+          git add data/raw/*.json || true
+          git add data/inbox/*.json || true
+          git add data/history/*.json || true
           
           # Só commita se tiver mudanças
           git diff --staged --quiet || git commit -m "🤖 Promoções atualizadas [$(date +'%d/%m %H:%M')]"
