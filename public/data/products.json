@@ -109,7 +109,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/2XtxnCi",
-        "price": 179.75,
+        "price": 69.99,
         "logo": "images/logos/ML.png"
       },
       "Shopee": {
@@ -125,7 +125,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 17:22"
+    "last_update": "2026-01-10 22:23"
   },
   {
     "category": "cozinha",
@@ -244,7 +244,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/2rYX8Th",
-        "price": 60.97,
+        "price": 19.97,
         "logo": "images/logos/ML.png"
       },
       "Magazine Luiza": {
@@ -255,7 +255,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:15"
+    "last_update": "2026-01-10 22:24"
   },
   {
     "category": "sala-de-estar",
@@ -276,7 +276,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/1LNpqvW",
-        "price": 179.75,
+        "price": 69.99,
         "logo": "images/logos/ML.png"
       },
       "Magazine Luiza": {
@@ -287,7 +287,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 17:23"
+    "last_update": "2026-01-10 22:24"
   },
   {
     "category": "outros",
@@ -320,7 +320,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lI3xky",
-        "price": 515.16,
+        "price": 629.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -331,7 +331,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 17:23"
+    "last_update": "2026-01-10 22:24"
   },
   {
     "category": "cozinha",
@@ -818,7 +818,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/42Sk4ty",
-        "price": 1648.0,
+        "price": 1936.1,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -829,7 +829,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:17"
+    "last_update": "2026-01-10 22:26"
   },
   {
     "category": "casa-inteligente",
@@ -976,7 +976,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4iDWWoz",
-        "price": 236.86,
+        "price": 367.54,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -987,7 +987,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 17:25"
+    "last_update": "2026-01-10 22:26"
   },
   {
     "category": "sala-de-estar",
