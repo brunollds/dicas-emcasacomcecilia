@@ -1,0 +1,22 @@
+{
+  "ultima_execucao": "2026-01-10T02:05:18.595601",
+  "coletores": {
+    "pelando": {
+      "total": 157,
+      "erro": null
+    },
+    "promobit": {
+      "total": 108,
+      "erro": null
+    },
+    "gatry": {
+      "total": 12,
+      "erro": null
+    },
+    "gafanho": {
+      "total": 50,
+      "erro": null
+    }
+  },
+  "rascunhos_gerados": 318
+}
