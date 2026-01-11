@@ -40,12 +40,12 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/43dZe8p",
-        "price": 309.68,
+        "price": 379.98,
         "logo": "images/logos/amazon.png"
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/2EHaanB",
-        "price": 303.5,
+        "price": 319.17,
         "logo": "images/logos/ML.png"
       },
       "Shopee": {
@@ -61,7 +61,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-11 12:38"
+    "last_update": "2026-01-11 22:23"
   },
   {
     "category": "cozinha",
@@ -72,7 +72,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/42S6eJ8",
-        "price": 159.58,
+        "price": 160.0,
         "logo": "images/logos/amazon.png"
       },
       "Mercado Livre": {
@@ -93,7 +93,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:14"
+    "last_update": "2026-01-11 22:23"
   },
   {
     "category": "cozinha",
@@ -109,7 +109,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/2XtxnCi",
-        "price": 155.9,
+        "price": 59.9,
         "logo": "images/logos/ML.png"
       },
       "Shopee": {
@@ -125,7 +125,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-11 12:38"
+    "last_update": "2026-01-11 22:23"
   },
   {
     "category": "cozinha",
@@ -202,7 +202,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lSkJnt",
-        "price": 190.4,
+        "price": 190.8,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -223,7 +223,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-11 17:22"
+    "last_update": "2026-01-11 22:24"
   },
   {
     "category": "cozinha",
@@ -276,7 +276,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/1LNpqvW",
-        "price": 155.9,
+        "price": 59.9,
         "logo": "images/logos/ML.png"
       },
       "Magazine Luiza": {
@@ -287,7 +287,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-11 12:39"
+    "last_update": "2026-01-11 22:24"
   },
   {
     "category": "outros",
@@ -419,7 +419,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/3YSVeZj",
-        "price": 3312.0,
+        "price": 3295.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -430,7 +430,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:16"
+    "last_update": "2026-01-11 22:25"
   },
   {
     "category": "tecnologia",
@@ -441,7 +441,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lLA49n",
-        "price": 5652.0,
+        "price": 5622.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -452,7 +452,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:16"
+    "last_update": "2026-01-11 22:25"
   },
   {
     "category": "tecnologia",
@@ -485,7 +485,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4jvhGjz",
-        "price": 179.99,
+        "price": 298.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -496,7 +496,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 12:39"
+    "last_update": "2026-01-11 22:25"
   },
   {
     "category": "cozinha",
@@ -1297,7 +1297,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/42T10eP",
-        "price": 64.9,
+        "price": 84.9,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -1308,7 +1308,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:18"
+    "last_update": "2026-01-11 22:27"
   },
   {
     "category": "lavanderia",
@@ -1319,7 +1319,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4cV3ZIm",
-        "price": 24.95,
+        "price": 24.19,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -1330,6 +1330,6 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:18"
+    "last_update": "2026-01-11 22:27"
   }
 ]
