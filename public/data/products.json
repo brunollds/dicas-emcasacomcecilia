@@ -202,7 +202,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lSkJnt",
-        "price": 190.3,
+        "price": 190.4,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -223,7 +223,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-11 12:39"
+    "last_update": "2026-01-11 17:22"
   },
   {
     "category": "cozinha",
