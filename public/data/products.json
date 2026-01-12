@@ -178,7 +178,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/2X8ngzN",
-        "price": 20.95,
+        "price": 20.2,
         "logo": "images/logos/ML.png"
       },
       "Magazine Luiza": {
@@ -191,7 +191,7 @@
       "youtube": "https://youtube.com/shorts/5PD7DSv_BKM"
     },
     "price_updated": true,
-    "last_update": "2026-01-11 12:39"
+    "last_update": "2026-01-12 12:44"
   },
   {
     "category": "cozinha",
@@ -249,13 +249,13 @@
       },
       "Magazine Luiza": {
         "link": "https://divulgador.magalu.com/NDUIjVuQ",
-        "price": 19.47,
+        "price": 19.69,
         "logo": "images/logos/magalu.png"
       }
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 22:24"
+    "last_update": "2026-01-12 12:45"
   },
   {
     "category": "sala-de-estar",
@@ -320,7 +320,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lI3xky",
-        "price": 629.0,
+        "price": 458.92,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -331,7 +331,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 22:24"
+    "last_update": "2026-01-12 12:45"
   },
   {
     "category": "cozinha",
@@ -485,7 +485,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4jvhGjz",
-        "price": 298.0,
+        "price": 289.9,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -496,7 +496,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-11 22:25"
+    "last_update": "2026-01-12 12:45"
   },
   {
     "category": "cozinha",
@@ -796,7 +796,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/44bm5n7",
-        "price": 3924.0,
+        "price": 4055.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -807,7 +807,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:17"
+    "last_update": "2026-01-12 12:46"
   },
   {
     "category": "lavanderia",
