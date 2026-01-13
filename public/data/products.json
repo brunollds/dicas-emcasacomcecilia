@@ -45,7 +45,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/2EHaanB",
-        "price": 329.9,
+        "price": 326.33,
         "logo": "images/logos/ML.png"
       },
       "Shopee": {
@@ -61,7 +61,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-13 12:44"
+    "last_update": "2026-01-13 17:31"
   },
   {
     "category": "cozinha",
@@ -109,7 +109,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/2XtxnCi",
-        "price": 69.9,
+        "price": 52.9,
         "logo": "images/logos/ML.png"
       },
       "Shopee": {
@@ -125,7 +125,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-12 22:22"
+    "last_update": "2026-01-13 17:31"
   },
   {
     "category": "cozinha",
@@ -151,13 +151,13 @@
       },
       "Magazine Luiza": {
         "link": "https://divulgador.magalu.com/Cl2TN0dg",
-        "price": 104.5,
+        "price": 88.0,
         "logo": "images/logos/magalu.png"
       }
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:15"
+    "last_update": "2026-01-13 17:31"
   },
   {
     "category": "banheiro",
@@ -202,7 +202,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lSkJnt",
-        "price": 190.3,
+        "price": 190.8,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -223,7 +223,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-13 12:44"
+    "last_update": "2026-01-13 17:32"
   },
   {
     "category": "cozinha",
@@ -276,7 +276,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/1LNpqvW",
-        "price": 69.9,
+        "price": 52.9,
         "logo": "images/logos/ML.png"
       },
       "Magazine Luiza": {
@@ -287,7 +287,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-13 12:45"
+    "last_update": "2026-01-13 17:32"
   },
   {
     "category": "outros",
@@ -419,7 +419,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/3YSVeZj",
-        "price": 3291.0,
+        "price": 3277.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -430,7 +430,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-13 12:45"
+    "last_update": "2026-01-13 17:32"
   },
   {
     "category": "tecnologia",
@@ -441,7 +441,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lLA49n",
-        "price": 5609.0,
+        "price": 5595.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -452,7 +452,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-13 12:45"
+    "last_update": "2026-01-13 17:32"
   },
   {
     "category": "tecnologia",
@@ -545,7 +545,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4cT1XZf",
-        "price": 360.05,
+        "price": 359.9,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -556,7 +556,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:16"
+    "last_update": "2026-01-13 17:33"
   },
   {
     "category": "casa-inteligente",
@@ -796,7 +796,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/44bm5n7",
-        "price": 3924.0,
+        "price": 4055.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -807,7 +807,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-12 17:30"
+    "last_update": "2026-01-13 17:33"
   },
   {
     "category": "lavanderia",
@@ -933,7 +933,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lNBCjr",
-        "price": 1472.63,
+        "price": 2036.9,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -944,7 +944,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-13 12:46"
+    "last_update": "2026-01-13 17:34"
   },
   {
     "category": "cozinha",
@@ -1298,7 +1298,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/42T10eP",
-        "price": 71.0,
+        "price": 66.99,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -1309,7 +1309,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-12 17:32"
+    "last_update": "2026-01-13 17:35"
   },
   {
     "category": "lavanderia",
