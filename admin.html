@@ -190,6 +190,27 @@
             cursor: pointer;
         }
 
+        /* Preview de imagem */
+        .imagem-preview {
+            margin-top: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            max-height: 150px;
+            display: none;
+        }
+
+        .imagem-preview.show {
+            display: block;
+        }
+
+        .imagem-preview img {
+            max-width: 100%;
+            max-height: 150px;
+            object-fit: contain;
+            border-radius: 8px;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
         /* Button */
         .btn {
             width: 100%;
@@ -704,6 +725,12 @@
                     <input type="text" id="cupom" placeholder="Ex: BLACKFRIDAY">
                 </div>
 
+                <div class="form-group campo-promo">
+                    <label for="imagem">URL da Imagem (opcional)</label>
+                    <input type="url" id="imagem" placeholder="https://exemplo.com/imagem.jpg" oninput="atualizarImagemPreview()">
+                    <div id="imagemPreview" class="imagem-preview"></div>
+                </div>
+
                 <!-- Campos de CUPOM -->
                 <div class="form-group campo-cupom hidden">
                     <label for="descricaoCupom">Descrição do Cupom *</label>
@@ -931,7 +958,7 @@
         const preview = document.getElementById('preview');
 
         // Atualizar preview em tempo real
-        ['loja', 'produto', 'preco', 'precoAntigo', 'info', 'cupom', 'link', 'descricaoCupom', 'codigoCupom'].forEach(id => {
+        ['loja', 'produto', 'preco', 'precoAntigo', 'info', 'cupom', 'imagem', 'link', 'descricaoCupom', 'codigoCupom'].forEach(id => {
             const el = document.getElementById(id);
             if (el) el.addEventListener('input', atualizarPreview);
         });
@@ -1022,6 +1049,19 @@
             }
             
             atualizarPreview();
+        }
+
+        function atualizarImagemPreview() {
+            const url = document.getElementById('imagem').value;
+            const container = document.getElementById('imagemPreview');
+            
+            if (url && url.startsWith('http')) {
+                container.innerHTML = `<img src="${url}" alt="Preview" onerror="this.parentElement.classList.remove('show')">`;
+                container.classList.add('show');
+            } else {
+                container.innerHTML = '';
+                container.classList.remove('show');
+            }
         }
 
         function atualizarPreview() {
@@ -1115,6 +1155,7 @@
                     precoAntigo: parseFloat(document.getElementById('precoAntigo').value) || null,
                     info: document.getElementById('info').value || null,
                     cupom: document.getElementById('cupom').value || null,
+                    imagem: document.getElementById('imagem').value || null,
                     link: document.getElementById('link').value,
                     destaque: document.getElementById('destaque').checked,
                     timestamp: isEdit ? undefined : new Date().toISOString()
@@ -1193,6 +1234,8 @@
             document.getElementById('editId').value = '';
             document.getElementById('btnCancelarEdicao').style.display = 'none';
             document.getElementById('btnPublicar').innerHTML = '<i class="fas fa-paper-plane"></i> PUBLICAR';
+            document.getElementById('imagemPreview').innerHTML = '';
+            document.getElementById('imagemPreview').classList.remove('show');
             mudarTipo('promo');
             atualizarPreview();
         }
