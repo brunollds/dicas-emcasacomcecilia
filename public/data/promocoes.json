@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768414458294,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Espelho Orgânico 70cm Decoração Lapidado Design Moderno Luxo",
+      "preco": 49.9,
+      "precoAntigo": 139.9,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_647206-MLB94350924297_102025-F-espelho-orgnico-70cm-decoraco-lapidado-design-moderno-luxo.webp",
+      "link": "https://mercadolivre.com/sec/2unpBmx",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:14:18.294Z"
+    },
+    {
       "id": 1768414347355,
       "tipo": "promo",
       "loja": "Mercado Livre",
