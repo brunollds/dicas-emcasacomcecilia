@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768407520796,
+      "tipo": "promo",
+      "loja": "Shopee",
+      "produto": "Whey Protein Concentrado 900g Dux",
+      "preco": 135.62,
+      "precoAntigo": null,
+      "info": "2x S/ Juros • Resgate o cupom de 20% off em lojas oficias e frete grátis:",
+      "cupom": null,
+      "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rfi8-m9ok2rdhf5t89c.webp",
+      "link": "https://s.shopee.com.br/1qVmROxZiD",
+      "destaque": false,
+      "timestamp": "2026-01-14T16:18:40.796Z"
+    },
+    {
       "id": 1768407044869,
       "tipo": "promo",
       "loja": "Amazon",
