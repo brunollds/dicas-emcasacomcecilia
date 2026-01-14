@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768407044869,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Geladeira Refrigerador HQ Frost Free Multidoor 426 Litros Prata HQ-426MDFF (127V)",
+      "preco": 3398.99,
+      "precoAntigo": 3999.99,
+      "info": "ou R$ 3.577,89 em até 12x de R$ 298,24 sem juros",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61Q8cUZ2DsL._AC_SX679_.jpg",
+      "link": "https://amzn.to/3YFn4b5",
+      "destaque": false,
+      "timestamp": "2026-01-14T16:10:44.869Z"
+    },
+    {
       "id": 1768406886046,
       "tipo": "promo",
       "loja": "Amazon",
