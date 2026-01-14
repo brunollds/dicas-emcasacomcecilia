@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768414041221,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Océane Mini Esponja Para Acabamento Rosa – Mini Powder Puff Océane Edition",
+      "preco": 10.86,
+      "precoAntigo": 18.75,
+      "info": "Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/51GQFi1K9-L._AC_SL1000_.jpg",
+      "link": "https://amzn.to/4qOrRCZ",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:07:21.221Z"
+    },
+    {
       "id": 1768412537153,
       "tipo": "promo",
       "loja": "Amazon",
