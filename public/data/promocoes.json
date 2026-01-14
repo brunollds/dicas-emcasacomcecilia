@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768417029344,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Lâminas de Reposição Originais Philips OneBlade QP220/51 Aço Inoxidável Para Raspar, Aparar e Contornar - Pacote com 2. Compatível com o barbeador eletrico OneBlade",
+      "preco": 87.82,
+      "precoAntigo": 159.9,
+      "info": "Em até 6x R$ 18,35 sem juros - Mais por Menos: 10% off em 10+ itens -  Só no app - 10%",
+      "cupom": "APP10 ",
+      "imagem": "https://m.media-amazon.com/images/I/61REbuQvWOL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4sVD3Qm",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:57:09.344Z"
+    },
+    {
       "id": 1768416924520,
       "tipo": "promo",
       "loja": "Shopee",
