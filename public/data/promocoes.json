@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768406886046,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Borracha Colorida Pull Pack Oval 1Branca/1Lilas Bl Com 02 110649",
+      "preco": 6.03,
+      "precoAntigo": 9,
+      "info": "Mais por Menos: 10% off em 10+ itensExclusivo Prime: Mais por Menos: +5% off em Volta às Aulas - R$ 5,43 +POR-",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61JewmfTYzL._AC_SX522_.jpg",
+      "link": "https://amzn.to/4qV56xr",
+      "destaque": false,
+      "timestamp": "2026-01-14T16:08:06.046Z"
+    },
+    {
       "id": 1768406702212,
       "tipo": "promo",
       "loja": "Mercado Livre",
