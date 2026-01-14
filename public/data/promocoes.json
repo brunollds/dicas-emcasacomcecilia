@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768416340366,
+      "tipo": "promo",
+      "loja": "Shopee",
+      "produto": "Asus Rog Ally Z1 Extreme 7 512GB SSD 16GB RAM Windows 11 Original Lacrado com NF",
+      "preco": 4879,
+      "precoAntigo": 5899,
+      "info": "12x S/ Juros • Frete grátis Full",
+      "cupom": "D4RL3N",
+      "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m7w9mafgjzshce.webp",
+      "link": "https://s.shopee.com.br/9UvDjhpjbh",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:45:40.366Z"
+    },
+    {
       "id": 1768416190799,
       "tipo": "promo",
       "loja": "Mercado Livre",
