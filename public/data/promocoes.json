@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768416190799,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Creatina Monohidratada 1Kg Soldiers Nutrition 100% Pura Importada Alta Performance Músculo Treino",
+      "preco": 66.61,
+      "precoAntigo": 239.9,
+      "info": "R$ 70,12 Parcelado • Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_736821-MLA99962382095_112025-F.webp",
+      "link": "https://mercadolivre.com/sec/1CpVagH",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:43:10.799Z"
+    },
+    {
       "id": 1768414854267,
       "tipo": "promo",
       "loja": "Amazon",
