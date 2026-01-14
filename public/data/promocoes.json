@@ -83,20 +83,6 @@
       "link": "https://s.shopee.com.br/AKUKQFrJ7H",
       "destaque": false,
       "timestamp": "2026-01-14T15:45:01.735Z"
-    },
-    {
-      "id": 1768405198931,
-      "tipo": "promo",
-      "loja": "Mercado Livre",
-      "produto": "teste",
-      "preco": null,
-      "precoAntigo": null,
-      "info": "promoção teste",
-      "cupom": null,
-      "imagem": null,
-      "link": "https://s.shopee.com.br/40aGuZJPDh",
-      "destaque": false,
-      "timestamp": "2026-01-14T15:39:58.931Z"
     }
   ]
 }
