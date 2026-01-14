@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768416437631,
+      "tipo": "promo",
+      "loja": "Shopee",
+      "produto": "Steam Deck Oled lacrado",
+      "preco": 4399,
+      "precoAntigo": 5199,
+      "info": "12x sem juros • Frete grátis",
+      "cupom": "D4RL3N",
+      "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lq5dyydnrjlv09.webp",
+      "link": "https://s.shopee.com.br/8pfWwaKmh8",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:47:17.631Z"
+    },
+    {
       "id": 1768416340366,
       "tipo": "promo",
       "loja": "Shopee",
