@@ -13,7 +13,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/1ywp7xi",
-        "price": 899.69,
+        "price": 899.05,
         "logo": "images/logos/ML.png"
       },
       "Shopee": {
@@ -29,7 +29,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-14 17:31"
+    "last_update": "2026-01-14 22:26"
   },
   {
     "category": "cozinha",
@@ -104,7 +104,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4d9vzSl",
-        "price": 588.9,
+        "price": 529.9,
         "logo": "images/logos/amazon.png"
       },
       "Mercado Livre": {
@@ -125,7 +125,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-14 17:31"
+    "last_update": "2026-01-14 22:27"
   },
   {
     "category": "cozinha",
@@ -178,7 +178,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/2BPpSYk",
-        "price": 23.75,
+        "price": 19.5,
         "logo": "images/logos/ML.png"
       },
       "Magazine Luiza": {
@@ -191,7 +191,7 @@
       "youtube": "https://youtube.com/shorts/5PD7DSv_BKM"
     },
     "price_updated": true,
-    "last_update": "2026-01-14 17:32"
+    "last_update": "2026-01-14 22:27"
   },
   {
     "category": "cozinha",
@@ -212,7 +212,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/1jAY2p9",
-        "price": 217.9,
+        "price": 205.7,
         "logo": "images/logos/ML.png"
       },
       "Magazine Luiza": {
@@ -223,7 +223,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-14 17:32"
+    "last_update": "2026-01-14 22:27"
   },
   {
     "category": "cozinha",
@@ -266,7 +266,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4jUK4LY",
-        "price": 53.0,
+        "price": 52.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -287,7 +287,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-14 17:32"
+    "last_update": "2026-01-14 22:28"
   },
   {
     "category": "outros",
@@ -330,7 +330,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lI3xky",
-        "price": 669.0,
+        "price": 629.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -351,7 +351,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-14 12:44"
+    "last_update": "2026-01-14 22:28"
   },
   {
     "category": "cozinha",
@@ -495,13 +495,13 @@
       },
       "Magazine Luiza": {
         "link": "https://divulgador.magalu.com/AF4SAmWw",
-        "price": 4898.12,
+        "price": 4831.9,
         "logo": "images/logos/magalu.png"
       }
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-14 12:45"
+    "last_update": "2026-01-14 22:29"
   },
   {
     "category": "tecnologia",
@@ -522,18 +522,18 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/1RwRvcy",
-        "price": 5.066,
+        "price": 5.185,
         "logo": "images/logos/ML.png"
       },
       "Magazine Luiza": {
         "link": "https://divulgador.magalu.com/AF4SAmWw",
-        "price": 4898.12,
+        "price": 4831.9,
         "logo": "images/logos/magalu.png"
       }
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-14 12:45"
+    "last_update": "2026-01-14 22:29"
   },
   {
     "category": "tecnologia",
@@ -576,7 +576,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4jvhGjz",
-        "price": 179.99,
+        "price": 283.9,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -597,7 +597,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-14 17:34"
+    "last_update": "2026-01-14 22:30"
   },
   {
     "category": "cozinha",
@@ -749,7 +749,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/42xhWso",
-        "price": 2129.0,
+        "price": 2079.9,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -759,7 +759,7 @@
       },
       "Mercado Livre": {
         "link": "https://mercadolivre.com/sec/1KMk97t",
-        "price": 2.333,
+        "price": 1.99,
         "logo": "images/logos/ML.png"
       },
       "Magazine Luiza": {
@@ -770,7 +770,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-14 17:34"
+    "last_update": "2026-01-14 22:30"
   },
   {
     "category": "cozinha",
@@ -830,7 +830,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/42B8TXv",
-        "price": 367.13,
+        "price": 362.97,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -841,7 +841,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2025-12-25 23:39"
+    "last_update": "2026-01-14 22:30"
   },
   {
     "category": "casa-inteligente",
@@ -961,7 +961,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4iJi7pp",
-        "price": 1353.48,
+        "price": 1329.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -972,7 +972,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-10 02:17"
+    "last_update": "2026-01-14 22:31"
   },
   {
     "category": "tecnologia",
@@ -1419,7 +1419,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/42T10eP",
-        "price": 71.0,
+        "price": 82.35,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -1430,7 +1430,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-13 22:31"
+    "last_update": "2026-01-14 22:32"
   },
   {
     "category": "lavanderia",
