@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768417975779,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Oster Torradeira Simple Life, 110V, Inox, 750W, OTOR600",
+      "preco": 136.77,
+      "precoAntigo": 179.9,
+      "info": "Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/51oipmMeSHL._AC_SX679_.jpg",
+      "link": "https://amzn.to/3LHantv",
+      "destaque": false,
+      "timestamp": "2026-01-14T19:12:55.779Z"
+    },
+    {
       "id": 1768417845615,
       "tipo": "promo",
       "loja": "Amazon",
