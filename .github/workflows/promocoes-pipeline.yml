@@ -139,19 +139,19 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Pull ANTES de adicionar arquivos
-          git pull --rebase origin main || true
+          # 1. Adicionar TODOS os arquivos modificados e novos
+          # Isso limpa o "unstaged changes" que trava o pull
+          git add .
           
-          # Adicionar arquivos
-          git add data/raw/*.json || true
-          git add data/inbox/*.json || true
-          git add data/history/*.json || true
-          git add public/data/inbox/*.json || true
-          
-          # Só commita se tiver mudanças
+          # 2. Só tenta commitar e subir se houver mudanças reais
           if ! git diff --staged --quiet; then
             git commit -m "🤖 Promoções atualizadas [$(date +'%d/%m %H:%M')]"
             
-            # Push com retry em caso de conflito
-            git push || (git pull --rebase origin main && git push)
+            # 3. Agora faz o pull com rebase. 
+            # Como as mudanças locais já estão commitadas, o Git consegue mesclar.
+            # O autostash garante que qualquer sujeira extra não atrapalhe.
+            git pull --rebase --autostash origin main
+            
+            # 4. Push final
+            git push origin main
           fi
