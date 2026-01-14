@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768418137521,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Bolsa Masculina Executiva Em Couro Macio De Ombro Casual",
+      "preco": 99.9,
+      "precoAntigo": 139.9,
+      "info": "3x S/ Juros • Chegando amanhã • Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_790203-MLB87921981884_072025-F-bolsa-masculina-executiva-em-couro-macio-de-ombro-casual.webp",
+      "link": "https://mercadolivre.com/sec/2usqUPp",
+      "destaque": false,
+      "timestamp": "2026-01-14T19:15:37.521Z"
+    },
+    {
       "id": 1768417975779,
       "tipo": "promo",
       "loja": "Amazon",
