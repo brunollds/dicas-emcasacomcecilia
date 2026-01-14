@@ -1,6 +1,6 @@
 // =====================================================
 // PROMOÇÕES AO VIVO - Em Casa com Cecília
-// Versão com popup estilo Promobit + Busca Unificada + Imagens
+// Versão com popup estilo Promobit + Busca Unificada
 // =====================================================
 
 // URLs dos dados
@@ -36,13 +36,29 @@ const categoriasNomes = {
 // CARREGAR DADOS
 // =====================================================
 
+// Limite de tempo para promoções (72 horas)
+const LIMITE_HORAS = 72;
+
+function filtrarPromocoesRecentes(promocoes) {
+    const agora = new Date();
+    const limiteMs = LIMITE_HORAS * 60 * 60 * 1000; // 72h em millisegundos
+    
+    return promocoes.filter(promo => {
+        if (!promo.timestamp) return false;
+        const dataPromo = new Date(promo.timestamp);
+        return (agora - dataPromo) <= limiteMs;
+    });
+}
+
 async function carregarPromocoes() {
     try {
         // Carregar promoções
         const response = await fetch(PROMOCOES_URL);
         if (!response.ok) throw new Error('Erro ao carregar promoções');
         const data = await response.json();
-        todasPromocoes = data.promocoes || [];
+        
+        // Filtrar apenas promoções das últimas 72h
+        todasPromocoes = filtrarPromocoesRecentes(data.promocoes || []);
         todasPromocoes.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
 
         // Carregar produtos (para busca unificada)
@@ -197,7 +213,7 @@ function renderizarPromocoes() {
 }
 
 // =====================================================
-// CRIAR HTML DO CARD (COM SUPORTE A IMAGEM)
+// CRIAR HTML DO CARD (COMPACTO)
 // =====================================================
 
 function criarCardHTML(promo, index) {
@@ -205,20 +221,11 @@ function criarCardHTML(promo, index) {
     const tempoAtras = calcularTempoAtras(promo.timestamp);
     const isCupom = promo.tipo === 'cupom';
 
-    // Verificar se tem imagem
-    const temImagem = promo.imagem && promo.imagem.trim() !== '';
-    
-    // HTML da imagem ou ícone fallback
-    const imagemHTML = temImagem 
-        ? `<img src="${promo.imagem}" alt="${promo.produto || promo.descricaoCupom}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-           <i class="fas fa-${isCupom ? 'ticket-alt' : 'shopping-bag'}" style="display:none;"></i>`
-        : `<i class="fas fa-${isCupom ? 'ticket-alt' : 'shopping-bag'}"></i>`;
-
     if (isCupom) {
         return `
             <article class="promo-card cupom-card" data-index="${index}">
                 <div class="promo-image">
-                    ${imagemHTML}
+                    <i class="fas fa-ticket-alt"></i>
                 </div>
                 <div class="promo-info">
                     <span class="promo-store ${storeClass}">${promo.loja}</span>
@@ -232,13 +239,15 @@ function criarCardHTML(promo, index) {
         `;
     }
 
-    const temDesconto = promo.precoAntigo && promo.precoAntigo > promo.preco;
+    const temDesconto = promo.preco && promo.precoAntigo && promo.precoAntigo > promo.preco;
     const desconto = temDesconto ? Math.round((1 - promo.preco / promo.precoAntigo) * 100) : 0;
+    const precoFormatado = promo.preco ? `R$ ${promo.preco.toFixed(2).replace('.', ',')}` : 'Ver preço';
+    const precoAntigoFormatado = promo.precoAntigo ? `R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}` : '';
 
     return `
         <article class="promo-card ${promo.destaque ? 'destaque' : ''}" data-index="${index}">
             <div class="promo-image">
-                ${imagemHTML}
+                <i class="fas fa-shopping-bag"></i>
             </div>
             <div class="promo-info">
                 <span class="promo-store ${storeClass}">${promo.loja}</span>
@@ -249,8 +258,8 @@ function criarCardHTML(promo, index) {
                 </div>
             </div>
             <div class="promo-pricing">
-                <span class="promo-price">R$ ${promo.preco.toFixed(2).replace('.', ',')}</span>
-                ${temDesconto ? `<span class="promo-old-price">R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}</span>` : ''}
+                <span class="promo-price">${precoFormatado}</span>
+                ${temDesconto ? `<span class="promo-old-price">${precoAntigoFormatado}</span>` : ''}
                 ${desconto > 0 ? `<span class="promo-discount">-${desconto}%</span>` : ''}
             </div>
             <button class="promo-btn">Ver Oferta</button>
@@ -259,20 +268,18 @@ function criarCardHTML(promo, index) {
 }
 
 // =====================================================
-// POPUP (COM SUPORTE A IMAGEM)
+// POPUP
 // =====================================================
 
 function abrirPopup(promo) {
     const isCupom = promo.tipo === 'cupom';
     const storeClass = promo.loja.toLowerCase().replace(/\s+/g, '-');
-    const temImagem = promo.imagem && promo.imagem.trim() !== '';
     
     let html = '';
 
     if (isCupom) {
         // Popup de CUPOM
         html = `
-            ${temImagem ? `<div class="popup-image"><img src="${promo.imagem}" alt="${promo.descricaoCupom}"></div>` : ''}
             <div class="popup-header">
                 <span class="popup-store ${storeClass}">${promo.loja}</span>
                 <h3 class="popup-title">🏷️ ${promo.descricaoCupom}</h3>
@@ -308,7 +315,6 @@ function abrirPopup(promo) {
         const desconto = temDesconto ? Math.round((1 - promo.preco / promo.precoAntigo) * 100) : 0;
 
         html = `
-            ${temImagem ? `<div class="popup-image"><img src="${promo.imagem}" alt="${promo.produto}"></div>` : ''}
             <div class="popup-header">
                 <span class="popup-store ${storeClass}">${promo.loja}</span>
                 <h3 class="popup-title">${promo.produto}</h3>
@@ -427,22 +433,29 @@ window.compartilharWhatsApp = function(tipo, promo) {
         texto += `👉 ${promo.link}`;
     } else {
         // Formato para promoção
+        // Título com emoji 🔥 (sem nome da loja)
         texto = `🔥 ${promo.produto}\n\n`;
+        
+        // Preço atual em negrito
         texto += `💲 *R$ ${promo.preco.toFixed(2).replace('.', ',')}*`;
         
+        // Preço antigo riscado (se houver)
         if (promo.precoAntigo && promo.precoAntigo > promo.preco) {
             const desconto = Math.round((1 - promo.preco / promo.precoAntigo) * 100);
             texto += ` ~De R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}~ (-${desconto}%)`;
         }
         
+        // Info extra (parcelamento, frete, etc)
         if (promo.info) {
             texto += `\n${promo.info}`;
         }
         
+        // Cupom (se houver)
         if (promo.cupom) {
             texto += `\n\n🎟️ Cupom: ${promo.cupom}`;
         }
         
+        // Link
         texto += `\n\n👉 ${promo.link}`;
     }
 
