@@ -128,18 +128,30 @@ jobs:
           print(f"✅ Status gerado: {status['rascunhos_gerados']} rascunhos")
           EOF
 
+      - name: Copiar rascunhos para public
+        run: |
+          mkdir -p public/data/inbox
+          cp data/inbox/rascunhos.json public/data/inbox/ || true
+          cp data/inbox/status.json public/data/inbox/ || true
+
       - name: Commit e Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
+          # Pull ANTES de adicionar arquivos
+          git pull --rebase origin main || true
+          
+          # Adicionar arquivos
           git add data/raw/*.json || true
           git add data/inbox/*.json || true
           git add data/history/*.json || true
+          git add public/data/inbox/*.json || true
           
           # Só commita se tiver mudanças
           if ! git diff --staged --quiet; then
             git commit -m "🤖 Promoções atualizadas [$(date +'%d/%m %H:%M')]"
-            git pull --rebase origin main
-            git push
+            
+            # Push com retry em caso de conflito
+            git push || (git pull --rebase origin main && git push)
           fi
