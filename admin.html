@@ -1349,7 +1349,11 @@
                 document.getElementById('precoAntigo').value = promo.precoAntigo || '';
                 document.getElementById('info').value = promo.info || '';
                 document.getElementById('cupom').value = promo.cupom || '';
+                document.getElementById('imagem').value = promo.imagem || '';
                 document.getElementById('destaque').checked = promo.destaque || false;
+                
+                // Atualizar preview da imagem
+                atualizarImagemPreview();
             }
 
             // Atualizar UI
