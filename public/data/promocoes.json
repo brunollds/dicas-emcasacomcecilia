@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768417137568,
+      "tipo": "promo",
+      "loja": "Shopee",
+      "produto": "Console Nintendo Switch 2 Novo lacrado Lançamento 2025",
+      "preco": 3399,
+      "precoAntigo": 4299,
+      "info": "12x sem juros - • Frete grátis",
+      "cupom": "D4RL3N",
+      "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mdowf6ocgtyx02@resize_w450_nl.webp",
+      "link": "https://s.shopee.com.br/9KbnXwPR4f",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:58:57.568Z"
+    },
+    {
       "id": 1768417029344,
       "tipo": "promo",
       "loja": "Amazon",
