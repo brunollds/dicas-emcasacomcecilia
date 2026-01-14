@@ -1,0 +1,41 @@
+name: Limpeza de Promoções Antigas
+
+on:
+  schedule:
+    # Executa uma vez por dia às 03:00 UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Permite rodar manualmente pelo painel do GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Executar Limpeza
+        run: python scripts/maintenance/cleanup_promotions.py
+
+      - name: Commit e Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Sincroniza antes de subir (evita conflitos se você postou algo)
+          git pull --rebase origin main
+          
+          git add public/data/promocoes.json
+          if ! git diff --staged --quiet; then
+            git commit -m "🤖 Limpeza automática de promoções (+72h)"
+            git push
+          else
+            print "Nada para commitar."
+          fi
