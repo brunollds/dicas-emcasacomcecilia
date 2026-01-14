@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768416924520,
+      "tipo": "promo",
+      "loja": "Shopee",
+      "produto": "REDMAGIC Astra Gaming Tablet Mini 9.06'' OLED 8200mAh Snapdragon 8 Elite 12GB+256GB/16GB+512GB/24GB+1TB Preto/Prata",
+      "preco": 4099,
+      "precoAntigo": 5411,
+      "info": null,
+      "cupom": "D4RL3N",
+      "imagem": "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mg4xcjxv8p341f@resize_w450_nl.webp",
+      "link": "https://s.shopee.com.br/9KbnXwPR4f",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:55:24.520Z"
+    },
+    {
       "id": 1768416663373,
       "tipo": "promo",
       "loja": "Amazon",
