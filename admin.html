@@ -899,6 +899,29 @@
         }
 
         // Funções auxiliares GitHub API
+        
+        // Encode UTF-8 para Base64 (corrigido)
+        function utf8ToBase64(str) {
+            const encoder = new TextEncoder();
+            const data = encoder.encode(str);
+            let binary = '';
+            for (let i = 0; i < data.length; i++) {
+                binary += String.fromCharCode(data[i]);
+            }
+            return btoa(binary);
+        }
+        
+        // Decode Base64 para UTF-8 (corrigido)
+        function base64ToUtf8(base64) {
+            const binary = atob(base64);
+            const bytes = new Uint8Array(binary.length);
+            for (let i = 0; i < binary.length; i++) {
+                bytes[i] = binary.charCodeAt(i);
+            }
+            const decoder = new TextDecoder('utf-8');
+            return decoder.decode(bytes);
+        }
+        
         async function getFileFromGitHub() {
             const response = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.path}`, {
                 headers: { 
@@ -910,11 +933,14 @@
             if (!response.ok) throw new Error('Erro ao buscar arquivo');
             
             const data = await response.json();
-            const content = JSON.parse(atob(data.content));
+            const content = JSON.parse(base64ToUtf8(data.content));
             return { content, sha: data.sha };
         }
 
         async function saveFileToGitHub(content, sha, message) {
+            const jsonString = JSON.stringify(content, null, 2);
+            const base64Content = utf8ToBase64(jsonString);
+            
             const response = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.path}`, {
                 method: 'PUT',
                 headers: { 
@@ -924,7 +950,7 @@
                 },
                 body: JSON.stringify({
                     message: message,
-                    content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2)))),
+                    content: base64Content,
                     sha: sha,
                     branch: GITHUB_CONFIG.branch
                 })
