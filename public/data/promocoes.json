@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768412537153,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Pack Cerveja Stella Artois Pure Gold Sem Glúten, Lata, 473ml, Caixa 12 unidades",
+      "preco": 70.09,
+      "precoAntigo": 86.28,
+      "info": "Recorrência -10% • Mais por Menos: 10% off em 10+ itens - R$ 5,25/und +POR- ",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61Soc2-7woL._AC_SX522_.jpg",
+      "link": "https://amzn.to/4qWSdTF",
+      "destaque": false,
+      "timestamp": "2026-01-14T17:42:17.153Z"
+    },
+    {
       "id": 1768407520796,
       "tipo": "promo",
       "loja": "Shopee",
