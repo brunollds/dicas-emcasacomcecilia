@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768414347355,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Aparelho De Jantar 20 Peças Basic Sandy- Porto Brasil",
+      "preco": 258,
+      "precoAntigo": 468.7,
+      "info": "6x R$ 42,83 S/ Juros • Frete grátis Full - Oferta Relâmpago",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_933736-MLA92681998879_092025-F.webp",
+      "link": "https://mercadolivre.com/sec/2DAyy9r",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:12:27.355Z"
+    },
+    {
       "id": 1768414175360,
       "tipo": "promo",
       "loja": "Mercado Livre",
