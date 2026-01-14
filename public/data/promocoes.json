@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768405501735,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "teste de promoção 2",
+      "preco": 199.9,
+      "precoAntigo": 500.99,
+      "info": "12x sem juros • Frete grátis",
+      "cupom": "GK100ACC",
+      "imagem": null,
+      "link": "https://s.shopee.com.br/AKUKQFrJ7H",
+      "destaque": false,
+      "timestamp": "2026-01-14T15:45:01.735Z"
+    },
+    {
       "id": 1768405198931,
       "tipo": "promo",
       "loja": "Mercado Livre",
