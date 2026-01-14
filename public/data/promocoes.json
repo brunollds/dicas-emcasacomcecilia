@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768416663373,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Apple AirPods 4",
+      "preco": 1154.94,
+      "precoAntigo": 1499,
+      "info": "10x S/ Juros • Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/41u0NXHPxKL._AC_SL1000_.jpg",
+      "link": "https://amzn.to/4sY2wZx",
+      "destaque": false,
+      "timestamp": "2026-01-14T18:51:03.373Z"
+    },
+    {
       "id": 1768416569852,
       "tipo": "promo",
       "loja": "Amazon",
