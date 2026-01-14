@@ -1299,58 +1299,62 @@
         // Lista de promoções
         // =====================================================
         async function carregarLista() {
-            const container = document.getElementById('promoList');
-            const total = document.getElementById('totalPromos');
+    const container = document.getElementById('promoList');
+    const total = document.getElementById('totalPromos');
 
-            if (!config.token) {
-                container.innerHTML = '<p style="text-align: center; opacity: 0.6;">Configure o Token na aba Config</p>';
-                return;
-            }
+    if (!config.token) {
+        container.innerHTML = '<p style="text-align: center; opacity: 0.6;">Configure o Token na aba Config</p>';
+        return;
+    }
 
-            try {
-                const { content: data } = await getFileFromGitHub();
-                const promos = data.promocoes || [];
+    try {
+        const { content: data } = await getFileFromGitHub();
+        const promos = data.promocoes || [];
 
-                total.textContent = promos.length;
+        total.textContent = promos.length;
 
-                if (promos.length === 0) {
-                    container.innerHTML = '<p style="text-align: center; opacity: 0.6;">Nenhuma promoção cadastrada</p>';
-                    return;
-                }
-
-                container.innerHTML = promos.map(promo => {
-                    const isCupom = promo.tipo === 'cupom';
-                    const titulo = isCupom ? `🏷️ ${promo.codigoCupom}` : promo.produto;
-                    const preco = isCupom ? '' : `R$ ${promo.preco.toFixed(2).replace('.', ',')}`;
-                    
-                    return `
-                        <div class="promo-item ${isCupom ? 'cupom' : 'promo'}">
-                            <div class="promo-item-header">
-                                <span class="promo-item-title">${promo.destaque ? '🔥 ' : ''}${titulo}</span>
-                                <span class="promo-item-price">${preco}</span>
-                            </div>
-                            <div class="promo-item-meta">
-                                <span>${promo.loja}</span>
-                                <span>${formatarData(promo.timestamp)}</span>
-                                ${promo.cupom ? `<span>🏷️ ${promo.cupom}</span>` : ''}
-                            </div>
-                            <div class="promo-item-actions">
-                                <button class="btn btn-edit" onclick='editarPromo(${JSON.stringify(promo).replace(/'/g, "\\'")})'>
-                                    <i class="fas fa-edit"></i> Editar
-                                </button>
-                                <button class="btn btn-danger" onclick="excluirPromo(${promo.id})">
-                                    <i class="fas fa-trash"></i> Excluir
-                                </button>
-                            </div>
-                        </div>
-                    `;
-                }).join('');
-
-            } catch (error) {
-                container.innerHTML = '<p style="text-align: center; color: #dc2626;">Erro ao carregar</p>';
-            }
+        if (promos.length === 0) {
+            container.innerHTML = '<p style="text-align: center; opacity: 0.6;">Nenhuma promoção cadastrada</p>';
+            return;
         }
 
+        container.innerHTML = promos.map(promo => {
+            const isCupom = promo.tipo === 'cupom';
+            const titulo = isCupom ? `🏷️ ${promo.codigoCupom}` : promo.produto;
+            
+            // CORREÇÃO: Formatação segura para a lista do Admin
+            const precoValido = typeof promo.preco === 'number';
+            const preco = (isCupom || !precoValido) 
+                ? (isCupom ? '' : 'Preço não definido') 
+                : `R$ ${promo.preco.toFixed(2).replace('.', ',')}`;
+            
+            return `
+                <div class="promo-item ${isCupom ? 'cupom' : 'promo'}">
+                    <div class="promo-item-header">
+                        <span class="promo-item-title">${promo.destaque ? '🔥 ' : ''}${titulo}</span>
+                        <span class="promo-item-price">${preco}</span>
+                    </div>
+                    <div class="promo-item-meta">
+                        <span>${promo.loja}</span>
+                        <span>${formatarData(promo.timestamp)}</span>
+                        ${promo.cupom ? `<span>🏷️ ${promo.cupom}</span>` : ''}
+                    </div>
+                    <div class="promo-item-actions">
+                        <button class="btn btn-edit" onclick='editarPromo(${JSON.stringify(promo).replace(/'/g, "\\'")})'>
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        <button class="btn btn-danger" onclick="excluirPromo(${promo.id})">
+                            <i class="fas fa-trash"></i> Excluir
+                        </button>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+    } catch (error) {
+        container.innerHTML = '<p style="text-align: center; color: #dc2626;">Erro ao carregar</p>';
+    }
+}
         function editarPromo(promo) {
             // Mudar para tab de edição
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));

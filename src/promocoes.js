@@ -221,12 +221,15 @@ function criarCardHTML(promo, index) {
     const tempoAtras = calcularTempoAtras(promo.timestamp);
     const isCupom = promo.tipo === 'cupom';
 
+    // HTML da Imagem: Usa a imagem salva ou um ícone de sacola como reserva
+    const imagemHTML = promo.imagem 
+        ? `<img src="${promo.imagem}" alt="${promo.produto}" onerror="this.parentElement.innerHTML='<i class=\'fas fa-shopping-bag\'></i>'">`
+        : `<i class="fas fa-shopping-bag"></i>`;
+
     if (isCupom) {
         return `
             <article class="promo-card cupom-card" data-index="${index}">
-                <div class="promo-image">
-                    <i class="fas fa-ticket-alt"></i>
-                </div>
+                <div class="promo-image"><i class="fas fa-ticket-alt"></i></div>
                 <div class="promo-info">
                     <span class="promo-store ${storeClass}">${promo.loja}</span>
                     <h3 class="promo-title">🏷️ ${promo.descricaoCupom}</h3>
@@ -239,15 +242,18 @@ function criarCardHTML(promo, index) {
         `;
     }
 
-    const temDesconto = promo.preco && promo.precoAntigo && promo.precoAntigo > promo.preco;
+    // Formatação segura de preços (evita o erro toFixed)
+    const precoValido = typeof promo.preco === 'number' && promo.preco > 0;
+    const precoFormatado = precoValido ? `R$ ${promo.preco.toFixed(2).replace('.', ',')}` : 'Ver na loja';
+    
+    const temDesconto = precoValido && promo.precoAntigo && promo.precoAntigo > promo.preco;
+    const precoAntigoFormatado = temDesconto ? `R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}` : '';
     const desconto = temDesconto ? Math.round((1 - promo.preco / promo.precoAntigo) * 100) : 0;
-    const precoFormatado = promo.preco ? `R$ ${promo.preco.toFixed(2).replace('.', ',')}` : 'Ver preço';
-    const precoAntigoFormatado = promo.precoAntigo ? `R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}` : '';
 
     return `
         <article class="promo-card ${promo.destaque ? 'destaque' : ''}" data-index="${index}">
             <div class="promo-image">
-                <i class="fas fa-shopping-bag"></i>
+                ${imagemHTML}
             </div>
             <div class="promo-info">
                 <span class="promo-store ${storeClass}">${promo.loja}</span>
@@ -275,16 +281,20 @@ function abrirPopup(promo) {
     const isCupom = promo.tipo === 'cupom';
     const storeClass = promo.loja.toLowerCase().replace(/\s+/g, '-');
     
+    // HTML da Imagem para o Popup
+    const imagemHTML = promo.imagem 
+        ? `<div class="popup-product-img"><img src="${promo.imagem}" alt="${promo.produto}"></div>`
+        : '';
+
     let html = '';
 
     if (isCupom) {
-        // Popup de CUPOM
+        // ... (Mantenha o código de cupom igual ou adicione a imagem se desejar)
         html = `
             <div class="popup-header">
                 <span class="popup-store ${storeClass}">${promo.loja}</span>
                 <h3 class="popup-title">🏷️ ${promo.descricaoCupom}</h3>
             </div>
-            
             <div class="popup-cupom">
                 <p class="popup-cupom-label">Use o cupom abaixo:</p>
                 <div class="popup-cupom-code">
@@ -294,24 +304,19 @@ function abrirPopup(promo) {
                     </button>
                 </div>
             </div>
-            
             <a href="${promo.link}" target="_blank" rel="noopener" class="popup-cta" onclick="fecharPopup()">
-                <i class="fas fa-external-link-alt"></i>
-                IR PARA ${promo.loja.toUpperCase()}
+                <i class="fas fa-external-link-alt"></i> IR PARA ${promo.loja.toUpperCase()}
             </a>
-            
             <div class="popup-share">
-                <button class="popup-share-btn" onclick="copiarLink('${promo.link}')">
-                    <i class="fas fa-link"></i> Copiar link
-                </button>
-                <button class="popup-share-btn whatsapp" onclick="compartilharWhatsApp('cupom', ${JSON.stringify(promo).replace(/'/g, "\\'")})">
-                    <i class="fab fa-whatsapp"></i> Compartilhar
-                </button>
+                <button class="popup-share-btn" onclick="copiarLink('${promo.link}')"><i class="fas fa-link"></i> Copiar link</button>
+                <button class="popup-share-btn whatsapp" onclick="compartilharWhatsApp('cupom', ${JSON.stringify(promo).replace(/'/g, "\\'")})"><i class="fab fa-whatsapp"></i> Compartilhar</button>
             </div>
         `;
     } else {
-        // Popup de PROMOÇÃO
-        const temDesconto = promo.precoAntigo && promo.precoAntigo > promo.preco;
+        // Popup de PROMOÇÃO com segurança de preço e IMAGEM
+        const precoValido = typeof promo.preco === 'number';
+        const precoDisplay = precoValido ? `R$ ${promo.preco.toFixed(2).replace('.', ',')}` : 'Consulte o preço';
+        const temDesconto = precoValido && promo.precoAntigo && promo.precoAntigo > promo.preco;
         const desconto = temDesconto ? Math.round((1 - promo.preco / promo.precoAntigo) * 100) : 0;
 
         html = `
@@ -320,8 +325,10 @@ function abrirPopup(promo) {
                 <h3 class="popup-title">${promo.produto}</h3>
             </div>
             
+            ${imagemHTML}
+
             <div class="popup-price-section">
-                <span class="popup-price">R$ ${promo.preco.toFixed(2).replace('.', ',')}</span>
+                <span class="popup-price">${precoDisplay}</span>
                 ${temDesconto ? `<span class="popup-old-price">R$ ${promo.precoAntigo.toFixed(2).replace('.', ',')}</span>` : ''}
                 ${desconto > 0 ? `<div class="popup-discount">-${desconto}% de desconto</div>` : ''}
             </div>
@@ -331,32 +338,20 @@ function abrirPopup(promo) {
                     <p class="popup-cupom-label">Use o cupom para garantir o desconto:</p>
                     <div class="popup-cupom-code">
                         <code>${promo.cupom}</code>
-                        <button class="popup-cupom-copy" onclick="copiarCupom('${promo.cupom}')">
-                            <i class="fas fa-copy"></i> Copiar
-                        </button>
+                        <button class="popup-cupom-copy" onclick="copiarCupom('${promo.cupom}')"><i class="fas fa-copy"></i> Copiar</button>
                     </div>
                 </div>
             ` : ''}
             
-            ${promo.info ? `
-                <div class="popup-info">
-                    <i class="fas fa-info-circle"></i>
-                    ${promo.info}
-                </div>
-            ` : ''}
+            ${promo.info ? `<div class="popup-info"><i class="fas fa-info-circle"></i> ${promo.info}</div>` : ''}
             
             <a href="${promo.link}" target="_blank" rel="noopener" class="popup-cta" onclick="fecharPopup()">
-                <i class="fas fa-shopping-cart"></i>
-                APROVEITAR OFERTA
+                <i class="fas fa-shopping-cart"></i> APROVEITAR OFERTA
             </a>
             
             <div class="popup-share">
-                <button class="popup-share-btn" onclick="copiarLink('${promo.link}')">
-                    <i class="fas fa-link"></i> Copiar link
-                </button>
-                <button class="popup-share-btn whatsapp" onclick="compartilharWhatsApp('promo', ${JSON.stringify(promo).replace(/'/g, "\\'")})">
-                    <i class="fab fa-whatsapp"></i> Compartilhar
-                </button>
+                <button class="popup-share-btn" onclick="copiarLink('${promo.link}')"><i class="fas fa-link"></i> Copiar link</button>
+                <button class="popup-share-btn whatsapp" onclick="compartilharWhatsApp('promo', ${JSON.stringify(promo).replace(/'/g, "\\'")})"><i class="fab fa-whatsapp"></i> Compartilhar</button>
             </div>
         `;
     }
