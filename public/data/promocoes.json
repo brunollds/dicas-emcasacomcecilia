@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768418331884,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit 2 Short Duplo Compreensão Fitness Bermuda Feminino",
+      "preco": 63.9,
+      "precoAntigo": 99.9,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_771763-MLB90662184203_082025-F-kit-2-short-duplo-compreenso-fitness-bermuda-feminino.webp",
+      "link": "https://mercadolivre.com/sec/19u59Kf",
+      "destaque": false,
+      "timestamp": "2026-01-14T19:18:51.884Z"
+    },
+    {
       "id": 1768418276318,
       "tipo": "promo",
       "loja": "Mercado Livre",
