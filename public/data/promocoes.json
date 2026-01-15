@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768442692661,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Telescópio Astronômico 70mm Com Tripé F300 70m F30070m Ultra Cor Cinza",
+      "preco": 207.41,
+      "precoAntigo": 398.86,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_676401-MLA91599232156_092025-F.webp",
+      "link": "https://mercadolivre.com/sec/1vJ43oT",
+      "destaque": false,
+      "timestamp": "2026-01-15T02:04:52.661Z"
+    },
+    {
       "id": 1768442290294,
       "tipo": "promo",
       "loja": "Mercado Livre",
