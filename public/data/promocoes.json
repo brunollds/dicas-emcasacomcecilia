@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768521051764,
+      "tipo": "promo",
+      "loja": "Shopee",
+      "produto": "NIVEA - Creme Facial Antissinais - 50g",
+      "preco": 21.99,
+      "precoAntigo": 36.05,
+      "info": null,
+      "cupom": null,
+      "imagem": "https://down-br.img.susercontent.com/file/sg-11134201-7rav5-ma8yn26kc8djc2.webp",
+      "link": " https://s.shopee.com.br/4q9Q6uLjLo",
+      "destaque": false,
+      "timestamp": "2026-01-15T23:50:51.764Z"
+    },
+    {
       "id": 1768520702018,
       "tipo": "promo",
       "loja": "Mercado Livre",
