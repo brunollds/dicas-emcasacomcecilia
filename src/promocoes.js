@@ -7,6 +7,10 @@
 const PROMOCOES_URL = '/data/promocoes.json';
 const PRODUCTS_URL = '/data/products.json';
 
+// No topo do arquivo, logo abaixo das URLs das APIs
+let limiteExibicao = 20; 
+const ITENS_POR_PAGINA = 20;
+
 // Elementos do DOM
 const container = document.getElementById('promos-container');
 const searchInput = document.getElementById('searchInput');
@@ -145,71 +149,72 @@ function criarBoxResultadosCategorias(resultados) {
 function renderizarPromocoes() {
     const termoBusca = searchInput ? searchInput.value.toLowerCase().trim() : '';
     
+    // 1. Filtragem completa (mantendo sua lógica de busca unificada)
     let promosFiltradas = todasPromocoes.filter(promo => {
-        // Filtro por tipo
         if (filtroAtual === 'promo' && promo.tipo === 'cupom') return false;
         if (filtroAtual === 'cupom' && promo.tipo !== 'cupom') return false;
 
-        // Filtro por busca
         if (termoBusca) {
-            const texto = [
-                promo.produto,
-                promo.loja,
-                promo.cupom,
-                promo.info,
-                promo.descricaoCupom,
-                promo.codigoCupom
-            ].filter(Boolean).join(' ').toLowerCase();
-            
+            const texto = [promo.produto, promo.loja, promo.cupom, promo.info].filter(Boolean).join(' ').toLowerCase();
             return texto.includes(termoBusca);
         }
-
         return true;
     });
 
-    // Buscar também em produtos se houver termo de busca
     const resultadosCategorias = termoBusca ? buscarEmProdutos(termoBusca) : {};
     const temResultadosCategorias = Object.keys(resultadosCategorias).length > 0;
 
-    if (promosFiltradas.length === 0 && !temResultadosCategorias) {
-        container.innerHTML = `
-            <div class="empty-state">
-                <i class="fas fa-search"></i>
-                <p>${termoBusca ? 'Nenhuma promoção encontrada.' : 'Nenhuma promoção no momento.'}<br>Volte em breve!</p>
-            </div>
-        `;
+    // 2. Paginação: Pegar apenas a fatia para exibir
+    const totalDisponivel = promosFiltradas.length;
+    const listaParaExibir = promosFiltradas.slice(0, limiteExibicao);
+
+    if (listaParaExibir.length === 0 && !temResultadosCategorias) {
+        container.innerHTML = `<div class="empty-state"><i class="fas fa-search"></i><p>Nenhuma promoção encontrada.</p></div>`;
         return;
     }
 
-    // Montar HTML
-    let html = '';
+    // 3. Montar o HTML
+    let html = listaParaExibir.map((promo, index) => criarCardHTML(promo, index)).join('');
     
-    if (promosFiltradas.length > 0) {
-        html = promosFiltradas.map((promo, index) => criarCardHTML(promo, index)).join('');
-    } else if (termoBusca) {
-        html = `
-            <div class="empty-state small">
-                <i class="fas fa-search"></i>
-                <p>Nenhuma promoção ativa para "${termoBusca}"</p>
+    // 4. Adicionar botão "Carregar Mais" se necessário
+    if (limiteExibicao < totalDisponivel) {
+        html += `
+            <div id="load-more-wrapper" style="grid-column: 1 / -1; text-align: center; padding: 30px 0;">
+                <button id="btnCarregarMais" class="promo-btn" style="width: auto; min-width: 250px;">
+                    Carregar mais promoções (${totalDisponivel - limiteExibicao} restantes)
+                </button>
             </div>
         `;
     }
-    
-    // Adicionar box de resultados em categorias
+
     if (temResultadosCategorias) {
         html += criarBoxResultadosCategorias(resultadosCategorias);
     }
     
     container.innerHTML = html;
 
-    // Adicionar event listeners nos cards
+    // 5. Configurar Eventos
+    configurarEventosCards(listaParaExibir);
+}
+
+// Função para reatribuir cliques após renderizar
+function configurarEventosCards(listaAtual) {
+    // Cliques nos Cards para abrir Popup
     document.querySelectorAll('.promo-card').forEach(card => {
         card.addEventListener('click', () => {
             const index = parseInt(card.dataset.index);
-            const promo = promosFiltradas[index];
-            abrirPopup(promo);
+            abrirPopup(listaAtual[index]);
         });
     });
+
+    // Clique no botão "Carregar Mais"
+    const btn = document.getElementById('btnCarregarMais');
+    if (btn) {
+        btn.addEventListener('click', () => {
+            limiteExibicao += ITENS_POR_PAGINA;
+            renderizarPromocoes();
+        });
+    }
 }
 
 // =====================================================

@@ -1074,3 +1074,29 @@ a {
     width: 100%;
     height: 100%;
 }
+/* Container da imagem dentro do Popup */
+.popup-product-img {
+    width: 100%;
+    max-height: 250px; /* Limita a altura para não empurrar o texto para fora */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* Garante que a imagem se ajuste sem esticar */
+.popup-product-img img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain; /* Mantém a proporção original da foto */
+}
+
+/* Ajuste opcional para o título no popup não ficar colado */
+.popup-title {
+    margin-bottom: 15px;
+    text-align: center;
+}
