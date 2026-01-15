@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768498351142,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Tênis Masculino Edgeride - Serven Skechers",
+      "preco": 241.31,
+      "precoAntigo": 499.99,
+      "info": "Frete grátis Full • Chegando amanhã - Aplicar Cupom na Pagina",
+      "cupom": "15% OFF",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_617245-MLB100073494925_122025-F-tnis-masculino-edgeride-serven-skechers.webp",
+      "link": "https://mercadolivre.com/sec/2HieU4H",
+      "destaque": false,
+      "timestamp": "2026-01-15T17:32:31.142Z"
+    },
+    {
       "id": 1768498295223,
       "tipo": "promo",
       "loja": "Mercado Livre",
