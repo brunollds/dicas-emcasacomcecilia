@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768497844131,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Comfort Amaciante Concentrado Puro Cuidado 1,5L",
+      "preco": 21.74,
+      "precoAntigo": 35.9,
+      "info": "Recorrência -10% • Mais por Menos: 10% off em 10+ itens - R$19,56 +POR-",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61Ju1heOhrL._AC_SX679_.jpg",
+      "link": "https://amzn.to/3NvIxAS",
+      "destaque": false,
+      "timestamp": "2026-01-15T17:24:04.131Z"
+    },
+    {
       "id": 1768497220123,
       "tipo": "promo",
       "loja": "Magazine Luiza",
