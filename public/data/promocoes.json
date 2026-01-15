@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768442765968,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Faca Chef 8 Pol Inox Profissional Cozinha Hauskraft Couper",
+      "preco": 20.33,
+      "precoAntigo": 59.9,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_810533-MLB100743171984_122025-F-faca-chef-8-pol-inox-profissional-cozinha-hauskraft-couper.webp",
+      "link": "https://mercadolivre.com/sec/1P5datt",
+      "destaque": false,
+      "timestamp": "2026-01-15T02:06:05.968Z"
+    },
+    {
       "id": 1768442692661,
       "tipo": "promo",
       "loja": "Mercado Livre",
