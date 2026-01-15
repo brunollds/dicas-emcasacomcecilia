@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768516818983,
+      "tipo": "promo",
+      "loja": "Magazine Luiza",
+      "produto": "Máquina de Lavar F170B7WA 17KG Branca 220V Panasonic",
+      "preco": 1811.61,
+      "precoAntigo": 2599,
+      "info": "ou R$ 2012,90 em 10x S/ Juros - Vendido Pelo Carrefour Oficial",
+      "cupom": null,
+      "imagem": "https://a-static.mlcdn.com.br/800x560/maquina-de-lavar-f170b7wa-17kg-branca-220v-panasonic/carrefouroficial/900012847/23ca4ee7df994887660105575588bfce.jpeg",
+      "link": "https://divulgador.magalu.com/OCXV901R",
+      "destaque": false,
+      "timestamp": "2026-01-15T22:40:18.983Z"
+    },
+    {
       "id": 1768498827017,
       "tipo": "promo",
       "loja": "Mercado Livre",
