@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768520702018,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit 3 Calças Feminina Legging Grossa Para Academia Cós Alto",
+      "preco": 53.34,
+      "precoAntigo": 69.99,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_883331-MLB83550069065_042025-F-kit-3-calcas-feminina-legging-grossa-para-academia-cos-alto.webp",
+      "link": "https://mercadolivre.com/sec/1RefR8c",
+      "destaque": false,
+      "timestamp": "2026-01-15T23:45:02.018Z"
+    },
+    {
       "id": 1768519777147,
       "tipo": "promo",
       "loja": "Mercado Livre",
