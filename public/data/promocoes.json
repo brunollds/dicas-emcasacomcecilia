@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768498295223,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Tênis Masculino Go Walk Now - Payton Skechers",
+      "preco": 202.29,
+      "precoAntigo": 649.99,
+      "info": "Frete grátis Full • Chegando amanhã - Aplicar Cupom na Pagina",
+      "cupom": "15% OFF",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_908088-MLB99697616352_122025-F-tnis-masculino-go-walk-now-payton-skechers.webp",
+      "link": "https://mercadolivre.com/sec/1MD5PAw",
+      "destaque": false,
+      "timestamp": "2026-01-15T17:31:35.223Z"
+    },
+    {
       "id": 1768497844131,
       "tipo": "promo",
       "loja": "Amazon",
