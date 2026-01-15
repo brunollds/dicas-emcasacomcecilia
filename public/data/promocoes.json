@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768437027249,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Pijama Feminino Curto Estampado Hering",
+      "preco": 66.49,
+      "precoAntigo": 129.9,
+      "info": "R$ 69,99 em 3x S/ Juros • Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_823100-MLB100266448889_122025-F-pijama-feminino-curto-estampado-hering.webp",
+      "link": "https://mercadolivre.com/sec/2zF39nf",
+      "destaque": false,
+      "timestamp": "2026-01-15T00:30:27.250Z"
+    },
+    {
       "id": 1768436873563,
       "tipo": "promo",
       "loja": "Mercado Livre",
