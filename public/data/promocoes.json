@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768442162960,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Enxaguante Bucal Colgate Plax Soft Mint 2l",
+      "preco": 37.7,
+      "precoAntigo": 65.06,
+      "info": "Mais por Menos: 10% off em 10+ itens • Recorrência -10% - R$ 33,93 *+POR-* ",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61YZKhBhPOL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4sFTekv",
+      "destaque": false,
+      "timestamp": "2026-01-15T01:56:02.960Z"
+    },
+    {
       "id": 1768441336704,
       "tipo": "promo",
       "loja": "Amazon",
