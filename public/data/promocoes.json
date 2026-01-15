@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768443125815,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Rabanne Phantom Intense Refillable 150ml - Perfume Masculino",
+      "preco": 659.9,
+      "precoAntigo": 1102.95,
+      "info": "10X s/ Juros • Frete grátis Full - Ative o Cupom na Pagina",
+      "cupom": "15% Off",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_855124-MLB77106784504_062024-F.webp",
+      "link": "https://mercadolivre.com/sec/1yUnRSw",
+      "destaque": false,
+      "timestamp": "2026-01-15T02:12:05.815Z"
+    },
+    {
       "id": 1768442992166,
       "tipo": "promo",
       "loja": "Amazon",
