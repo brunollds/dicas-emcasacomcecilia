@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768438232010,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Cuba De Vidro Quadrada 31cm Preta Para Banheiros E Lavabo Tampo Moderno Pia De Sobrepor",
+      "preco": 68.9,
+      "precoAntigo": 139,
+      "info": "R$ 76,55 em 3x  S/ Juros - Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_869681-MLA101686608723_122025-F.webp",
+      "link": "https://mercadolivre.com/sec/1bLanmA",
+      "destaque": false,
+      "timestamp": "2026-01-15T00:50:32.010Z"
+    },
+    {
       "id": 1768437129434,
       "tipo": "promo",
       "loja": "Mercado Livre",
