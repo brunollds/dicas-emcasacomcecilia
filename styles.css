@@ -1100,3 +1100,38 @@ a {
     margin-bottom: 15px;
     text-align: center;
 }
+
+/* Ajuste na largura do Popup para não ser tão estreito */
+.promo-popup {
+    max-width: 650px !important; /* Aumentamos de 450px para 650px */
+    width: 95%;
+    padding: 10px;
+}
+
+/* Container da imagem no Popup - ESSENCIAL para as imagens não ficarem gigantes */
+.popup-product-img {
+    width: 100%;
+    max-height: 300px; /* Limita a altura da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.popup-product-img img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain; /* Mantém a proporção sem esticar */
+}
+
+/* Melhoria no título do Popup */
+.popup-title {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 15px 0;
+    line-height: 1.3;
+}

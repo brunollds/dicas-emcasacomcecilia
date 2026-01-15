@@ -10,6 +10,7 @@ const PRODUCTS_URL = '/data/products.json';
 // No topo do arquivo, logo abaixo das URLs das APIs
 let limiteExibicao = 20; 
 const ITENS_POR_PAGINA = 20;
+let observer; // Para o carregamento automático
 
 // Elementos do DOM
 const container = document.getElementById('promos-container');
@@ -149,11 +150,10 @@ function criarBoxResultadosCategorias(resultados) {
 function renderizarPromocoes() {
     const termoBusca = searchInput ? searchInput.value.toLowerCase().trim() : '';
     
-    // 1. Filtragem completa (mantendo sua lógica de busca unificada)
+    // Filtra a lista completa
     let promosFiltradas = todasPromocoes.filter(promo => {
         if (filtroAtual === 'promo' && promo.tipo === 'cupom') return false;
         if (filtroAtual === 'cupom' && promo.tipo !== 'cupom') return false;
-
         if (termoBusca) {
             const texto = [promo.produto, promo.loja, promo.cupom, promo.info].filter(Boolean).join(' ').toLowerCase();
             return texto.includes(termoBusca);
@@ -161,40 +161,53 @@ function renderizarPromocoes() {
         return true;
     });
 
-    const resultadosCategorias = termoBusca ? buscarEmProdutos(termoBusca) : {};
-    const temResultadosCategorias = Object.keys(resultadosCategorias).length > 0;
-
-    // 2. Paginação: Pegar apenas a fatia para exibir
     const totalDisponivel = promosFiltradas.length;
     const listaParaExibir = promosFiltradas.slice(0, limiteExibicao);
 
-    if (listaParaExibir.length === 0 && !temResultadosCategorias) {
-        container.innerHTML = `<div class="empty-state"><i class="fas fa-search"></i><p>Nenhuma promoção encontrada.</p></div>`;
+    if (listaParaExibir.length === 0) {
+        container.innerHTML = `<div class="empty-state"><p>Nenhuma promoção encontrada.</p></div>`;
         return;
     }
 
-    // 3. Montar o HTML
+    // Gera o HTML
     let html = listaParaExibir.map((promo, index) => criarCardHTML(promo, index)).join('');
     
-    // 4. Adicionar botão "Carregar Mais" se necessário
+    // Adiciona um "sentinela" no final para o carregamento automático
     if (limiteExibicao < totalDisponivel) {
-        html += `
-            <div id="load-more-wrapper" style="grid-column: 1 / -1; text-align: center; padding: 30px 0;">
-                <button id="btnCarregarMais" class="promo-btn" style="width: auto; min-width: 250px;">
-                    Carregar mais promoções (${totalDisponivel - limiteExibicao} restantes)
-                </button>
-            </div>
-        `;
-    }
-
-    if (temResultadosCategorias) {
-        html += criarBoxResultadosCategorias(resultadosCategorias);
+        html += `<div id="sentinela" style="height: 20px; margin-bottom: 50px;"></div>`;
     }
     
     container.innerHTML = html;
 
-    // 5. Configurar Eventos
-    configurarEventosCards(listaParaExibir);
+    configurarEventos(listaParaExibir);
+    ativarCarregamentoAutomatico();
+}
+
+// 3. Adicione esta nova função para detectar o fim da página
+function ativarCarregamentoAutomatico() {
+    const sentinela = document.getElementById('sentinela');
+    if (!sentinela) return;
+
+    if (observer) observer.disconnect();
+
+    observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            limiteExibicao += ITENS_POR_PAGINA;
+            renderizarPromocoes();
+        }
+    }, { rootMargin: '200px' }); // Começa a carregar 200px antes de chegar no fim
+
+    observer.observe(sentinela);
+}
+
+// 4. Ajuste sua função configurarEventos para lidar com os cliques
+function configurarEventos(listaAtual) {
+    document.querySelectorAll('.promo-card').forEach(card => {
+        card.onclick = () => {
+            const index = parseInt(card.dataset.index);
+            abrirPopup(listaAtual[index]);
+        };
+    });
 }
 
 // Função para reatribuir cliques após renderizar
