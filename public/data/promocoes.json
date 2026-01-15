@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768441068792,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Panela Elétrica Philco Multifuncional",
+      "preco": 132.9,
+      "precoAntigo": 167.8,
+      "info": "ou R$ 139,90 em até 4x de R$ 34,99 sem juros",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/51iv0p68nZL._AC_SX679_.jpg",
+      "link": "https://amzn.to/49xwquA",
+      "destaque": false,
+      "timestamp": "2026-01-15T01:37:48.792Z"
+    },
+    {
       "id": 1768438232010,
       "tipo": "promo",
       "loja": "Mercado Livre",
