@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768521190636,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "ATTACK SHARK AKS068 Teclado mecânico para jogos com fio 65% Alice Layout Hot-swapped Gaxeta, retroiluminação RGB VIA Botão programável NKRO TKL AS Interruptor vermelho linear pré-lubrificado (Azul)",
+      "preco": 237.99,
+      "precoAntigo": 399,
+      "info": "R$251,99 em 6x S/ Juros - Aplique Cupom na Pagina",
+      "cupom": "10% OFF",
+      "imagem": "https://m.media-amazon.com/images/I/81nfEopqe6L._AC_SX679_.jpg",
+      "link": "https://amzn.to/4jLyZ0M",
+      "destaque": false,
+      "timestamp": "2026-01-15T23:53:10.636Z"
+    },
+    {
       "id": 1768521051764,
       "tipo": "promo",
       "loja": "Shopee",
