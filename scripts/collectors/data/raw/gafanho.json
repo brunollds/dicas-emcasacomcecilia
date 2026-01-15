@@ -1,5 +1,405 @@
 [
   {
+    "id": "4961117",
+    "source": "gafanho",
+    "title": "Hub USB-C 8 em 1, Hub Adaptador Multifuncional com HDMI 4K, Ethernet RJ45, Carregamento PD, 2 Portas USB 3.0, Leitor SD/TF, Cinza - R$19",
+    "url": "https://gafanho.to/gafanhoto/go/6648095",
+    "price": 19.0,
+    "price_text": "R$ 19,00",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808538Z"
+  },
+  {
+    "id": "4961113",
+    "source": "gafanho",
+    "title": "Downy Amaciante Concentrado Perfume Collection Místico 1,35L",
+    "url": "https://gafanho.to/gafanhoto/go/6648091",
+    "price": 21.84,
+    "price_text": "R$ 21,84",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808642Z"
+  },
+  {
+    "id": "4961112",
+    "source": "gafanho",
+    "title": "Suporte de Papel Higiênico Slim Sem Furos Dourado",
+    "url": "https://gafanho.to/gafanhoto/go/6648090",
+    "price": 18.95,
+    "price_text": "R$ 18,95",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808660Z"
+  },
+  {
+    "id": "4961109",
+    "source": "gafanho",
+    "title": "AOC, Monitor 22” 120Hz, 22B35HM23, 1ms Gaming, HDMI",
+    "url": "https://gafanho.to/gafanhoto/go/6648089",
+    "price": 420.0,
+    "price_text": "R$ 420,00",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808671Z"
+  },
+  {
+    "id": "4961107",
+    "source": "gafanho",
+    "title": "Monitor LG UltraFine™ - Tela IPS UHD 4K 27\", HDR10, DCI-P3 90%, Dynamic Action Sync – 27US500-W.",
+    "url": "https://gafanho.to/gafanhoto/go/6648088",
+    "price": 1239.0,
+    "price_text": "R$ 1.239,00",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808681Z"
+  },
+  {
+    "id": "4961105",
+    "source": "gafanho",
+    "title": "FGC - Cadastro De Informações Para Quem Tem CDB Do Banco Master",
+    "url": "https://gafanho.to/gafanhoto/go/6648086",
+    "price": null,
+    "price_text": null,
+    "store": "Google",
+    "collected_at": "2026-01-15T04:39:37.808689Z"
+  },
+  {
+    "id": "4961104",
+    "source": "gafanho",
+    "title": "Cotonetes Hastes Flexíveis Pote,150un por R$ 11,34",
+    "url": "https://gafanho.to/gafanhoto/go/6648085",
+    "price": 11.34,
+    "price_text": "R$ 11,34",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808698Z"
+  },
+  {
+    "id": "4961103",
+    "source": "gafanho",
+    "title": "Meias Esportivas MEIA PERF INV 1/2 TOALHA REEBOKmasculino por R$ 19,43",
+    "url": "https://gafanho.to/gafanhoto/go/6648084",
+    "price": 19.43,
+    "price_text": "R$ 19,43",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808713Z"
+  },
+  {
+    "id": "4961102",
+    "source": "gafanho",
+    "title": "Memória RAM Diamond Series 8GB 3200Mhz DDR4 Black para Desktop 1.2v - RM-D4-8G-3200D - R$ 229",
+    "url": "https://gafanho.to/gafanhoto/go/6648083",
+    "price": 229.0,
+    "price_text": "R$ 229,00",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808723Z"
+  },
+  {
+    "id": "4961101",
+    "source": "gafanho",
+    "title": "Novos Cupons Shopee",
+    "url": "https://gafanho.to/gafanhoto/go/6648082",
+    "price": 899.0,
+    "price_text": "R$ 899,00",
+    "store": "Shopee",
+    "collected_at": "2026-01-15T04:39:37.808731Z"
+  },
+  {
+    "id": "4961100",
+    "source": "gafanho",
+    "title": "Máscara De Solda Escurecimento Automatico Profissional Cor Preto Liso The Black Tools por R$ 59,90 em 2x sem juros!",
+    "url": "https://gafanho.to/gafanhoto/go/6648081",
+    "price": 59.9,
+    "price_text": "R$ 59,90",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808740Z"
+  },
+  {
+    "id": "4961096",
+    "source": "gafanho",
+    "title": "Calça Legging Feminina Cintura Alta Leg Fitness Academia e Dia a Dia - R$ 9",
+    "url": "https://gafanho.to/gafanhoto/go/6648077",
+    "price": 9.0,
+    "price_text": "R$ 9,00",
+    "store": "Shopee",
+    "collected_at": "2026-01-15T04:39:37.808748Z"
+  },
+  {
+    "id": "4961093",
+    "source": "gafanho",
+    "title": "Caneta Corretiva Cis Pen Grip 4ml com 12 Unidades",
+    "url": "https://gafanho.to/gafanhoto/go/6648074",
+    "price": 40.0,
+    "price_text": "R$ 40,00",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808756Z"
+  },
+  {
+    "id": "4961090",
+    "source": "gafanho",
+    "title": "Micro-ondas MO-01-21-W 21 Litros 1200W Mondial",
+    "url": "https://gafanho.to/gafanhoto/go/6648073",
+    "price": 374.0,
+    "price_text": "R$ 374,00",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808763Z"
+  },
+  {
+    "id": "4961089",
+    "source": "gafanho",
+    "title": "Brinquedo Trator Colheitadeira Case Axial Flow",
+    "url": "https://gafanho.to/gafanhoto/go/6648072",
+    "price": 39.09,
+    "price_text": "R$ 39,09",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808770Z"
+  },
+  {
+    "id": "4961084",
+    "source": "gafanho",
+    "title": "Harpic Cloro Forte - Desinfetante Sanitário Líquido Desodorizador, 200ml, Azul",
+    "url": "https://gafanho.to/gafanhoto/go/6648069",
+    "price": 5.99,
+    "price_text": "R$ 5,99",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808777Z"
+  },
+  {
+    "id": "4961083",
+    "source": "gafanho",
+    "title": "Fogão Itatiaia Star New 4 Bocas Branco Bivolt 3700000357 - WebContinental",
+    "url": "https://gafanho.to/gafanhoto/go/6648068",
+    "price": 509.0,
+    "price_text": "R$ 509,00",
+    "store": "Webcontinental",
+    "collected_at": "2026-01-15T04:39:37.808785Z"
+  },
+  {
+    "id": "4961082",
+    "source": "gafanho",
+    "title": "Lavadora De Alta Pressão Master Doméstica Jato Regulável 1500psi Com 1200w Amarelo E Preto Tramontina",
+    "url": "https://gafanho.to/gafanhoto/go/6648067",
+    "price": 272.0,
+    "price_text": "R$ 272,00",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808793Z"
+  },
+  {
+    "id": "4961079",
+    "source": "gafanho",
+    "title": "Achocolatado em Pó 3 Corações Chocolatto Pouch 700G",
+    "url": "https://gafanho.to/gafanhoto/go/6648066",
+    "price": 7.39,
+    "price_text": "R$ 7,39",
+    "store": "Carrefour",
+    "collected_at": "2026-01-15T04:39:37.808802Z"
+  },
+  {
+    "id": "4961077",
+    "source": "gafanho",
+    "title": "Telescópio Astronômico 70mm Com Tripé F300 70m F30070m Ultra Cor Cinza por R$ 207,41 à vista!",
+    "url": "https://gafanho.to/gafanhoto/go/6648065",
+    "price": 207.41,
+    "price_text": "R$ 207,41",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808810Z"
+  },
+  {
+    "id": "4961075",
+    "source": "gafanho",
+    "title": "Kit De Acessórios Para Banheiro 5 Peças Stander Polido por R$ 32,99 à vista!",
+    "url": "https://gafanho.to/gafanhoto/go/6648063",
+    "price": 32.99,
+    "price_text": "R$ 32,99",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808817Z"
+  },
+  {
+    "id": "4961074",
+    "source": "gafanho",
+    "title": "Pack De Fanta Laranja Zero Lata 350ml 6 Unidades por R$ 17,94",
+    "url": "https://gafanho.to/gafanhoto/go/6648062",
+    "price": 17.94,
+    "price_text": "R$ 17,94",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808824Z"
+  },
+  {
+    "id": "4961073",
+    "source": "gafanho",
+    "title": "Suporte Cockpit Para Volante Simulador Extreme Sgt Cinza por R$ 1.225,00 à vista!",
+    "url": "https://gafanho.to/gafanhoto/go/6648061",
+    "price": 1225.0,
+    "price_text": "R$ 1.225,00",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808831Z"
+  },
+  {
+    "id": "4961072",
+    "source": "gafanho",
+    "title": "Copo Térmico De Cerveja Stanley Matte Black Preto | 473ML por R$ 82,70",
+    "url": "https://gafanho.to/gafanhoto/go/6648060",
+    "price": 82.7,
+    "price_text": "R$ 82,70",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808837Z"
+  },
+  {
+    "id": "4961070",
+    "source": "gafanho",
+    "title": "O Novo Czar: Ascensão E Reinado De Vladimir Putin por R$ 78,99",
+    "url": "https://gafanho.to/gafanhoto/go/6648058",
+    "price": 78.99,
+    "price_text": "R$ 78,99",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808845Z"
+  },
+  {
+    "id": "4961069",
+    "source": "gafanho",
+    "title": "Kit 10 Calcinhas Sem Costura Poliamida Cintura Alta Laser por R$ 55,90 em 2x sem juros!",
+    "url": "https://gafanho.to/gafanhoto/go/6648057",
+    "price": 55.9,
+    "price_text": "R$ 55,90",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808851Z"
+  },
+  {
+    "id": "4961068",
+    "source": "gafanho",
+    "title": "Kit De Acessórios Para Banheiro 5 Peças Stander Polido",
+    "url": "https://gafanho.to/gafanhoto/go/6648056",
+    "price": 32.99,
+    "price_text": "R$ 32,99",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808858Z"
+  },
+  {
+    "id": "4961067",
+    "source": "gafanho",
+    "title": "Mangueira Tramontina Master 1600psi 6 metros",
+    "url": "https://gafanho.to/gafanhoto/go/6648055",
+    "price": 38.0,
+    "price_text": "R$ 38,00",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808864Z"
+  },
+  {
+    "id": "4961064",
+    "source": "gafanho",
+    "title": "Faca Chef 8\" Inox Profissional Hauskraft",
+    "url": "https://gafanho.to/gafanhoto/go/6648053",
+    "price": 20.0,
+    "price_text": "R$ 20,00",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808871Z"
+  },
+  {
+    "id": "4961063",
+    "source": "gafanho",
+    "title": "Kit 48 Potes Plásticos 350ml com Tampa Prafesta",
+    "url": "https://gafanho.to/gafanhoto/go/6648052",
+    "price": 21.57,
+    "price_text": "R$ 21,57",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808878Z"
+  },
+  {
+    "id": "4961062",
+    "source": "gafanho",
+    "title": "Colgate Creme Dental Vegano Natural Extracts Carvão e Menta, Dentes Mais Brancos, Sem Gluten, Com Flúor, 90g - 3 unidades",
+    "url": "https://gafanho.to/gafanhoto/go/6648054",
+    "price": 18.76,
+    "price_text": "R$ 18,76",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808885Z"
+  },
+  {
+    "id": "4961058",
+    "source": "gafanho",
+    "title": "Jogo De Panelas 18 Peças, Conjunto De Panelas Antiaderentes Punho Destacável, Conjuntos De Panelas De Cozinha De Indução Antiaderente Com Alça Removível",
+    "url": "https://gafanho.to/gafanhoto/go/6648050",
+    "price": 408.49,
+    "price_text": "R$ 408,49",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808893Z"
+  },
+  {
+    "id": "4961057",
+    "source": "gafanho",
+    "title": "Tênis Feminino Moda Casual Ajuste Cadarço Conforto Original",
+    "url": "https://gafanho.to/gafanhoto/go/6648049",
+    "price": 48.4,
+    "price_text": "R$ 48,40",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808902Z"
+  },
+  {
+    "id": "4961056",
+    "source": "gafanho",
+    "title": "2 Conjunto Fitness Feminino Top E Short De Academia",
+    "url": "https://gafanho.to/gafanhoto/go/6648048",
+    "price": 57.75,
+    "price_text": "R$ 57,75",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808907Z"
+  },
+  {
+    "id": "4961055",
+    "source": "gafanho",
+    "title": "Patinete Scooter Elétrico Premium 45km Motorizado Até 120kg Preto por R$ 1.599,00 em 10x sem juros!",
+    "url": "https://gafanho.to/gafanhoto/go/6648047",
+    "price": 1599.0,
+    "price_text": "R$ 1.599,00",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808912Z"
+  },
+  {
+    "id": "4961054",
+    "source": "gafanho",
+    "title": "Smart Tv Britânia 32 Polegadas Hd Led Btv32g7pr2csgblh por R$ 773,10",
+    "url": "https://gafanho.to/gafanhoto/go/6648046",
+    "price": 773.1,
+    "price_text": "R$ 773,10",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808916Z"
+  },
+  {
+    "id": "4961053",
+    "source": "gafanho",
+    "title": "Relógio Smartwatch Qcy Gt S8 Tela Amoled Bluetooth Ipx8",
+    "url": "https://gafanho.to/gafanhoto/go/6648045",
+    "price": 225.22,
+    "price_text": "R$ 225,22",
+    "store": "Magalu",
+    "collected_at": "2026-01-15T04:39:37.808921Z"
+  },
+  {
+    "id": "4961052",
+    "source": "gafanho",
+    "title": "Cabo USB-C Verde Sonserina Harry Potter",
+    "url": "https://gafanho.to/gafanhoto/go/6648044",
+    "price": 29.0,
+    "price_text": "R$ 29,00",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T04:39:37.808925Z"
+  },
+  {
+    "id": "4961050",
+    "source": "gafanho",
+    "title": "Climatizador de Ar Frio, 60W, 4,5L, Midea Branco 220V, AKAF2 por R$ 399,00 em 7x sem juros!",
+    "url": "https://gafanho.to/gafanhoto/go/6648043",
+    "price": 399.0,
+    "price_text": "R$ 399,00",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T04:39:37.808929Z"
+  },
+  {
+    "id": "4961048",
+    "source": "gafanho",
+    "title": "Guarda-Roupa Casal Katherine Slim 3 Portas com Espelho - Bege",
+    "url": "https://gafanho.to/gafanhoto/go/6648041",
+    "price": 741.23,
+    "price_text": "R$ 741,23",
+    "store": "Casas Bahia",
+    "collected_at": "2026-01-15T04:39:37.808933Z"
+  },
+  {
     "id": "4961047",
     "source": "gafanho",
     "title": "Hub Usb Adaptador 3.0 Extensor 4 Portas Speed Hd Pen Drive Pc Notebook 5 Gbps",
@@ -7,7 +407,7 @@
     "price": 13.57,
     "price_text": "R$ 13,57",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.283891Z"
+    "collected_at": "2026-01-15T04:39:37.808938Z"
   },
   {
     "id": "4961046",
@@ -17,7 +417,7 @@
     "price": 67.5,
     "price_text": "R$ 67,50",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.283913Z"
+    "collected_at": "2026-01-15T04:39:37.808942Z"
   },
   {
     "id": "4961042",
@@ -27,7 +427,7 @@
     "price": 15.29,
     "price_text": "R$ 15,29",
     "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.283920Z"
+    "collected_at": "2026-01-15T04:39:37.808946Z"
   },
   {
     "id": "4961041",
@@ -37,7 +437,7 @@
     "price": 113.99,
     "price_text": "R$ 113,99",
     "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.283926Z"
+    "collected_at": "2026-01-15T04:39:37.808950Z"
   },
   {
     "id": "4961040",
@@ -47,7 +447,7 @@
     "price": 350.1,
     "price_text": "R$ 350,10",
     "store": "Magalu",
-    "collected_at": "2026-01-15T01:24:29.283933Z"
+    "collected_at": "2026-01-15T04:39:37.808954Z"
   },
   {
     "id": "4961039",
@@ -57,7 +457,7 @@
     "price": 1449.9,
     "price_text": "R$ 1.449,90",
     "store": "Terabyte",
-    "collected_at": "2026-01-15T01:24:29.283939Z"
+    "collected_at": "2026-01-15T04:39:37.808959Z"
   },
   {
     "id": "4961037",
@@ -67,7 +467,7 @@
     "price": 37.71,
     "price_text": "R$ 37,71",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.283944Z"
+    "collected_at": "2026-01-15T04:39:37.808963Z"
   },
   {
     "id": "4961034",
@@ -77,7 +477,7 @@
     "price": 2899.0,
     "price_text": "R$ 2.899,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.283955Z"
+    "collected_at": "2026-01-15T04:39:37.808968Z"
   },
   {
     "id": "4961033",
@@ -87,7 +487,7 @@
     "price": 3210.0,
     "price_text": "R$ 3.210,00",
     "store": "Aliexpress",
-    "collected_at": "2026-01-15T01:24:29.283962Z"
+    "collected_at": "2026-01-15T04:39:37.808972Z"
   },
   {
     "id": "4961031",
@@ -97,406 +497,6 @@
     "price": 35.0,
     "price_text": "R$ 35,00",
     "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.283968Z"
-  },
-  {
-    "id": "4961028",
-    "source": "gafanho",
-    "title": "Luz LED Touch Recarregável p/ Mesa Escritório",
-    "url": "https://gafanho.to/gafanhoto/go/6648024",
-    "price": 37.71,
-    "price_text": "R$ 37,71",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.283974Z"
-  },
-  {
-    "id": "4961026",
-    "source": "gafanho",
-    "title": "Umbro Camisa Masculina CAP | Athletico Paranaense Oficial por R$ 82,04",
-    "url": "https://gafanho.to/gafanhoto/go/6648023",
-    "price": 82.04,
-    "price_text": "R$ 82,04",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.283979Z"
-  },
-  {
-    "id": "4961018",
-    "source": "gafanho",
-    "title": "Kit De Pesca Vara + Molinete E Acessorios Completo",
-    "url": "https://gafanho.to/gafanhoto/go/6648017",
-    "price": 59.99,
-    "price_text": "R$ 59,99",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.283984Z"
-  },
-  {
-    "id": "4961017",
-    "source": "gafanho",
-    "title": "Kit Com 2 Mesas Redonda Retro Apoio Decorativa Porta Livros Blanco",
-    "url": "https://gafanho.to/gafanhoto/go/6648016",
-    "price": 57.06,
-    "price_text": "R$ 57,06",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.283989Z"
-  },
-  {
-    "id": "4961015",
-    "source": "gafanho",
-    "title": "Vonder, Martelo De Borracha 40 Mm, Cabo Em Madeira, Preto. por R$ 15,69",
-    "url": "https://gafanho.to/gafanhoto/go/6648014",
-    "price": 15.69,
-    "price_text": "R$ 15,69",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.283993Z"
-  },
-  {
-    "id": "4961013",
-    "source": "gafanho",
-    "title": "Fralda Turma da Mônica XG 168 Unidades - 4 Pacotes com 42",
-    "url": "https://gafanho.to/gafanhoto/go/6648011",
-    "price": 114.9,
-    "price_text": "R$ 114,90",
-    "store": "Shopee",
-    "collected_at": "2026-01-15T01:24:29.283999Z"
-  },
-  {
-    "id": "4961012",
-    "source": "gafanho",
-    "title": "Samsung Galaxy A17 5g Com Ia, 128gb, 4gb Ram, Câm De 50mp, Tela De 6.7 , Nfc, Ip54",
-    "url": "https://gafanho.to/gafanhoto/go/6648010",
-    "price": 1124.0,
-    "price_text": "R$ 1.124,00",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284004Z"
-  },
-  {
-    "id": "4961007",
-    "source": "gafanho",
-    "title": "Notebook Asus Vivobook 15 X1504va Intel Core I5 1334u 16gb Ram 512gb Ssd Linux Keepos Intel Iris Xe Tela 15,6 Led Fhd Blue - Nj1746",
-    "url": "https://gafanho.to/gafanhoto/go/6648005",
-    "price": 2859.0,
-    "price_text": "R$ 2.859,00",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284009Z"
-  },
-  {
-    "id": "4961001",
-    "source": "gafanho",
-    "title": "Pato Desodorizador Sanitário Caixa Acoplada Marine, Limpeza Banheiro, 2 Discos",
-    "url": "https://gafanho.to/gafanhoto/go/6647999",
-    "price": 17.52,
-    "price_text": "R$ 17,52",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284014Z"
-  },
-  {
-    "id": "4961000",
-    "source": "gafanho",
-    "title": "Caixa Térmica Para Latas 20 Litros Air Flow Termolar Azul Azul por R$ 59,18",
-    "url": "https://gafanho.to/gafanhoto/go/6647998",
-    "price": 59.18,
-    "price_text": "R$ 59,18",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284019Z"
-  },
-  {
-    "id": "4960999",
-    "source": "gafanho",
-    "title": "Placa Mãe MSI PRO B650M-B, AMD AM5, mATX, DDR5, Preto - PRO B650M-B",
-    "url": "https://gafanho.to/gafanhoto/go/6647997",
-    "price": 603.49,
-    "price_text": "R$ 603,49",
-    "store": "KaBuM!",
-    "collected_at": "2026-01-15T01:24:29.284024Z"
-  },
-  {
-    "id": "4960998",
-    "source": "gafanho",
-    "title": "Lâmpada Inteligente Alexa Tuya",
-    "url": "https://gafanho.to/gafanhoto/go/6647996",
-    "price": 38.94,
-    "price_text": "R$ 38,94",
-    "store": "Aliexpress",
-    "collected_at": "2026-01-15T01:24:29.284029Z"
-  },
-  {
-    "id": "4960993",
-    "source": "gafanho",
-    "title": "Celular Samsung Galaxy A16, 128GB 4GB RAM, Câmera de até 50MP, Tela 6.7 , NFC, IP54, Bateria 5000 mAh - Cinza",
-    "url": "https://gafanho.to/gafanhoto/go/6647993",
-    "price": 887.0,
-    "price_text": "R$ 887,00",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284058Z"
-  },
-  {
-    "id": "4960992",
-    "source": "gafanho",
-    "title": "Mor - Coleira P Línea Rosa",
-    "url": "https://gafanho.to/gafanhoto/go/6647992",
-    "price": 4.5,
-    "price_text": "R$ 4,50",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284070Z"
-  },
-  {
-    "id": "4960991",
-    "source": "gafanho",
-    "title": "Panela Elétrica Philco Multifuncional",
-    "url": "https://gafanho.to/gafanhoto/go/6647990",
-    "price": 132.9,
-    "price_text": "R$ 132,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284076Z"
-  },
-  {
-    "id": "4960990",
-    "source": "gafanho",
-    "title": "Conjunto De Panelas Elegan Antiaderente E Tampa De Vidro 8 Peças",
-    "url": "https://gafanho.to/gafanhoto/go/6647989",
-    "price": 132.6,
-    "price_text": "R$ 132,60",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284081Z"
-  },
-  {
-    "id": "4960988",
-    "source": "gafanho",
-    "title": "Massageador Muscular Yin Yang 6 Velocidades",
-    "url": "https://gafanho.to/gafanhoto/go/6647987",
-    "price": 34.83,
-    "price_text": "R$ 34,83",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284086Z"
-  },
-  {
-    "id": "4960984",
-    "source": "gafanho",
-    "title": "Headphone Fone de Ouvido Havit HV-H2002d, Gamer, com Microfone, Falante 53mm, Plug 3, 5mm: compatível com XBOX ONE e PS4, HAVIT, HV-H2002d",
-    "url": "https://gafanho.to/gafanhoto/go/6647985",
-    "price": 158.0,
-    "price_text": "R$ 158,00",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284091Z"
-  },
-  {
-    "id": "4960982",
-    "source": "gafanho",
-    "title": "Kit 6 Cuecas Masculinas Boxer Variadas Alta Qualidade Aaa",
-    "url": "https://gafanho.to/gafanhoto/go/6647983",
-    "price": 28.19,
-    "price_text": "R$ 28,19",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284096Z"
-  },
-  {
-    "id": "4960981",
-    "source": "gafanho",
-    "title": "Cerveja Corona Extra Lata 269ml - Pack com 8 unidades por R$ 35,91 comprando com Recorrência!",
-    "url": "https://gafanho.to/gafanhoto/go/6647982",
-    "price": 35.91,
-    "price_text": "R$ 35,91",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284101Z"
-  },
-  {
-    "id": "4960980",
-    "source": "gafanho",
-    "title": "Kit 2 Tapetes De Banheiro Mágico Ultra Absorvente 40x60cm",
-    "url": "https://gafanho.to/gafanhoto/go/6647981",
-    "price": 27.99,
-    "price_text": "R$ 27,99",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284105Z"
-  },
-  {
-    "id": "4960977",
-    "source": "gafanho",
-    "title": "Panela Elétrica Oster, para Fondue, 110V, Cinza, 1000W, OFND100",
-    "url": "https://gafanho.to/gafanhoto/go/6647978",
-    "price": 189.9,
-    "price_text": "R$ 189,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284110Z"
-  },
-  {
-    "id": "4960976",
-    "source": "gafanho",
-    "title": "Cabide Tintureiro Cromado Organização Roupa Armario",
-    "url": "https://gafanho.to/gafanhoto/go/6647977",
-    "price": 2.92,
-    "price_text": "R$ 2,92",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284114Z"
-  },
-  {
-    "id": "4960975",
-    "source": "gafanho",
-    "title": "Mochila Lenovo Casual B210 Azul para notebook de até 15.6\" GX40Q17226",
-    "url": "https://gafanho.to/gafanhoto/go/6647976",
-    "price": 87.57,
-    "price_text": "R$ 87,57",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284119Z"
-  },
-  {
-    "id": "4960972",
-    "source": "gafanho",
-    "title": "HAIZ Smartwatch Relógio Inteligente My Watch I Pro Tela Full Touch 1.3 Resistente à Água IP67 com 100 Modos Esportivos Faz e Recebe Ligaç es",
-    "url": "https://gafanho.to/gafanhoto/go/6647974",
-    "price": 119.97,
-    "price_text": "R$ 119,97",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284123Z"
-  },
-  {
-    "id": "4960971",
-    "source": "gafanho",
-    "title": "Cerveja Corona Extra Lata 269ml - Pack com 8 unidades",
-    "url": "https://gafanho.to/gafanhoto/go/6647973",
-    "price": 39.9,
-    "price_text": "R$ 39,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284128Z"
-  },
-  {
-    "id": "4960969",
-    "source": "gafanho",
-    "title": "Torneira Gourmet Preta Bancada Pia Cozinha Flexível 2 Jatos Cone",
-    "url": "https://gafanho.to/gafanhoto/go/6647971",
-    "price": 29.64,
-    "price_text": "R$ 29,64",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284132Z"
-  },
-  {
-    "id": "4960968",
-    "source": "gafanho",
-    "title": "R$ 20 OFF em R$ 169",
-    "url": "https://gafanho.to/gafanhoto/go/6647970",
-    "price": 599.0,
-    "price_text": "R$ 599,00",
-    "store": "Shopee",
-    "collected_at": "2026-01-15T01:24:29.284136Z"
-  },
-  {
-    "id": "4960967",
-    "source": "gafanho",
-    "title": "Ralph s Club New York Eau De Parfum 110ml Frete Grátis",
-    "url": "https://gafanho.to/gafanhoto/go/6647969",
-    "price": 490.15,
-    "price_text": "R$ 490,15",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284141Z"
-  },
-  {
-    "id": "4960965",
-    "source": "gafanho",
-    "title": "12 Unidades de Crisp Bar Ovomaltine Integralmédica",
-    "url": "https://gafanho.to/gafanhoto/go/6647967",
-    "price": 78.0,
-    "price_text": "R$ 78,00",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284145Z"
-  },
-  {
-    "id": "4960964",
-    "source": "gafanho",
-    "title": "Climatizador de Ar Frio, 60W, 4,5L, Midea Preto 220V, AKAP1",
-    "url": "https://gafanho.to/gafanhoto/go/6647966",
-    "price": 474.05,
-    "price_text": "R$ 474,05",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284149Z"
-  },
-  {
-    "id": "4960963",
-    "source": "gafanho",
-    "title": "Chaleira Elétrica Jarra Café Chá Inox 110v",
-    "url": "https://gafanho.to/gafanhoto/go/6647964",
-    "price": 43.12,
-    "price_text": "R$ 43,12",
-    "store": "Shopee",
-    "collected_at": "2026-01-15T01:24:29.284154Z"
-  },
-  {
-    "id": "4960962",
-    "source": "gafanho",
-    "title": "Moletom Adulto Liso Preto Colorido Unissex Aleatorio Avarias",
-    "url": "https://gafanho.to/gafanhoto/go/6647963",
-    "price": 25.99,
-    "price_text": "R$ 25,99",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284158Z"
-  },
-  {
-    "id": "4960961",
-    "source": "gafanho",
-    "title": "Calça Pantalona Plus Size Wide Leg Cintura Alta Com Elastico",
-    "url": "https://gafanho.to/gafanhoto/go/6647962",
-    "price": 29.99,
-    "price_text": "R$ 29,99",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284162Z"
-  },
-  {
-    "id": "4960958",
-    "source": "gafanho",
-    "title": "Perfume Masculino Ralph Lauren Polo Red EDT 125ml Frete Grátis",
-    "url": "https://gafanho.to/gafanhoto/go/6647959",
-    "price": 413.1,
-    "price_text": "R$ 413,10",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T01:24:29.284167Z"
-  },
-  {
-    "id": "4960957",
-    "source": "gafanho",
-    "title": "R$ 20 OFF em R$ 169",
-    "url": "https://gafanho.to/gafanhoto/go/6647958",
-    "price": 599.0,
-    "price_text": "R$ 599,00",
-    "store": "Shopee",
-    "collected_at": "2026-01-15T01:24:29.284171Z"
-  },
-  {
-    "id": "4960956",
-    "source": "gafanho",
-    "title": "Lixeira de Cozinha Escritório Banheiro 5L com Tampa",
-    "url": "https://gafanho.to/gafanhoto/go/6647956",
-    "price": 31.59,
-    "price_text": "R$ 31,59",
-    "store": "Shopee",
-    "collected_at": "2026-01-15T01:24:29.284176Z"
-  },
-  {
-    "id": "4960955",
-    "source": "gafanho",
-    "title": "Celular Samsung Galaxy S25+ 5G, 256GB, 12GB RAM, Câmera Tripla de 50+12+10, Tela Grande de 6.7\" - Galaxy S25+",
-    "url": "https://gafanho.to/gafanhoto/go/6647955",
-    "price": 4282.0,
-    "price_text": "R$ 4.282,00",
-    "store": "Magalu",
-    "collected_at": "2026-01-15T01:24:29.284181Z"
-  },
-  {
-    "id": "4960952",
-    "source": "gafanho",
-    "title": "Whisky Johnnie Walker Red Label 1L",
-    "url": "https://gafanho.to/gafanhoto/go/6647953",
-    "price": 78.12,
-    "price_text": "R$ 78,12",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T01:24:29.284185Z"
-  },
-  {
-    "id": "4960951",
-    "source": "gafanho",
-    "title": "Fralda Pampers Pants Ajuste Total XXG com 120 Unidades - 2 pacotes com 60 unidades",
-    "url": "https://gafanho.to/gafanhoto/go/6647952",
-    "price": 121.08,
-    "price_text": "R$ 121,08",
-    "store": "Carrefour",
-    "collected_at": "2026-01-15T01:24:29.284189Z"
+    "collected_at": "2026-01-15T04:39:37.808976Z"
   }
 ]
