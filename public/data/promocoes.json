@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768443392534,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Hábitos Atômicos: um Método Fácil e Comprovado de Criar Bons Hábitos e se Livrar dos Maus- Idioma ‏ : ‎ Português",
+      "preco": 36.53,
+      "precoAntigo": 60.9,
+      "info": null,
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/81eT2pjx4jL._SY425_.jpg",
+      "link": "https://amzn.to/3ZjmZtP",
+      "destaque": false,
+      "timestamp": "2026-01-15T02:16:32.534Z"
+    },
+    {
       "id": 1768443193789,
       "tipo": "promo",
       "loja": "Mercado Livre",
