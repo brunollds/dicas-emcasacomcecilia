@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768436873563,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Calça Para Trabalho Masculina Tradicional",
+      "preco": 43.86,
+      "precoAntigo": 71.9,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_852398-MLB103878488703_012026-F-calca-para-trabalho-masculina-tradicional-barata-promoco.webp",
+      "link": "https://mercadolivre.com/sec/2ozUV21",
+      "destaque": false,
+      "timestamp": "2026-01-15T00:27:53.563Z"
+    },
+    {
       "id": 1768436737692,
       "tipo": "promo",
       "loja": "Mercado Livre",
