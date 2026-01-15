@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768518380345,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Neutrogena Gel de Limpeza Facial Purified Skin, 300g",
+      "preco": 38.99,
+      "precoAntigo": 69.99,
+      "info": "Recorrência -10% • Mais por Menos: 10% off em 10+ itens - R$35,10 +POR-",
+      "cupom": "25OFF",
+      "imagem": "https://m.media-amazon.com/images/I/618UdYXN3QL._AC_SX522_.jpg",
+      "link": "https://amzn.to/4byUekb",
+      "destaque": true,
+      "timestamp": "2026-01-15T23:06:20.345Z"
+    },
+    {
       "id": 1768518097786,
       "tipo": "promo",
       "loja": "Amazon",
