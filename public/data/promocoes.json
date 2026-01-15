@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768519777147,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Jogo De Toalhas Buddemeyer Atena Fio Penteado Banho Cinza/cinza Claro 4 Peças",
+      "preco": 161.42,
+      "precoAntigo": 289.9,
+      "info": "OFERTA RELÂMPAGO - R$ 179 em 6x S/ Juros",
+      "cupom": "5% off na pagina",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_856490-MLA95690222024_102025-F.webp",
+      "link": "https://mercadolivre.com/sec/2M8Lko6",
+      "destaque": false,
+      "timestamp": "2026-01-15T23:29:37.147Z"
+    },
+    {
       "id": 1768518939108,
       "tipo": "promo",
       "loja": "Mercado Livre",
