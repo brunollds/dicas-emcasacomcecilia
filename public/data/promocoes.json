@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768497220123,
+      "tipo": "promo",
+      "loja": "Magazine Luiza",
+      "produto": "Calça FLARE Leg Feminina Boca Sino Bailarina Legging Cintura Média Suplex, Tecido Leve e Duradouro, P/Academia, Fitness, Dia a Dia, Trabalho ou Casual - Dandi Modas",
+      "preco": 25.38,
+      "precoAntigo": 39.9,
+      "info": "Retire na loja",
+      "cupom": null,
+      "imagem": "https://a-static.mlcdn.com.br/800x560/calca-flare-leg-feminina-boca-sino-bailarina-legging-cintura-media-suplex-tecido-leve-e-duradouro-p-academia-fitness-dia-a-dia-trabalho-ou-casual-dandi-modas/dandimodas/flare-marinho-g/6c296c9e62ef77c221dd2837edbfa507.jpeg",
+      "link": "https://divulgador.magalu.com/SGlT1mjd",
+      "destaque": false,
+      "timestamp": "2026-01-15T17:13:40.123Z"
+    },
+    {
       "id": 1768443392534,
       "tipo": "promo",
       "loja": "Amazon",
