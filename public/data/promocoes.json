@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768518097786,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "iPhone 15 256GB iOS 5G Wi-Fi Tela 6.1\" - Apple",
+      "preco": 4189.1,
+      "precoAntigo": 8095.5,
+      "info": "R$ 4689,10 em 10x S/ Juros",
+      "cupom": "AGORAVAI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_841858-MLA95934002967_102025-F.webp",
+      "link": "https://mercadolivre.com/sec/2DHsBch",
+      "destaque": false,
+      "timestamp": "2026-01-15T23:01:37.786Z"
+    },
+    {
       "id": 1768517057677,
       "tipo": "promo",
       "loja": "Shopee",
