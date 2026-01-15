@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768436737692,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Piscina Inflável Redonda Wellmix Summer Fun 100 Litros 3 Aneis Fundo Do Mar Criança Infantil Branca",
+      "preco": 39.99,
+      "precoAntigo": 48.9,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_685143-MLA99938108465_112025-F.webp",
+      "link": "https://mercadolivre.com/sec/28Vg2eV",
+      "destaque": false,
+      "timestamp": "2026-01-15T00:25:37.692Z"
+    },
+    {
       "id": 1768418331884,
       "tipo": "promo",
       "loja": "Mercado Livre",
