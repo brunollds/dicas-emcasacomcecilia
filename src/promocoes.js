@@ -219,23 +219,6 @@ function configurarEventos(listaFiltrada) {
     });
 }
 
-// 3. Adicione esta nova função para detectar o fim da página
-function ativarCarregamentoAutomatico() {
-    const sentinela = document.getElementById('sentinela');
-    if (!sentinela) return;
-
-    if (observer) observer.disconnect();
-
-    observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            limiteExibicao += ITENS_POR_PAGINA;
-            renderizarPromocoes();
-        }
-    }, { rootMargin: '200px' }); // Começa a carregar 200px antes de chegar no fim
-
-    observer.observe(sentinela);
-}
-
 // 4. Ajuste sua função configurarEventos para lidar com os cliques
 function configurarEventos(listaAtual) {
     document.querySelectorAll('.promo-card').forEach(card => {
