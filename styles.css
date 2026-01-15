@@ -1135,3 +1135,36 @@ a {
     margin: 15px 0;
     line-height: 1.3;
 }
+
+/* RESOLUÇÃO DO POPUP - LARGURA E IMAGEM */
+
+.promo-popup {
+    max-width: 600px !important; /* Força a largura para 600px em vez de 450px */
+    width: 90% !important;
+    border-radius: 16px !important;
+}
+
+/* Garante que a área da imagem no popup seja controlada */
+.popup-product-img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 280px !important; /* Limita a altura para não empurrar tudo pra baixo */
+    display: flex !important;
+    justify-content: center !important;
+    background: #fff !important;
+    margin-bottom: 20px !important;
+    padding: 10px !important;
+}
+
+.popup-product-img img {
+    max-width: 100% !important;
+    max-height: 280px !important;
+    object-fit: contain !important; /* Mantém a proporção sem esticar */
+}
+
+/* Ajuste no título do popup para não ficar gigante */
+.popup-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 15px !important;
+    line-height: 1.4 !important;
+}

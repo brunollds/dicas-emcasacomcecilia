@@ -147,10 +147,14 @@ function criarBoxResultadosCategorias(resultados) {
 // RENDERIZAR LISTA DE PROMOÇÕES
 // =====================================================
 
-function renderizarPromocoes() {
+function renderizarPromocoes(resetar = true) {
+    if (resetar) {
+        limiteExibicao = ITENS_POR_PAGINA;
+        container.innerHTML = ''; // Limpa a lista apenas no início
+    }
+
     const termoBusca = searchInput ? searchInput.value.toLowerCase().trim() : '';
     
-    // Filtra a lista completa
     let promosFiltradas = todasPromocoes.filter(promo => {
         if (filtroAtual === 'promo' && promo.tipo === 'cupom') return false;
         if (filtroAtual === 'cupom' && promo.tipo !== 'cupom') return false;
@@ -162,25 +166,57 @@ function renderizarPromocoes() {
     });
 
     const totalDisponivel = promosFiltradas.length;
-    const listaParaExibir = promosFiltradas.slice(0, limiteExibicao);
+    const listaParaExibir = promosFiltradas.slice(container.children.length, limiteExibicao);
 
-    if (listaParaExibir.length === 0) {
+    if (promosFiltradas.length === 0) {
         container.innerHTML = `<div class="empty-state"><p>Nenhuma promoção encontrada.</p></div>`;
         return;
     }
 
-    // Gera o HTML
-    let html = listaParaExibir.map((promo, index) => criarCardHTML(promo, index)).join('');
-    
-    // Adiciona um "sentinela" no final para o carregamento automático
-    if (limiteExibicao < totalDisponivel) {
-        html += `<div id="sentinela" style="height: 20px; margin-bottom: 50px;"></div>`;
-    }
-    
-    container.innerHTML = html;
+    // Adiciona apenas os novos cards sem apagar os antigos
+    listaParaExibir.forEach((promo, index) => {
+        // O index real para o clique deve considerar o que já estava na tela
+        const realIndex = container.querySelectorAll('.promo-card').length; 
+        const cardHTML = criarCardHTML(promo, realIndex);
+        container.insertAdjacentHTML('beforeend', cardHTML);
+    });
 
-    configurarEventos(listaParaExibir);
-    ativarCarregamentoAutomatico();
+    // Remove sentinela antigo e adiciona novo se houver mais itens
+    const antigoSentinela = document.getElementById('sentinela');
+    if (antigoSentinela) antigoSentinela.remove();
+
+    if (limiteExibicao < totalDisponivel) {
+        container.insertAdjacentHTML('beforeend', `<div id="sentinela" style="height: 50px; width: 100%;"></div>`);
+        ativarCarregamentoAutomatico();
+    }
+
+    // Configura os eventos de clique em TODOS os cards atuais
+    configurarEventos(promosFiltradas);
+}
+
+function ativarCarregamentoAutomatico() {
+    const sentinela = document.getElementById('sentinela');
+    if (!sentinela) return;
+
+    if (observer) observer.disconnect();
+
+    observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            limiteExibicao += ITENS_POR_PAGINA;
+            renderizarPromocoes(false); // Chama sem resetar para apenas "acrescentar"
+        }
+    }, { rootMargin: '300px' });
+
+    observer.observe(sentinela);
+}
+
+function configurarEventos(listaFiltrada) {
+    document.querySelectorAll('.promo-card').forEach((card, idx) => {
+        card.onclick = () => {
+            // Usa a lista filtrada completa para achar o item correto pelo index do card
+            abrirPopup(listaFiltrada[idx]);
+        };
+    });
 }
 
 // 3. Adicione esta nova função para detectar o fim da página
@@ -526,3 +562,4 @@ carregarPromocoes();
 
 // Atualizar a cada 2 minutos
 setInterval(carregarPromocoes, 120000);
+
