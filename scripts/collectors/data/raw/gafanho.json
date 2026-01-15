@@ -1,13 +1,123 @@
 [
   {
-    "id": "4961117",
+    "id": "4961137",
     "source": "gafanho",
-    "title": "Hub USB-C 8 em 1, Hub Adaptador Multifuncional com HDMI 4K, Ethernet RJ45, Carregamento PD, 2 Portas USB 3.0, Leitor SD/TF, Cinza - R$19",
-    "url": "https://gafanho.to/gafanhoto/go/6648095",
-    "price": 19.0,
-    "price_text": "R$ 19,00",
+    "title": "Sabonete de Enxofre, Granado, Laranja, 90 g",
+    "url": "https://gafanho.to/gafanhoto/go/6648109",
+    "price": 6.99,
+    "price_text": "R$ 6,99",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808538Z"
+    "collected_at": "2026-01-15T08:28:57.488864Z"
+  },
+  {
+    "id": "4961136",
+    "source": "gafanho",
+    "title": "Apple iPhone 16 (128 GB) - Preto - Distribuidor Autorizado",
+    "url": "https://gafanho.to/gafanhoto/go/6648108",
+    "price": 4368.9,
+    "price_text": "R$ 4.368,90",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T08:28:57.488886Z"
+  },
+  {
+    "id": "4961133",
+    "source": "gafanho",
+    "title": "Processador Ryzen 7 5700X - R$ 972,00 - Sem taxas",
+    "url": "https://gafanho.to/gafanhoto/go/6648105",
+    "price": 972.0,
+    "price_text": "R$ 972,00",
+    "store": "Aliexpress",
+    "collected_at": "2026-01-15T08:28:57.488893Z"
+  },
+  {
+    "id": "4961131",
+    "source": "gafanho",
+    "title": "Espelho Rocco Corpo Inteiro Organico 90x40 Pinterest Grande",
+    "url": "https://gafanho.to/gafanhoto/go/6648104",
+    "price": 78.9,
+    "price_text": "R$ 78,90",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T08:28:57.488898Z"
+  },
+  {
+    "id": "4961130",
+    "source": "gafanho",
+    "title": "Colônia Shiraz Feminino 100 ml",
+    "url": "https://gafanho.to/gafanhoto/go/6648103",
+    "price": 110.42,
+    "price_text": "R$ 110,42",
+    "store": "Natura",
+    "collected_at": "2026-01-15T08:28:57.488905Z"
+  },
+  {
+    "id": "4961128",
+    "source": "gafanho",
+    "title": "Aliexpress - Processador Ryzen 7 5700X - R$ 972,00 - Do Brasil, sem taxas",
+    "url": "",
+    "price": 972.0,
+    "price_text": "R$ 972,00",
+    "store": null,
+    "collected_at": "2026-01-15T08:28:57.488910Z"
+  },
+  {
+    "id": "4961126",
+    "source": "gafanho",
+    "title": "Combo Teclado e Mouse sem fio Logitech MK220 com Design Compacto, Conexão USB, Pilhas Inclusas e Layout ABNT2",
+    "url": "https://gafanho.to/gafanhoto/go/6648101",
+    "price": 113.0,
+    "price_text": "R$ 113,00",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T08:28:57.488915Z"
+  },
+  {
+    "id": "4961124",
+    "source": "gafanho",
+    "title": "Selim de Bicicleta 3D Macio com Almofada MTB",
+    "url": "https://gafanho.to/gafanhoto/go/6648100",
+    "price": 13.33,
+    "price_text": "R$ 13,33",
+    "store": "Aliexpress",
+    "collected_at": "2026-01-15T08:28:57.488927Z"
+  },
+  {
+    "id": "4961122",
+    "source": "gafanho",
+    "title": "Downy Amaciante Concentrado Frescor Da Primavera 3L, Rende 12L, Perfume com Notas de Flores e Baunilha",
+    "url": "https://gafanho.to/gafanhoto/go/6648099",
+    "price": 40.84,
+    "price_text": "R$ 40,84",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T08:28:57.488933Z"
+  },
+  {
+    "id": "4961120",
+    "source": "gafanho",
+    "title": "Kit 10 Peças Roupa Infantil Menina Verão Conjunto Criança",
+    "url": "https://gafanho.to/gafanhoto/go/6648098",
+    "price": 74.0,
+    "price_text": "R$ 74,00",
+    "store": "Mercado Livre",
+    "collected_at": "2026-01-15T08:28:57.488939Z"
+  },
+  {
+    "id": "4961119",
+    "source": "gafanho",
+    "title": "Samsung Smart TV 65\" Crystal UHD 4K U8100F 2025",
+    "url": "https://gafanho.to/gafanhoto/go/6648097",
+    "price": 2989.8,
+    "price_text": "R$ 2.989,80",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T08:28:57.488944Z"
+  },
+  {
+    "id": "4961118",
+    "source": "gafanho",
+    "title": "Climatizador de Ar Frio, 60W, 4,5L, Midea Branco 220V, AKAF2",
+    "url": "https://gafanho.to/gafanhoto/go/6648096",
+    "price": 399.0,
+    "price_text": "R$ 399,00",
+    "store": "Amazon",
+    "collected_at": "2026-01-15T08:28:57.488949Z"
   },
   {
     "id": "4961113",
@@ -17,7 +127,7 @@
     "price": 21.84,
     "price_text": "R$ 21,84",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808642Z"
+    "collected_at": "2026-01-15T08:28:57.488954Z"
   },
   {
     "id": "4961112",
@@ -27,7 +137,7 @@
     "price": 18.95,
     "price_text": "R$ 18,95",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808660Z"
+    "collected_at": "2026-01-15T08:28:57.488959Z"
   },
   {
     "id": "4961109",
@@ -37,7 +147,7 @@
     "price": 420.0,
     "price_text": "R$ 420,00",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808671Z"
+    "collected_at": "2026-01-15T08:28:57.488963Z"
   },
   {
     "id": "4961107",
@@ -47,7 +157,7 @@
     "price": 1239.0,
     "price_text": "R$ 1.239,00",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808681Z"
+    "collected_at": "2026-01-15T08:28:57.488968Z"
   },
   {
     "id": "4961105",
@@ -57,7 +167,7 @@
     "price": null,
     "price_text": null,
     "store": "Google",
-    "collected_at": "2026-01-15T04:39:37.808689Z"
+    "collected_at": "2026-01-15T08:28:57.488973Z"
   },
   {
     "id": "4961104",
@@ -67,7 +177,7 @@
     "price": 11.34,
     "price_text": "R$ 11,34",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808698Z"
+    "collected_at": "2026-01-15T08:28:57.488977Z"
   },
   {
     "id": "4961103",
@@ -77,7 +187,7 @@
     "price": 19.43,
     "price_text": "R$ 19,43",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808713Z"
+    "collected_at": "2026-01-15T08:28:57.488982Z"
   },
   {
     "id": "4961102",
@@ -87,7 +197,7 @@
     "price": 229.0,
     "price_text": "R$ 229,00",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808723Z"
+    "collected_at": "2026-01-15T08:28:57.488987Z"
   },
   {
     "id": "4961101",
@@ -97,7 +207,7 @@
     "price": 899.0,
     "price_text": "R$ 899,00",
     "store": "Shopee",
-    "collected_at": "2026-01-15T04:39:37.808731Z"
+    "collected_at": "2026-01-15T08:28:57.488991Z"
   },
   {
     "id": "4961100",
@@ -107,7 +217,7 @@
     "price": 59.9,
     "price_text": "R$ 59,90",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808740Z"
+    "collected_at": "2026-01-15T08:28:57.488996Z"
   },
   {
     "id": "4961096",
@@ -117,7 +227,7 @@
     "price": 9.0,
     "price_text": "R$ 9,00",
     "store": "Shopee",
-    "collected_at": "2026-01-15T04:39:37.808748Z"
+    "collected_at": "2026-01-15T08:28:57.489000Z"
   },
   {
     "id": "4961093",
@@ -127,7 +237,7 @@
     "price": 40.0,
     "price_text": "R$ 40,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808756Z"
+    "collected_at": "2026-01-15T08:28:57.489005Z"
   },
   {
     "id": "4961090",
@@ -137,7 +247,7 @@
     "price": 374.0,
     "price_text": "R$ 374,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808763Z"
+    "collected_at": "2026-01-15T08:28:57.489009Z"
   },
   {
     "id": "4961089",
@@ -147,7 +257,7 @@
     "price": 39.09,
     "price_text": "R$ 39,09",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808770Z"
+    "collected_at": "2026-01-15T08:28:57.489012Z"
   },
   {
     "id": "4961084",
@@ -157,7 +267,7 @@
     "price": 5.99,
     "price_text": "R$ 5,99",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808777Z"
+    "collected_at": "2026-01-15T08:28:57.489016Z"
   },
   {
     "id": "4961083",
@@ -167,7 +277,7 @@
     "price": 509.0,
     "price_text": "R$ 509,00",
     "store": "Webcontinental",
-    "collected_at": "2026-01-15T04:39:37.808785Z"
+    "collected_at": "2026-01-15T08:28:57.489020Z"
   },
   {
     "id": "4961082",
@@ -177,7 +287,7 @@
     "price": 272.0,
     "price_text": "R$ 272,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808793Z"
+    "collected_at": "2026-01-15T08:28:57.489024Z"
   },
   {
     "id": "4961079",
@@ -187,7 +297,7 @@
     "price": 7.39,
     "price_text": "R$ 7,39",
     "store": "Carrefour",
-    "collected_at": "2026-01-15T04:39:37.808802Z"
+    "collected_at": "2026-01-15T08:28:57.489029Z"
   },
   {
     "id": "4961077",
@@ -197,7 +307,7 @@
     "price": 207.41,
     "price_text": "R$ 207,41",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808810Z"
+    "collected_at": "2026-01-15T08:28:57.489033Z"
   },
   {
     "id": "4961075",
@@ -207,7 +317,7 @@
     "price": 32.99,
     "price_text": "R$ 32,99",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808817Z"
+    "collected_at": "2026-01-15T08:28:57.489038Z"
   },
   {
     "id": "4961074",
@@ -217,7 +327,7 @@
     "price": 17.94,
     "price_text": "R$ 17,94",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808824Z"
+    "collected_at": "2026-01-15T08:28:57.489042Z"
   },
   {
     "id": "4961073",
@@ -227,7 +337,7 @@
     "price": 1225.0,
     "price_text": "R$ 1.225,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808831Z"
+    "collected_at": "2026-01-15T08:28:57.489047Z"
   },
   {
     "id": "4961072",
@@ -237,7 +347,7 @@
     "price": 82.7,
     "price_text": "R$ 82,70",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808837Z"
+    "collected_at": "2026-01-15T08:28:57.489050Z"
   },
   {
     "id": "4961070",
@@ -247,7 +357,7 @@
     "price": 78.99,
     "price_text": "R$ 78,99",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808845Z"
+    "collected_at": "2026-01-15T08:28:57.489054Z"
   },
   {
     "id": "4961069",
@@ -257,7 +367,7 @@
     "price": 55.9,
     "price_text": "R$ 55,90",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808851Z"
+    "collected_at": "2026-01-15T08:28:57.489060Z"
   },
   {
     "id": "4961068",
@@ -267,7 +377,7 @@
     "price": 32.99,
     "price_text": "R$ 32,99",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808858Z"
+    "collected_at": "2026-01-15T08:28:57.489064Z"
   },
   {
     "id": "4961067",
@@ -277,7 +387,7 @@
     "price": 38.0,
     "price_text": "R$ 38,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808864Z"
+    "collected_at": "2026-01-15T08:28:57.489068Z"
   },
   {
     "id": "4961064",
@@ -287,7 +397,7 @@
     "price": 20.0,
     "price_text": "R$ 20,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808871Z"
+    "collected_at": "2026-01-15T08:28:57.489071Z"
   },
   {
     "id": "4961063",
@@ -297,7 +407,7 @@
     "price": 21.57,
     "price_text": "R$ 21,57",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808878Z"
+    "collected_at": "2026-01-15T08:28:57.489075Z"
   },
   {
     "id": "4961062",
@@ -307,7 +417,7 @@
     "price": 18.76,
     "price_text": "R$ 18,76",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808885Z"
+    "collected_at": "2026-01-15T08:28:57.489079Z"
   },
   {
     "id": "4961058",
@@ -317,7 +427,7 @@
     "price": 408.49,
     "price_text": "R$ 408,49",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808893Z"
+    "collected_at": "2026-01-15T08:28:57.489083Z"
   },
   {
     "id": "4961057",
@@ -327,7 +437,7 @@
     "price": 48.4,
     "price_text": "R$ 48,40",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808902Z"
+    "collected_at": "2026-01-15T08:28:57.489086Z"
   },
   {
     "id": "4961056",
@@ -337,7 +447,7 @@
     "price": 57.75,
     "price_text": "R$ 57,75",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808907Z"
+    "collected_at": "2026-01-15T08:28:57.489090Z"
   },
   {
     "id": "4961055",
@@ -347,7 +457,7 @@
     "price": 1599.0,
     "price_text": "R$ 1.599,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808912Z"
+    "collected_at": "2026-01-15T08:28:57.489094Z"
   },
   {
     "id": "4961054",
@@ -357,7 +467,7 @@
     "price": 773.1,
     "price_text": "R$ 773,10",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808916Z"
+    "collected_at": "2026-01-15T08:28:57.489098Z"
   },
   {
     "id": "4961053",
@@ -367,7 +477,7 @@
     "price": 225.22,
     "price_text": "R$ 225,22",
     "store": "Magalu",
-    "collected_at": "2026-01-15T04:39:37.808921Z"
+    "collected_at": "2026-01-15T08:28:57.489101Z"
   },
   {
     "id": "4961052",
@@ -377,7 +487,7 @@
     "price": 29.0,
     "price_text": "R$ 29,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808925Z"
+    "collected_at": "2026-01-15T08:28:57.489105Z"
   },
   {
     "id": "4961050",
@@ -387,116 +497,6 @@
     "price": 399.0,
     "price_text": "R$ 399,00",
     "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808929Z"
-  },
-  {
-    "id": "4961048",
-    "source": "gafanho",
-    "title": "Guarda-Roupa Casal Katherine Slim 3 Portas com Espelho - Bege",
-    "url": "https://gafanho.to/gafanhoto/go/6648041",
-    "price": 741.23,
-    "price_text": "R$ 741,23",
-    "store": "Casas Bahia",
-    "collected_at": "2026-01-15T04:39:37.808933Z"
-  },
-  {
-    "id": "4961047",
-    "source": "gafanho",
-    "title": "Hub Usb Adaptador 3.0 Extensor 4 Portas Speed Hd Pen Drive Pc Notebook 5 Gbps",
-    "url": "https://gafanho.to/gafanhoto/go/6648038",
-    "price": 13.57,
-    "price_text": "R$ 13,57",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808938Z"
-  },
-  {
-    "id": "4961046",
-    "source": "gafanho",
-    "title": "Kit Fran Chillicake Kit By Franciny Ehlke",
-    "url": "https://gafanho.to/gafanhoto/go/6648040",
-    "price": 67.5,
-    "price_text": "R$ 67,50",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808942Z"
-  },
-  {
-    "id": "4961042",
-    "source": "gafanho",
-    "title": "Colgate Luminous White Creme Dental Clareador Carvão Ativado 70g 3 unidades",
-    "url": "https://gafanho.to/gafanhoto/go/6648036",
-    "price": 15.29,
-    "price_text": "R$ 15,29",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808946Z"
-  },
-  {
-    "id": "4961041",
-    "source": "gafanho",
-    "title": "Mesa ajustável dobrável, mesa de notebook lateral com ajuste de altura (Preto-Básico)",
-    "url": "https://gafanho.to/gafanhoto/go/6648035",
-    "price": 113.99,
-    "price_text": "R$ 113,99",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808950Z"
-  },
-  {
-    "id": "4961040",
-    "source": "gafanho",
-    "title": "Panificadora 19 Programas Gallant 600w 220v Preta (GPA1E19A_220PT)",
-    "url": "https://gafanho.to/gafanhoto/go/6648034",
-    "price": 350.1,
-    "price_text": "R$ 350,10",
-    "store": "Magalu",
-    "collected_at": "2026-01-15T04:39:37.808954Z"
-  },
-  {
-    "id": "4961039",
-    "source": "gafanho",
-    "title": "Placa de Vídeo AsRock AMD Radeon RX 7600 Challenger Pro OC, 8GB, GDDR6, FSR, Ray Tracing, 90-GA62ZZ-00UANF",
-    "url": "https://gafanho.to/gafanhoto/go/6648032",
-    "price": 1449.9,
-    "price_text": "R$ 1.449,90",
-    "store": "Terabyte",
-    "collected_at": "2026-01-15T04:39:37.808959Z"
-  },
-  {
-    "id": "4961037",
-    "source": "gafanho",
-    "title": "Luz Led Sem Fio Touch Rotacao Monitor Escritorio Mesa Hora Sensor Toque Bivolt Recarrega Compacta Pequena Discreta Home por R$ 37,71 à vista!",
-    "url": "https://gafanho.to/gafanhoto/go/6648033",
-    "price": 37.71,
-    "price_text": "R$ 37,71",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808963Z"
-  },
-  {
-    "id": "4961034",
-    "source": "gafanho",
-    "title": "Cupom válido somente para clientes meli",
-    "url": "https://gafanho.to/gafanhoto/go/6648029",
-    "price": 2899.0,
-    "price_text": "R$ 2.899,00",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-15T04:39:37.808968Z"
-  },
-  {
-    "id": "4961033",
-    "source": "gafanho",
-    "title": "Geladeira/Refrigerador Midea Frost Free Duplex Inox 473L MD-RT611EVK463 Inverter - Bivolt",
-    "url": "https://gafanho.to/gafanhoto/go/6648028",
-    "price": 3210.0,
-    "price_text": "R$ 3.210,00",
-    "store": "Aliexpress",
-    "collected_at": "2026-01-15T04:39:37.808972Z"
-  },
-  {
-    "id": "4961031",
-    "source": "gafanho",
-    "title": "Dispostivo De Proteção Elétrica EPS 301 Branco Intelbras por R$ 35,00",
-    "url": "https://gafanho.to/gafanhoto/go/6648027",
-    "price": 35.0,
-    "price_text": "R$ 35,00",
-    "store": "Amazon",
-    "collected_at": "2026-01-15T04:39:37.808976Z"
+    "collected_at": "2026-01-15T08:28:57.489109Z"
   }
 ]
