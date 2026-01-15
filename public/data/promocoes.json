@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768442290294,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Cadeira Portátil Dobrável Banco Bolso Camping Pesca Praia",
+      "preco": 63.91,
+      "precoAntigo": 78.9,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_670191-MLA81372781104_122024-F.webp",
+      "link": "https://mercadolivre.com/sec/1MXhMvB",
+      "destaque": false,
+      "timestamp": "2026-01-15T01:58:10.294Z"
+    },
+    {
       "id": 1768442162960,
       "tipo": "promo",
       "loja": "Amazon",
