@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768518729394,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Mochila Masculina Grande Notebook Impermeável Reforçada",
+      "preco": 60.12,
+      "precoAntigo": 78.99,
+      "info": "Frete grátis Full ",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_615102-MLA99700960038_122025-F.webp",
+      "link": "https://mercadolivre.com/sec/1EcWze6",
+      "destaque": false,
+      "timestamp": "2026-01-15T23:12:09.394Z"
+    },
+    {
       "id": 1768518380345,
       "tipo": "promo",
       "loja": "Amazon",
