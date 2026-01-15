@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768518939108,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Mochila Lancheira Pré Escola Infantil Creche Girafa Cor Amarelo",
+      "preco": 75.2,
+      "precoAntigo": 159.9,
+      "info": "Frete grátis Full - Outros Modelos Disponíveis ",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_730610-MLA95068192148_102025-F.webp",
+      "link": "https://mercadolivre.com/sec/1KS5YtK",
+      "destaque": false,
+      "timestamp": "2026-01-15T23:15:39.108Z"
+    },
+    {
       "id": 1768518729394,
       "tipo": "promo",
       "loja": "Mercado Livre",
