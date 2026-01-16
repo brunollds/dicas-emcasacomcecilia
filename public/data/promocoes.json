@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768524600999,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Bolsa Tiracolo Pochete Masculina Transversal Ombro Cor Preto",
+      "preco": 21.79,
+      "precoAntigo": null,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_917935-MLA99566774498_122025-F.webp",
+      "link": "https://mercadolivre.com/sec/1saoXfQ",
+      "destaque": false,
+      "timestamp": "2026-01-16T00:50:00.999Z"
+    },
+    {
       "id": 1768524020316,
       "tipo": "promo",
       "loja": "Mercado Livre",
