@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768607461878,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit Com 10 Cuecas Slip Infantil Algodão Usee Brasil",
+      "preco": 39.68,
+      "precoAntigo": 59.99,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_632543-MLB77220418997_062024-F-kit-com-10-cuecas-slip-infantil-algodo-usee-brasil.webp",
+      "link": "https://mercadolivre.com/sec/1aMsGXZ",
+      "destaque": false,
+      "timestamp": "2026-01-16T23:51:01.878Z"
+    },
+    {
       "id": 1768605095132,
       "tipo": "promo",
       "loja": "Mercado Livre",
