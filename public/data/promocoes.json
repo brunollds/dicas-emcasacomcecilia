@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768602644953,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Calça Pantalona Wide Leg Elegante Casual Dia A Dia",
+      "preco": 47.99,
+      "precoAntigo": 159.99,
+      "info": "Frete grátis Full",
+      "cupom": "PROMOBBB",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_949219-MLB103425351875_012026-F-calca-pantalona-wide-leg-elegante-casual-dia-a-dia.webp",
+      "link": "https://mercadolivre.com/sec/2y7RmJp",
+      "destaque": false,
+      "timestamp": "2026-01-16T22:30:44.953Z"
+    },
+    {
       "id": 1768602507513,
       "tipo": "promo",
       "loja": "Mercado Livre",
