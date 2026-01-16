@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768589475396,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Escova Secadora de Cabelos Soft Beauty Cherry Philco Pec13 1300w 4 em 1 seca, alisa, modela e dá volume",
+      "preco": 78.67,
+      "precoAntigo": 139.99,
+      "info": "Frete grátis Full",
+      "cupom": "BELEZANOMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_653169-MLA99851166997_112025-F.webp",
+      "link": "https://mercadolivre.com/sec/1Buj8oV",
+      "destaque": true,
+      "timestamp": "2026-01-16T18:51:15.396Z"
+    },
+    {
       "id": 1768589372221,
       "tipo": "promo",
       "loja": "Mercado Livre",
