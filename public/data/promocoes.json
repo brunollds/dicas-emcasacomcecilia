@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768607671446,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit 2 Sutiãs Microfibra Sem Costura Daily Sustentação Trifil",
+      "preco": 57.49,
+      "precoAntigo": 69.99,
+      "info": "Pix ou 1x • Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_687035-MLB78969119165_092024-F-kit-2-sutis-microfibra-sem-costura-daily-sustentaco-trifil.webp",
+      "link": "https://mercadolivre.com/sec/1yzr9Xm",
+      "destaque": false,
+      "timestamp": "2026-01-16T23:54:31.446Z"
+    },
+    {
       "id": 1768607461878,
       "tipo": "promo",
       "loja": "Mercado Livre",
