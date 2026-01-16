@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768577993004,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Balança Digital Bioimpedância Premium Bluetooth com App Saúde iOS Android para IMC Gordura Corporal Massa Muscular Massa Óssea Água Corporal Taxa Metabólica BMR Alta Precisão Vidro Temperado LED",
+      "preco": 29.9,
+      "precoAntigo": 34,
+      "info": "Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/41XIyJU1kPL.jpg",
+      "link": "https://amzn.to/49snY0Q",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:39:53.004Z"
+    },
+    {
       "id": 1768577927738,
       "tipo": "promo",
       "loja": "Mercado Livre",
