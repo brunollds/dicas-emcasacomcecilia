@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768524867500,
+      "tipo": "promo",
+      "loja": "Aliexpress",
+      "produto": "Robô aspirador de pó abir x9, lidar a laser, sucção 6500pa, limpeza uv, mapa de vários andares, área restrita por aplicativo, esfregão seco e molhado para casa inteligente",
+      "preco": 1182.61,
+      "precoAntigo": 2299,
+      "info": "Frete grátis - Valor Final",
+      "cupom": "MEGA200 +  AEBR6",
+      "imagem": "https://ae-pic-a1.aliexpress-media.com/kf/Sdde88302805d4e79a572bb94076c7895u.jpg_220x220q75.jpg_.avif",
+      "link": "https://s.click.aliexpress.com/e/_c4kIus4B",
+      "destaque": false,
+      "timestamp": "2026-01-16T00:54:27.500Z"
+    },
+    {
       "id": 1768524600999,
       "tipo": "promo",
       "loja": "Mercado Livre",
