@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768603109860,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Capa Protetora Colchão Box Casal Padrão Matelado Impermeável",
+      "preco": 30.52,
+      "precoAntigo": 78.9,
+      "info": "Frete grátis Full - Outras Cores Disponíveis ",
+      "cupom": "DECORMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_639258-MLB82839590542_032025-F-capa-protetora-colcho-box-casal-padro-matelado-impermeavel.webp",
+      "link": "https://mercadolivre.com/sec/2Rkgw7c",
+      "destaque": false,
+      "timestamp": "2026-01-16T22:38:29.860Z"
+    },
+    {
       "id": 1768602919224,
       "tipo": "promo",
       "loja": "Mercado Livre",
