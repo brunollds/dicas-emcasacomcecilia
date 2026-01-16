@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768605095132,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Vestido Longo Com Alças E Detalhe Nas Costas Moda Blogueira",
+      "preco": 47.96,
+      "precoAntigo": 89.9,
+      "info": "Prime: Frete grátis",
+      "cupom": "PROMOBBB",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_819003-MLB84621253371_052025-F-vestido-longo-com-alcas-e-detalhe-nas-costas-moda-blogueira.webp",
+      "link": "https://mercadolivre.com/sec/23j9kRs",
+      "destaque": false,
+      "timestamp": "2026-01-16T23:11:35.132Z"
+    },
+    {
       "id": 1768603306219,
       "tipo": "promo",
       "loja": "Amazon",
