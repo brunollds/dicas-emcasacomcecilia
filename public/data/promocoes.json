@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768578237528,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Brinox - Frigideira 16X3,2Cm 0,4L Anis - Vermelho Borgonha",
+      "preco": 18.02,
+      "precoAntigo": 36.04,
+      "info": "Prime: Frete grátis • Mais por Menos: 10% off em 10+ itens",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/41IazyldogL._AC_SX679_.jpg",
+      "link": "https://amzn.to/45fx1Qk",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:43:57.528Z"
+    },
+    {
       "id": 1768578167680,
       "tipo": "promo",
       "loja": "Amazon",
