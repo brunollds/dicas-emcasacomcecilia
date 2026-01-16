@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768589372221,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Torneira Gourmet Monocomando Quadrada 360 Escovada Prateado Escovado",
+      "preco": 36.2,
+      "precoAntigo": 120.68,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_811802-MLB92316978755_092025-F.webp",
+      "link": "https://mercadolivre.com/sec/2LQVUja",
+      "destaque": false,
+      "timestamp": "2026-01-16T18:49:32.221Z"
+    },
+    {
       "id": 1768589255483,
       "tipo": "promo",
       "loja": "Amazon",
