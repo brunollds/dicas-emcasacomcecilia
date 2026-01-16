@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768523642652,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Vestido Feminino Curto Tubinho Alfaiataria Elegante Fashion",
+      "preco": 58.89,
+      "precoAntigo": 189.99,
+      "info": "Frete grátis Full - Devolução grátis",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_790961-MLB103145663283_122025-F-vestido-feminino-curto-tubinho-alfaiataria-elegante-fashion.webp",
+      "link": "https://mercadolivre.com/sec/2zxrmcN",
+      "destaque": false,
+      "timestamp": "2026-01-16T00:34:02.652Z"
+    },
+    {
       "id": 1768523511384,
       "tipo": "promo",
       "loja": "Mercado Livre",
