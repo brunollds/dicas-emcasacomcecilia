@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768578167680,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Prancha de Cabelo Mallory Red Diamond, Com Placas flutuantes, Máxima Temperatura de 210°c – Bivolt",
+      "preco": 39.99,
+      "precoAntigo": 79.99,
+      "info": "Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61CwqxwfZAL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4b8OvSh",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:42:47.680Z"
+    },
+    {
       "id": 1768578096239,
       "tipo": "promo",
       "loja": "Amazon",
