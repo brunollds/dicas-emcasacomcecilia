@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768577858383,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "HEPTA WORLD Ventilador de Coluna 110V/220V, Resfriamento, Silencioso, Design Slim para Casa/Escritório (101, 110V)",
+      "preco": 116,
+      "precoAntigo": 189,
+      "info": "3x S/ Juros • Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61mqHOV-JyL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4qWfrZS",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:37:38.383Z"
+    },
+    {
       "id": 1768577721822,
       "tipo": "promo",
       "loja": "Mercado Livre",
