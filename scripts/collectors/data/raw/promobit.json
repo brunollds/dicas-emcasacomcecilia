@@ -1,25 +1,5 @@
 [
   {
-    "id": "2586562",
-    "source": "promobit",
-    "title": "Monitor Portátil Amoudo 15.6 IPS FHD",
-    "url": "https://www.promobit.com.br/oferta/monitor-portatil-amoudo-156-ips-fhd-2586562/",
-    "price": 1198.0,
-    "price_text": "R$ 1.198,00",
-    "store": "aliexpress.com",
-    "collected_at": "2026-01-16T12:39:20.587566Z"
-  },
-  {
-    "id": "2587603",
-    "source": "promobit",
-    "title": "Ganhe 15% OFF PROMOHOJE - Em todos os produtos Compra mínima",
-    "url": "https://www.promobit.com.br/oferta/ganhe-15-off-promohoje-em-todos-os-produtos-compra-minima-r79-limite-de-r60-2587603/",
-    "price": 79.0,
-    "price_text": "R$79",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587655Z"
-  },
-  {
     "id": "2586685",
     "source": "promobit",
     "title": "Geladeira Electrolux Frost Free Inverter 480L Efficient AutoSense 3 Portas Branca (IM7)",
@@ -27,1086 +7,1126 @@
     "price": 4139.1,
     "price_text": "R$4.139,10",
     "store": "lebiscuit.com.br",
-    "collected_at": "2026-01-16T12:39:20.587724Z"
+    "collected_at": "2026-01-16T16:25:49.819412Z"
   },
   {
-    "id": "2583504",
+    "id": "2587117",
     "source": "promobit",
-    "title": "Aparador de pelos Smart Blade be emotion MEN",
-    "url": "https://www.promobit.com.br/oferta/aparador-de-pelos-smart-blade-be-emotion-men-2583504/",
-    "price": 599.9,
-    "price_text": "R$ 599,90",
-    "store": "polishop.com.br",
-    "collected_at": "2026-01-16T12:39:20.587791Z"
-  },
-  {
-    "id": "2589311",
-    "source": "promobit",
-    "title": "Monitor Gamer Acer Nitro 23.8” Full HD LED IPS 200 Hz 1ms VG240Y X1biip",
-    "url": "https://www.promobit.com.br/oferta/monitor-gamer-acer-nitro-238-full-hd-led-ips-200-hz-1ms-vg240y-x1biip-2589311/",
-    "price": 1049.0,
-    "price_text": "R$ 1.049,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587822Z"
-  },
-  {
-    "id": "2589312",
-    "source": "promobit",
-    "title": "Pneu Cg 125 150 Fan Titan Ks Es Esd Traseiro 90/90-18",
-    "url": "https://www.promobit.com.br/oferta/pneu-cg-125-150-fan-titan-ks-es-esd-traseiro-90-90-18-2589312/",
-    "price": 99.36,
-    "price_text": "R$99,36",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587847Z"
-  },
-  {
-    "id": "2589291",
-    "source": "promobit",
-    "title": "Memória Ram 8gb Ddr4 3200mhz Udimm Ioway",
-    "url": "https://www.promobit.com.br/oferta/memoria-ram-8gb-ddr4-3200mhz-udimm-ioway-2589291/",
-    "price": 279.0,
-    "price_text": "R$279,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587868Z"
-  },
-  {
-    "id": "2589310",
-    "source": "promobit",
-    "title": "Smartphone JOVI V50 5G 512GB 12GB RAM Câmera 50MP Snapdragon 7 Gen3 Bateria 6000mAh",
-    "url": "https://www.promobit.com.br/oferta/smartphone-jovi-v50-5g-512gb-12gb-ram-camera-50mp-snapdragon-7-gen3-bateria-6000mah-2589310/",
-    "price": 4999.0,
-    "price_text": "R$ 4.999,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587891Z"
-  },
-  {
-    "id": "2589305",
-    "source": "promobit",
-    "title": "Notebook Gamer Acer Nitro V15 ANV15-52-737P Intel® Core™ i7-13620H 13ªG 16GB RAM 512GB SSD RTX4050 FHD 15.6”",
-    "url": "https://www.promobit.com.br/oferta/notebook-gamer-acer-nitro-v15-anv15-52-737p-intel-core-i7-13620h-13g-16gb-ram-512gb-ssd-rtx4050-fhd-156-2589305/",
-    "price": 8999.0,
-    "price_text": "R$ 8.999,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587914Z"
-  },
-  {
-    "id": "2589307",
-    "source": "promobit",
-    "title": "Notebook Gamer Acer Nitro V15 ANV15-52-737P Intel® Core™ i7-13620H 13ªG 16GB RAM 512GB SSD RTX4050 FHD 15.6”",
-    "url": "https://www.promobit.com.br/oferta/notebook-gamer-acer-nitro-v15-anv15-52-737p-intel-core-i7-13620h-13g-16gb-ram-512gb-ssd-rtx4050-fhd-156-2589307/",
-    "price": 8999.0,
-    "price_text": "R$ 8.999,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587936Z"
-  },
-  {
-    "id": "2589304",
-    "source": "promobit",
-    "title": "iPhone 17 Pro Max 256GB - Laranja-cósmico - Distribuidor Autorizado",
-    "url": "https://www.promobit.com.br/oferta/iphone-17-pro-max-256gb-laranja-cosmico-distribuidor-autorizado-2589304/",
-    "price": 12499.0,
-    "price_text": "R$ 12.499,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587957Z"
-  },
-  {
-    "id": "2589303",
-    "source": "promobit",
-    "title": "Notebook Vaio Fe16 Amd Ryzen 7 5825u Linux 8gb RAM 512gb Ssd Wi-Fi 6 Tela 16\" Ips Wuxga Antirreflexo - Cinza Grafite Vjfe69f11xb0321h - Permite upgrad",
-    "url": "https://www.promobit.com.br/oferta/notebook-vaio-fe16-amd-ryzen-7-5825u-linux-8gb-ram-512gb-ssd-wi-fi-6-tela-16-ips-wuxga-antirreflexo-cinza-grafite-vjfe69f11xb0321h-permite-upgrad-2589303/",
-    "price": 3999.0,
-    "price_text": "R$ 3.999,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587978Z"
-  },
-  {
-    "id": "2589302",
-    "source": "promobit",
-    "title": "Smart Tv LG 50 4k Uhd Hdr Thinq Ai Pro Wi-fi Bluetooth Alexa Apple Airplay - 50tu801c0sa",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-lg-50-4k-uhd-hdr-thinq-ai-pro-wi-fi-bluetooth-alexa-apple-airplay-50tu801c0sa-2589302/",
-    "price": 3010.0,
-    "price_text": "R$ 3.010,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.587997Z"
-  },
-  {
-    "id": "2589301",
-    "source": "promobit",
-    "title": "Pneu Technic SPORT 110/70-17 54S TL Dianteiro CB300 R XTZ250X NINJA250 300 GS500 Twister CBX250 Twist",
-    "url": "https://www.promobit.com.br/oferta/pneu-technic-sport-110-70-17-54s-tl-dianteiro-cb300-r-xtz250x-ninja250-300-gs500-twister-cbx250-twist-2589301/",
-    "price": 238.9,
-    "price_text": "R$238,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588055Z"
-  },
-  {
-    "id": "2589300",
-    "source": "promobit",
-    "title": "PNEU BROS TRASEIRO 110 90 17 CROSSER XRE 190 BROS 160 150 125 MAGGION NOVO 0715",
-    "url": "https://www.promobit.com.br/oferta/pneu-bros-traseiro-110-90-17-crosser-xre-190-bros-160-150-125-maggion-novo-0715-2589300/",
-    "price": 290.5,
-    "price_text": "R$290,50",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588079Z"
-  },
-  {
-    "id": "2589299",
-    "source": "promobit",
-    "title": "Invicta Relógio masculino Specialty 21659 com mostrador analógico de quartzo suíço em dois tons",
-    "url": "https://www.promobit.com.br/oferta/invicta-relogio-masculino-specialty-21659-com-mostrador-analogico-de-quartzo-suico-em-dois-tons-2589299/",
-    "price": 452.55,
-    "price_text": "R$452,55",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588099Z"
-  },
-  {
-    "id": "2589297",
-    "source": "promobit",
-    "title": "Cooktop Mueller 5 bocas Preto com Queimador Tripla chama",
-    "url": "https://www.promobit.com.br/oferta/cooktop-mueller-5-bocas-preto-com-queimador-tripla-chama-2589297/",
-    "price": 855.71,
-    "price_text": "R$ 855,71",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588120Z"
-  },
-  {
-    "id": "2589298",
-    "source": "promobit",
-    "title": "Garrafa térmica Stanley Quick Flip de aço inoxidável 710mL Polar",
-    "url": "https://www.promobit.com.br/oferta/garrafa-termica-stanley-quick-flip-de-aco-inoxidavel-710ml-polar-2589298/",
-    "price": 359.0,
-    "price_text": "R$ 359,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588139Z"
-  },
-  {
-    "id": "2589296",
-    "source": "promobit",
-    "title": "Smart TV 60\" Philco QLED Roku Dolby Audio P60CRA",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-60-philco-qled-roku-dolby-audio-p60cra-2589296/",
-    "price": 3460.9,
-    "price_text": "R$ 3.460,90",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588160Z"
-  },
-  {
-    "id": "2589295",
-    "source": "promobit",
-    "title": "Celular Samsung Galaxy A17 Com Ia, 256gb, 8gb Ram, Câm De 50mp, Tela De 6.7 , Nfc, Ip54 - Cinza",
-    "url": "https://www.promobit.com.br/oferta/celular-samsung-galaxy-a17-com-ia-256gb-8gb-ram-cam-de-50mp-tela-de-67-nfc-ip54-cinza-2589295/",
-    "price": 1749.0,
-    "price_text": "R$ 1.749,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588179Z"
-  },
-  {
-    "id": "2589294",
-    "source": "promobit",
-    "title": "Ar Condicionado Hi Wall Tcl T-pro 2.0 Inverter 18.000 Btus Frio R-32",
-    "url": "https://www.promobit.com.br/oferta/ar-condicionado-hi-wall-tcl-t-pro-20-inverter-18000-btus-frio-r-32-2589294/",
-    "price": 4559.0,
-    "price_text": "R$ 4.559,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588197Z"
-  },
-  {
-    "id": "2589292",
-    "source": "promobit",
-    "title": "Ofertas Insanas para Gamers: Performance Estilo e Economia\nA partir de",
-    "url": "https://www.promobit.com.br/oferta/ofertas-insanas-para-gamers-performance-estilo-e-economia-2589292/",
-    "price": 14.9,
-    "price_text": "R$14,90",
-    "store": "promobit.com.br",
-    "collected_at": "2026-01-16T12:39:20.588254Z"
-  },
-  {
-    "id": "2589281",
-    "source": "promobit",
-    "title": "Whey 100% Concentrado Pote 900G Dark Lab (900g Chocolate)",
-    "url": "https://www.promobit.com.br/oferta/whey-100-concentrado-pote-900g-dark-lab-900g-chocolate-2589281/",
-    "price": 159.9,
-    "price_text": "R$ 159,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588277Z"
-  },
-  {
-    "id": "2589283",
-    "source": "promobit",
-    "title": "Mouse Gamer Sem Fio Logitech G305 LIGHTSPEED com 6 Botões Programáveis e Até 12.000 DPI - Preto",
-    "url": "https://www.promobit.com.br/oferta/mouse-gamer-sem-fio-logitech-g305-lightspeed-com-6-botoes-programaveis-e-ate-12000-dpi-preto-2589283/",
-    "price": 299.9,
-    "price_text": "R$ 299,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588297Z"
-  },
-  {
-    "id": "2589277",
-    "source": "promobit",
-    "title": "Creatina Pura Dark Lab 1kg Monohidratada 100% de Pureza Sem Sabor",
-    "url": "https://www.promobit.com.br/oferta/creatina-pura-dark-lab-1kg-monohidratada-100-de-pureza-sem-sabor-2589277/",
-    "price": 168.9,
-    "price_text": "R$ 168,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588316Z"
-  },
-  {
-    "id": "2589276",
-    "source": "promobit",
-    "title": "Ar Condicionado Split Inverter Aufit 9.000 Btus Frio 220v",
-    "url": "https://www.promobit.com.br/oferta/ar-condicionado-split-inverter-aufit-9000-btus-frio-220v-2589276/",
-    "price": 2584.0,
-    "price_text": "R$ 2.584,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588334Z"
-  },
-  {
-    "id": "2589258",
-    "source": "promobit",
-    "title": "O Jardim Secreto - Edição de Luxo Almofadada",
-    "url": "https://www.promobit.com.br/oferta/o-jardim-secreto-edicao-de-luxo-almofadada-2589258/",
-    "price": 33.7,
-    "price_text": "R$33,70",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588353Z"
-  },
-  {
-    "id": "2589273",
-    "source": "promobit",
-    "title": "Smart Tv 32  Philco Led Roku Tv Hd Dolby Audio P32cra",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-32-philco-led-roku-tv-hd-dolby-audio-p32cra-2589273/",
-    "price": 1099.0,
-    "price_text": "R$ 1.099,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588370Z"
-  },
-  {
-    "id": "2589272",
-    "source": "promobit",
-    "title": "Creatina Pura Dark Lab 1kg Monohidratada 100% de Pureza Sem Sabor",
-    "url": "https://www.promobit.com.br/oferta/creatina-pura-dark-lab-1kg-monohidratada-100-de-pureza-sem-sabor-2589272/",
-    "price": 168.9,
-    "price_text": "R$ 168,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588389Z"
-  },
-  {
-    "id": "2589271",
-    "source": "promobit",
-    "title": "Whey 100% Concentrado Pote 900G Dark Lab (900g Chocolate)",
-    "url": "https://www.promobit.com.br/oferta/whey-100-concentrado-pote-900g-dark-lab-900g-chocolate-2589271/",
-    "price": 159.9,
-    "price_text": "R$ 159,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588407Z"
-  },
-  {
-    "id": "2589270",
-    "source": "promobit",
-    "title": "Celular Samsung Galaxy S25 Fe 5g, 128gb, 8gb Ram, Câmera Tripla De 50+12+8, Tela Grande De 6.7 Jetblack",
-    "url": "https://www.promobit.com.br/oferta/celular-samsung-galaxy-s25-fe-5g-128gb-8gb-ram-camera-tripla-de-50-12-8-tela-grande-de-67-jetblack-2589270/",
-    "price": 4499.0,
-    "price_text": "R$ 4.499,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588445Z"
-  },
-  {
-    "id": "2589268",
-    "source": "promobit",
-    "title": "Balança Digital Bioimpedância Premium Bluetooth com App Saúde iOS Android para IMC Gordura Corporal Massa Muscular Massa Óssea Água Corporal Taxa Meta",
-    "url": "https://www.promobit.com.br/oferta/balanca-digital-bioimpedancia-premium-bluetooth-com-app-saude-ios-android-para-imc-gordura-corporal-massa-muscular-massa-ossea-agua-corporal-taxa-meta-2589268/",
-    "price": 33.9,
-    "price_text": "R$ 33,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588472Z"
-  },
-  {
-    "id": "2589267",
-    "source": "promobit",
-    "title": "Umbro Camisa Feminina Santos Oficial nº 3 2024 (Torcedora) Amarelo/Preto P",
-    "url": "https://www.promobit.com.br/oferta/umbro-camisa-feminina-santos-oficial-n-3-2024-torcedora-amarelo-preto-p-2589267/",
-    "price": 299.99,
-    "price_text": "R$ 299,99",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588492Z"
-  },
-  {
-    "id": "2589265",
-    "source": "promobit",
-    "title": "Cadeira De Carro Infantil 4ever Dlx 4 Em 1 Zagg Graco",
-    "url": "https://www.promobit.com.br/oferta/cadeira-de-carro-infantil-4ever-dlx-4-em-1-zagg-graco-2589265/",
-    "price": 2799.0,
-    "price_text": "R$ 2.799,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588511Z"
-  },
-  {
-    "id": "2589262",
-    "source": "promobit",
-    "title": "Hot Wheels City Pista de Brinquedo Hamburgueria para crianças a partir de 4 anos",
-    "url": "https://www.promobit.com.br/oferta/hot-wheels-city-pista-de-brinquedo-hamburgueria-para-criancas-a-partir-de-4-anos-2589262/",
-    "price": 105.99,
-    "price_text": "R$ 105,99",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588529Z"
-  },
-  {
-    "id": "2589261",
-    "source": "promobit",
-    "title": "Sérum De Tratamento Labial Avon Renew Incolor 3,5g",
-    "url": "https://www.promobit.com.br/oferta/serum-de-tratamento-labial-avon-renew-incolor-35g-2589261/",
-    "price": 69.9,
-    "price_text": "R$ 69,90",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588551Z"
-  },
-  {
-    "id": "2589259",
-    "source": "promobit",
-    "title": "Smart TV de 50\" LG UT801C 50UT801C0SA com tela LED 4K 127/220V - preto",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-de-50-lg-ut801c-50ut801c0sa-com-tela-led-4k-127-220v-preto-2589259/",
-    "price": 2599.0,
-    "price_text": "R$ 2.599,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588570Z"
-  },
-  {
-    "id": "2589254",
-    "source": "promobit",
-    "title": "Da Colonia Dacolonia - Paçoca Rolha Tradicional Balde 56 Unidades",
-    "url": "https://www.promobit.com.br/oferta/da-colonia-dacolonia-pacoca-rolha-tradicional-balde-56-unidades-2589254/",
-    "price": 29.9,
-    "price_text": "R$ 29,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588588Z"
-  },
-  {
-    "id": "2589255",
-    "source": "promobit",
-    "title": "Smart TV AOC 40\" 40S5045/78G Roku TV DLED Full HD",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-aoc-40-40s5045-78g-roku-tv-dled-full-hd-2589255/",
-    "price": 1999.0,
-    "price_text": "R$ 1.999,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588606Z"
-  },
-  {
-    "id": "2589256",
-    "source": "promobit",
-    "title": "Smart Tv 65'' Samsung Lh65bedhvggxzd Led Crystal Uhd 4k Hdr",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-65-samsung-lh65bedhvggxzd-led-crystal-uhd-4k-hdr-2589256/",
-    "price": 3699.0,
-    "price_text": "R$ 3.699,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588624Z"
-  },
-  {
-    "id": "2589253",
-    "source": "promobit",
-    "title": "Max Titanium Top Whey Bar 12 Unidades De 41G (Chocolate Com Avelã)",
-    "url": "https://www.promobit.com.br/oferta/max-titanium-top-whey-bar-12-unidades-de-41g-chocolate-com-avela-2589253/",
-    "price": 102.9,
-    "price_text": "R$ 102,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588641Z"
-  },
-  {
-    "id": "2589251",
-    "source": "promobit",
-    "title": "Processador AMD Ryzen 7 7800X3D 5.0GHz Max Turbo Cache 104MB AM5 8 Núcleos Vídeo Integrado - 100-100000910WOF",
-    "url": "https://www.promobit.com.br/oferta/processador-amd-ryzen-7-7800x3d-50ghz-max-turbo-cache-104mb-am5-8-nucleos-video-integrado-100-100000910wof-2589251/",
-    "price": 1998.0,
-    "price_text": "R$1.998,00",
-    "store": "kabum.com.br",
-    "collected_at": "2026-01-16T12:39:20.588699Z"
-  },
-  {
-    "id": "2589250",
-    "source": "promobit",
-    "title": "Processador AMD Ryzen 7 9800X3D Cache 8MB 8 Núcleos 16 Threads AM5 - 100-100001084WOF",
-    "url": "https://www.promobit.com.br/oferta/processador-amd-ryzen-7-9800x3d-cache-8mb-8-nucleos-16-threads-am5-100-100001084wof-2589250/",
-    "price": 4352.93,
-    "price_text": "R$ 4.352,93",
-    "store": "kabum.com.br",
-    "collected_at": "2026-01-16T12:39:20.588721Z"
-  },
-  {
-    "id": "2589249",
-    "source": "promobit",
-    "title": "Forno Elétrico Britânia 44L Preto Dupla Resistência 1500W BFE44P 127V",
-    "url": "https://www.promobit.com.br/oferta/forno-eletrico-britania-44l-preto-dupla-resistencia-1500w-bfe44p-127v-2589249/",
-    "price": 399.0,
-    "price_text": "R$ 399,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588741Z"
-  },
-  {
-    "id": "2589243",
-    "source": "promobit",
-    "title": "Notebook Positivo Vision R15 Lumina Bar, AMD Ryzen 5 8GB 256GB, Tela 15 polegadas Full HD Antirreflexo, Linux - Preto",
-    "url": "https://www.promobit.com.br/oferta/notebook-positivo-vision-r15-lumina-bar-amd-ryzen-5-8gb-256gb-tela-15-polegadas-full-hd-antirreflexo-linux-preto-2589243/",
-    "price": 3570.0,
-    "price_text": "R$ 3.570,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588763Z"
-  },
-  {
-    "id": "2589245",
-    "source": "promobit",
-    "title": "Placa de Vídeo XFX Swift RX 9070 XT TRIPLE FAN GAMING EDITION WITH AMD Radeon 16GB GDDR6 HDMI 3xDP RDNA 4 - RX-97TSWF3B9",
-    "url": "https://www.promobit.com.br/oferta/placa-de-video-xfx-swift-rx-9070-xt-triple-fan-gaming-edition-with-amd-radeon-16gb-gddr6-hdmi-3xdp-rdna-4-rx-97tswf3b9-2589245/",
-    "price": 6363.62,
-    "price_text": "R$ 6.363,62",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.588829Z"
-  },
-  {
-    "id": "2589241",
-    "source": "promobit",
-    "title": "Smart TV 4K 55\" LG UHD 55AU801 Processador 7 AI Ger8 Super Upscaling Google Cast Alexa Integrado Controle",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-4k-55-lg-uhd-55au801-processador-7-ai-ger8-super-upscaling-google-cast-alexa-integrado-controle-2589241/",
-    "price": 3999.0,
-    "price_text": "R$ 3.999,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588854Z"
-  },
-  {
-    "id": "2589239",
-    "source": "promobit",
-    "title": "Jogo Crocodilo Morde Dedo Divertido para Crianças e Família – Brinquedo Interativo 15x135x85cm",
-    "url": "https://www.promobit.com.br/oferta/jogo-crocodilo-morde-dedo-divertido-para-criancas-e-familia-brinquedo-interativo-15x135x85cm-2589239/",
-    "price": 29.99,
-    "price_text": "R$ 29,99",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588881Z"
-  },
-  {
-    "id": "2589238",
-    "source": "promobit",
-    "title": "Ar Condicionado Inverter 9000 Btus Philco Frio Pac9fb Branco",
-    "url": "https://www.promobit.com.br/oferta/ar-condicionado-inverter-9000-btus-philco-frio-pac9fb-branco-2589238/",
-    "price": 2599.0,
-    "price_text": "R$ 2.599,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588902Z"
-  },
-  {
-    "id": "2589240",
-    "source": "promobit",
-    "title": "Smart Tv 50'' Philco Ptv50g7pr2csb 4k Roku Tv Led Dolby Audio Preta",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-50-philco-ptv50g7pr2csb-4k-roku-tv-led-dolby-audio-preta-2589240/",
-    "price": 3140.0,
-    "price_text": "R$ 3.140,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588921Z"
-  },
-  {
-    "id": "2589234",
-    "source": "promobit",
-    "title": "Notebook Positivo Vision R15m Amd Ryzen 5-5625u Linux 8gb Ram 256gb Ssd Wi-fi 6 Tela 15 Full Hd Ips Antirreflexo - Permite Upgrade De Memória Ram E Ss",
-    "url": "https://www.promobit.com.br/oferta/notebook-positivo-vision-r15m-amd-ryzen-5-5625u-linux-8gb-ram-256gb-ssd-wi-fi-6-tela-15-full-hd-ips-antirreflexo-permite-upgrade-de-memoria-ram-e-ss-2589234/",
-    "price": 3855.71,
-    "price_text": "R$ 3.855,71",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588941Z"
-  },
-  {
-    "id": "2589233",
-    "source": "promobit",
-    "title": "Extensão Elétrica 10 Metros Reforçada 10/20a Obra Profissional Tomada Em Barra Preto MS Eletro Eletrônica",
-    "url": "https://www.promobit.com.br/oferta/extensao-eletrica-10-metros-reforcada-10-20a-obra-profissional-tomada-em-barra-preto-ms-eletro-eletronica-2589233/",
-    "price": 45.44,
-    "price_text": "R$ 45,44",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.588963Z"
-  },
-  {
-    "id": "2589232",
-    "source": "promobit",
-    "title": "HEPTA WORLD Ventilador de Coluna 110V/220V Resfriamento Silencioso Design Slim para Casa/Escritório (101 110V)",
-    "url": "https://www.promobit.com.br/oferta/hepta-world-ventilador-de-coluna-110v-220v-resfriamento-silencioso-design-slim-para-casa-escritorio-101-110v-2589232/",
-    "price": 439.99,
-    "price_text": "R$ 439,99",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.588984Z"
-  },
-  {
-    "id": "2589229",
-    "source": "promobit",
-    "title": "Smart Tv 32 Philco Led Roku Tv Hd Dolby Audio Bivolt P32CRA",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-32-philco-led-roku-tv-hd-dolby-audio-bivolt-p32cra-2589229/",
-    "price": 1099.0,
-    "price_text": "R$ 1.099,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.589004Z"
-  },
-  {
-    "id": "2589228",
-    "source": "promobit",
-    "title": "LEGO Super Heroes Marvel Homem de Ferro com Motocicleta e o Hulk 76287",
-    "url": "https://www.promobit.com.br/oferta/lego-super-heroes-marvel-homem-de-ferro-com-motocicleta-e-o-hulk-76287-2589228/",
-    "price": 149.99,
-    "price_text": "R$ 149,99",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589022Z"
-  },
-  {
-    "id": "2589227",
-    "source": "promobit",
-    "title": "Máquina De Lavar Electrolux Efficient 13kg Auto Cesto Inox Branco",
-    "url": "https://www.promobit.com.br/oferta/maquina-de-lavar-electrolux-efficient-13kg-auto-cesto-inox-branco-2589227/",
-    "price": 1999.0,
-    "price_text": "R$ 1.999,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.589040Z"
-  },
-  {
-    "id": "2589225",
-    "source": "promobit",
-    "title": "Forno a Gás de Embutir Consul Multifuncional Grill 78L Preto COA84CE",
-    "url": "https://www.promobit.com.br/oferta/forno-a-gas-de-embutir-consul-multifuncional-grill-78l-preto-coa84ce-2589225/",
-    "price": 5397.0,
-    "price_text": "R$ 5.397,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589058Z"
-  },
-  {
-    "id": "2589226",
-    "source": "promobit",
-    "title": "Smart Tv Lg 43'' 4k Ultra Hd Pro Led Hdr Thinq Ai Alexa",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-lg-43-4k-ultra-hd-pro-led-hdr-thinq-ai-alexa-2589226/",
-    "price": 2750.0,
-    "price_text": "R$ 2.750,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.589076Z"
-  },
-  {
-    "id": "2589223",
-    "source": "promobit",
-    "title": "Smart Tv 50 Aoc 4k Dled 50u704578g Roku Tv Quad",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-50-aoc-4k-dled-50u704578g-roku-tv-quad-2589223/",
-    "price": 3099.0,
-    "price_text": "R$ 3.099,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.589093Z"
-  },
-  {
-    "id": "2589221",
-    "source": "promobit",
-    "title": "Whey 100% Concentrado Pote 900G Dark Lab (900g Chocolate)",
-    "url": "https://www.promobit.com.br/oferta/whey-100-concentrado-pote-900g-dark-lab-900g-chocolate-2589221/",
-    "price": 159.9,
-    "price_text": "R$ 159,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589114Z"
-  },
-  {
-    "id": "2589222",
-    "source": "promobit",
-    "title": "Aspirador de Pó Vertical Philco Filtro Ciclone 1450W PAS1600P Preto",
-    "url": "https://www.promobit.com.br/oferta/aspirador-de-po-vertical-philco-filtro-ciclone-1450w-pas1600p-preto-2589222/",
-    "price": 160.55,
-    "price_text": "R$160,55",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589132Z"
-  },
-  {
-    "id": "2589219",
-    "source": "promobit",
-    "title": "Fralda Pampers Pants Ajuste Total tamanho XXG Fácil de Vestir 78 Unidades",
-    "url": "https://www.promobit.com.br/oferta/fralda-pampers-pants-ajuste-total-tamanho-xxg-facil-de-vestir-78-unidades-2589219/",
-    "price": 169.52,
-    "price_text": "R$ 169,52",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589150Z"
-  },
-  {
-    "id": "2589220",
-    "source": "promobit",
-    "title": "Caixa De Som Torre Double 12\" 2300W Bluetooth Pulse - PS736",
-    "url": "https://www.promobit.com.br/oferta/caixa-de-som-torre-double-12-2300w-bluetooth-pulse-ps736-2589220/",
-    "price": 1698.9,
-    "price_text": "R$1.698,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589167Z"
-  },
-  {
-    "id": "2589214",
-    "source": "promobit",
-    "title": "Tee para golfe Pride Professional Tee System branco pacote com 75",
-    "url": "https://www.promobit.com.br/oferta/tee-para-golfe-pride-professional-tee-system-branco-pacote-com-75-2589214/",
-    "price": 73.43,
-    "price_text": "R$ 73,43",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589185Z"
-  },
-  {
-    "id": "2589217",
-    "source": "promobit",
-    "title": "Lava Louças HQ Digital 8 Serviços Branca HQ-LL8DB2 220V",
-    "url": "https://www.promobit.com.br/oferta/lava-loucas-hq-digital-8-servicos-branca-hq-ll8db2-220v-2589217/",
-    "price": 1921.11,
-    "price_text": "R$ 1.921,11",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589203Z"
-  },
-  {
-    "id": "2589215",
-    "source": "promobit",
-    "title": "O grúfalo",
-    "url": "https://www.promobit.com.br/oferta/o-grufalo-2589215/",
-    "price": 64.9,
-    "price_text": "R$ 64,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589220Z"
-  },
-  {
-    "id": "2589216",
-    "source": "promobit",
-    "title": "Console Nintendo Switch 2 + Jogo Digital Mario Kart World",
-    "url": "https://www.promobit.com.br/oferta/console-nintendo-switch-2-jogo-digital-mario-kart-world-2589216/",
-    "price": 3998.07,
-    "price_text": "R$3.998,07",
-    "store": "kabum.com.br",
-    "collected_at": "2026-01-16T12:39:20.589238Z"
-  },
-  {
-    "id": "2589213",
-    "source": "promobit",
-    "title": "Fechadura Digital ! smart Simple Access Biometria 100 Digitais Conexão com APP Cinza - KSFD200CZ",
-    "url": "https://www.promobit.com.br/oferta/fechadura-digital-smart-simple-access-biometria-100-digitais-conexao-com-app-cinza-ksfd200cz-2589213/",
-    "price": 736.74,
-    "price_text": "R$ 736,74",
-    "store": "kabum.com.br",
-    "collected_at": "2026-01-16T12:39:20.589256Z"
-  },
-  {
-    "id": "2589211",
-    "source": "promobit",
-    "title": "Ferro de Passar Roupa a Vapor e a Seco Black+Decker FX1050 Branco e Roxo",
-    "url": "https://www.promobit.com.br/oferta/ferro-de-passar-roupa-a-vapor-e-a-seco-black-decker-fx1050-branco-e-roxo-2589211/",
-    "price": 199.0,
-    "price_text": "R$ 199,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589277Z"
-  },
-  {
-    "id": "2589210",
-    "source": "promobit",
-    "title": "Fechadura Digital ! smart 500 - Biometria Controle via aplicativo Branco (com maçaneta) - KBSG002",
-    "url": "https://www.promobit.com.br/oferta/fechadura-digital-smart-500-biometria-controle-via-aplicativo-branco-com-macaneta-kbsg002-2589210/",
-    "price": 424.14,
-    "price_text": "R$424,14",
-    "store": "kabum.com.br",
-    "collected_at": "2026-01-16T12:39:20.589298Z"
-  },
-  {
-    "id": "2589209",
-    "source": "promobit",
-    "title": "Micro-ondas LG 30 Litros 220V Limpa Fácil MS3043BR Prata",
-    "url": "https://www.promobit.com.br/oferta/micro-ondas-lg-30-litros-220v-limpa-facil-ms3043br-prata-2589209/",
+    "title": "Monitor Gamer 34\" Curvo 1ms 165Hz AMD FreeSync Full HD HDMI DP HQ Premium HQ34C16",
+    "url": "https://www.promobit.com.br/oferta/monitor-gamer-34-curvo-1ms-165hz-amd-freesync-full-hd-hdmi-dp-hq-premium-hq34c16-2587117/",
     "price": 1399.0,
     "price_text": "R$ 1.399,00",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589317Z"
+    "collected_at": "2026-01-16T16:25:49.819529Z"
   },
   {
-    "id": "2589208",
+    "id": "2587585",
     "source": "promobit",
-    "title": "Fechadura Digital ! smart 500 - Biometria controle via aplicativo Vidro Preto (Com maçaneta) - KBSG001",
-    "url": "https://www.promobit.com.br/oferta/fechadura-digital-smart-500-biometria-controle-via-aplicativo-vidro-preto-com-macaneta-kbsg001-2589208/",
-    "price": 561.35,
-    "price_text": "R$ 561,35",
-    "store": "kabum.com.br",
-    "collected_at": "2026-01-16T12:39:20.589335Z"
-  },
-  {
-    "id": "2589205",
-    "source": "promobit",
-    "title": "Climatizador Ventisol Cli0601 6 Litros Branco Cinza 60W",
-    "url": "https://www.promobit.com.br/oferta/climatizador-ventisol-cli0601-6-litros-branco-cinza-60w-2589205/",
-    "price": 239.99,
-    "price_text": "R$239,99",
-    "store": "shopee.com.br",
-    "collected_at": "2026-01-16T12:39:20.589394Z"
-  },
-  {
-    "id": "2589206",
-    "source": "promobit",
-    "title": "Climatizador Ar Ventisol 16 Litros Branco 127V",
-    "url": "https://www.promobit.com.br/oferta/climatizador-ar-ventisol-16-litros-branco-127v-2589206/",
-    "price": 474.0,
-    "price_text": "R$ 474,00",
+    "title": "Geladeira LG Side by Side Inverter GC-L257SLP Frost Free com Tecnologia UVnano ThinQ Aço Escovado - 611L - 110V",
+    "url": "https://www.promobit.com.br/oferta/geladeira-lg-side-by-side-inverter-gc-l257slp-frost-free-com-tecnologia-uvnano-thinq-aco-escovado-611l-110v-2587585/",
+    "price": 10751.61,
+    "price_text": "R$ 10.751,61",
     "store": "casasbahia.com.br",
-    "collected_at": "2026-01-16T12:39:20.589477Z"
+    "collected_at": "2026-01-16T16:25:49.819601Z"
   },
   {
-    "id": "2589201",
+    "id": "2589529",
     "source": "promobit",
-    "title": "Cachaça Germana Palha 1l",
-    "url": "https://www.promobit.com.br/oferta/cachaca-germana-palha-1l-2589201/",
-    "price": 85.0,
-    "price_text": "R$85,00",
+    "title": "Flush Stick Blush em Bastão Plum 6g",
+    "url": "https://www.promobit.com.br/oferta/flush-stick-blush-em-bastao-plum-6g-2589529/",
+    "price": 99.9,
+    "price_text": "R$ 99,90",
+    "store": "mascavo.com",
+    "collected_at": "2026-01-16T16:25:49.819661Z"
+  },
+  {
+    "id": "2589930",
+    "source": "promobit",
+    "title": "Relógio Smarts Unissex Life Preto - MOLIFEUAR7P",
+    "url": "https://www.promobit.com.br/oferta/relogio-smarts-unissex-life-preto-molifeuar7p-2589930/",
+    "price": 506.0,
+    "price_text": "R$ 506,00",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589503Z"
+    "collected_at": "2026-01-16T16:25:49.819719Z"
   },
   {
-    "id": "2589202",
+    "id": "2589924",
     "source": "promobit",
-    "title": "Tênis Nike Rival Fly 4 Masculino",
-    "url": "https://www.promobit.com.br/oferta/tenis-nike-rival-fly-4-masculino-2589202/",
-    "price": 899.99,
-    "price_text": "R$ 899,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T12:39:20.589561Z"
-  },
-  {
-    "id": "2589200",
-    "source": "promobit",
-    "title": "Freezer Vertical Midea 196L MDRU276FZA012",
-    "url": "https://www.promobit.com.br/oferta/freezer-vertical-midea-196l-mdru276fza012-2589200/",
-    "price": 3499.0,
-    "price_text": "R$ 3.499,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589583Z"
-  },
-  {
-    "id": "2589199",
-    "source": "promobit",
-    "title": "Fralda Pampers Pants Ajuste Total tamanho XXG Fácil de Vestir 78 Unidades",
-    "url": "https://www.promobit.com.br/oferta/fralda-pampers-pants-ajuste-total-tamanho-xxg-facil-de-vestir-78-unidades-2589199/",
-    "price": 169.52,
-    "price_text": "R$ 169,52",
+    "title": "Tiny Love Centro de Atividades 5 em 1 Here I Grow",
+    "url": "https://www.promobit.com.br/oferta/tiny-love-centro-de-atividades-5-em-1-here-i-grow-2589924/",
+    "price": 1099.0,
+    "price_text": "R$ 1.099,00",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589604Z"
+    "collected_at": "2026-01-16T16:25:49.819744Z"
   },
   {
-    "id": "2589198",
+    "id": "2589923",
     "source": "promobit",
-    "title": "Aspirador de Pó Vertical e Portátil Electrolux Filtro HEPA 1450W Plus STK14 Denim Blue",
-    "url": "https://www.promobit.com.br/oferta/aspirador-de-po-vertical-e-portatil-electrolux-filtro-hepa-1450w-plus-stk14-denim-blue-2589198/",
-    "price": 309.0,
-    "price_text": "R$ 309,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589622Z"
-  },
-  {
-    "id": "2589195",
-    "source": "promobit",
-    "title": "Cooktop 4 Bocas a Gás GLP Preto Efficient KE4GR",
-    "url": "https://www.promobit.com.br/oferta/cooktop-4-bocas-a-gas-glp-preto-efficient-ke4gr-2589195/",
-    "price": 1857.0,
-    "price_text": "R$ 1.857,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589640Z"
-  },
-  {
-    "id": "2589196",
-    "source": "promobit",
-    "title": "Mochila adidas Classic Back to School 3 Listras - 27,5 Litros",
-    "url": "https://www.promobit.com.br/oferta/mochila-adidas-classic-back-to-school-3-listras-275-litros-2589196/",
-    "price": 117.03,
-    "price_text": "R$117,03",
-    "store": "centauro.com.br",
-    "collected_at": "2026-01-16T12:39:20.589699Z"
-  },
-  {
-    "id": "2589193",
-    "source": "promobit",
-    "title": "Whey 100% Concentrado Pote 900G Dark Lab (900g Chocolate)",
-    "url": "https://www.promobit.com.br/oferta/whey-100-concentrado-pote-900g-dark-lab-900g-chocolate-2589193/",
-    "price": 159.9,
-    "price_text": "R$ 159,90",
+    "title": "Copo NUK Mini-Me Flip 450ml 2 em 1 – Roxo",
+    "url": "https://www.promobit.com.br/oferta/copo-nuk-mini-me-flip-450ml-2-em-1-roxo-2589923/",
+    "price": 22.44,
+    "price_text": "R$22,44",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589722Z"
+    "collected_at": "2026-01-16T16:25:49.819769Z"
   },
   {
-    "id": "2589189",
+    "id": "2589921",
     "source": "promobit",
-    "title": "Delta 3 Plus - 127v Br Ecoflow Gerador De Energia Portátil",
-    "url": "https://www.promobit.com.br/oferta/delta-3-plus-127v-br-ecoflow-gerador-de-energia-portatil-2589189/",
-    "price": 8099.0,
-    "price_text": "R$8.099,00",
+    "title": "Bright FN572 Fone de Ouvido Bluetooth Sport Resistente à Água Bluetooth 5.3 7-8h de Uso",
+    "url": "https://www.promobit.com.br/oferta/bright-fn572-fone-de-ouvido-bluetooth-sport-resistente-a-agua-bluetooth-53-7-8h-de-uso-2589921/",
+    "price": 339.0,
+    "price_text": "R$ 339,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819793Z"
+  },
+  {
+    "id": "2589922",
+    "source": "promobit",
+    "title": "Barbie Cutie Reveal Boneca Ursinhos Carinhosos Dos Sonhos Brilhantes Urso para crianças a partir de 3 anos",
+    "url": "https://www.promobit.com.br/oferta/barbie-cutie-reveal-boneca-ursinhos-carinhosos-dos-sonhos-brilhantes-urso-para-criancas-a-partir-de-3-anos-2589922/",
+    "price": 299.99,
+    "price_text": "R$ 299,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819814Z"
+  },
+  {
+    "id": "2589917",
+    "source": "promobit",
+    "title": "Caminhao Passeio e Pedal Bandeirante",
+    "url": "https://www.promobit.com.br/oferta/caminhao-passeio-e-pedal-bandeirante-2589917/",
+    "price": 949.0,
+    "price_text": "R$ 949,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819833Z"
+  },
+  {
+    "id": "2589916",
+    "source": "promobit",
+    "title": "Camesa Jogo de Banho Velour Select 4 peças Marinho 100% Algodão",
+    "url": "https://www.promobit.com.br/oferta/camesa-jogo-de-banho-velour-select-4-pecas-marinho-100-algodao-2589916/",
+    "price": 199.9,
+    "price_text": "R$ 199,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819852Z"
+  },
+  {
+    "id": "2589915",
+    "source": "promobit",
+    "title": "Buba Aspirador Nasal De Succao Branco",
+    "url": "https://www.promobit.com.br/oferta/buba-aspirador-nasal-de-succao-branco-2589915/",
+    "price": 26.9,
+    "price_text": "R$ 26,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819871Z"
+  },
+  {
+    "id": "2589914",
+    "source": "promobit",
+    "title": "Panasonic Forno Elétrico de Embutir 72L Black Glass HL-CX672BRPK",
+    "url": "https://www.promobit.com.br/oferta/panasonic-forno-eletrico-de-embutir-72l-black-glass-hl-cx672brpk-2589914/",
+    "price": 3435.8,
+    "price_text": "R$ 3.435,80",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819897Z"
+  },
+  {
+    "id": "2589913",
+    "source": "promobit",
+    "title": "Freso Baby Soft Play Sofá de Brincar Infantil Montessori Verde Sofá Modular 4 Peças Fácil Montagem Macio e Maleável Método Montessoriano p",
+    "url": "https://www.promobit.com.br/oferta/freso-baby-soft-play-sofa-de-brincar-infantil-montessori-verde-sofa-modular-4-pecas-facil-montagem-macio-e-maleavel-metodo-montessoriano-p-2589913/",
+    "price": 1044.99,
+    "price_text": "R$ 1.044,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819919Z"
+  },
+  {
+    "id": "2589911",
+    "source": "promobit",
+    "title": "Guitarra Elétrica Thomaz TEG 310 Natural",
+    "url": "https://www.promobit.com.br/oferta/guitarra-eletrica-thomaz-teg-310-natural-2589911/",
+    "price": 838.0,
+    "price_text": "R$ 838,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819938Z"
+  },
+  {
+    "id": "2589909",
+    "source": "promobit",
+    "title": "CUBA SIRIUS DUPLA SID 620 CARBON BLACK - TECTONITE",
+    "url": "https://www.promobit.com.br/oferta/cuba-sirius-dupla-sid-620-carbon-black-tectonite-2589909/",
+    "price": 2723.91,
+    "price_text": "R$ 2.723,91",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819957Z"
+  },
+  {
+    "id": "2589908",
+    "source": "promobit",
+    "title": "Fechadura Digital de Sobrepor Abertura por senha ou tag Pop Preta DS1100V Elsys",
+    "url": "https://www.promobit.com.br/oferta/fechadura-digital-de-sobrepor-abertura-por-senha-ou-tag-pop-preta-ds1100v-elsys-2589908/",
+    "price": 499.0,
+    "price_text": "R$ 499,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819976Z"
+  },
+  {
+    "id": "2589910",
+    "source": "promobit",
+    "title": "Trilho com 3 Spots LED Direct 6 W Preto 6500 K Taschibra",
+    "url": "https://www.promobit.com.br/oferta/trilho-com-3-spots-led-direct-6-w-preto-6500-k-taschibra-2589910/",
+    "price": 294.89,
+    "price_text": "R$ 294,89",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.819995Z"
+  },
+  {
+    "id": "2589907",
+    "source": "promobit",
+    "title": "Jogo De Chaves Allen Com 14 Peças Vonder 1.5 Mm A 6 Mm E 1/16\" A 1/4\"",
+    "url": "https://www.promobit.com.br/oferta/jogo-de-chaves-allen-com-14-pecas-vonder-15-mm-a-6-mm-e-1-16-a-1-4-2589907/",
+    "price": 42.13,
+    "price_text": "R$ 42,13",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820013Z"
+  },
+  {
+    "id": "2589906",
+    "source": "promobit",
+    "title": "Travel System Cosco Kids Reverse Trio Rosa Onda",
+    "url": "https://www.promobit.com.br/oferta/travel-system-cosco-kids-reverse-trio-rosa-onda-2589906/",
+    "price": 1399.0,
+    "price_text": "R$ 1.399,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820031Z"
+  },
+  {
+    "id": "2589904",
+    "source": "promobit",
+    "title": "Polly Pocket Conjunto de Brinquedo Compacto Mundo Surpresa Mamãe Macaca e seu Bebê para crianças a partir de 4 anos",
+    "url": "https://www.promobit.com.br/oferta/polly-pocket-conjunto-de-brinquedo-compacto-mundo-surpresa-mamae-macaca-e-seu-bebe-para-criancas-a-partir-de-4-anos-2589904/",
+    "price": 239.99,
+    "price_text": "R$ 239,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820052Z"
+  },
+  {
+    "id": "2589905",
+    "source": "promobit",
+    "title": "Sandália Crocs Baya Plataform Clog Winter White",
+    "url": "https://www.promobit.com.br/oferta/sandalia-crocs-baya-plataform-clog-winter-white-2589905/",
+    "price": 195.83,
+    "price_text": "R$195,83",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.589743Z"
+    "collected_at": "2026-01-16T16:25:49.820116Z"
   },
   {
-    "id": "2589191",
+    "id": "2589901",
     "source": "promobit",
-    "title": "Bluetti Ac2p Estação De Energia Portátil 300w 230wh Br 220v",
-    "url": "https://www.promobit.com.br/oferta/bluetti-ac2p-estacao-de-energia-portatil-300w-230wh-br-220v-2589191/",
-    "price": 2890.0,
-    "price_text": "R$ 2.890,00",
+    "title": "Espelho Decorativo Adnet Marrom Alça Corino Preto 30cm Redondo",
+    "url": "https://www.promobit.com.br/oferta/espelho-decorativo-adnet-marrom-alca-corino-preto-30cm-redondo-2589901/",
+    "price": 166.88,
+    "price_text": "R$ 166,88",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820139Z"
+  },
+  {
+    "id": "2589896",
+    "source": "promobit",
+    "title": "Novabrink - Super Magia Fantasia Cinderela Pop TAM G",
+    "url": "https://www.promobit.com.br/oferta/novabrink-super-magia-fantasia-cinderela-pop-tam-g-2589896/",
+    "price": 45.07,
+    "price_text": "R$ 45,07",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820159Z"
+  },
+  {
+    "id": "2589895",
+    "source": "promobit",
+    "title": "Air Cooler Cooler Master Hyper 212 Spectrum V3 RGB Intel e AMD 120mm Preto - RR-S4NA-17PA-R1",
+    "url": "https://www.promobit.com.br/oferta/air-cooler-cooler-master-hyper-212-spectrum-v3-rgb-intel-e-amd-120mm-preto-rr-s4na-17pa-r1-2589895/",
+    "price": 129.4,
+    "price_text": "R$ 129,40",
+    "store": "kabum.com.br",
+    "collected_at": "2026-01-16T16:25:49.820215Z"
+  },
+  {
+    "id": "2589893",
+    "source": "promobit",
+    "title": "Filhos de Duna: livro 3 - Capa dura",
+    "url": "https://www.promobit.com.br/oferta/filhos-de-duna-livro-3-capa-dura-2589893/",
+    "price": 119.9,
+    "price_text": "R$ 119,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820238Z"
+  },
+  {
+    "id": "2589883",
+    "source": "promobit",
+    "title": "Kit 3 Legging Suplex Feminina Fitness Academia Los Angeles",
+    "url": "https://www.promobit.com.br/oferta/kit-3-legging-suplex-feminina-fitness-academia-los-angeles-2589883/",
+    "price": 57.23,
+    "price_text": "R$57,23",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.589761Z"
+    "collected_at": "2026-01-16T16:25:49.820258Z"
   },
   {
-    "id": "2589187",
+    "id": "2589872",
     "source": "promobit",
-    "title": "Deo Corporal Kriska Drama 100ml - Natura",
-    "url": "https://www.promobit.com.br/oferta/deo-corporal-kriska-drama-100ml-natura-2589187/",
-    "price": 29.73,
-    "price_text": "R$ 29,73",
+    "title": "Kit 3 Conjunto Top Short Academia Plus Size Feminino",
+    "url": "https://www.promobit.com.br/oferta/kit-3-conjunto-top-short-academia-plus-size-feminino-2589872/",
+    "price": 96.22,
+    "price_text": "R$96,22",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.589779Z"
+    "collected_at": "2026-01-16T16:25:49.820276Z"
   },
   {
-    "id": "2589186",
+    "id": "2589891",
     "source": "promobit",
-    "title": "Refil Creme Nutritivo para o Corpo Natura Tododia Algodão 400ml",
-    "url": "https://www.promobit.com.br/oferta/refil-creme-nutritivo-para-o-corpo-natura-tododia-algodao-400ml-2589186/",
-    "price": 58.9,
-    "price_text": "R$ 58,90",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.589797Z"
-  },
-  {
-    "id": "2589076",
-    "source": "promobit",
-    "title": "Economize 20% em SUPLEMENTOS DARK LAB\nCupom\n\nNinja \n\nHá 1 h\n\n3\n\n0",
-    "url": "https://www.promobit.com.br/oferta/economize-20-em-suplementos-dark-lab-2589076/",
+    "title": "7% de Desconto em produtos ASUS selecionados\nCupom\n\nGênio\n\nHá 25 min\n\n0\n\n0",
+    "url": "https://www.promobit.com.br/oferta/7-de-desconto-em-produtos-asus-selecionados-2589891/",
     "price": null,
     "price_text": null,
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589812Z"
-  },
-  {
-    "id": "2589080",
-    "source": "promobit",
-    "title": "Ganhe 10% off em compras a cima",
-    "url": "https://www.promobit.com.br/oferta/ganhe-10-off-em-compras-a-cima-r-10-2589080/",
-    "price": 10.0,
-    "price_text": "R$ 10",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589831Z"
-  },
-  {
-    "id": "2589185",
-    "source": "promobit",
-    "title": "Controle Sony DualSense PS5 Sem fio Edição Limitada Do 30º Aniversário Cinza e Preto - 1000050269",
-    "url": "https://www.promobit.com.br/oferta/controle-sony-dualsense-ps5-sem-fio-edicao-limitada-do-30-aniversario-cinza-e-preto-1000050269-2589185/",
-    "price": 799.9,
-    "price_text": "R$ 799,90",
     "store": "kabum.com.br",
-    "collected_at": "2026-01-16T12:39:20.589848Z"
+    "collected_at": "2026-01-16T16:25:49.820295Z"
   },
   {
-    "id": "2589181",
+    "id": "2589871",
     "source": "promobit",
-    "title": "Perfume Adidas Vibes Energy Drive Eau de Parfum 100ml",
-    "url": "https://www.promobit.com.br/oferta/perfume-adidas-vibes-energy-drive-eau-de-parfum-100ml-2589181/",
-    "price": 189.0,
-    "price_text": "R$ 189,00",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589866Z"
-  },
-  {
-    "id": "2589180",
-    "source": "promobit",
-    "title": "LA GANEXA Pasta De Amendoim Sabor Chocolate Ao Leite Com Whey 1 005Kg",
-    "url": "https://www.promobit.com.br/oferta/la-ganexa-pasta-de-amendoim-sabor-chocolate-ao-leite-com-whey-1-005kg-2589180/",
-    "price": 54.9,
-    "price_text": "R$ 54,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589886Z"
-  },
-  {
-    "id": "2589177",
-    "source": "promobit",
-    "title": "Proteja-se guarda-chuva Linha Premium abertura automática 8 varetas tecido hidro-repelente cobre 1 pessoa Ø 100m Preto",
-    "url": "https://www.promobit.com.br/oferta/proteja-se-guarda-chuva-linha-premium-abertura-automatica-8-varetas-tecido-hidro-repelente-cobre-1-pessoa-o-100m-preto-2589177/",
-    "price": 71.18,
-    "price_text": "R$ 71,18",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589910Z"
-  },
-  {
-    "id": "2589178",
-    "source": "promobit",
-    "title": "Microondas 20 Litros Limpa Fácil 1100w Philco PME25B",
-    "url": "https://www.promobit.com.br/oferta/microondas-20-litros-limpa-facil-1100w-philco-pme25b-2589178/",
-    "price": 1299.99,
-    "price_text": "R$ 1.299,99",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589929Z"
-  },
-  {
-    "id": "2589176",
-    "source": "promobit",
-    "title": "Cooktop 4 Bocas Indução Electrolux Vitrocerâmico Touch Preto Acendimento Automático IE6LP",
-    "url": "https://www.promobit.com.br/oferta/cooktop-4-bocas-inducao-electrolux-vitroceramico-touch-preto-acendimento-automatico-ie6lp-2589176/",
-    "price": 3399.99,
-    "price_text": "R$ 3.399,99",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.589948Z"
-  },
-  {
-    "id": "2589175",
-    "source": "promobit",
-    "title": "Vodka Smirnoff Ice 269ml - Pack 6 unidades",
-    "url": "https://www.promobit.com.br/oferta/vodka-smirnoff-ice-269ml-pack-6-unidades-2589175/",
-    "price": 34.7,
-    "price_text": "R$ 34,70",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589967Z"
-  },
-  {
-    "id": "2589172",
-    "source": "promobit",
-    "title": "Protetor Contra Surtos Elétricos (DPS) CLAMPER 127/220V 10 Amperes 3 Pinos para PC PS5 Xbox Smartphone Monitor Impressora etc - iCLAMPER Energia 3 Pre",
-    "url": "https://www.promobit.com.br/oferta/protetor-contra-surtos-eletricos-dps-clamper-127-220v-10-amperes-3-pinos-para-pc-ps5-xbox-smartphone-monitor-impressora-etc-iclamper-energia-3-pre-2589172/",
-    "price": 64.49,
-    "price_text": "R$ 64,49",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.589985Z"
-  },
-  {
-    "id": "2589173",
-    "source": "promobit",
-    "title": "Lancheira Oxer Quadri",
-    "url": "https://www.promobit.com.br/oferta/lancheira-oxer-quadri-2589173/",
-    "price": 109.99,
-    "price_text": "R$ 109,99",
-    "store": "centauro.com.br",
-    "collected_at": "2026-01-16T12:39:20.590002Z"
-  },
-  {
-    "id": "2589171",
-    "source": "promobit",
-    "title": "Freezer Vertical Electrolux Cycle Defrost 1 Porta 162L FEI19",
-    "url": "https://www.promobit.com.br/oferta/freezer-vertical-electrolux-cycle-defrost-1-porta-162l-fei19-2589171/",
-    "price": 4155.0,
-    "price_text": "R$ 4.155,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.590020Z"
-  },
-  {
-    "id": "2589170",
-    "source": "promobit",
-    "title": "Fogão 4 Bocas Brastemp Branco BFO4NBB",
-    "url": "https://www.promobit.com.br/oferta/fogao-4-bocas-brastemp-branco-bfo4nbb-2589170/",
-    "price": 1599.0,
-    "price_text": "R$ 1.599,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.590038Z"
-  },
-  {
-    "id": "2589169",
-    "source": "promobit",
-    "title": "Pote Decorado Santos 374 ml Lembrancinha Festa Lancheira Plasútil",
-    "url": "https://www.promobit.com.br/oferta/pote-decorado-santos-374-ml-lembrancinha-festa-lancheira-plasutil-2589169/",
-    "price": 8.82,
-    "price_text": "R$ 8,82",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.590055Z"
-  },
-  {
-    "id": "2589168",
-    "source": "promobit",
-    "title": "Forno Elétrico de Embutir Electrolux Multifuncional 50L Preto Experience OE5EA",
-    "url": "https://www.promobit.com.br/oferta/forno-eletrico-de-embutir-electrolux-multifuncional-50l-preto-experience-oe5ea-2589168/",
-    "price": 2599.0,
-    "price_text": "R$ 2.599,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.590072Z"
-  },
-  {
-    "id": "2589162",
-    "source": "promobit",
-    "title": "Kit de Meias Cano Médio Puma Esportiva com 3 Pares - 39 a 43 - Adulto",
-    "url": "https://www.promobit.com.br/oferta/kit-de-meias-cano-medio-puma-esportiva-com-3-pares-39-a-43-adulto-2589162/",
-    "price": 59.99,
-    "price_text": "R$ 59,99",
-    "store": "centauro.com.br",
-    "collected_at": "2026-01-16T12:39:20.590089Z"
-  },
-  {
-    "id": "2589163",
-    "source": "promobit",
-    "title": "Lava Louças Philco 10 Serviços Preta PLL10 127 Volts",
-    "url": "https://www.promobit.com.br/oferta/lava-loucas-philco-10-servicos-preta-pll10-127-volts-2589163/",
-    "price": 2799.99,
-    "price_text": "R$ 2.799,99",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.590109Z"
-  },
-  {
-    "id": "2589160",
-    "source": "promobit",
-    "title": "Air Fryer Britânia BFR37 Preto com Timer 4,2L",
-    "url": "https://www.promobit.com.br/oferta/air-fryer-britania-bfr37-preto-com-timer-42l-2589160/",
-    "price": 384.0,
-    "price_text": "R$ 384,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.590127Z"
-  },
-  {
-    "id": "2589159",
-    "source": "promobit",
-    "title": "Samsonite Mala de Viagem Fiero 3.0 Preta Média Expansível",
-    "url": "https://www.promobit.com.br/oferta/samsonite-mala-de-viagem-fiero-30-preta-media-expansivel-2589159/",
-    "price": 1100.0,
-    "price_text": "R$ 1.100,00",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.590144Z"
-  },
-  {
-    "id": "2589158",
-    "source": "promobit",
-    "title": "Fritadeira Air Fryer Gallant GFE05 Digital Family Sem Óleo 5L 1400w 127v",
-    "url": "https://www.promobit.com.br/oferta/fritadeira-air-fryer-gallant-gfe05-digital-family-sem-oleo-5l-1400w-127v-2589158/",
-    "price": 310.7,
-    "price_text": "R$ 310,70",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.590162Z"
-  },
-  {
-    "id": "2589156",
-    "source": "promobit",
-    "title": "Fritadeira Airfryer Digital Série 2000 XL Philips Walita 62 litros Tecnologia RapidAir Preta 2 anos de garantia 220v 1700W - NA230/09",
-    "url": "https://www.promobit.com.br/oferta/fritadeira-airfryer-digital-serie-2000-xl-philips-walita-62-litros-tecnologia-rapidair-preta-2-anos-de-garantia-220v-1700w-na230-09-2589156/",
-    "price": 699.9,
-    "price_text": "R$ 699,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.590179Z"
-  },
-  {
-    "id": "2589153",
-    "source": "promobit",
-    "title": "Kit 2 Luminárias Decorativas Infantil Quarto De Bebe Luz De Led Tomada Encaixe Fácil Decorativo",
-    "url": "https://www.promobit.com.br/oferta/kit-2-luminarias-decorativas-infantil-quarto-de-bebe-luz-de-led-tomada-encaixe-facil-decorativo-2589153/",
-    "price": 49.9,
-    "price_text": "R$ 49,90",
+    "title": "Conjunto Top Shorts Feminino Los Angeles Slim Moda Academia",
+    "url": "https://www.promobit.com.br/oferta/conjunto-top-shorts-feminino-los-angeles-slim-moda-academia-2589871/",
+    "price": 27.71,
+    "price_text": "R$27,71",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T12:39:20.590196Z"
+    "collected_at": "2026-01-16T16:25:49.820315Z"
   },
   {
-    "id": "2589154",
+    "id": "2589886",
     "source": "promobit",
-    "title": "Tênis Rainha Twist III Masculino",
-    "url": "https://www.promobit.com.br/oferta/tenis-rainha-twist-iii-masculino-2589154/",
-    "price": 159.99,
-    "price_text": "R$ 159,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T12:39:20.590212Z"
+    "title": "13% de Desconto em CPUs selecionadas\nCupom\n\nGênio\n\nHá 25 min\n\n0\n\n0",
+    "url": "https://www.promobit.com.br/oferta/13-de-desconto-em-cpus-selecionadas-2589886/",
+    "price": null,
+    "price_text": null,
+    "store": "kabum.com.br",
+    "collected_at": "2026-01-16T16:25:49.820399Z"
   },
   {
-    "id": "2589149",
+    "id": "2589885",
     "source": "promobit",
-    "title": "LA GANEXA Pasta De Amendoim Sabor Chocolate Ao Leite Com Whey 1 005Kg",
-    "url": "https://www.promobit.com.br/oferta/la-ganexa-pasta-de-amendoim-sabor-chocolate-ao-leite-com-whey-1-005kg-2589149/",
-    "price": 54.9,
-    "price_text": "R$ 54,90",
+    "title": "Air Cooler Cooler Master Hyper 212 Spectrum V3 RGB Intel e AMD 120mm Preto - RR-S4NA-17PA-R1",
+    "url": "https://www.promobit.com.br/oferta/air-cooler-cooler-master-hyper-212-spectrum-v3-rgb-intel-e-amd-120mm-preto-rr-s4na-17pa-r1-2589885/",
+    "price": 129.4,
+    "price_text": "R$ 129,40",
+    "store": "kabum.com.br",
+    "collected_at": "2026-01-16T16:25:49.820417Z"
+  },
+  {
+    "id": "2589880",
+    "source": "promobit",
+    "title": "Luva de Academia Musculação Fitness - Neoprene - Pink - G",
+    "url": "https://www.promobit.com.br/oferta/luva-de-academia-musculacao-fitness-neoprene-pink-g-2589880/",
+    "price": 15.43,
+    "price_text": "R$15,43",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T12:39:20.590230Z"
+    "collected_at": "2026-01-16T16:25:49.820438Z"
   },
   {
-    "id": "2589151",
+    "id": "2589879",
     "source": "promobit",
-    "title": "Batedeira Planetária Oster 4L 850W Preta 220V OBAT640-220",
-    "url": "https://www.promobit.com.br/oferta/batedeira-planetaria-oster-4l-850w-preta-220v-obat640-220-2589151/",
-    "price": 454.55,
-    "price_text": "R$ 454,55",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T12:39:20.590250Z"
+    "title": "Water Cooler Segotep Bezer 240 ARGB 240mm Branco - BeZer 240 ARGB-W",
+    "url": "https://www.promobit.com.br/oferta/water-cooler-segotep-bezer-240-argb-240mm-branco-bezer-240-argb-w-2589879/",
+    "price": 301.16,
+    "price_text": "R$ 301,16",
+    "store": "kabum.com.br",
+    "collected_at": "2026-01-16T16:25:49.820456Z"
+  },
+  {
+    "id": "2589876",
+    "source": "promobit",
+    "title": "Base para Mouse Maxprint",
+    "url": "https://www.promobit.com.br/oferta/base-para-mouse-maxprint-2589876/",
+    "price": 9.99,
+    "price_text": "R$ 9,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820490Z"
+  },
+  {
+    "id": "2589877",
+    "source": "promobit",
+    "title": "Water Cooler Segotep BeCool 360S RGB 360mm - BeCool 360s RGB",
+    "url": "https://www.promobit.com.br/oferta/water-cooler-segotep-becool-360s-rgb-360mm-becool-360s-rgb-2589877/",
+    "price": 383.52,
+    "price_text": "R$ 383,52",
+    "store": "kabum.com.br",
+    "collected_at": "2026-01-16T16:25:49.820510Z"
+  },
+  {
+    "id": "2589874",
+    "source": "promobit",
+    "title": "Miaoqian BY-WM8 Pro-K2 UHF Sistema de microfone sem fio de canal duplo Receptor + transmissor A + Transmissor B com tela LCD compatível com câmera fil",
+    "url": "https://www.promobit.com.br/oferta/miaoqian-by-wm8-pro-k2-uhf-sistema-de-microfone-sem-fio-de-canal-duplo-receptor-transmissor-a-transmissor-b-com-tela-lcd-compativel-com-camera-fil-2589874/",
+    "price": 314.0,
+    "price_text": "R$314,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820532Z"
+  },
+  {
+    "id": "2589869",
+    "source": "promobit",
+    "title": "Toyster - Tapete para Pintar - Coré",
+    "url": "https://www.promobit.com.br/oferta/toyster-tapete-para-pintar-core-2589869/",
+    "price": 96.5,
+    "price_text": "R$ 96,50",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820551Z"
+  },
+  {
+    "id": "2589870",
+    "source": "promobit",
+    "title": "Câmera Webcam PTZ EMEET Pixy 4K Dual Camera Rastreamento Automático IA Controle por Gestos Foco 0.2s - OBS Twitch",
+    "url": "https://www.promobit.com.br/oferta/camera-webcam-ptz-emeet-pixy-4k-dual-camera-rastreamento-automatico-ia-controle-por-gestos-foco-02s-obs-twitch-2589870/",
+    "price": 1519.0,
+    "price_text": "R$ 1.519,00",
+    "store": "aliexpress.com",
+    "collected_at": "2026-01-16T16:25:49.820612Z"
+  },
+  {
+    "id": "2589864",
+    "source": "promobit",
+    "title": "Skil Serra Tico-Tico 4400 400W 220V Com 1 Chave E 1 Lâmina",
+    "url": "https://www.promobit.com.br/oferta/skil-serra-tico-tico-4400-400w-220v-com-1-chave-e-1-lamina-2589864/",
+    "price": 490.9,
+    "price_text": "R$ 490,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820635Z"
+  },
+  {
+    "id": "2589868",
+    "source": "promobit",
+    "title": "Customic Capinha Case Capa para Celular iPhone 16 (6.1\") Impactor Space Anti Impacto Proteção Militar 4 metros contra",
+    "url": "https://www.promobit.com.br/oferta/customic-capinha-case-capa-para-celular-iphone-16-61-impactor-space-anti-impacto-protecao-militar-4-metros-contra-2589868/",
+    "price": 229.9,
+    "price_text": "R$ 229,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820655Z"
+  },
+  {
+    "id": "2589856",
+    "source": "promobit",
+    "title": "BLACK+DECKER Parafusadeira à Bateria Ferramenta com Encaixe de 64mm Acompanha Bateria Bivolt Modelo 9036 20V",
+    "url": "https://www.promobit.com.br/oferta/black-decker-parafusadeira-a-bateria-ferramenta-com-encaixe-de-64mm-acompanha-bateria-bivolt-modelo-9036-20v-2589856/",
+    "price": 139.0,
+    "price_text": "R$ 139,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820673Z"
+  },
+  {
+    "id": "2589855",
+    "source": "promobit",
+    "title": "Vonder Aspirador de pó 1.200 W APV 1230 127 V~",
+    "url": "https://www.promobit.com.br/oferta/vonder-aspirador-de-po-1200-w-apv-1230-127-v-2589855/",
+    "price": 436.62,
+    "price_text": "R$ 436,62",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820691Z"
+  },
+  {
+    "id": "2589857",
+    "source": "promobit",
+    "title": "Sistema de Microfone Lapela Sem Fio By-v1 Dispositivos Ios Conexão 2.4Ghz Ultracompacto Ideal para Vlogging Podcasts Entrevistas e Gravações de Vídeo",
+    "url": "https://www.promobit.com.br/oferta/sistema-de-microfone-lapela-sem-fio-by-v1-dispositivos-ios-conexao-24ghz-ultracompacto-ideal-para-vlogging-podcasts-entrevistas-e-gravacoes-de-video-2589857/",
+    "price": 111.0,
+    "price_text": "R$111,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820713Z"
+  },
+  {
+    "id": "2589854",
+    "source": "promobit",
+    "title": "Brinquedos Bandeirante - Carro Toyota Hilux (Vermelho) R_C Elétrico 12V Bandeirante",
+    "url": "https://www.promobit.com.br/oferta/brinquedos-bandeirante-carro-toyota-hilux-vermelho-r-c-eletrico-12v-bandeirante-2589854/",
+    "price": 1873.0,
+    "price_text": "R$1.873,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820733Z"
+  },
+  {
+    "id": "2589850",
+    "source": "promobit",
+    "title": "AirPods (3.ª geração)",
+    "url": "https://www.promobit.com.br/oferta/airpods-3-geracao-2589850/",
+    "price": 1449.0,
+    "price_text": "R$ 1.449,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820751Z"
+  },
+  {
+    "id": "2589847",
+    "source": "promobit",
+    "title": "COQUETELEIRA / SHAKER Preta - Academia 600ml - 3VS Nutrition",
+    "url": "https://www.promobit.com.br/oferta/coqueteleira-shaker-preta-academia-600ml-3vs-nutrition-2589847/",
+    "price": 27.99,
+    "price_text": "R$ 27,99",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.820772Z"
+  },
+  {
+    "id": "2589848",
+    "source": "promobit",
+    "title": "Relógio De Pulso Seculus 44203g0svna1 Com Corria De Aço Inoxidável Cor Prata - Fondo Azul - Bisel Preto",
+    "url": "https://www.promobit.com.br/oferta/relogio-de-pulso-seculus-44203g0svna1-com-corria-de-aco-inoxidavel-cor-prata-fondo-azul-bisel-preto-2589848/",
+    "price": 339.0,
+    "price_text": "R$ 339,00",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.820791Z"
+  },
+  {
+    "id": "2589843",
+    "source": "promobit",
+    "title": "PIX Controle Remoto Compatível com LG ABK73715664 - Led Smart 3D PIX",
+    "url": "https://www.promobit.com.br/oferta/pix-controle-remoto-compativel-com-lg-abk73715664-led-smart-3d-pix-2589843/",
+    "price": 12.9,
+    "price_text": "R$ 12,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820809Z"
+  },
+  {
+    "id": "2589842",
+    "source": "promobit",
+    "title": "Boneco Funko POP Pokémon Squirtle - Candide",
+    "url": "https://www.promobit.com.br/oferta/boneco-funko-pop-pokemon-squirtle-candide-2589842/",
+    "price": 112.0,
+    "price_text": "R$ 112,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.820831Z"
+  },
+  {
+    "id": "2589839",
+    "source": "promobit",
+    "title": "Maxi Baby Cadeira de Descanso Musical FunTime até 18kgs Azul",
+    "url": "https://www.promobit.com.br/oferta/maxi-baby-cadeira-de-descanso-musical-funtime-ate-18kgs-azul-2589839/",
+    "price": 359.0,
+    "price_text": "R$ 359,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821045Z"
+  },
+  {
+    "id": "2589771",
+    "source": "promobit",
+    "title": "Mochila Hang Loose Escolar Casual Espaçosa Moderna Resistente",
+    "url": "https://www.promobit.com.br/oferta/mochila-hang-loose-escolar-casual-espacosa-moderna-resistente-2589771/",
+    "price": 169.9,
+    "price_text": "R$ 169,90",
+    "store": "netshoes.com.br",
+    "collected_at": "2026-01-16T16:25:49.821112Z"
+  },
+  {
+    "id": "2589838",
+    "source": "promobit",
+    "title": "Chinelo Havaianas Masculino Top Max Comfort Anatômica Macia",
+    "url": "https://www.promobit.com.br/oferta/chinelo-havaianas-masculino-top-max-comfort-anatomica-macia-2589838/",
+    "price": 46.74,
+    "price_text": "R$46,74",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.821136Z"
+  },
+  {
+    "id": "2589802",
+    "source": "promobit",
+    "title": "Lava E Seca Hisense 11kg Titanium 3s Conectada - WD3S1143BT2",
+    "url": "https://www.promobit.com.br/oferta/lava-e-seca-hisense-11kg-titanium-3s-conectada-wd3s1143bt2-2589802/",
+    "price": 2799.0,
+    "price_text": "R$2.799,00",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.821158Z"
+  },
+  {
+    "id": "2589805",
+    "source": "promobit",
+    "title": "Casaco Bobojaco Jaqueta Puffer Feminina Corta Vento Nylon",
+    "url": "https://www.promobit.com.br/oferta/casaco-bobojaco-jaqueta-puffer-feminina-corta-vento-nylon-2589805/",
+    "price": 69.99,
+    "price_text": "R$69,99",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.821177Z"
+  },
+  {
+    "id": "2589829",
+    "source": "promobit",
+    "title": "Panela  Ichef Home Sauté Petit Shark Series Azul 20cm",
+    "url": "https://www.promobit.com.br/oferta/panela-ichef-home-saute-petit-shark-series-azul-20cm-2589829/",
+    "price": 219.9,
+    "price_text": "R$ 219,90",
+    "store": "polishop.com.br",
+    "collected_at": "2026-01-16T16:25:49.821236Z"
+  },
+  {
+    "id": "2589837",
+    "source": "promobit",
+    "title": "Climatizador de Ar Air Protect WAP",
+    "url": "https://www.promobit.com.br/oferta/climatizador-de-ar-air-protect-wap-2589837/",
+    "price": 2399.9,
+    "price_text": "R$ 2.399,90",
+    "store": "polishop.com.br",
+    "collected_at": "2026-01-16T16:25:49.821258Z"
+  },
+  {
+    "id": "2589835",
+    "source": "promobit",
+    "title": "Fritadeira Elétrica Airfryer Ichef Smart Vision 6L",
+    "url": "https://www.promobit.com.br/oferta/fritadeira-eletrica-airfryer-ichef-smart-vision-6l-2589835/",
+    "price": 999.9,
+    "price_text": "R$ 999,90",
+    "store": "polishop.com.br",
+    "collected_at": "2026-01-16T16:25:49.821277Z"
+  },
+  {
+    "id": "2589830",
+    "source": "promobit",
+    "title": "Sabonete em Barra Puro Vegetal Tododia Flores 2 un de 90 g",
+    "url": "https://www.promobit.com.br/oferta/sabonete-em-barra-puro-vegetal-tododia-flores-2-un-de-90-g-2589830/",
+    "price": 14.6,
+    "price_text": "R$14,60",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T16:25:49.821330Z"
+  },
+  {
+    "id": "2589827",
+    "source": "promobit",
+    "title": "Audi RS E-Tron GT R/C Eletrico 12V Azul Bandeirante",
+    "url": "https://www.promobit.com.br/oferta/audi-rs-e-tron-gt-r-c-eletrico-12v-azul-bandeirante-2589827/",
+    "price": 727.0,
+    "price_text": "R$727,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821352Z"
+  },
+  {
+    "id": "2589821",
+    "source": "promobit",
+    "title": "Andador Empurrar Bebê Infantil Musical Brinquedo Educativo Atentu Rosa",
+    "url": "https://www.promobit.com.br/oferta/andador-empurrar-bebe-infantil-musical-brinquedo-educativo-atentu-rosa-2589821/",
+    "price": 220.0,
+    "price_text": "R$ 220,00",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.821372Z"
+  },
+  {
+    "id": "2589820",
+    "source": "promobit",
+    "title": "Prancha de Cabelo Mallory Red Diamond Com Placas flutuantes Máxima Temperatura de 210°c – Bivolt",
+    "url": "https://www.promobit.com.br/oferta/prancha-de-cabelo-mallory-red-diamond-com-placas-flutuantes-maxima-temperatura-de-210c-bivolt-2589820/",
+    "price": 79.99,
+    "price_text": "R$ 79,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821395Z"
+  },
+  {
+    "id": "2589811",
+    "source": "promobit",
+    "title": "Tênis Air Force 1 Linen",
+    "url": "https://www.promobit.com.br/oferta/tenis-air-force-1-linen-2589811/",
+    "price": 999.99,
+    "price_text": "R$ 999,99",
+    "store": "nike.com.br",
+    "collected_at": "2026-01-16T16:25:49.821448Z"
+  },
+  {
+    "id": "2589813",
+    "source": "promobit",
+    "title": "Candide Boneco Funko POP! Squirtle (Soft Color) Pokémon - 7 cm",
+    "url": "https://www.promobit.com.br/oferta/candide-boneco-funko-pop-squirtle-soft-color-pokemon-7-cm-2589813/",
+    "price": 199.99,
+    "price_text": "R$ 199,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821490Z"
+  },
+  {
+    "id": "2589815",
+    "source": "promobit",
+    "title": "Câmera Segurança Ip Externa 360° Monitoramento Luz De Alarme Prova D'água Jortan Jt-9689",
+    "url": "https://www.promobit.com.br/oferta/camera-seguranca-ip-externa-360-monitoramento-luz-de-alarme-prova-dagua-jortan-jt-9689-2589815/",
+    "price": 24.0,
+    "price_text": "R$24,00",
+    "store": "kabum.com.br",
+    "collected_at": "2026-01-16T16:25:49.821515Z"
+  },
+  {
+    "id": "2589812",
+    "source": "promobit",
+    "title": "Regional\nFogão 4 Bocas Acendimento Automático Clean Bfo4nbb Brastemp Cor Branco",
+    "url": "https://www.promobit.com.br/oferta/fogao-4-bocas-acendimento-automatico-clean-bfo4nbb-brastemp-cor-branco-2589812/",
+    "price": 1449.0,
+    "price_text": "R$ 1.449,00",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.821536Z"
+  },
+  {
+    "id": "2589809",
+    "source": "promobit",
+    "title": "Boneco Candide Funko POP! O Líder Marvel Capitão América: Admirável Mundo Novo",
+    "url": "https://www.promobit.com.br/oferta/boneco-candide-funko-pop-o-lider-marvel-capitao-america-admiravel-mundo-novo-2589809/",
+    "price": 79.97,
+    "price_text": "R$ 79,97",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821555Z"
+  },
+  {
+    "id": "2589808",
+    "source": "promobit",
+    "title": "Balcão Bartira Topázio UP 3 Portas de Bater 2 Prateleiras Internas Com Tampo MDP - 120,1cm de Largura",
+    "url": "https://www.promobit.com.br/oferta/balcao-bartira-topazio-up-3-portas-de-bater-2-prateleiras-internas-com-tampo-mdp-1201cm-de-largura-2589808/",
+    "price": 405.53,
+    "price_text": "R$ 405,53",
+    "store": "casasbahia.com.br",
+    "collected_at": "2026-01-16T16:25:49.821575Z"
+  },
+  {
+    "id": "2589807",
+    "source": "promobit",
+    "title": "Panela First Sauté Petit Vermelha 20cm Ichef",
+    "url": "https://www.promobit.com.br/oferta/panela-first-saute-petit-vermelha-20cm-ichef-2589807/",
+    "price": 299.88,
+    "price_text": "R$ 299,88",
+    "store": "polishop.com.br",
+    "collected_at": "2026-01-16T16:25:49.821593Z"
+  },
+  {
+    "id": "2589806",
+    "source": "promobit",
+    "title": "Panela  Sauté Grand Vermelha 24cm",
+    "url": "https://www.promobit.com.br/oferta/panela-saute-grand-vermelha-24cm-2589806/",
+    "price": 389.88,
+    "price_text": "R$ 389,88",
+    "store": "polishop.com.br",
+    "collected_at": "2026-01-16T16:25:49.821610Z"
+  },
+  {
+    "id": "2589804",
+    "source": "promobit",
+    "title": "ELG SHCF602 Câmera Inteligente Externa Wi-Fi Full Color Áudio Bidirecional Grava Full HD 1080p Visão Noturna Compatível com Alexa Branco",
+    "url": "https://www.promobit.com.br/oferta/elg-shcf602-camera-inteligente-externa-wi-fi-full-color-audio-bidirecional-grava-full-hd-1080p-visao-noturna-compativel-com-alexa-branco-2589804/",
+    "price": 555.0,
+    "price_text": "R$ 555,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821638Z"
+  },
+  {
+    "id": "2589803",
+    "source": "promobit",
+    "title": "Relógio Analógico Berlim Masculino Prata E Preto Dumont",
+    "url": "https://www.promobit.com.br/oferta/relogio-analogico-berlim-masculino-prata-e-preto-dumont-2589803/",
+    "price": 279.0,
+    "price_text": "R$ 279,00",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.821657Z"
+  },
+  {
+    "id": "2589799",
+    "source": "promobit",
+    "title": "Romantic Crown Mochila de Viagem Expansivel Avião Grande FemininaMochila Executiva Masculina Impermeável Reforçada para NotebookCasual Esportes Hiking",
+    "url": "https://www.promobit.com.br/oferta/romantic-crown-mochila-de-viagem-expansivel-aviao-grande-femininamochila-executiva-masculina-impermeavel-reforcada-para-notebookcasual-esportes-hiking-2589799/",
+    "price": 139.99,
+    "price_text": "R$ 139,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821676Z"
+  },
+  {
+    "id": "2589801",
+    "source": "promobit",
+    "title": "Sabonete em Barra com Saboneteira Mamãe e Bebê Flor de Laranjeira 100 g",
+    "url": "https://www.promobit.com.br/oferta/sabonete-em-barra-com-saboneteira-mamae-e-bebe-flor-de-laranjeira-100-g-2589801/",
+    "price": 14.4,
+    "price_text": "R$14,40",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T16:25:49.821695Z"
+  },
+  {
+    "id": "2589800",
+    "source": "promobit",
+    "title": "Prancha de Cabelo Shine Nutrah Be Emotion",
+    "url": "https://www.promobit.com.br/oferta/prancha-de-cabelo-shine-nutrah-be-emotion-2589800/",
+    "price": 499.9,
+    "price_text": "R$ 499,90",
+    "store": "polishop.com.br",
+    "collected_at": "2026-01-16T16:25:49.821713Z"
+  },
+  {
+    "id": "2589798",
+    "source": "promobit",
+    "title": "Sabonete Líquido para o Corpo Biografia Feminino 100 ml",
+    "url": "https://www.promobit.com.br/oferta/sabonete-liquido-para-o-corpo-biografia-feminino-100-ml-2589798/",
+    "price": 14.0,
+    "price_text": "R$14,00",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T16:25:49.821731Z"
+  },
+  {
+    "id": "2589796",
+    "source": "promobit",
+    "title": "Creme Desodorante Nutritivo para o Corpo Tododia Cereja e Avelã 50g",
+    "url": "https://www.promobit.com.br/oferta/creme-desodorante-nutritivo-para-o-corpo-tododia-cereja-e-avela-50g-2589796/",
+    "price": 13.9,
+    "price_text": "R$13,90",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T16:25:49.821749Z"
+  },
+  {
+    "id": "2589797",
+    "source": "promobit",
+    "title": "Escova Secadora Rotativa Rotating Hyaluronic Conair",
+    "url": "https://www.promobit.com.br/oferta/escova-secadora-rotativa-rotating-hyaluronic-conair-2589797/",
+    "price": 999.9,
+    "price_text": "R$ 999,90",
+    "store": "polishop.com.br",
+    "collected_at": "2026-01-16T16:25:49.821767Z"
+  },
+  {
+    "id": "2589795",
+    "source": "promobit",
+    "title": "Ar Condicionado Tcl Split Hi Wall Elite Inverter 12.000 Btus 220v - Tac-12csgv-inv",
+    "url": "https://www.promobit.com.br/oferta/ar-condicionado-tcl-split-hi-wall-elite-inverter-12000-btus-220v-tac-12csgv-inv-2589795/",
+    "price": 3199.0,
+    "price_text": "R$ 3.199,00",
+    "store": "aliexpress.com",
+    "collected_at": "2026-01-16T16:25:49.821787Z"
+  },
+  {
+    "id": "2589794",
+    "source": "promobit",
+    "title": "ON WHEY GOLD STANDARD BAUNILHA 15LBS (682G)",
+    "url": "https://www.promobit.com.br/oferta/on-whey-gold-standard-baunilha-15lbs-682g-2589794/",
+    "price": 310.0,
+    "price_text": "R$ 310,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821805Z"
+  },
+  {
+    "id": "2589791",
+    "source": "promobit",
+    "title": "Câmera Segurança Ip Externa 360° Monitoramento Luz De Alarme Prova D'água Jortan Jt-9689",
+    "url": "https://www.promobit.com.br/oferta/camera-seguranca-ip-externa-360-monitoramento-luz-de-alarme-prova-dagua-jortan-jt-9689-2589791/",
+    "price": 24.99,
+    "price_text": "R$24,99",
+    "store": "kabum.com.br",
+    "collected_at": "2026-01-16T16:25:49.821824Z"
+  },
+  {
+    "id": "2589792",
+    "source": "promobit",
+    "title": "Desodorante Antitranspirante Roll On Kaiak Aventura Masculino 75 ml",
+    "url": "https://www.promobit.com.br/oferta/desodorante-antitranspirante-roll-on-kaiak-aventura-masculino-75-ml-2589792/",
+    "price": 11.9,
+    "price_text": "R$11,90",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T16:25:49.821841Z"
+  },
+  {
+    "id": "2589793",
+    "source": "promobit",
+    "title": "Shampoo 2 em 1 Sintonia 100 ml",
+    "url": "https://www.promobit.com.br/oferta/shampoo-2-em-1-sintonia-100-ml-2589793/",
+    "price": 13.9,
+    "price_text": "R$13,90",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T16:25:49.821858Z"
+  },
+  {
+    "id": "2589776",
+    "source": "promobit",
+    "title": "Kit Cobre Leito Solteiro 2 peças Heitor MR Enxovais Unissex Vermelho",
+    "url": "https://www.promobit.com.br/oferta/kit-cobre-leito-solteiro-2-pecas-heitor-mr-enxovais-unissex-vermelho-2589776/",
+    "price": 149.92,
+    "price_text": "R$ 149,92",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821876Z"
+  },
+  {
+    "id": "2589780",
+    "source": "promobit",
+    "title": "MARMITA VIKTERM 15 LT. CONJ. 5 PEÇAS 4pç s/div + 1 pç c/divisória + 1 tampa - CREME/VERMELHO",
+    "url": "https://www.promobit.com.br/oferta/marmita-vikterm-15-lt-conj-5-pecas-4pc-s-div-1-pc-c-divisoria-1-tampa-creme-vermelho-2589780/",
+    "price": 30.0,
+    "price_text": "R$30,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821894Z"
+  },
+  {
+    "id": "2589778",
+    "source": "promobit",
+    "title": "SECADOR E.MOTION DIGITAL 2500W 220V",
+    "url": "https://www.promobit.com.br/oferta/secador-emotion-digital-2500w-220v-2589778/",
+    "price": 436.0,
+    "price_text": "R$436,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821913Z"
+  },
+  {
+    "id": "2589777",
+    "source": "promobit",
+    "title": "Escapamento Next Honda Titan 99 Verde Neon",
+    "url": "https://www.promobit.com.br/oferta/escapamento-next-honda-titan-99-verde-neon-2589777/",
+    "price": 100.0,
+    "price_text": "R$100,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821931Z"
+  },
+  {
+    "id": "2589774",
+    "source": "promobit",
+    "title": "Veiculo Transposer - Rc 7 Func Bat Recarreg",
+    "url": "https://www.promobit.com.br/oferta/veiculo-transposer-rc-7-func-bat-recarreg-2589774/",
+    "price": 123.0,
+    "price_text": "R$123,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.821949Z"
+  },
+  {
+    "id": "2589770",
+    "source": "promobit",
+    "title": "Macaco Hidráulico Vermelho Garrafa 3 Toneladas Para Carro",
+    "url": "https://www.promobit.com.br/oferta/macaco-hidraulico-vermelho-garrafa-3-toneladas-para-carro-2589770/",
+    "price": 184.46,
+    "price_text": "R$ 184,46",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.821967Z"
+  },
+  {
+    "id": "2589766",
+    "source": "promobit",
+    "title": "Fogão A Gás Mesa Inox E Forno 50L 4 Bocas",
+    "url": "https://www.promobit.com.br/oferta/fogao-a-gas-mesa-inox-e-forno-50l-4-bocas-2589766/",
+    "price": 544.87,
+    "price_text": "R$544,87",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.821985Z"
+  },
+  {
+    "id": "2589767",
+    "source": "promobit",
+    "title": "Kit 6 Cuecas Box Boxer Lupo Sem Costura Basic Microfibra 436",
+    "url": "https://www.promobit.com.br/oferta/kit-6-cuecas-box-boxer-lupo-sem-costura-basic-microfibra-436-2589767/",
+    "price": 116.59,
+    "price_text": "R$116,59",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T16:25:49.822002Z"
+  },
+  {
+    "id": "2589768",
+    "source": "promobit",
+    "title": "WAP Parafusadeira e Furadeira de Impacto 1/2\" EFPI-1000 com Empunhadura Emborracha e Maleta Organizadora 1000W 127V",
+    "url": "https://www.promobit.com.br/oferta/wap-parafusadeira-e-furadeira-de-impacto-1-2-efpi-1000-com-empunhadura-emborracha-e-maleta-organizadora-1000w-127v-2589768/",
+    "price": 459.9,
+    "price_text": "R$ 459,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822020Z"
+  },
+  {
+    "id": "2589755",
+    "source": "promobit",
+    "title": "Penalty Tênis Rocket Kids Y-5 Ch-Lj-Am T 36",
+    "url": "https://www.promobit.com.br/oferta/penalty-tenis-rocket-kids-y-5-ch-lj-am-t-36-2589755/",
+    "price": 199.99,
+    "price_text": "R$ 199,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822038Z"
+  },
+  {
+    "id": "2589757",
+    "source": "promobit",
+    "title": "MAONO Microfone Duplo de Lapela AU-200",
+    "url": "https://www.promobit.com.br/oferta/maono-microfone-duplo-de-lapela-au-200-2589757/",
+    "price": 199.9,
+    "price_text": "R$ 199,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822057Z"
+  },
+  {
+    "id": "2589753",
+    "source": "promobit",
+    "title": "LEGO Disney Classic Vestidos da Malévola e Cruella De Vil 43262",
+    "url": "https://www.promobit.com.br/oferta/lego-disney-classic-vestidos-da-malevola-e-cruella-de-vil-43262-2589753/",
+    "price": 699.99,
+    "price_text": "R$ 699,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822075Z"
+  },
+  {
+    "id": "2589751",
+    "source": "promobit",
+    "title": "Martelo de solda Estwing Big Big E3-WC 396 g azul",
+    "url": "https://www.promobit.com.br/oferta/martelo-de-solda-estwing-big-big-e3-wc-396-g-azul-2589751/",
+    "price": 266.93,
+    "price_text": "R$ 266,93",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822094Z"
+  },
+  {
+    "id": "2589749",
+    "source": "promobit",
+    "title": "Estante de Parede Metaltru Preto com Preto",
+    "url": "https://www.promobit.com.br/oferta/estante-de-parede-metaltru-preto-com-preto-2589749/",
+    "price": 406.8,
+    "price_text": "R$ 406,80",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822112Z"
+  },
+  {
+    "id": "2589750",
+    "source": "promobit",
+    "title": "SJ~CAM C300 Pocket Camera de Ação4K Camera Filmadora7 Horas de Autonomia Estabilização em 6 Eixos Câmera Corporal com Tela Sensível ao Toq",
+    "url": "https://www.promobit.com.br/oferta/sjcam-c300-pocket-camera-de-acao4k-camera-filmadora7-horas-de-autonomia-estabilizacao-em-6-eixos-camera-corporal-com-tela-sensivel-ao-toq-2589750/",
+    "price": 1099.0,
+    "price_text": "R$ 1.099,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822132Z"
+  },
+  {
+    "id": "2589746",
+    "source": "promobit",
+    "title": "Vonder Óculos De Segurança Labrador Incolor.",
+    "url": "https://www.promobit.com.br/oferta/vonder-oculos-de-seguranca-labrador-incolor-2589746/",
+    "price": 9.98,
+    "price_text": "R$ 9,98",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822149Z"
+  },
+  {
+    "id": "2589744",
+    "source": "promobit",
+    "title": "LEGO Harry Potter Família de Testrálios 76458",
+    "url": "https://www.promobit.com.br/oferta/lego-harry-potter-familia-de-testralios-76458-2589744/",
+    "price": 699.99,
+    "price_text": "R$ 699,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822167Z"
+  },
+  {
+    "id": "2589743",
+    "source": "promobit",
+    "title": "Bebedouro de Água Philco PBE11 Branco",
+    "url": "https://www.promobit.com.br/oferta/bebedouro-de-agua-philco-pbe11-branco-2589743/",
+    "price": 499.0,
+    "price_text": "R$499,00",
+    "store": "fastshop.com.br",
+    "collected_at": "2026-01-16T16:25:49.822231Z"
+  },
+  {
+    "id": "2589725",
+    "source": "promobit",
+    "title": "Fone de Ouvido Bluetooth JBL Endurance Race 2 Azul",
+    "url": "https://www.promobit.com.br/oferta/fone-de-ouvido-bluetooth-jbl-endurance-race-2-azul-2589725/",
+    "price": 336.82,
+    "price_text": "R$336,82",
+    "store": "netshoes.com.br",
+    "collected_at": "2026-01-16T16:25:49.822254Z"
+  },
+  {
+    "id": "2589741",
+    "source": "promobit",
+    "title": "Pacote Office 365 Personal 1 Ano Digital",
+    "url": "https://www.promobit.com.br/oferta/pacote-office-365-personal-1-ano-digital-2589741/",
+    "price": 459.0,
+    "price_text": "R$ 459,00",
+    "store": "aliexpress.com",
+    "collected_at": "2026-01-16T16:25:49.822275Z"
+  },
+  {
+    "id": "2589742",
+    "source": "promobit",
+    "title": "Quadriciclo (Vermelho) Eletrico 6V Bandeirante",
+    "url": "https://www.promobit.com.br/oferta/quadriciclo-vermelho-eletrico-6v-bandeirante-2589742/",
+    "price": 969.99,
+    "price_text": "R$ 969,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822294Z"
+  },
+  {
+    "id": "2589738",
+    "source": "promobit",
+    "title": "Worker Furadeira e Parafusadeira a Bateria 108V 17 Peças Bivolt",
+    "url": "https://www.promobit.com.br/oferta/worker-furadeira-e-parafusadeira-a-bateria-108v-17-pecas-bivolt-2589738/",
+    "price": 168.0,
+    "price_text": "R$168,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822313Z"
+  },
+  {
+    "id": "2589735",
+    "source": "promobit",
+    "title": "SECADOR Turbe DIGITAL 2400W 127V",
+    "url": "https://www.promobit.com.br/oferta/secador-turbe-digital-2400w-127v-2589735/",
+    "price": 1599.9,
+    "price_text": "R$ 1.599,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822331Z"
+  },
+  {
+    "id": "2589731",
+    "source": "promobit",
+    "title": "Godox SL100D Led Light",
+    "url": "https://www.promobit.com.br/oferta/godox-sl100d-led-light-2589731/",
+    "price": 564.0,
+    "price_text": "R$564,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822349Z"
+  },
+  {
+    "id": "2589732",
+    "source": "promobit",
+    "title": "Thrustmaster Ferrari 458 Spider - Volante de corrida para Xbox Series X",
+    "url": "https://www.promobit.com.br/oferta/thrustmaster-ferrari-458-spider-volante-de-corrida-para-xbox-series-x-2589732/",
+    "price": 1370.4,
+    "price_text": "R$ 1.370,40",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822366Z"
+  },
+  {
+    "id": "2589727",
+    "source": "promobit",
+    "title": "QDB Lápis de Olhos Preto 600mg",
+    "url": "https://www.promobit.com.br/oferta/qdb-lapis-de-olhos-preto-600mg-2589727/",
+    "price": 25.9,
+    "price_text": "R$ 25,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822384Z"
+  },
+  {
+    "id": "2589720",
+    "source": "promobit",
+    "title": "WAP Parafusadeira e Furadeira de Impacto 12\" EFPI-1000 com Empunhadura Emborracha e Maleta Organizadora",
+    "url": "https://www.promobit.com.br/oferta/wap-parafusadeira-e-furadeira-de-impacto-12-efpi-1000-com-empunhadura-emborracha-e-maleta-organizadora-2589720/",
+    "price": 142.69,
+    "price_text": "R$142,69",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822407Z"
+  },
+  {
+    "id": "2589721",
+    "source": "promobit",
+    "title": "Amvox Fritadeira Elétrica Air Fryer ARF 1250 110V com 55L e 1400W",
+    "url": "https://www.promobit.com.br/oferta/amvox-fritadeira-eletrica-air-fryer-arf-1250-110v-com-55l-e-1400w-2589721/",
+    "price": 469.9,
+    "price_text": "R$ 469,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822426Z"
+  },
+  {
+    "id": "2589719",
+    "source": "promobit",
+    "title": "PELUCIA PAPAI PIG - PEPPA PIG 33CM",
+    "url": "https://www.promobit.com.br/oferta/pelucia-papai-pig-peppa-pig-33cm-2589719/",
+    "price": 167.04,
+    "price_text": "R$ 167,04",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822445Z"
+  },
+  {
+    "id": "2589717",
+    "source": "promobit",
+    "title": "MONDIAL Lixadeira Orbital De 1/4 de Lixa Vermelho 250W 110V - FLO-02",
+    "url": "https://www.promobit.com.br/oferta/mondial-lixadeira-orbital-de-1-4-de-lixa-vermelho-250w-110v-flo-02-2589717/",
+    "price": 289.9,
+    "price_text": "R$ 289,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T16:25:49.822464Z"
   }
 ]
