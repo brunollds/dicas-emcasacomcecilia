@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768577616283,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "WAP Parafusadeira e Furadeira de Impacto 1/2\" EFPI-1000, com Empunhadura Emborracha e Maleta Organizadora, 1000W 127V",
+      "preco": 142.69,
+      "precoAntigo": 459.9,
+      "info": "4x S/ Juros • Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/91pe39IFupL._AC_SX679_.jpg",
+      "link": "https://amzn.to/49rsEnP",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:33:36.283Z"
+    },
+    {
       "id": 1768577489931,
       "tipo": "promo",
       "loja": "Amazon",
