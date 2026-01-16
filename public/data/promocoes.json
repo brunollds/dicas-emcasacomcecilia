@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768523511384,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Calça Jeans Wide Leg Feminina Cintura Alta Pantalona",
+      "preco": 56.64,
+      "precoAntigo": 78.9,
+      "info": "Frete grátis Full - Devolução Grátis",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_826166-MLB95492816246_102025-F-calca-jeans-wide-leg-feminina-cintura-alta-pantalona.webp",
+      "link": "https://mercadolivre.com/sec/1tJuiWx",
+      "destaque": false,
+      "timestamp": "2026-01-16T00:31:51.384Z"
+    },
+    {
       "id": 1768523432278,
       "tipo": "promo",
       "loja": "Mercado Livre",
