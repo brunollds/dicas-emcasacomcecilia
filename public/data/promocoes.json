@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768527908901,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Porto Brasil Conjunto com 6 Xícaras de Café com Pires Orgânico Petroleum 120ml",
+      "preco": 124,
+      "precoAntigo": 216.62,
+      "info": "Em até 4x R$ 31,00 sem juros • Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://amzn.to/4qYLjNz",
+      "link": "https://amzn.to/4qYLjNz",
+      "destaque": false,
+      "timestamp": "2026-01-16T01:45:08.901Z"
+    },
+    {
       "id": 1768527776165,
       "tipo": "promo",
       "loja": "Mercado Livre",
