@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768601276250,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Cesto De Roupas De Bambu 70 Litros Yikasa",
+      "preco": 46.47,
+      "precoAntigo": 72.9,
+      "info": "Frete grátis Full",
+      "cupom": "DECORMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_712475-MLA81886241991_012025-F.webp",
+      "link": "https://mercadolivre.com/sec/2SRs1G3",
+      "destaque": true,
+      "timestamp": "2026-01-16T22:07:56.250Z"
+    },
+    {
       "id": 1768591721877,
       "tipo": "promo",
       "loja": "Amazon",
