@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768523432278,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Calça De Sarja Masculina Bolso Faca/embutido C/ Lycra",
+      "preco": 59,
+      "precoAntigo": 78.9,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_872800-MLB97244887641_112025-F.webp",
+      "link": "https://mercadolivre.com/sec/2Xym9pT",
+      "destaque": false,
+      "timestamp": "2026-01-16T00:30:32.278Z"
+    },
+    {
       "id": 1768522786489,
       "tipo": "promo",
       "loja": "Shopee",
