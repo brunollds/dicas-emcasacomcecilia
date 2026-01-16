@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768591412927,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Aparador De Pelos Super Groom 10 Mondial 6W Bivolt BG-03",
+      "preco": 84.89,
+      "precoAntigo": 202.9,
+      "info": "Frete grátis Full",
+      "cupom": "BELEZANOMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_981084-MLA99522140924_122025-F.webp",
+      "link": "https://mercadolivre.com/sec/2ZcMsVe",
+      "destaque": false,
+      "timestamp": "2026-01-16T19:23:32.927Z"
+    },
+    {
       "id": 1768589475396,
       "tipo": "promo",
       "loja": "Mercado Livre",
