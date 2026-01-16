@@ -7,7 +7,7 @@
     "price": 4139.1,
     "price_text": "R$4.139,10",
     "store": "lebiscuit.com.br",
-    "collected_at": "2026-01-16T04:38:26.111949Z"
+    "collected_at": "2026-01-16T08:27:33.663313Z"
   },
   {
     "id": "2586751",
@@ -17,7 +17,7 @@
     "price": 712.39,
     "price_text": "R$ 712,39",
     "store": "aliexpress.com",
-    "collected_at": "2026-01-16T04:38:26.112035Z"
+    "collected_at": "2026-01-16T08:27:33.663399Z"
   },
   {
     "id": "2586317",
@@ -27,7 +27,7 @@
     "price": 2450.0,
     "price_text": "R$ 2.450,00",
     "store": "fossil.com.br",
-    "collected_at": "2026-01-16T04:38:26.112099Z"
+    "collected_at": "2026-01-16T08:27:33.663466Z"
   },
   {
     "id": "2586244",
@@ -37,7 +37,97 @@
     "price": 219.0,
     "price_text": "R$ 219,00",
     "store": "stanley1913.com.br",
-    "collected_at": "2026-01-16T04:38:26.112166Z"
+    "collected_at": "2026-01-16T08:27:33.663534Z"
+  },
+  {
+    "id": "2589050",
+    "source": "promobit",
+    "title": "Desodorante Perfume Essencial Ato Feminino 100 ml",
+    "url": "https://www.promobit.com.br/oferta/desodorante-perfume-essencial-ato-feminino-100-ml-2589050/",
+    "price": 154.61,
+    "price_text": "R$154,61",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T08:27:33.663602Z"
+  },
+  {
+    "id": "2589049",
+    "source": "promobit",
+    "title": "Kriska Drama Miniatura 25 ml",
+    "url": "https://www.promobit.com.br/oferta/kriska-drama-miniatura-25-ml-2589049/",
+    "price": 34.85,
+    "price_text": "R$34,85",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T08:27:33.663626Z"
+  },
+  {
+    "id": "2589046",
+    "source": "promobit",
+    "title": "Body Splash Luna Fascinante 200 ml",
+    "url": "https://www.promobit.com.br/oferta/body-splash-luna-fascinante-200-ml-2589046/",
+    "price": 53.38,
+    "price_text": "R$53,38",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T08:27:33.663647Z"
+  },
+  {
+    "id": "2589044",
+    "source": "promobit",
+    "title": "Creme Desodorante Nutritivo para o Corpo Framboesa e Pimenta Rosa Tododia 400ml",
+    "url": "https://www.promobit.com.br/oferta/creme-desodorante-nutritivo-para-o-corpo-framboesa-e-pimenta-rosa-tododia-400ml-2589044/",
+    "price": 46.92,
+    "price_text": "R$46,92",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T08:27:33.663669Z"
+  },
+  {
+    "id": "2589043",
+    "source": "promobit",
+    "title": "Manteiga Hidratante para o Corpo Ekos Ucuuba 200 g",
+    "url": "https://www.promobit.com.br/oferta/manteiga-hidratante-para-o-corpo-ekos-ucuuba-200-g-2589043/",
+    "price": 49.89,
+    "price_text": "R$49,89",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T08:27:33.663687Z"
+  },
+  {
+    "id": "2589041",
+    "source": "promobit",
+    "title": "Shampoo Cabelo Corpo e Barba Humor a Dois 100 ml",
+    "url": "https://www.promobit.com.br/oferta/shampoo-cabelo-corpo-e-barba-humor-a-dois-100-ml-2589041/",
+    "price": 18.87,
+    "price_text": "R$18,87",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T08:27:33.663706Z"
+  },
+  {
+    "id": "2589040",
+    "source": "promobit",
+    "title": "Perfume para Cabelos Una Artisan 30 ml",
+    "url": "https://www.promobit.com.br/oferta/perfume-para-cabelos-una-artisan-30-ml-2589040/",
+    "price": 36.89,
+    "price_text": "R$36,89",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T08:27:33.663723Z"
+  },
+  {
+    "id": "2589039",
+    "source": "promobit",
+    "title": "Desodorante Corporal Kaiak O2 Masculino 100 ml",
+    "url": "https://www.promobit.com.br/oferta/desodorante-corporal-kaiak-o2-masculino-100-ml-2589039/",
+    "price": 24.14,
+    "price_text": "R$24,14",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T08:27:33.663741Z"
+  },
+  {
+    "id": "2589038",
+    "source": "promobit",
+    "title": "Desodorante Corporal Luna Força 100 ml",
+    "url": "https://www.promobit.com.br/oferta/desodorante-corporal-luna-forca-100-ml-2589038/",
+    "price": 24.14,
+    "price_text": "R$24,14",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T08:27:33.663759Z"
   },
   {
     "id": "2589016",
@@ -47,7 +137,7 @@
     "price": 199.9,
     "price_text": "R$ 199,90",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.112230Z"
+    "collected_at": "2026-01-16T08:27:33.663819Z"
   },
   {
     "id": "2589009",
@@ -57,7 +147,7 @@
     "price": 5.63,
     "price_text": "R$ 5,63",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.112288Z"
+    "collected_at": "2026-01-16T08:27:33.663890Z"
   },
   {
     "id": "2588998",
@@ -67,7 +157,7 @@
     "price": 699.0,
     "price_text": "R$ 699,00",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.112347Z"
+    "collected_at": "2026-01-16T08:27:33.663953Z"
   },
   {
     "id": "2588986",
@@ -77,7 +167,7 @@
     "price": 132.98,
     "price_text": "R$ 132,98",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.112375Z"
+    "collected_at": "2026-01-16T08:27:33.663978Z"
   },
   {
     "id": "2588981",
@@ -87,7 +177,7 @@
     "price": 375.99,
     "price_text": "R$ 375,99",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.112412Z"
+    "collected_at": "2026-01-16T08:27:33.663998Z"
   },
   {
     "id": "2588977",
@@ -97,7 +187,7 @@
     "price": 119.9,
     "price_text": "R$119,90",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.112437Z"
+    "collected_at": "2026-01-16T08:27:33.664017Z"
   },
   {
     "id": "2588968",
@@ -107,7 +197,7 @@
     "price": 139.0,
     "price_text": "R$ 139,00",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.112458Z"
+    "collected_at": "2026-01-16T08:27:33.664035Z"
   },
   {
     "id": "2588966",
@@ -117,7 +207,7 @@
     "price": 119.9,
     "price_text": "R$ 119,90",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.112478Z"
+    "collected_at": "2026-01-16T08:27:33.664053Z"
   },
   {
     "id": "2588961",
@@ -127,7 +217,7 @@
     "price": 63.99,
     "price_text": "R$ 63,99",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.112498Z"
+    "collected_at": "2026-01-16T08:27:33.664071Z"
   },
   {
     "id": "2588957",
@@ -137,7 +227,7 @@
     "price": 21.99,
     "price_text": "R$21,99",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.112516Z"
+    "collected_at": "2026-01-16T08:27:33.664088Z"
   },
   {
     "id": "2588956",
@@ -147,7 +237,7 @@
     "price": 47.99,
     "price_text": "R$ 47,99",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.112536Z"
+    "collected_at": "2026-01-16T08:27:33.664107Z"
   },
   {
     "id": "2588954",
@@ -157,7 +247,7 @@
     "price": 170.0,
     "price_text": "R$ 170,00",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.112555Z"
+    "collected_at": "2026-01-16T08:27:33.664127Z"
   },
   {
     "id": "2588949",
@@ -167,7 +257,7 @@
     "price": 219.99,
     "price_text": "R$219,99",
     "store": "adidas.com.br",
-    "collected_at": "2026-01-16T04:38:26.112614Z"
+    "collected_at": "2026-01-16T08:27:33.664187Z"
   },
   {
     "id": "2588948",
@@ -177,7 +267,7 @@
     "price": 799.0,
     "price_text": "R$ 799,00",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.112644Z"
+    "collected_at": "2026-01-16T08:27:33.664215Z"
   },
   {
     "id": "2588943",
@@ -187,7 +277,7 @@
     "price": 35.7,
     "price_text": "R$ 35,70",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.112666Z"
+    "collected_at": "2026-01-16T08:27:33.664240Z"
   },
   {
     "id": "2588939",
@@ -197,7 +287,7 @@
     "price": 160.02,
     "price_text": "R$ 160,02",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.112685Z"
+    "collected_at": "2026-01-16T08:27:33.664264Z"
   },
   {
     "id": "2588941",
@@ -207,7 +297,7 @@
     "price": 368.55,
     "price_text": "R$ 368,55",
     "store": "aliexpress.com",
-    "collected_at": "2026-01-16T04:38:26.112705Z"
+    "collected_at": "2026-01-16T08:27:33.664283Z"
   },
   {
     "id": "2588935",
@@ -217,7 +307,7 @@
     "price": 71.0,
     "price_text": "R$ 71,00",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.112724Z"
+    "collected_at": "2026-01-16T08:27:33.664301Z"
   },
   {
     "id": "2588934",
@@ -227,7 +317,7 @@
     "price": 59.97,
     "price_text": "R$ 59,97",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.112741Z"
+    "collected_at": "2026-01-16T08:27:33.664319Z"
   },
   {
     "id": "2588932",
@@ -237,7 +327,7 @@
     "price": 3.91,
     "price_text": "R$ 3,91",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.112803Z"
+    "collected_at": "2026-01-16T08:27:33.664397Z"
   },
   {
     "id": "2588933",
@@ -247,7 +337,7 @@
     "price": 174.99,
     "price_text": "R$174,99",
     "store": "dafiti.com.br",
-    "collected_at": "2026-01-16T04:38:26.112866Z"
+    "collected_at": "2026-01-16T08:27:33.664463Z"
   },
   {
     "id": "2588930",
@@ -257,7 +347,7 @@
     "price": 70.44,
     "price_text": "R$ 70,44",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.112890Z"
+    "collected_at": "2026-01-16T08:27:33.664486Z"
   },
   {
     "id": "2588929",
@@ -267,7 +357,7 @@
     "price": 38.99,
     "price_text": "R$ 38,99",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.112910Z"
+    "collected_at": "2026-01-16T08:27:33.664505Z"
   },
   {
     "id": "2588926",
@@ -277,7 +367,7 @@
     "price": 89.91,
     "price_text": "R$89,91",
     "store": "dafiti.com.br",
-    "collected_at": "2026-01-16T04:38:26.112928Z"
+    "collected_at": "2026-01-16T08:27:33.664523Z"
   },
   {
     "id": "2588925",
@@ -287,7 +377,7 @@
     "price": 139.0,
     "price_text": "R$139,00",
     "store": "dafiti.com.br",
-    "collected_at": "2026-01-16T04:38:26.112946Z"
+    "collected_at": "2026-01-16T08:27:33.664540Z"
   },
   {
     "id": "2588924",
@@ -297,7 +387,17 @@
     "price": 379.0,
     "price_text": "R$ 379,00",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.112963Z"
+    "collected_at": "2026-01-16T08:27:33.664561Z"
+  },
+  {
+    "id": "2588923",
+    "source": "promobit",
+    "title": "Balança Digital De Vidro Good Deals OficialAte 180kg Portatil Corporal",
+    "url": "https://www.promobit.com.br/oferta/balanca-digital-de-vidro-good-deals-oficialate-180kg-portatil-corporal-2588923/",
+    "price": 51.13,
+    "price_text": "R$ 51,13",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T08:27:33.664588Z"
   },
   {
     "id": "2588922",
@@ -307,7 +407,7 @@
     "price": 169.9,
     "price_text": "R$ 169,90",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.112981Z"
+    "collected_at": "2026-01-16T08:27:33.664606Z"
   },
   {
     "id": "2588921",
@@ -317,7 +417,7 @@
     "price": 78.95,
     "price_text": "R$ 78,95",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.113000Z"
+    "collected_at": "2026-01-16T08:27:33.664625Z"
   },
   {
     "id": "2588919",
@@ -327,7 +427,7 @@
     "price": 999.99,
     "price_text": "R$ 999,99",
     "store": "nike.com.br",
-    "collected_at": "2026-01-16T04:38:26.113052Z"
+    "collected_at": "2026-01-16T08:27:33.664679Z"
   },
   {
     "id": "256gb",
@@ -337,7 +437,7 @@
     "price": 8095.5,
     "price_text": "R$ 8.095,50",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.113074Z"
+    "collected_at": "2026-01-16T08:27:33.664701Z"
   },
   {
     "id": "2588917",
@@ -347,7 +447,7 @@
     "price": 7208.99,
     "price_text": "R$ 7.208,99",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.113098Z"
+    "collected_at": "2026-01-16T08:27:33.664720Z"
   },
   {
     "id": "2588916",
@@ -357,7 +457,7 @@
     "price": 399.0,
     "price_text": "R$ 399,00",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.113122Z"
+    "collected_at": "2026-01-16T08:27:33.664739Z"
   },
   {
     "id": "2588915",
@@ -367,7 +467,7 @@
     "price": 379.9,
     "price_text": "R$ 379,90",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.113142Z"
+    "collected_at": "2026-01-16T08:27:33.664756Z"
   },
   {
     "id": "2588914",
@@ -377,7 +477,7 @@
     "price": 549.99,
     "price_text": "R$ 549,99",
     "store": "nike.com.br",
-    "collected_at": "2026-01-16T04:38:26.113160Z"
+    "collected_at": "2026-01-16T08:27:33.664773Z"
   },
   {
     "id": "2588913",
@@ -387,7 +487,7 @@
     "price": 300.95,
     "price_text": "R$300,95",
     "store": "centauro.com.br",
-    "collected_at": "2026-01-16T04:38:26.113215Z"
+    "collected_at": "2026-01-16T08:27:33.664826Z"
   },
   {
     "id": "2588912",
@@ -397,7 +497,7 @@
     "price": 30.0,
     "price_text": "R$ 30,00",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.113237Z"
+    "collected_at": "2026-01-16T08:27:33.664848Z"
   },
   {
     "id": "2588911",
@@ -407,7 +507,7 @@
     "price": 37.9,
     "price_text": "R$ 37,90",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.113259Z"
+    "collected_at": "2026-01-16T08:27:33.664884Z"
   },
   {
     "id": "2588910",
@@ -417,7 +517,7 @@
     "price": 189.99,
     "price_text": "R$189,99",
     "store": "dafiti.com.br",
-    "collected_at": "2026-01-16T04:38:26.113278Z"
+    "collected_at": "2026-01-16T08:27:33.664907Z"
   },
   {
     "id": "2588909",
@@ -427,7 +527,7 @@
     "price": 139.99,
     "price_text": "R$139,99",
     "store": "dafiti.com.br",
-    "collected_at": "2026-01-16T04:38:26.113296Z"
+    "collected_at": "2026-01-16T08:27:33.664925Z"
   },
   {
     "id": "2588908",
@@ -437,7 +537,7 @@
     "price": 299.99,
     "price_text": "R$ 299,99",
     "store": "centauro.com.br",
-    "collected_at": "2026-01-16T04:38:26.113314Z"
+    "collected_at": "2026-01-16T08:27:33.664943Z"
   },
   {
     "id": "2588907",
@@ -447,7 +547,7 @@
     "price": 7198.57,
     "price_text": "R$ 7.198,57",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.113337Z"
+    "collected_at": "2026-01-16T08:27:33.664962Z"
   },
   {
     "id": "2588906",
@@ -457,7 +557,7 @@
     "price": 1199.99,
     "price_text": "R$ 1.199,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.113354Z"
+    "collected_at": "2026-01-16T08:27:33.664979Z"
   },
   {
     "id": "2588904",
@@ -467,7 +567,7 @@
     "price": 449.99,
     "price_text": "R$ 449,99",
     "store": "lojanba.com",
-    "collected_at": "2026-01-16T04:38:26.113419Z"
+    "collected_at": "2026-01-16T08:27:33.665032Z"
   },
   {
     "id": "2588903",
@@ -477,7 +577,7 @@
     "price": 3496.9,
     "price_text": "R$3.496,90",
     "store": "lebiscuit.com.br",
-    "collected_at": "2026-01-16T04:38:26.113445Z"
+    "collected_at": "2026-01-16T08:27:33.665054Z"
   },
   {
     "id": "2588892",
@@ -487,7 +587,7 @@
     "price": 6699.0,
     "price_text": "R$ 6.699,00",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.113466Z"
+    "collected_at": "2026-01-16T08:27:33.665073Z"
   },
   {
     "id": "2588893",
@@ -497,7 +597,7 @@
     "price": 579.9,
     "price_text": "R$ 579,90",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.113485Z"
+    "collected_at": "2026-01-16T08:27:33.665096Z"
   },
   {
     "id": "2588901",
@@ -507,7 +607,7 @@
     "price": 67.6,
     "price_text": "R$ 67,60",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.113507Z"
+    "collected_at": "2026-01-16T08:27:33.665115Z"
   },
   {
     "id": "2588894",
@@ -517,7 +617,7 @@
     "price": 479.9,
     "price_text": "R$ 479,90",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.113526Z"
+    "collected_at": "2026-01-16T08:27:33.665133Z"
   },
   {
     "id": "2588900",
@@ -527,7 +627,7 @@
     "price": 66.14,
     "price_text": "R$66,14",
     "store": "zattini.com.br",
-    "collected_at": "2026-01-16T04:38:26.113583Z"
+    "collected_at": "2026-01-16T08:27:33.665189Z"
   },
   {
     "id": "2588899",
@@ -537,7 +637,7 @@
     "price": 2339.1,
     "price_text": "R$2.339,10",
     "store": "fastshop.com.br",
-    "collected_at": "2026-01-16T04:38:26.113642Z"
+    "collected_at": "2026-01-16T08:27:33.665247Z"
   },
   {
     "id": "2588898",
@@ -547,7 +647,7 @@
     "price": 119.99,
     "price_text": "R$119,99",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.113664Z"
+    "collected_at": "2026-01-16T08:27:33.665270Z"
   },
   {
     "id": "2588896",
@@ -557,7 +657,7 @@
     "price": 70.2,
     "price_text": "R$ 70,20",
     "store": "casasbahia.com.br",
-    "collected_at": "2026-01-16T04:38:26.113726Z"
+    "collected_at": "2026-01-16T08:27:33.665330Z"
   },
   {
     "id": "2588897",
@@ -567,7 +667,7 @@
     "price": 249.99,
     "price_text": "R$ 249,99",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.113749Z"
+    "collected_at": "2026-01-16T08:27:33.665352Z"
   },
   {
     "id": "2588895",
@@ -577,7 +677,7 @@
     "price": 499.99,
     "price_text": "R$ 499,99",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.113768Z"
+    "collected_at": "2026-01-16T08:27:33.665371Z"
   },
   {
     "id": "2588889",
@@ -587,7 +687,7 @@
     "price": 96.39,
     "price_text": "R$96,39",
     "store": "natura.com.br",
-    "collected_at": "2026-01-16T04:38:26.113821Z"
+    "collected_at": "2026-01-16T08:27:33.665389Z"
   },
   {
     "id": "2588873",
@@ -597,7 +697,7 @@
     "price": 179.99,
     "price_text": "R$ 179,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.113843Z"
+    "collected_at": "2026-01-16T08:27:33.665407Z"
   },
   {
     "id": "2588887",
@@ -607,7 +707,7 @@
     "price": 275.49,
     "price_text": "R$275,49",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.113865Z"
+    "collected_at": "2026-01-16T08:27:33.665424Z"
   },
   {
     "id": "2588885",
@@ -617,7 +717,7 @@
     "price": 59.9,
     "price_text": "R$59,90",
     "store": "tng.com.br",
-    "collected_at": "2026-01-16T04:38:26.113920Z"
+    "collected_at": "2026-01-16T08:27:33.665473Z"
   },
   {
     "id": "2588884",
@@ -627,7 +727,7 @@
     "price": 9499.0,
     "price_text": "R$ 9.499,00",
     "store": "extra.com.br",
-    "collected_at": "2026-01-16T04:38:26.113974Z"
+    "collected_at": "2026-01-16T08:27:33.665526Z"
   },
   {
     "id": "2588883",
@@ -637,7 +737,7 @@
     "price": 3443.33,
     "price_text": "R$ 3.443,33",
     "store": "extra.com.br",
-    "collected_at": "2026-01-16T04:38:26.113997Z"
+    "collected_at": "2026-01-16T08:27:33.665548Z"
   },
   {
     "id": "2588882",
@@ -647,7 +747,7 @@
     "price": 198.63,
     "price_text": "R$198,63",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.114015Z"
+    "collected_at": "2026-01-16T08:27:33.665567Z"
   },
   {
     "id": "2588881",
@@ -657,7 +757,7 @@
     "price": 3199.0,
     "price_text": "R$ 3.199,00",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.114035Z"
+    "collected_at": "2026-01-16T08:27:33.665586Z"
   },
   {
     "id": "2588879",
@@ -667,7 +767,7 @@
     "price": 184.99,
     "price_text": "R$184,99",
     "store": "dafiti.com.br",
-    "collected_at": "2026-01-16T04:38:26.114052Z"
+    "collected_at": "2026-01-16T08:27:33.665604Z"
   },
   {
     "id": "2588877",
@@ -677,7 +777,7 @@
     "price": 47.9,
     "price_text": "R$ 47,90",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.114070Z"
+    "collected_at": "2026-01-16T08:27:33.665622Z"
   },
   {
     "id": "2588878",
@@ -687,7 +787,7 @@
     "price": 43.99,
     "price_text": "R$ 43,99",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.114088Z"
+    "collected_at": "2026-01-16T08:27:33.665644Z"
   },
   {
     "id": "2588876",
@@ -697,7 +797,7 @@
     "price": 124.99,
     "price_text": "R$124,99",
     "store": "dafiti.com.br",
-    "collected_at": "2026-01-16T04:38:26.114108Z"
+    "collected_at": "2026-01-16T08:27:33.665662Z"
   },
   {
     "id": "2588875",
@@ -707,7 +807,7 @@
     "price": 129.99,
     "price_text": "R$129,99",
     "store": "dafiti.com.br",
-    "collected_at": "2026-01-16T04:38:26.114126Z"
+    "collected_at": "2026-01-16T08:27:33.665678Z"
   },
   {
     "id": "2588874",
@@ -717,7 +817,7 @@
     "price": 6608.37,
     "price_text": "R$ 6.608,37",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.114145Z"
+    "collected_at": "2026-01-16T08:27:33.665697Z"
   },
   {
     "id": "2588872",
@@ -727,7 +827,7 @@
     "price": 5.07,
     "price_text": "R$5,07",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.114163Z"
+    "collected_at": "2026-01-16T08:27:33.665714Z"
   },
   {
     "id": "2588871",
@@ -737,7 +837,7 @@
     "price": 4193.1,
     "price_text": "R$4.193,10",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.114184Z"
+    "collected_at": "2026-01-16T08:27:33.665733Z"
   },
   {
     "id": "2588870",
@@ -747,7 +847,7 @@
     "price": 129.9,
     "price_text": "R$ 129,90",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.114202Z"
+    "collected_at": "2026-01-16T08:27:33.665752Z"
   },
   {
     "id": "2588868",
@@ -757,7 +857,7 @@
     "price": 32.0,
     "price_text": "R$ 32,00",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.114220Z"
+    "collected_at": "2026-01-16T08:27:33.665770Z"
   },
   {
     "id": "2588864",
@@ -767,7 +867,7 @@
     "price": 35.9,
     "price_text": "R$35,90",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T04:38:26.114274Z"
+    "collected_at": "2026-01-16T08:27:33.665824Z"
   },
   {
     "id": "2588866",
@@ -777,7 +877,7 @@
     "price": 7799.0,
     "price_text": "R$ 7.799,00",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.114296Z"
+    "collected_at": "2026-01-16T08:27:33.665846Z"
   },
   {
     "id": "2588862",
@@ -787,7 +887,7 @@
     "price": 13.9,
     "price_text": "R$13,90",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T04:38:26.114323Z"
+    "collected_at": "2026-01-16T08:27:33.665882Z"
   },
   {
     "id": "2588861",
@@ -797,7 +897,7 @@
     "price": 1499.9,
     "price_text": "R$ 1.499,90",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T04:38:26.114342Z"
+    "collected_at": "2026-01-16T08:27:33.665904Z"
   },
   {
     "id": "128gb",
@@ -807,7 +907,7 @@
     "price": 6665.56,
     "price_text": "R$ 6.665,56",
     "store": "lebiscuit.com.br",
-    "collected_at": "2026-01-16T04:38:26.114362Z"
+    "collected_at": "2026-01-16T08:27:33.665922Z"
   },
   {
     "id": "2588857",
@@ -817,7 +917,7 @@
     "price": 14.99,
     "price_text": "R$14,99",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T04:38:26.114380Z"
+    "collected_at": "2026-01-16T08:27:33.665940Z"
   },
   {
     "id": "2588856",
@@ -827,7 +927,7 @@
     "price": 6443.33,
     "price_text": "R$ 6.443,33",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.114417Z"
+    "collected_at": "2026-01-16T08:27:33.665958Z"
   },
   {
     "id": "2588852",
@@ -837,7 +937,7 @@
     "price": 10.79,
     "price_text": "R$10,79",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T04:38:26.114439Z"
+    "collected_at": "2026-01-16T08:27:33.665975Z"
   },
   {
     "id": "2588851",
@@ -847,7 +947,7 @@
     "price": 28.99,
     "price_text": "R$28,99",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T04:38:26.114457Z"
+    "collected_at": "2026-01-16T08:27:33.665992Z"
   },
   {
     "id": "2588849",
@@ -857,7 +957,7 @@
     "price": 10.79,
     "price_text": "R$10,79",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T04:38:26.114474Z"
+    "collected_at": "2026-01-16T08:27:33.666008Z"
   },
   {
     "id": "2588847",
@@ -867,7 +967,7 @@
     "price": 14.99,
     "price_text": "R$14,99",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T04:38:26.114490Z"
+    "collected_at": "2026-01-16T08:27:33.666023Z"
   },
   {
     "id": "2588850",
@@ -877,7 +977,7 @@
     "price": 1299.99,
     "price_text": "R$ 1.299,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114513Z"
+    "collected_at": "2026-01-16T08:27:33.666040Z"
   },
   {
     "id": "2588848",
@@ -887,7 +987,7 @@
     "price": 1299.99,
     "price_text": "R$ 1.299,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114531Z"
+    "collected_at": "2026-01-16T08:27:33.666056Z"
   },
   {
     "id": "2588845",
@@ -897,7 +997,7 @@
     "price": 999.99,
     "price_text": "R$ 999,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114549Z"
+    "collected_at": "2026-01-16T08:27:33.666079Z"
   },
   {
     "id": "2588846",
@@ -907,7 +1007,7 @@
     "price": 1099.99,
     "price_text": "R$ 1.099,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114565Z"
+    "collected_at": "2026-01-16T08:27:33.666095Z"
   },
   {
     "id": "2588843",
@@ -917,7 +1017,7 @@
     "price": 1199.99,
     "price_text": "R$ 1.199,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114581Z"
+    "collected_at": "2026-01-16T08:27:33.666111Z"
   },
   {
     "id": "2588837",
@@ -927,7 +1027,7 @@
     "price": 3499.0,
     "price_text": "R$ 3.499,00",
     "store": "shopee.com.br",
-    "collected_at": "2026-01-16T04:38:26.114640Z"
+    "collected_at": "2026-01-16T08:27:33.666166Z"
   },
   {
     "id": "2588842",
@@ -937,7 +1037,7 @@
     "price": 899.99,
     "price_text": "R$ 899,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114663Z"
+    "collected_at": "2026-01-16T08:27:33.666187Z"
   },
   {
     "id": "2588841",
@@ -947,7 +1047,7 @@
     "price": 899.99,
     "price_text": "R$ 899,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114685Z"
+    "collected_at": "2026-01-16T08:27:33.666205Z"
   },
   {
     "id": "2588833",
@@ -957,7 +1057,7 @@
     "price": 729.0,
     "price_text": "R$729,00",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T04:38:26.114703Z"
+    "collected_at": "2026-01-16T08:27:33.666222Z"
   },
   {
     "id": "2588839",
@@ -967,7 +1067,7 @@
     "price": 999.99,
     "price_text": "R$ 999,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114720Z"
+    "collected_at": "2026-01-16T08:27:33.666239Z"
   },
   {
     "id": "2588840",
@@ -977,7 +1077,7 @@
     "price": 4199.0,
     "price_text": "R$ 4.199,00",
     "store": "aliexpress.com",
-    "collected_at": "2026-01-16T04:38:26.114741Z"
+    "collected_at": "2026-01-16T08:27:33.666257Z"
   },
   {
     "id": "2588838",
@@ -987,7 +1087,7 @@
     "price": 999.99,
     "price_text": "R$ 999,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114760Z"
+    "collected_at": "2026-01-16T08:27:33.666283Z"
   },
   {
     "id": "2588834",
@@ -997,7 +1097,7 @@
     "price": 799.99,
     "price_text": "R$ 799,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114784Z"
+    "collected_at": "2026-01-16T08:27:33.666300Z"
   },
   {
     "id": "2588831",
@@ -1007,7 +1107,7 @@
     "price": 799.99,
     "price_text": "R$ 799,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114801Z"
+    "collected_at": "2026-01-16T08:27:33.666317Z"
   },
   {
     "id": "2588829",
@@ -1017,7 +1117,7 @@
     "price": 351.9,
     "price_text": "R$ 351,90",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.114820Z"
+    "collected_at": "2026-01-16T08:27:33.666336Z"
   },
   {
     "id": "2588828",
@@ -1027,7 +1127,7 @@
     "price": 799.99,
     "price_text": "R$ 799,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114853Z"
+    "collected_at": "2026-01-16T08:27:33.666353Z"
   },
   {
     "id": "2588826",
@@ -1037,7 +1137,7 @@
     "price": 599.99,
     "price_text": "R$ 599,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114870Z"
+    "collected_at": "2026-01-16T08:27:33.666370Z"
   },
   {
     "id": "2588825",
@@ -1047,7 +1147,7 @@
     "price": 699.99,
     "price_text": "R$ 699,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114890Z"
+    "collected_at": "2026-01-16T08:27:33.666387Z"
   },
   {
     "id": "2588824",
@@ -1057,7 +1157,7 @@
     "price": 499.99,
     "price_text": "R$ 499,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114908Z"
+    "collected_at": "2026-01-16T08:27:33.666403Z"
   },
   {
     "id": "2588823",
@@ -1067,7 +1167,7 @@
     "price": 599.99,
     "price_text": "R$ 599,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114928Z"
+    "collected_at": "2026-01-16T08:27:33.666419Z"
   },
   {
     "id": "2588821",
@@ -1077,7 +1177,7 @@
     "price": 599.99,
     "price_text": "R$ 599,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114945Z"
+    "collected_at": "2026-01-16T08:27:33.666435Z"
   },
   {
     "id": "2588820",
@@ -1087,46 +1187,6 @@
     "price": 499.99,
     "price_text": "R$ 499,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114960Z"
-  },
-  {
-    "id": "2588819",
-    "source": "promobit",
-    "title": "Tênis Adidas Grand Court Lo Feminino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-grand-court-lo-feminino-2588819/",
-    "price": 449.99,
-    "price_text": "R$ 449,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.114976Z"
-  },
-  {
-    "id": "2588817",
-    "source": "promobit",
-    "title": "Fralda Turma da Mônica Baby Shortinho Jumbinho XG 12 Unidades",
-    "url": "https://www.promobit.com.br/oferta/fralda-turma-da-monica-baby-shortinho-jumbinho-xg-12-unidades-2588817/",
-    "price": 30.99,
-    "price_text": "R$ 30,99",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T04:38:26.114993Z"
-  },
-  {
-    "id": "2588818",
-    "source": "promobit",
-    "title": "Tênis Adidas Cloudfoam Move Sock Feminino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-cloudfoam-move-sock-feminino-2588818/",
-    "price": 399.99,
-    "price_text": "R$ 399,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.115011Z"
-  },
-  {
-    "id": "2588815",
-    "source": "promobit",
-    "title": "Tênis Adidas Ultimashow 2.0 Mercedes - AMG Petronas Formula One Team Unissex",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-ultimashow-20-mercedes-amg-petronas-formula-one-team-unissex-2588815/",
-    "price": 499.99,
-    "price_text": "R$ 499,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T04:38:26.115028Z"
+    "collected_at": "2026-01-16T08:27:33.666451Z"
   }
 ]
