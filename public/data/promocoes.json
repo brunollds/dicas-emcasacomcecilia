@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768601552158,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit Aparelho De Jantar 30 Peças Pratos Copos E Talheres Inox",
+      "preco": 63.71,
+      "precoAntigo": 122.9,
+      "info": "Frete grátis Full - Oferta Relâmpago",
+      "cupom": "DECORMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_618732-MLB93180265343_092025-F.webp",
+      "link": "https://mercadolivre.com/sec/2ygDhxz",
+      "destaque": false,
+      "timestamp": "2026-01-16T22:12:32.158Z"
+    },
+    {
       "id": 1768601406038,
       "tipo": "promo",
       "loja": "Mercado Livre",
