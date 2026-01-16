@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768522786489,
+      "tipo": "promo",
+      "loja": "Shopee",
+      "produto": "Conjunto De Mesa Com 2 Cadeiras Empoli Em-6021 Para Jardim",
+      "preco": 377.99,
+      "precoAntigo": 527.99,
+      "info": "Frete grátis",
+      "cupom": null,
+      "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-mcmkmmpketde77.webp",
+      "link": "https://s.shopee.com.br/2B8ey1PJke",
+      "destaque": false,
+      "timestamp": "2026-01-16T00:19:46.489Z"
+    },
+    {
       "id": 1768521349821,
       "tipo": "promo",
       "loja": "Shopee",
