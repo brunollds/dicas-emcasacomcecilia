@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768527575214,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Panela De Pressão 4,5 Litros Alumínio Polido Panelux Classic Cor Cinza",
+      "preco": 42,
+      "precoAntigo": 71.42,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_677708-MLA100077743997_122025-F.webp",
+      "link": "https://mercadolivre.com/sec/1sefQhK",
+      "destaque": false,
+      "timestamp": "2026-01-16T01:39:35.214Z"
+    },
+    {
       "id": 1768526864227,
       "tipo": "promo",
       "loja": "Mercado Livre",
