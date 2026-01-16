@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768577721822,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Boné Ny New York Yankees Unissex",
+      "preco": 29.99,
+      "precoAntigo": 49.99,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_878871-MLB92227777669_092025-F-bone-ny-new-york-yankees-unissex-blogueira-fito-regulavel.webp",
+      "link": "https://mercadolivre.com/sec/25EHvHE",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:35:21.822Z"
+    },
+    {
       "id": 1768577616283,
       "tipo": "promo",
       "loja": "Amazon",
