@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768602919224,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit Com 3 Pares De Meias Invisíveis Day By Day Hoahi",
+      "preco": 20.3,
+      "precoAntigo": 27.4,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_676479-MLB87140452155_072025-F-kit-com-3-pares-de-meias-invisiveis-day-by-day-hoahi.webp",
+      "link": "https://mercadolivre.com/sec/1bdFJsh",
+      "destaque": false,
+      "timestamp": "2026-01-16T22:35:19.224Z"
+    },
+    {
       "id": 1768602715957,
       "tipo": "promo",
       "loja": "Mercado Livre",
