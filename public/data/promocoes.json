@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768527776165,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit 10 Pares Meias Mash Invisível Esportiva Algodão Original",
+      "preco": 59.98,
+      "precoAntigo": 99.98,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_986817-MLB98664775176_112025-F-kit-10-pares-meias-mash-invisivel-esportiva-algodo-original.webp",
+      "link": "https://mercadolivre.com/sec/2ce7DPX",
+      "destaque": false,
+      "timestamp": "2026-01-16T01:42:56.165Z"
+    },
+    {
       "id": 1768527725863,
       "tipo": "promo",
       "loja": "Mercado Livre",
