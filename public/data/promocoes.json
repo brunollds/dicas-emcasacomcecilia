@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768601681655,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Monitor Gamer LG 24ml600m - 1ms, Full Hd Ips",
+      "preco": 526.64,
+      "precoAntigo": 699,
+      "info": "R$ 557,19 em 10x S/ Juros - Frete grátis Full",
+      "cupom": "Cupom na Pagina",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_650955-MLA99525729494_122025-F.webp",
+      "link": "https://mercadolivre.com/sec/1bk2NL4",
+      "destaque": false,
+      "timestamp": "2026-01-16T22:14:41.655Z"
+    },
+    {
       "id": 1768601552158,
       "tipo": "promo",
       "loja": "Mercado Livre",
