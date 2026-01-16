@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768602382233,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Conjunto Blusa Tomara Que Caia Com Ajuste Na Lateral E Calça",
+      "preco": 43.54,
+      "precoAntigo": 78.9,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_752880-MLB100969381177_122025-F-conjunto-blusa-tomara-que-caia-com-ajuste-na-lateral-e-calca.webp",
+      "link": "https://mercadolivre.com/sec/2891659",
+      "destaque": false,
+      "timestamp": "2026-01-16T22:26:22.233Z"
+    },
+    {
       "id": 1768602176460,
       "tipo": "promo",
       "loja": "Amazon",
