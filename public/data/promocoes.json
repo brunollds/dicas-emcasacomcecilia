@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768591721877,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Molico Leite Em Pó Desnatado Total Cálcio 500G",
+      "preco": 28.07,
+      "precoAntigo": 37.89,
+      "info": "Recorrência -10% • Mais por Menos: 10% off em 10+ itens - R$ 28,07 +POR-",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/618Qj2ncFwL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4sOT3Uc",
+      "destaque": false,
+      "timestamp": "2026-01-16T19:28:41.877Z"
+    },
+    {
       "id": 1768591412927,
       "tipo": "promo",
       "loja": "Mercado Livre",
