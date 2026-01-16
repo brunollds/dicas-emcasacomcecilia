@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768527651176,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit 9 Pares Meias Puma Sapatilha Cano Baixo Original Algodão",
+      "preco": 51.63,
+      "precoAntigo": 78.11,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_852043-MLB101173457426_122025-F-kit-9-pares-meias-puma-sapatilha-cano-baixo-original-algodo.webp",
+      "link": "https://mercadolivre.com/sec/1x21mVi",
+      "destaque": false,
+      "timestamp": "2026-01-16T01:40:51.176Z"
+    },
+    {
       "id": 1768527575214,
       "tipo": "promo",
       "loja": "Mercado Livre",
