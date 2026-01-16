@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768577489931,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "SJ~CAM C300 Pocket Camera de Ação,4K Camera Filmadora,7 Horas de Autonomia, Estabilização em 6 Eixos, Câmera Corporal com Tela Sensível ao Toque dupla, à Prova D'água Até 30M",
+      "preco": 618,
+      "precoAntigo": 1099,
+      "info": "12x sem juros • Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61c0L4f+FuL._AC_SX679_.jpg",
+      "link": "https://amzn.to/3YEMLZt",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:31:29.931Z"
+    },
+    {
       "id": 1768527908901,
       "tipo": "promo",
       "loja": "Amazon",
