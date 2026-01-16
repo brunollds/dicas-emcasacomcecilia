@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768525429485,
+      "tipo": "promo",
+      "loja": "Magazine Luiza",
+      "produto": "Cooktop 4 Bocas Elétrico Vitrocerâmico Midea",
+      "preco": 794,
+      "precoAntigo": 999,
+      "info": "R$854 em 7x S/ Juros",
+      "cupom": "MIDEA7",
+      "imagem": "https://a-static.mlcdn.com.br/800x560/cooktop-4-bocas-eletrico-vitroceramico-midea/mideacarrier/ccb40p2/902af8f5f86c10e3770c3f14dcb5be9a.jpeg",
+      "link": "https://divulgador.magalu.com/epk2B_C9",
+      "destaque": false,
+      "timestamp": "2026-01-16T01:03:49.485Z"
+    },
+    {
       "id": 1768525088118,
       "tipo": "promo",
       "loja": "Shopee",
