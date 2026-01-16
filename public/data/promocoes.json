@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768523842132,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Vestido Plus Size Midi Acinturado Modelador Alta Compressão",
+      "preco": 46.9,
+      "precoAntigo": 78.9,
+      "info": "Frete grátis Full - Devolução grátis",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_873632-MLB103143276539_122025-F-vestido-plus-size-midi-acinturado-modelador-alta-compresso.webp",
+      "link": "https://mercadolivre.com/sec/13Pwc34",
+      "destaque": false,
+      "timestamp": "2026-01-16T00:37:22.132Z"
+    },
+    {
       "id": 1768523716761,
       "tipo": "promo",
       "loja": "Mercado Livre",
