@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768525569851,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Neostrata Minesol Oil Control Fps 70, Neostrata",
+      "preco": 48.93,
+      "precoAntigo": 66.4,
+      "info": "Recorrência -10% - Cupom no aAPP",
+      "cupom": "25OFF",
+      "imagem": "https://m.media-amazon.com/images/I/416D3pbJDIL._AC_SX679_.jpg",
+      "link": "https://amzn.to/45eATBb",
+      "destaque": false,
+      "timestamp": "2026-01-16T01:06:09.851Z"
+    },
+    {
       "id": 1768525429485,
       "tipo": "promo",
       "loja": "Magazine Luiza",
