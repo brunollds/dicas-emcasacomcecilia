@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768577927738,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Tapete Ultra Absorvente Para Banheiro Premium Chuveiro Kit 2 Prateado",
+      "preco": 23.83,
+      "precoAntigo": 59.58,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_649113-MLB101833951724_122025-F.webp",
+      "link": "https://mercadolivre.com/sec/1CTXiiw",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:38:47.738Z"
+    },
+    {
       "id": 1768577858383,
       "tipo": "promo",
       "loja": "Amazon",
