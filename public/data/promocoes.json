@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768602176460,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Colgate Creme Dental Para Clareamento Luminous White Glow 70g 2 un",
+      "preco": 16.58,
+      "precoAntigo": 35,
+      "info": "Recorrência -10% • Mais por Menos: 10% off em 10+ itens - R$7,46/und +POR-",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61wQkqByLeL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4sLmMx0",
+      "destaque": false,
+      "timestamp": "2026-01-16T22:22:56.460Z"
+    },
+    {
       "id": 1768601681655,
       "tipo": "promo",
       "loja": "Mercado Livre",
