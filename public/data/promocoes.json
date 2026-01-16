@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768582329953,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "LEGO Set Speed Champions 76921 Carro de Corrida Audi S1 e-tron quattro 274 peças",
+      "preco": 149.99,
+      "precoAntigo": 249.99,
+      "info": "Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/814FRTrpDBL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4qrRj1z",
+      "destaque": false,
+      "timestamp": "2026-01-16T16:52:09.953Z"
+    },
+    {
       "id": 1768579146501,
       "tipo": "promo",
       "loja": "Magazine Luiza",
