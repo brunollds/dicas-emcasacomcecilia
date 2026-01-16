@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768607843188,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "WAP Liquidificador com Copo de Vidro WAP WB2000 2 Litros com Velocidade Variável 900W 127V",
+      "preco": 389.99,
+      "precoAntigo": 659.9,
+      "info": "7x S/ Juros - Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/71YMtq2MrPL._AC_SX679_.jpg",
+      "link": "https://amzn.to/49Ycu5n",
+      "destaque": true,
+      "timestamp": "2026-01-16T23:57:23.188Z"
+    },
+    {
       "id": 1768607671446,
       "tipo": "promo",
       "loja": "Mercado Livre",
