@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768527725863,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit 6 Pares Meias Puma Cano Médio Alto Atoalhada Original",
+      "preco": 69.99,
+      "precoAntigo": 214.9,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_718159-MLB70515562824_072023-F-kit-6-pares-meias-puma-cano-medio-alto-atoalhada-original.webp",
+      "link": "https://mercadolivre.com/sec/1jkwG1H",
+      "destaque": false,
+      "timestamp": "2026-01-16T01:42:05.863Z"
+    },
+    {
       "id": 1768527651176,
       "tipo": "promo",
       "loja": "Mercado Livre",
