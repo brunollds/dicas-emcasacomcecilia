@@ -7,37 +7,697 @@
     "price": 4139.1,
     "price_text": "R$4.139,10",
     "store": "lebiscuit.com.br",
-    "collected_at": "2026-01-16T01:26:33.037531Z"
+    "collected_at": "2026-01-16T04:38:26.111949Z"
   },
   {
-    "id": "2588463",
+    "id": "2586751",
     "source": "promobit",
-    "title": "Primeira Compra\nCupom 40% OFF em",
-    "url": "https://www.promobit.com.br/oferta/cupom-40-off-em-r-79-limite-r60-na-primeira-compra-no-mercado-livre-2588463/",
-    "price": 79.0,
-    "price_text": "R$ 79",
+    "title": "Taxa Inclusa\nFone de Ouvido Sem Fio Baseus Bowie MF1Eli 15i Bluetooth 5.4 Sport 60 Horas de Reprodução",
+    "url": "https://www.promobit.com.br/oferta/fone-de-ouvido-sem-fio-baseus-bowie-mf1eli-15i-bluetooth-54-sport-60-horas-de-reproducao-2586751/",
+    "price": 712.39,
+    "price_text": "R$ 712,39",
+    "store": "aliexpress.com",
+    "collected_at": "2026-01-16T04:38:26.112035Z"
+  },
+  {
+    "id": "2586317",
+    "source": "promobit",
+    "title": "Cupom Exclusivo\nRelógio  Masculino Breaker Prata - FS60622KN",
+    "url": "https://www.promobit.com.br/oferta/relogio-masculino-breaker-prata-fs60622kn-2586317/",
+    "price": 2450.0,
+    "price_text": "R$ 2.450,00",
+    "store": "fossil.com.br",
+    "collected_at": "2026-01-16T04:38:26.112099Z"
+  },
+  {
+    "id": "2586244",
+    "source": "promobit",
+    "title": "Can Cooler com canudo Stanley Black 2.0 | 296ML",
+    "url": "https://www.promobit.com.br/oferta/can-cooler-com-canudo-stanley-black-20-296ml-2586244/",
+    "price": 219.0,
+    "price_text": "R$ 219,00",
+    "store": "stanley1913.com.br",
+    "collected_at": "2026-01-16T04:38:26.112166Z"
+  },
+  {
+    "id": "2589016",
+    "source": "promobit",
+    "title": "Perfume Feminino Natura Ilía Ser Deo Parfum 50ml",
+    "url": "https://www.promobit.com.br/oferta/perfume-feminino-natura-ilia-ser-deo-parfum-50ml-2589016/",
+    "price": 199.9,
+    "price_text": "R$ 199,90",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.037619Z"
+    "collected_at": "2026-01-16T04:38:26.112230Z"
   },
   {
-    "id": "2588364",
+    "id": "2589009",
     "source": "promobit",
-    "title": "Perfume Yves Saint Laurent MYSLF Masculino EDP - 100ml",
-    "url": "https://www.promobit.com.br/oferta/perfume-yves-saint-laurent-myslf-masculino-edp-100ml-2588364/",
-    "price": 741.12,
-    "price_text": "R$ 741,12",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T01:26:33.037691Z"
-  },
-  {
-    "id": "128gb",
-    "source": "promobit",
-    "title": "Apple iPhone 16e de 128 GB Branco",
-    "url": "https://www.promobit.com.br/oferta/apple-iphone-16-e-128gb/",
-    "price": 5799.0,
-    "price_text": "R$ 5.799,00",
+    "title": "Kess Combo Econômico Com 3 Escovas Dentais Multicor",
+    "url": "https://www.promobit.com.br/oferta/kess-combo-economico-com-3-escovas-dentais-multicor-2589009/",
+    "price": 5.63,
+    "price_text": "R$ 5,63",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.037751Z"
+    "collected_at": "2026-01-16T04:38:26.112288Z"
+  },
+  {
+    "id": "2588998",
+    "source": "promobit",
+    "title": "Smartband Samsung Galaxy Fit3",
+    "url": "https://www.promobit.com.br/oferta/smartband-samsung-galaxy-fit3-2588998/",
+    "price": 699.0,
+    "price_text": "R$ 699,00",
+    "store": "netshoes.com.br",
+    "collected_at": "2026-01-16T04:38:26.112347Z"
+  },
+  {
+    "id": "2588986",
+    "source": "promobit",
+    "title": "Carregador Portátil 10000mAh com Display LED Mini Power Bank Rápido 22.5W com PD 3.0 e QC 3.0 USB-C Leve e Compatível com iPhone 16/15/14/13/12/11 e S",
+    "url": "https://www.promobit.com.br/oferta/carregador-portatil-10000mah-com-display-led-mini-power-bank-rapido-225w-com-pd-30-e-qc-30-usb-c-leve-e-compativel-com-iphone-16-15-14-13-12-11-e-s-2588986/",
+    "price": 132.98,
+    "price_text": "R$ 132,98",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.112375Z"
+  },
+  {
+    "id": "2588981",
+    "source": "promobit",
+    "title": "FIFINE Microphone Boom Arm Suporte braço de microfone de perfil baixo com braçadeira montagem de mesa Adaptador de parafuso Gerenciamento de cabos par",
+    "url": "https://www.promobit.com.br/oferta/fifine-microphone-boom-arm-suporte-braco-de-microfone-de-perfil-baixo-com-bracadeira-montagem-de-mesa-adaptador-de-parafuso-gerenciamento-de-cabos-par-2588981/",
+    "price": 375.99,
+    "price_text": "R$ 375,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.112412Z"
+  },
+  {
+    "id": "2588977",
+    "source": "promobit",
+    "title": "Caneta 3d Impressora Profissional + RefilFilamento +Usb",
+    "url": "https://www.promobit.com.br/oferta/caneta-3d-impressora-profissional-refilfilamento-usb-2588977/",
+    "price": 119.9,
+    "price_text": "R$119,90",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.112437Z"
+  },
+  {
+    "id": "2588968",
+    "source": "promobit",
+    "title": "Fone de Ouvido Gamer Havit H2230D 7.1 P3 50mm para PC e Consoles Cor Branco",
+    "url": "https://www.promobit.com.br/oferta/fone-de-ouvido-gamer-havit-h2230d-71-p3-50mm-para-pc-e-consoles-cor-branco-2588968/",
+    "price": 139.0,
+    "price_text": "R$ 139,00",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.112458Z"
+  },
+  {
+    "id": "2588966",
+    "source": "promobit",
+    "title": "Creatina Monohidratada Pura 1kg Dark LabUnidade Sem sabor",
+    "url": "https://www.promobit.com.br/oferta/creatina-monohidratada-pura-1kg-dark-labunidade-sem-sabor-2588966/",
+    "price": 119.9,
+    "price_text": "R$ 119,90",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.112478Z"
+  },
+  {
+    "id": "2588961",
+    "source": "promobit",
+    "title": "GIOTTO Turbo Maxi Canetinha Colorida Hidrocor Ponta de 5mm Estojo com 18 Cores",
+    "url": "https://www.promobit.com.br/oferta/giotto-turbo-maxi-canetinha-colorida-hidrocor-ponta-de-5mm-estojo-com-18-cores-2588961/",
+    "price": 63.99,
+    "price_text": "R$ 63,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.112498Z"
+  },
+  {
+    "id": "2588957",
+    "source": "promobit",
+    "title": "Cartão De Memória 8MB B-Max PlayStation 2 Memory Card",
+    "url": "https://www.promobit.com.br/oferta/cartao-de-memoria-8mb-b-max-playstation-2-memory-card-2588957/",
+    "price": 21.99,
+    "price_text": "R$21,99",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.112516Z"
+  },
+  {
+    "id": "2588956",
+    "source": "promobit",
+    "title": "Kit 2 Lâmpadas LED 20W Branca Fria Alta Potência Base E-27 Bivolt - 2 Unidades",
+    "url": "https://www.promobit.com.br/oferta/kit-2-lampadas-led-20w-branca-fria-alta-potencia-base-e-27-bivolt-2-unidades-2588956/",
+    "price": 47.99,
+    "price_text": "R$ 47,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.112536Z"
+  },
+  {
+    "id": "2588954",
+    "source": "promobit",
+    "title": "Lapis de cor Faber-Castell Ecolápis 72 cores,Multicor",
+    "url": "https://www.promobit.com.br/oferta/lapis-de-cor-faber-castell-ecolapis-72-coresmulticor-2588954/",
+    "price": 170.0,
+    "price_text": "R$ 170,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.112555Z"
+  },
+  {
+    "id": "2588949",
+    "source": "promobit",
+    "title": "Tênis Barreda",
+    "url": "https://www.promobit.com.br/oferta/tenis-barreda-2588949/",
+    "price": 219.99,
+    "price_text": "R$219,99",
+    "store": "adidas.com.br",
+    "collected_at": "2026-01-16T04:38:26.112614Z"
+  },
+  {
+    "id": "2588948",
+    "source": "promobit",
+    "title": "Carregador Portátil Power Bank 10000mAh 45w Anker Cor Preto Com 3 Ports 1 Cabo Usb‑C Retrátil Display Inteligente Carga Turbo Rápida Compatível Com iP",
+    "url": "https://www.promobit.com.br/oferta/carregador-portatil-power-bank-10000mah-45w-anker-cor-preto-com-3-ports-1-cabo-usbc-retratil-display-inteligente-carga-turbo-rapida-compativel-com-ip-2588948/",
+    "price": 799.0,
+    "price_text": "R$ 799,00",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.112644Z"
+  },
+  {
+    "id": "2588943",
+    "source": "promobit",
+    "title": "Protetor ParaSol Universal com Superficie Refletiva Tramontina",
+    "url": "https://www.promobit.com.br/oferta/protetor-parasol-universal-com-superficie-refletiva-tramontina-2588943/",
+    "price": 35.7,
+    "price_text": "R$ 35,70",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.112666Z"
+  },
+  {
+    "id": "2588939",
+    "source": "promobit",
+    "title": "Refil de Escova Elétrica Philips Colgate SonicPro Gengiva Saudável 2 unidades",
+    "url": "https://www.promobit.com.br/oferta/refil-de-escova-eletrica-philips-colgate-sonicpro-gengiva-saudavel-2-unidades-2588939/",
+    "price": 160.02,
+    "price_text": "R$ 160,02",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.112685Z"
+  },
+  {
+    "id": "2588941",
+    "source": "promobit",
+    "title": "Novo console de jogos portátil k36s sistema linux reprodutor embutido jogo clássico console portátil áudio ví",
+    "url": "https://www.promobit.com.br/oferta/novo-console-de-jogos-portatil-k36s-sistema-linux-reprodutor-embutido-jogo-classico-console-portatil-audio-vi-2588941/",
+    "price": 368.55,
+    "price_text": "R$ 368,55",
+    "store": "aliexpress.com",
+    "collected_at": "2026-01-16T04:38:26.112705Z"
+  },
+  {
+    "id": "2588935",
+    "source": "promobit",
+    "title": "Calculadora Científica 240 Funções Preta FX-82MS-2-S4-DH Casio",
+    "url": "https://www.promobit.com.br/oferta/calculadora-cientifica-240-funcoes-preta-fx-82ms-2-s4-dh-casio-2588935/",
+    "price": 71.0,
+    "price_text": "R$ 71,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.112724Z"
+  },
+  {
+    "id": "2588934",
+    "source": "promobit",
+    "title": "Carregador Portátil Potente Inteligente Bateria Carro Moto",
+    "url": "https://www.promobit.com.br/oferta/carregador-portatil-potente-inteligente-bateria-carro-moto-2588934/",
+    "price": 59.97,
+    "price_text": "R$ 59,97",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.112741Z"
+  },
+  {
+    "id": "2588932",
+    "source": "promobit",
+    "title": "AJI-NO-MOTO Floppy One Piece Ace 36g",
+    "url": "https://www.promobit.com.br/oferta/aji-no-moto-floppy-one-piece-ace-36g-2588932/",
+    "price": 3.91,
+    "price_text": "R$ 3,91",
+    "store": "magazineluiza.com.br",
+    "collected_at": "2026-01-16T04:38:26.112803Z"
+  },
+  {
+    "id": "2588933",
+    "source": "promobit",
+    "title": "Democrata Tênis Democrata Denin Marrom",
+    "url": "https://www.promobit.com.br/oferta/democrata-tenis-democrata-denin-marrom-2588933/",
+    "price": 174.99,
+    "price_text": "R$174,99",
+    "store": "dafiti.com.br",
+    "collected_at": "2026-01-16T04:38:26.112866Z"
+  },
+  {
+    "id": "2588930",
+    "source": "promobit",
+    "title": "Kit Aji-No-Moto One Piece Frasco Tripulação",
+    "url": "https://www.promobit.com.br/oferta/kit-aji-no-moto-one-piece-frasco-tripulacao-2588930/",
+    "price": 70.44,
+    "price_text": "R$ 70,44",
+    "store": "magazineluiza.com.br",
+    "collected_at": "2026-01-16T04:38:26.112890Z"
+  },
+  {
+    "id": "2588929",
+    "source": "promobit",
+    "title": "Azeite de Oliva Gallo 400ml",
+    "url": "https://www.promobit.com.br/oferta/azeite-de-oliva-gallo-400ml-2588929/",
+    "price": 38.99,
+    "price_text": "R$ 38,99",
+    "store": "magazineluiza.com.br",
+    "collected_at": "2026-01-16T04:38:26.112910Z"
+  },
+  {
+    "id": "2588926",
+    "source": "promobit",
+    "title": "Kit 2 Shorts Linho Premium Bermuda Masculina",
+    "url": "https://www.promobit.com.br/oferta/kit-2-shorts-linho-premium-bermuda-masculina-2588926/",
+    "price": 89.91,
+    "price_text": "R$89,91",
+    "store": "dafiti.com.br",
+    "collected_at": "2026-01-16T04:38:26.112928Z"
+  },
+  {
+    "id": "2588925",
+    "source": "promobit",
+    "title": "Kit 2 Camisetas Ícones Thiaguinho Reserva Preto",
+    "url": "https://www.promobit.com.br/oferta/kit-2-camisetas-icones-thiaguinho-reserva-preto-2588925/",
+    "price": 139.0,
+    "price_text": "R$139,00",
+    "store": "dafiti.com.br",
+    "collected_at": "2026-01-16T04:38:26.112946Z"
+  },
+  {
+    "id": "2588924",
+    "source": "promobit",
+    "title": "Relógio Technos Masculino Steel Prata",
+    "url": "https://www.promobit.com.br/oferta/relogio-technos-masculino-steel-prata-2588924/",
+    "price": 379.0,
+    "price_text": "R$ 379,00",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.112963Z"
+  },
+  {
+    "id": "2588922",
+    "source": "promobit",
+    "title": "Kit 4 Cestos Organizadores de Geladeira 3,8L Acrílico Plástico Transparente para Frutas e Verduras Conservar Alimentos",
+    "url": "https://www.promobit.com.br/oferta/kit-4-cestos-organizadores-de-geladeira-38l-acrilico-plastico-transparente-para-frutas-e-verduras-conservar-alimentos-2588922/",
+    "price": 169.9,
+    "price_text": "R$ 169,90",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.112981Z"
+  },
+  {
+    "id": "2588921",
+    "source": "promobit",
+    "title": "Câmera De Segurança Lâmpada Soquete WifiVisão Noturna 360 Graus Full Hd Espiã AppYoosee Cor Branca",
+    "url": "https://www.promobit.com.br/oferta/camera-de-seguranca-lampada-soquete-wifivisao-noturna-360-graus-full-hd-espia-appyoosee-cor-branca-2588921/",
+    "price": 78.95,
+    "price_text": "R$ 78,95",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.113000Z"
+  },
+  {
+    "id": "2588919",
+    "source": "promobit",
+    "title": "Tênis  Juniper Trail 2 GORE-TEX Masculino",
+    "url": "https://www.promobit.com.br/oferta/tenis-juniper-trail-2-gore-tex-masculino-2588919/",
+    "price": 999.99,
+    "price_text": "R$ 999,99",
+    "store": "nike.com.br",
+    "collected_at": "2026-01-16T04:38:26.113052Z"
+  },
+  {
+    "id": "256gb",
+    "source": "promobit",
+    "title": "Apple iPhone 15 (256 GB) - Preto - Distribuidor Autorizado",
+    "url": "https://www.promobit.com.br/oferta/apple-iphone-15-256gb/",
+    "price": 8095.5,
+    "price_text": "R$ 8.095,50",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.113074Z"
+  },
+  {
+    "id": "2588917",
+    "source": "promobit",
+    "title": "Apple iPhone 15 (128 GB) - Amarelo - Distribuidor Autorizado",
+    "url": "https://www.promobit.com.br/oferta/apple-iphone-15-128-gb-amarelo-distribuidor-autorizado-2588917/",
+    "price": 7208.99,
+    "price_text": "R$ 7.208,99",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.113098Z"
+  },
+  {
+    "id": "2588916",
+    "source": "promobit",
+    "title": "Relógio Technos Masculino Analógico Prata Performance Militar Fundo Azul todo em Aço Inoxidável Prova DAgua 50 Met",
+    "url": "https://www.promobit.com.br/oferta/relogio-technos-masculino-analogico-prata-performance-militar-fundo-azul-todo-em-aco-inoxidavel-prova-dagua-50-met-2588916/",
+    "price": 399.0,
+    "price_text": "R$ 399,00",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.113122Z"
+  },
+  {
+    "id": "2588915",
+    "source": "promobit",
+    "title": "Relógio Masculino Preto Couro Croco Saint Germain 22mm Preto Dourado Dourado",
+    "url": "https://www.promobit.com.br/oferta/relogio-masculino-preto-couro-croco-saint-germain-22mm-preto-dourado-dourado-2588915/",
+    "price": 379.9,
+    "price_text": "R$ 379,90",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.113142Z"
+  },
+  {
+    "id": "2588914",
+    "source": "promobit",
+    "title": "Tênis  Air Max Nuaxis Masculino",
+    "url": "https://www.promobit.com.br/oferta/tenis-air-max-nuaxis-masculino-2588914/",
+    "price": 549.99,
+    "price_text": "R$ 549,99",
+    "store": "nike.com.br",
+    "collected_at": "2026-01-16T04:38:26.113160Z"
+  },
+  {
+    "id": "2588913",
+    "source": "promobit",
+    "title": "Tênis Nike Interact Run - Masculino",
+    "url": "https://www.promobit.com.br/oferta/tenis-nike-interact-run-masculino-2588913/",
+    "price": 300.95,
+    "price_text": "R$300,95",
+    "store": "centauro.com.br",
+    "collected_at": "2026-01-16T04:38:26.113215Z"
+  },
+  {
+    "id": "2588912",
+    "source": "promobit",
+    "title": "Removedor De Manchas 1kg Percarbonato De Sódio Alvejante",
+    "url": "https://www.promobit.com.br/oferta/removedor-de-manchas-1kg-percarbonato-de-sodio-alvejante-2588912/",
+    "price": 30.0,
+    "price_text": "R$ 30,00",
+    "store": "magazineluiza.com.br",
+    "collected_at": "2026-01-16T04:38:26.113237Z"
+  },
+  {
+    "id": "2588911",
+    "source": "promobit",
+    "title": "Fralda Pampers Premium Care RN+ Até 6kg 20 Unidades",
+    "url": "https://www.promobit.com.br/oferta/fralda-pampers-premium-care-rn-ate-6kg-20-unidades-2588911/",
+    "price": 37.9,
+    "price_text": "R$ 37,90",
+    "store": "magazineluiza.com.br",
+    "collected_at": "2026-01-16T04:38:26.113259Z"
+  },
+  {
+    "id": "2588910",
+    "source": "promobit",
+    "title": "Tênis Masculino BAW Four Vermelho",
+    "url": "https://www.promobit.com.br/oferta/tenis-masculino-baw-four-vermelho-2588910/",
+    "price": 189.99,
+    "price_text": "R$189,99",
+    "store": "dafiti.com.br",
+    "collected_at": "2026-01-16T04:38:26.113278Z"
+  },
+  {
+    "id": "2588909",
+    "source": "promobit",
+    "title": "Tênis Masculino BAW First Branco",
+    "url": "https://www.promobit.com.br/oferta/tenis-masculino-baw-first-branco-2588909/",
+    "price": 139.99,
+    "price_text": "R$139,99",
+    "store": "dafiti.com.br",
+    "collected_at": "2026-01-16T04:38:26.113296Z"
+  },
+  {
+    "id": "2588908",
+    "source": "promobit",
+    "title": "Mochila Nord - 35 Litros",
+    "url": "https://www.promobit.com.br/oferta/mochila-nord-35-litros-2588908/",
+    "price": 299.99,
+    "price_text": "R$ 299,99",
+    "store": "centauro.com.br",
+    "collected_at": "2026-01-16T04:38:26.113314Z"
+  },
+  {
+    "id": "2588907",
+    "source": "promobit",
+    "title": "Notebook Gamer Acer Nitro V ANV15-51-57WSIntelo Core\"\" i5-13420H 13aGeração 512SSD8GB Nvidia GeForce@ RTX 3050 GDDR6Li",
+    "url": "https://www.promobit.com.br/oferta/notebook-gamer-acer-nitro-v-anv15-51-57wsintelo-core-i5-13420h-13ageracao-512ssd8gb-nvidia-geforce-rtx-3050-gddr6li-2588907/",
+    "price": 7198.57,
+    "price_text": "R$ 7.198,57",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.113337Z"
+  },
+  {
+    "id": "2588906",
+    "source": "promobit",
+    "title": "Tênis Asics Gel-Nimbus 27 Masculino",
+    "url": "https://www.promobit.com.br/oferta/tenis-asics-gel-nimbus-27-masculino-2588906/",
+    "price": 1199.99,
+    "price_text": "R$ 1.199,99",
+    "store": "netshoes.com.br",
+    "collected_at": "2026-01-16T04:38:26.113354Z"
+  },
+  {
+    "id": "2588904",
+    "source": "promobit",
+    "title": "Primeira Compra\nTênis Adidas Break Start Mid - Masculino",
+    "url": "https://www.promobit.com.br/oferta/tenis-adidas-break-start-mid-masculino-2588904/",
+    "price": 449.99,
+    "price_text": "R$ 449,99",
+    "store": "lojanba.com",
+    "collected_at": "2026-01-16T04:38:26.113419Z"
+  },
+  {
+    "id": "2588903",
+    "source": "promobit",
+    "title": "Smartphone Galaxy S25 5G Azul Marinho 256GB Tela de 6.2 12GB RAM Samsung",
+    "url": "https://www.promobit.com.br/oferta/smartphone-galaxy-s25-5g-azul-marinho-256gb-tela-de-62-12gb-ram-samsung-2588903/",
+    "price": 3496.9,
+    "price_text": "R$3.496,90",
+    "store": "lebiscuit.com.br",
+    "collected_at": "2026-01-16T04:38:26.113445Z"
+  },
+  {
+    "id": "2588892",
+    "source": "promobit",
+    "title": "Smartphone Samsung Galaxy Z Flip7 FE 5G 8GB 128GB 6.7\"",
+    "url": "https://www.promobit.com.br/oferta/smartphone-samsung-galaxy-z-flip7-fe-5g-8gb-128gb-67-2588892/",
+    "price": 6699.0,
+    "price_text": "R$ 6.699,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.113466Z"
+  },
+  {
+    "id": "2588893",
+    "source": "promobit",
+    "title": "Mouse Sem Fio Logitech Mx Vertical Flow Unifying",
+    "url": "https://www.promobit.com.br/oferta/mouse-sem-fio-logitech-mx-vertical-flow-unifying-2588893/",
+    "price": 579.9,
+    "price_text": "R$ 579,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.113485Z"
+  },
+  {
+    "id": "2588901",
+    "source": "promobit",
+    "title": "Decolab Jogo de Lençol Malha 100% Algodão Extra Macio - Roupa De Cama Antiácaro Inclui Lençol Com Elástico (Forro) E Fronhas (Azul-marinho",
+    "url": "https://www.promobit.com.br/oferta/decolab-jogo-de-lencol-malha-100-algodao-extra-macio-roupa-de-cama-antiacaro-inclui-lencol-com-elastico-forro-e-fronhas-azul-marinho-2588901/",
+    "price": 67.6,
+    "price_text": "R$ 67,60",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.113507Z"
+  },
+  {
+    "id": "2588894",
+    "source": "promobit",
+    "title": "Headset Sem Fio Logitech Zone 300",
+    "url": "https://www.promobit.com.br/oferta/headset-sem-fio-logitech-zone-300-2588894/",
+    "price": 479.9,
+    "price_text": "R$ 479,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.113526Z"
+  },
+  {
+    "id": "2588900",
+    "source": "promobit",
+    "title": "Kit Camisetas Hering Básicas Com 3 Peças Masculinas",
+    "url": "https://www.promobit.com.br/oferta/kit-camisetas-hering-basicas-com-3-pecas-masculinas-2588900/",
+    "price": 66.14,
+    "price_text": "R$66,14",
+    "store": "zattini.com.br",
+    "collected_at": "2026-01-16T04:38:26.113583Z"
+  },
+  {
+    "id": "2588899",
+    "source": "promobit",
+    "title": "Ar-Condicionado de Janela Hisense AW-10CWBRVGU02 Wi-Fi 10.000 BTUs Frio Branco 110V",
+    "url": "https://www.promobit.com.br/oferta/ar-condicionado-de-janela-hisense-aw-10cwbrvgu02-wi-fi-10000-btus-frio-branco-110v-2588899/",
+    "price": 2339.1,
+    "price_text": "R$2.339,10",
+    "store": "fastshop.com.br",
+    "collected_at": "2026-01-16T04:38:26.113642Z"
+  },
+  {
+    "id": "2588898",
+    "source": "promobit",
+    "title": "Cabeceira Cama de Casal Queen 160m - Bege Claro - Gaio e Cia",
+    "url": "https://www.promobit.com.br/oferta/cabeceira-cama-de-casal-queen-160m-bege-claro-gaio-e-cia-2588898/",
+    "price": 119.99,
+    "price_text": "R$119,99",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.113664Z"
+  },
+  {
+    "id": "2588896",
+    "source": "promobit",
+    "title": "Abajur Aranha Madeira Moderno Casa Sala E Quarto Decoração",
+    "url": "https://www.promobit.com.br/oferta/abajur-aranha-madeira-moderno-casa-sala-e-quarto-decoracao-2588896/",
+    "price": 70.2,
+    "price_text": "R$ 70,20",
+    "store": "casasbahia.com.br",
+    "collected_at": "2026-01-16T04:38:26.113726Z"
+  },
+  {
+    "id": "2588897",
+    "source": "promobit",
+    "title": "Tênis Olympikus Nível Masculino",
+    "url": "https://www.promobit.com.br/oferta/tenis-olympikus-nivel-masculino-2588897/",
+    "price": 249.99,
+    "price_text": "R$ 249,99",
+    "store": "magazineluiza.com.br",
+    "collected_at": "2026-01-16T04:38:26.113749Z"
+  },
+  {
+    "id": "2588895",
+    "source": "promobit",
+    "title": "Tênis Asics Gel-Equation 14 Masculino",
+    "url": "https://www.promobit.com.br/oferta/tenis-asics-gel-equation-14-masculino-2588895/",
+    "price": 499.99,
+    "price_text": "R$ 499,99",
+    "store": "magazineluiza.com.br",
+    "collected_at": "2026-01-16T04:38:26.113768Z"
+  },
+  {
+    "id": "2588889",
+    "source": "promobit",
+    "title": "Desodorante Colônia Humor a Rigor Masculino 75 ml\\n",
+    "url": "https://www.promobit.com.br/oferta/desodorante-colonia-humor-a-rigor-masculino-75-mln-2588889/",
+    "price": 96.39,
+    "price_text": "R$96,39",
+    "store": "natura.com.br",
+    "collected_at": "2026-01-16T04:38:26.113821Z"
+  },
+  {
+    "id": "2588873",
+    "source": "promobit",
+    "title": "Kit Camiseta Hering Slim Masculina - 5 Peças",
+    "url": "https://www.promobit.com.br/oferta/kit-camiseta-hering-slim-masculina-5-pecas-2588873/",
+    "price": 179.99,
+    "price_text": "R$ 179,99",
+    "store": "netshoes.com.br",
+    "collected_at": "2026-01-16T04:38:26.113843Z"
+  },
+  {
+    "id": "2588887",
+    "source": "promobit",
+    "title": "Tênis Olympikus Pride 4 - Masculino\nA partir de",
+    "url": "https://www.promobit.com.br/oferta/tenis-olympikus-pride-4-masculino-2588887/",
+    "price": 275.49,
+    "price_text": "R$275,49",
+    "store": "netshoes.com.br",
+    "collected_at": "2026-01-16T04:38:26.113865Z"
+  },
+  {
+    "id": "2588885",
+    "source": "promobit",
+    "title": "Tricot Careca Liso",
+    "url": "https://www.promobit.com.br/oferta/tricot-careca-liso-2588885/",
+    "price": 59.9,
+    "price_text": "R$59,90",
+    "store": "tng.com.br",
+    "collected_at": "2026-01-16T04:38:26.113920Z"
+  },
+  {
+    "id": "2588884",
+    "source": "promobit",
+    "title": "Celular Samsung Galaxy S25+ 5G 512GB 12GB RAM Câmera Tripla de 50+12+10 Tela Grande de 6.7\" - JetBlack",
+    "url": "https://www.promobit.com.br/oferta/celular-samsung-galaxy-s25-5g-512gb-12gb-ram-camera-tripla-de-50-12-10-tela-grande-de-67-jetblack-2588884/",
+    "price": 9499.0,
+    "price_text": "R$ 9.499,00",
+    "store": "extra.com.br",
+    "collected_at": "2026-01-16T04:38:26.113974Z"
+  },
+  {
+    "id": "2588883",
+    "source": "promobit",
+    "title": "Smartphone Samsung Galaxy S25 FE 5G Tela 67 AMOLED 128GB 8GB RAM Câmera 50MP JetBlack",
+    "url": "https://www.promobit.com.br/oferta/smartphone-samsung-galaxy-s25-fe-5g-tela-67-amoled-128gb-8gb-ram-camera-50mp-jetblack-2588883/",
+    "price": 3443.33,
+    "price_text": "R$ 3.443,33",
+    "store": "extra.com.br",
+    "collected_at": "2026-01-16T04:38:26.113997Z"
+  },
+  {
+    "id": "2588882",
+    "source": "promobit",
+    "title": "Chocadeira 20 Ovos Galinha 40 Codorna Pato Pavão Aves Inchoc",
+    "url": "https://www.promobit.com.br/oferta/chocadeira-20-ovos-galinha-40-codorna-pato-pavao-aves-inchoc-2588882/",
+    "price": 198.63,
+    "price_text": "R$198,63",
+    "store": "mercadolivre.com.br",
+    "collected_at": "2026-01-16T04:38:26.114015Z"
+  },
+  {
+    "id": "2588881",
+    "source": "promobit",
+    "title": "Geladeira Electrolux Frost Free Duplex Efficient com AutoSense Branca 390L (IF43) 127V",
+    "url": "https://www.promobit.com.br/oferta/geladeira-electrolux-frost-free-duplex-efficient-com-autosense-branca-390l-if43-127v-2588881/",
+    "price": 3199.0,
+    "price_text": "R$ 3.199,00",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.114035Z"
+  },
+  {
+    "id": "2588879",
+    "source": "promobit",
+    "title": "Tênis Masculino Colcci Urbano Preto",
+    "url": "https://www.promobit.com.br/oferta/tenis-masculino-colcci-urbano-preto-2588879/",
+    "price": 184.99,
+    "price_text": "R$184,99",
+    "store": "dafiti.com.br",
+    "collected_at": "2026-01-16T04:38:26.114052Z"
+  },
+  {
+    "id": "2588877",
+    "source": "promobit",
+    "title": "Buba Kit Cuidados Baby Cinza Tamanho Único",
+    "url": "https://www.promobit.com.br/oferta/buba-kit-cuidados-baby-cinza-tamanho-unico-2588877/",
+    "price": 47.9,
+    "price_text": "R$ 47,90",
+    "store": "amazon.com.br",
+    "collected_at": "2026-01-16T04:38:26.114070Z"
+  },
+  {
+    "id": "2588878",
+    "source": "promobit",
+    "title": "Prizm Limpador De Chuva Ácida Restaurador De Vidros Vonixx",
+    "url": "https://www.promobit.com.br/oferta/prizm-limpador-de-chuva-acida-restaurador-de-vidros-vonixx-2588878/",
+    "price": 43.99,
+    "price_text": "R$ 43,99",
+    "store": "magazineluiza.com.br",
+    "collected_at": "2026-01-16T04:38:26.114088Z"
+  },
+  {
+    "id": "2588876",
+    "source": "promobit",
+    "title": "Tênis Coca Cola Yankee Branco",
+    "url": "https://www.promobit.com.br/oferta/tenis-coca-cola-yankee-branco-2588876/",
+    "price": 124.99,
+    "price_text": "R$124,99",
+    "store": "dafiti.com.br",
+    "collected_at": "2026-01-16T04:38:26.114108Z"
   },
   {
     "id": "2588875",
@@ -47,7 +707,7 @@
     "price": 129.99,
     "price_text": "R$129,99",
     "store": "dafiti.com.br",
-    "collected_at": "2026-01-16T01:26:33.037842Z"
+    "collected_at": "2026-01-16T04:38:26.114126Z"
   },
   {
     "id": "2588874",
@@ -57,17 +717,17 @@
     "price": 6608.37,
     "price_text": "R$ 6.608,37",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T01:26:33.037874Z"
+    "collected_at": "2026-01-16T04:38:26.114145Z"
   },
   {
     "id": "2588872",
     "source": "promobit",
-    "title": "Kess Combo Econômico Com 3 Escovas Dentais Multicor",
-    "url": "https://www.promobit.com.br/oferta/kess-combo-economico-com-3-escovas-dentais-multicor-2588872/",
-    "price": 5.63,
-    "price_text": "R$ 5,63",
+    "title": "Kess Combo Econômico Escovas Dentais Multicor - 3 Unidades",
+    "url": "https://www.promobit.com.br/oferta/kess-combo-economico-escovas-dentais-multicor-3-unidades-2588872/",
+    "price": 5.07,
+    "price_text": "R$5,07",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.037897Z"
+    "collected_at": "2026-01-16T04:38:26.114163Z"
   },
   {
     "id": "2588871",
@@ -77,7 +737,7 @@
     "price": 4193.1,
     "price_text": "R$4.193,10",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T01:26:33.037921Z"
+    "collected_at": "2026-01-16T04:38:26.114184Z"
   },
   {
     "id": "2588870",
@@ -87,7 +747,7 @@
     "price": 129.9,
     "price_text": "R$ 129,90",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.037941Z"
+    "collected_at": "2026-01-16T04:38:26.114202Z"
   },
   {
     "id": "2588868",
@@ -97,7 +757,7 @@
     "price": 32.0,
     "price_text": "R$ 32,00",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.037961Z"
+    "collected_at": "2026-01-16T04:38:26.114220Z"
   },
   {
     "id": "2588864",
@@ -107,7 +767,7 @@
     "price": 35.9,
     "price_text": "R$35,90",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T01:26:33.038021Z"
+    "collected_at": "2026-01-16T04:38:26.114274Z"
   },
   {
     "id": "2588866",
@@ -117,7 +777,7 @@
     "price": 7799.0,
     "price_text": "R$ 7.799,00",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.038045Z"
+    "collected_at": "2026-01-16T04:38:26.114296Z"
   },
   {
     "id": "2588862",
@@ -127,7 +787,7 @@
     "price": 13.9,
     "price_text": "R$13,90",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T01:26:33.038065Z"
+    "collected_at": "2026-01-16T04:38:26.114323Z"
   },
   {
     "id": "2588861",
@@ -137,17 +797,17 @@
     "price": 1499.9,
     "price_text": "R$ 1.499,90",
     "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.038084Z"
+    "collected_at": "2026-01-16T04:38:26.114342Z"
   },
   {
     "id": "128gb",
     "source": "promobit",
     "title": "Apple iPhone 15 128 GB - Preto",
     "url": "https://www.promobit.com.br/oferta/apple-iphone-15-128gb/",
-    "price": 3923.1,
-    "price_text": "R$3.923,10",
+    "price": 6665.56,
+    "price_text": "R$ 6.665,56",
     "store": "lebiscuit.com.br",
-    "collected_at": "2026-01-16T01:26:33.038102Z"
+    "collected_at": "2026-01-16T04:38:26.114362Z"
   },
   {
     "id": "2588857",
@@ -157,7 +817,7 @@
     "price": 14.99,
     "price_text": "R$14,99",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T01:26:33.038120Z"
+    "collected_at": "2026-01-16T04:38:26.114380Z"
   },
   {
     "id": "2588856",
@@ -167,7 +827,7 @@
     "price": 6443.33,
     "price_text": "R$ 6.443,33",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T01:26:33.038139Z"
+    "collected_at": "2026-01-16T04:38:26.114417Z"
   },
   {
     "id": "2588852",
@@ -177,7 +837,7 @@
     "price": 10.79,
     "price_text": "R$10,79",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T01:26:33.038156Z"
+    "collected_at": "2026-01-16T04:38:26.114439Z"
   },
   {
     "id": "2588851",
@@ -187,7 +847,7 @@
     "price": 28.99,
     "price_text": "R$28,99",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T01:26:33.038172Z"
+    "collected_at": "2026-01-16T04:38:26.114457Z"
   },
   {
     "id": "2588849",
@@ -197,7 +857,7 @@
     "price": 10.79,
     "price_text": "R$10,79",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T01:26:33.038188Z"
+    "collected_at": "2026-01-16T04:38:26.114474Z"
   },
   {
     "id": "2588847",
@@ -207,7 +867,7 @@
     "price": 14.99,
     "price_text": "R$14,99",
     "store": "atacadao.com.br",
-    "collected_at": "2026-01-16T01:26:33.038204Z"
+    "collected_at": "2026-01-16T04:38:26.114490Z"
   },
   {
     "id": "2588850",
@@ -217,7 +877,7 @@
     "price": 1299.99,
     "price_text": "R$ 1.299,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038261Z"
+    "collected_at": "2026-01-16T04:38:26.114513Z"
   },
   {
     "id": "2588848",
@@ -227,7 +887,7 @@
     "price": 1299.99,
     "price_text": "R$ 1.299,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038283Z"
+    "collected_at": "2026-01-16T04:38:26.114531Z"
   },
   {
     "id": "2588845",
@@ -237,27 +897,27 @@
     "price": 999.99,
     "price_text": "R$ 999,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038301Z"
+    "collected_at": "2026-01-16T04:38:26.114549Z"
   },
   {
     "id": "2588846",
     "source": "promobit",
-    "title": "Tênis Adidas Ultraboost 5 Feminino",
+    "title": "Tênis Adidas Ultraboost 5 - Feminino",
     "url": "https://www.promobit.com.br/oferta/tenis-adidas-ultraboost-5-feminino-2588846/",
     "price": 1099.99,
     "price_text": "R$ 1.099,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038321Z"
+    "collected_at": "2026-01-16T04:38:26.114565Z"
   },
   {
     "id": "2588843",
     "source": "promobit",
-    "title": "Tênis Adidas Agravic Speed Feminino",
+    "title": "Tênis Adidas Agravic Speed - Feminino",
     "url": "https://www.promobit.com.br/oferta/tenis-adidas-agravic-speed-feminino-2588843/",
     "price": 1199.99,
     "price_text": "R$ 1.199,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038339Z"
+    "collected_at": "2026-01-16T04:38:26.114581Z"
   },
   {
     "id": "2588837",
@@ -267,7 +927,7 @@
     "price": 3499.0,
     "price_text": "R$ 3.499,00",
     "store": "shopee.com.br",
-    "collected_at": "2026-01-16T01:26:33.038395Z"
+    "collected_at": "2026-01-16T04:38:26.114640Z"
   },
   {
     "id": "2588842",
@@ -277,7 +937,7 @@
     "price": 899.99,
     "price_text": "R$ 899,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038417Z"
+    "collected_at": "2026-01-16T04:38:26.114663Z"
   },
   {
     "id": "2588841",
@@ -287,7 +947,7 @@
     "price": 899.99,
     "price_text": "R$ 899,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038435Z"
+    "collected_at": "2026-01-16T04:38:26.114685Z"
   },
   {
     "id": "2588833",
@@ -297,7 +957,7 @@
     "price": 729.0,
     "price_text": "R$729,00",
     "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T01:26:33.038453Z"
+    "collected_at": "2026-01-16T04:38:26.114703Z"
   },
   {
     "id": "2588839",
@@ -307,7 +967,7 @@
     "price": 999.99,
     "price_text": "R$ 999,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038471Z"
+    "collected_at": "2026-01-16T04:38:26.114720Z"
   },
   {
     "id": "2588840",
@@ -317,7 +977,7 @@
     "price": 4199.0,
     "price_text": "R$ 4.199,00",
     "store": "aliexpress.com",
-    "collected_at": "2026-01-16T01:26:33.038525Z"
+    "collected_at": "2026-01-16T04:38:26.114741Z"
   },
   {
     "id": "2588838",
@@ -327,7 +987,7 @@
     "price": 999.99,
     "price_text": "R$ 999,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038555Z"
+    "collected_at": "2026-01-16T04:38:26.114760Z"
   },
   {
     "id": "2588834",
@@ -337,7 +997,7 @@
     "price": 799.99,
     "price_text": "R$ 799,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038575Z"
+    "collected_at": "2026-01-16T04:38:26.114784Z"
   },
   {
     "id": "2588831",
@@ -347,7 +1007,7 @@
     "price": 799.99,
     "price_text": "R$ 799,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038593Z"
+    "collected_at": "2026-01-16T04:38:26.114801Z"
   },
   {
     "id": "2588829",
@@ -357,7 +1017,7 @@
     "price": 351.9,
     "price_text": "R$ 351,90",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.038611Z"
+    "collected_at": "2026-01-16T04:38:26.114820Z"
   },
   {
     "id": "2588828",
@@ -367,17 +1027,17 @@
     "price": 799.99,
     "price_text": "R$ 799,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038629Z"
+    "collected_at": "2026-01-16T04:38:26.114853Z"
   },
   {
     "id": "2588826",
     "source": "promobit",
-    "title": "Tênis Adidas Corrida Questar 3 Feminino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-corrida-questar-3-feminino-2588826/",
+    "title": "Tênis Adidas Questar 3 - Feminino",
+    "url": "https://www.promobit.com.br/oferta/tenis-adidas-questar-3-feminino-2588826/",
     "price": 599.99,
     "price_text": "R$ 599,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038645Z"
+    "collected_at": "2026-01-16T04:38:26.114870Z"
   },
   {
     "id": "2588825",
@@ -387,17 +1047,17 @@
     "price": 699.99,
     "price_text": "R$ 699,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038661Z"
+    "collected_at": "2026-01-16T04:38:26.114890Z"
   },
   {
     "id": "2588824",
     "source": "promobit",
-    "title": "Tênis Adidas Response Feminino",
+    "title": "Tênis Adidas Response - Feminino",
     "url": "https://www.promobit.com.br/oferta/tenis-adidas-response-feminino-2588824/",
     "price": 499.99,
     "price_text": "R$ 499,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038677Z"
+    "collected_at": "2026-01-16T04:38:26.114908Z"
   },
   {
     "id": "2588823",
@@ -407,7 +1067,7 @@
     "price": 599.99,
     "price_text": "R$ 599,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038693Z"
+    "collected_at": "2026-01-16T04:38:26.114928Z"
   },
   {
     "id": "2588821",
@@ -417,7 +1077,7 @@
     "price": 599.99,
     "price_text": "R$ 599,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038709Z"
+    "collected_at": "2026-01-16T04:38:26.114945Z"
   },
   {
     "id": "2588820",
@@ -427,7 +1087,7 @@
     "price": 499.99,
     "price_text": "R$ 499,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038725Z"
+    "collected_at": "2026-01-16T04:38:26.114960Z"
   },
   {
     "id": "2588819",
@@ -437,7 +1097,7 @@
     "price": 449.99,
     "price_text": "R$ 449,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038741Z"
+    "collected_at": "2026-01-16T04:38:26.114976Z"
   },
   {
     "id": "2588817",
@@ -447,7 +1107,7 @@
     "price": 30.99,
     "price_text": "R$ 30,99",
     "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.038758Z"
+    "collected_at": "2026-01-16T04:38:26.114993Z"
   },
   {
     "id": "2588818",
@@ -457,7 +1117,7 @@
     "price": 399.99,
     "price_text": "R$ 399,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038774Z"
+    "collected_at": "2026-01-16T04:38:26.115011Z"
   },
   {
     "id": "2588815",
@@ -467,686 +1127,6 @@
     "price": 499.99,
     "price_text": "R$ 499,99",
     "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038790Z"
-  },
-  {
-    "id": "2588816",
-    "source": "promobit",
-    "title": "Conjunto De Taças 220ml Com 6 Peças Borda Dourada - Quanhe Transparente",
-    "url": "https://www.promobit.com.br/oferta/conjunto-de-tacas-220ml-com-6-pecas-borda-dourada-quanhe-transparente-2588816/",
-    "price": 114.39,
-    "price_text": "R$ 114,39",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.038823Z"
-  },
-  {
-    "id": "2588811",
-    "source": "promobit",
-    "title": "Ar-Condicionado LG AI Dual Inverter Voice Artcool 24.000 BTU Frio 220V - S3-Q24K2R1B",
-    "url": "https://www.promobit.com.br/oferta/ar-condicionado-lg-ai-dual-inverter-voice-artcool-24000-btu-frio-220v-s3-q24k2r1b-2588811/",
-    "price": 7299.0,
-    "price_text": "R$ 7.299,00",
-    "store": "lg.com",
-    "collected_at": "2026-01-16T01:26:33.038875Z"
-  },
-  {
-    "id": "2588814",
-    "source": "promobit",
-    "title": "Tênis Adidas Barreda Feminino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-barreda-feminino-2588814/",
-    "price": 349.99,
-    "price_text": "R$ 349,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038897Z"
-  },
-  {
-    "id": "2588810",
-    "source": "promobit",
-    "title": "Tênis Adidas Grand Court 2.0 Feminino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-grand-court-20-feminino-2588810/",
-    "price": 399.99,
-    "price_text": "R$ 399,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038916Z"
-  },
-  {
-    "id": "2588806",
-    "source": "promobit",
-    "title": "Tênis Infantil Adidas Tensaur Run 2.0",
-    "url": "https://www.promobit.com.br/oferta/tenis-infantil-adidas-tensaur-run-20-2588806/",
-    "price": 349.99,
-    "price_text": "R$ 349,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038934Z"
-  },
-  {
-    "id": "2588791",
-    "source": "promobit",
-    "title": "Botinha Infantil De Led Homem Aranha",
-    "url": "https://www.promobit.com.br/oferta/botinha-infantil-de-led-homem-aranha-2588791/",
-    "price": 78.99,
-    "price_text": "R$ 78,99",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.038956Z"
-  },
-  {
-    "id": "2588803",
-    "source": "promobit",
-    "title": "Tênis Adidas Barreda Feminino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-barreda-feminino-2588803/",
-    "price": 349.99,
-    "price_text": "R$ 349,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038974Z"
-  },
-  {
-    "id": "2588802",
-    "source": "promobit",
-    "title": "Tênis Infantil Adidas Tensaur Run 3.0",
-    "url": "https://www.promobit.com.br/oferta/tenis-infantil-adidas-tensaur-run-30-2588802/",
-    "price": 349.99,
-    "price_text": "R$ 349,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.038991Z"
-  },
-  {
-    "id": "2588801",
-    "source": "promobit",
-    "title": "Tênis Adidas CourtBlock Masculino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-courtblock-masculino-2588801/",
-    "price": 349.99,
-    "price_text": "R$ 349,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039007Z"
-  },
-  {
-    "id": "2588799",
-    "source": "promobit",
-    "title": "Smartphone Samsung Galaxy S25 Ultra 256GB 12GB Galaxy AI 5G 6.9\"",
-    "url": "https://www.promobit.com.br/oferta/smartphone-samsung-galaxy-s25-ultra-256gb-12gb-galaxy-ai-5g-69-2588799/",
-    "price": 10999.0,
-    "price_text": "R$ 10.999,00",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039025Z"
-  },
-  {
-    "id": "2588800",
-    "source": "promobit",
-    "title": "Tênis Infantil Adidas Tensaur",
-    "url": "https://www.promobit.com.br/oferta/tenis-infantil-adidas-tensaur-2588800/",
-    "price": 349.99,
-    "price_text": "R$ 349,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039042Z"
-  },
-  {
-    "id": "2588797",
-    "source": "promobit",
-    "title": "Tênis Adidas Advantage 2.0 Feminino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-advantage-20-feminino-2588797/",
-    "price": 349.99,
-    "price_text": "R$ 349,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039059Z"
-  },
-  {
-    "id": "2588796",
-    "source": "promobit",
-    "title": "Tênis Adidas Streetalk",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-streetalk-2588796/",
-    "price": 399.99,
-    "price_text": "R$ 399,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039077Z"
-  },
-  {
-    "id": "2588794",
-    "source": "promobit",
-    "title": "Tênis Infantil Adidas Street Talk",
-    "url": "https://www.promobit.com.br/oferta/tenis-infantil-adidas-street-talk-2588794/",
-    "price": 299.99,
-    "price_text": "R$ 299,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039094Z"
-  },
-  {
-    "id": "2588792",
-    "source": "promobit",
-    "title": "Tênis Infantil Adidas Tensaur Sport Training Lace",
-    "url": "https://www.promobit.com.br/oferta/tenis-infantil-adidas-tensaur-sport-training-lace-2588792/",
-    "price": 299.99,
-    "price_text": "R$ 299,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039110Z"
-  },
-  {
-    "id": "2588790",
-    "source": "promobit",
-    "title": "Tênis Infantil Adidas Lite Racer Adapt 7.0",
-    "url": "https://www.promobit.com.br/oferta/tenis-infantil-adidas-lite-racer-adapt-70-2588790/",
-    "price": 299.99,
-    "price_text": "R$ 299,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039127Z"
-  },
-  {
-    "id": "2588788",
-    "source": "promobit",
-    "title": "Taxa Inclusa\nKit Carregador Rápido USB-C para iPhone e Android + Cabo Tipo C Transformers",
-    "url": "https://www.promobit.com.br/oferta/kit-carregador-rapido-usb-c-para-iphone-e-android-cabo-tipo-c-transformers-2588788/",
-    "price": 112.87,
-    "price_text": "R$ 112,87",
-    "store": "aliexpress.com",
-    "collected_at": "2026-01-16T01:26:33.039144Z"
-  },
-  {
-    "id": "2588787",
-    "source": "promobit",
-    "title": "Tênis Adidas Advantage Base 2.0 Feminino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-advantage-base-20-feminino-2588787/",
-    "price": 299.99,
-    "price_text": "R$ 299,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039161Z"
-  },
-  {
-    "id": "2588785",
-    "source": "promobit",
-    "title": "Porto Brasil Conjunto com 6 Xícaras de Café com Pires Orgânico Petroleum 120ml",
-    "url": "https://www.promobit.com.br/oferta/porto-brasil-conjunto-com-6-xicaras-de-cafe-com-pires-organico-petroleum-120ml-2588785/",
-    "price": 216.62,
-    "price_text": "R$ 216,62",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039178Z"
-  },
-  {
-    "id": "2588783",
-    "source": "promobit",
-    "title": "Camisa Canelada Meia Gola Alta Slim Estilosa Elegante Homem",
-    "url": "https://www.promobit.com.br/oferta/camisa-canelada-meia-gola-alta-slim-estilosa-elegante-homem-2588783/",
-    "price": 78.0,
-    "price_text": "R$ 78,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.039196Z"
-  },
-  {
-    "id": "2588777",
-    "source": "promobit",
-    "title": "Liquidificador Britânia Pro Maxx 6 com Filtro 4 Velocidades 1150W 2,7L - BLQ1280P",
-    "url": "https://www.promobit.com.br/oferta/liquidificador-britania-pro-maxx-6-com-filtro-4-velocidades-1150w-27l-blq1280p-2588777/",
-    "price": 229.0,
-    "price_text": "R$ 229,00",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039213Z"
-  },
-  {
-    "id": "2588778",
-    "source": "promobit",
-    "title": "Sierra Batuco Vinho Branco Chileno Chardonnay 750ml",
-    "url": "https://www.promobit.com.br/oferta/sierra-batuco-vinho-branco-chileno-chardonnay-750ml-2588778/",
-    "price": 40.25,
-    "price_text": "R$ 40,25",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039230Z"
-  },
-  {
-    "id": "2588755",
-    "source": "promobit",
-    "title": "Maionese Vigor - 1kg",
-    "url": "https://www.promobit.com.br/oferta/maionese-vigor-1kg-2588755/",
-    "price": 12.79,
-    "price_text": "R$12,79",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039246Z"
-  },
-  {
-    "id": "2588759",
-    "source": "promobit",
-    "title": "Fogão Cooktop Elétrico INMA 2 Bocas 2000w Portátil Elétrico Mesa Fogareiro Chapa I",
-    "url": "https://www.promobit.com.br/oferta/fogao-cooktop-eletrico-inma-2-bocas-2000w-portatil-eletrico-mesa-fogareiro-chapa-i-2588759/",
-    "price": 168.79,
-    "price_text": "R$ 168,79",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.039264Z"
-  },
-  {
-    "id": "2588760",
-    "source": "promobit",
-    "title": "Marketplace\nChinelo Havaianas Brasil 10 - Unissex",
-    "url": "https://www.promobit.com.br/oferta/chinelo-havaianas-brasil-10-unissex-2588760/",
-    "price": 29.99,
-    "price_text": "R$ 29,99",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039284Z"
-  },
-  {
-    "id": "2588751",
-    "source": "promobit",
-    "title": "Cômoda Ditália 6 Gavetas Dm-243",
-    "url": "https://www.promobit.com.br/oferta/comoda-ditalia-6-gavetas-dm-243-2588751/",
-    "price": 639.9,
-    "price_text": "R$ 639,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039301Z"
-  },
-  {
-    "id": "2588749",
-    "source": "promobit",
-    "title": "Ketchup Heinz Picante 397g",
-    "url": "https://www.promobit.com.br/oferta/ketchup-heinz-picante-397g-2588749/",
-    "price": 15.79,
-    "price_text": "R$ 15,79",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039317Z"
-  },
-  {
-    "id": "2588754",
-    "source": "promobit",
-    "title": "Maionese Vigor - 500g",
-    "url": "https://www.promobit.com.br/oferta/maionese-vigor-500g-2588754/",
-    "price": 7.29,
-    "price_text": "R$7,29",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039333Z"
-  },
-  {
-    "id": "2588746",
-    "source": "promobit",
-    "title": "Camiseta Nike Training Dri-FIT - Feminina",
-    "url": "https://www.promobit.com.br/oferta/camiseta-nike-training-dri-fit-feminina-2588746/",
-    "price": 129.99,
-    "price_text": "R$ 129,99",
-    "store": "centauro.com.br",
-    "collected_at": "2026-01-16T01:26:33.039389Z"
-  },
-  {
-    "id": "2588768",
-    "source": "promobit",
-    "title": "Tênis Infantil Adidas Advantage Base 2.0",
-    "url": "https://www.promobit.com.br/oferta/tenis-infantil-adidas-advantage-base-20-2588768/",
-    "price": 166.46,
-    "price_text": "R$166,46",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039410Z"
-  },
-  {
-    "id": "2588769",
-    "source": "promobit",
-    "title": "Fone KZ ZSE Duplo Driver In-Ear com Isolamento de ruido",
-    "url": "https://www.promobit.com.br/oferta/fone-kz-zse-duplo-driver-in-ear-com-isolamento-de-ruido-2588769/",
-    "price": 114.76,
-    "price_text": "R$ 114,76",
-    "store": "aliexpress.com",
-    "collected_at": "2026-01-16T01:26:33.039430Z"
-  },
-  {
-    "id": "2588766",
-    "source": "promobit",
-    "title": "Tênis Infantil Adidas Grand Court 2.0",
-    "url": "https://www.promobit.com.br/oferta/tenis-infantil-adidas-grand-court-20-2588766/",
-    "price": 166.46,
-    "price_text": "R$166,46",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039447Z"
-  },
-  {
-    "id": "2588764",
-    "source": "promobit",
-    "title": "Devocional Café Com Deus Pai Porções Diárias De Amor Junior Rostirola Edição 2026",
-    "url": "https://www.promobit.com.br/oferta/devocional-cafe-com-deus-pai-porcoes-diarias-de-amor-junior-rostirola-edicao-2026-2588764/",
-    "price": 65.5,
-    "price_text": "R$65,50",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.039466Z"
-  },
-  {
-    "id": "2588762",
-    "source": "promobit",
-    "title": "Copo Térmico Termolar 500mL Chumbo",
-    "url": "https://www.promobit.com.br/oferta/copo-termico-termolar-500ml-chumbo-2588762/",
-    "price": 63.9,
-    "price_text": "R$ 63,90",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T01:26:33.039483Z"
-  },
-  {
-    "id": "2588756",
-    "source": "promobit",
-    "title": "Ventoinha Rise Mode Wind W1 120mm LED Branco Preto - RM-WN-01-BW",
-    "url": "https://www.promobit.com.br/oferta/ventoinha-rise-mode-wind-w1-120mm-led-branco-preto-rm-wn-01-bw-2588756/",
-    "price": 18.81,
-    "price_text": "R$ 18,81",
-    "store": "kabum.com.br",
-    "collected_at": "2026-01-16T01:26:33.039534Z"
-  },
-  {
-    "id": "2588753",
-    "source": "promobit",
-    "title": "Tênis Fila Kr7 Pro Speed Tech - Masculino\nA partir de",
-    "url": "https://www.promobit.com.br/oferta/tenis-fila-kr7-pro-speed-tech-masculino-2588753/",
-    "price": 408.49,
-    "price_text": "R$408,49",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039555Z"
-  },
-  {
-    "id": "2588744",
-    "source": "promobit",
-    "title": "Mixer BMX350P 350W Lâminas Pro Maxx Britânia",
-    "url": "https://www.promobit.com.br/oferta/mixer-bmx350p-350w-laminas-pro-maxx-britania-2588744/",
-    "price": 119.9,
-    "price_text": "R$ 119,90",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.039574Z"
-  },
-  {
-    "id": "2588735",
-    "source": "promobit",
-    "title": "Tênis Adidas Ownthegame 3.0 - Masculino",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-ownthegame-30-masculino-2588735/",
-    "price": 499.99,
-    "price_text": "R$ 499,99",
-    "store": "centauro.com.br",
-    "collected_at": "2026-01-16T01:26:33.039592Z"
-  },
-  {
-    "id": "2588743",
-    "source": "promobit",
-    "title": "Cadeira de Escritório Diretor Oficial Vegas com apoio - Preto",
-    "url": "https://www.promobit.com.br/oferta/cadeira-de-escritorio-diretor-oficial-vegas-com-apoio-preto-2588743/",
-    "price": 341.16,
-    "price_text": "R$ 341,16",
-    "store": "casasbahia.com.br",
-    "collected_at": "2026-01-16T01:26:33.039649Z"
-  },
-  {
-    "id": "2588740",
-    "source": "promobit",
-    "title": "Mixer Britânia 350W PRO MAXX - BMX350P",
-    "url": "https://www.promobit.com.br/oferta/mixer-britania-350w-pro-maxx-bmx350p-2588740/",
-    "price": 119.9,
-    "price_text": "R$ 119,90",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.039670Z"
-  },
-  {
-    "id": "2588725",
-    "source": "promobit",
-    "title": "Tênis New Balance Fresh Foam Arishi V'4 - Feminino",
-    "url": "https://www.promobit.com.br/oferta/tenis-new-balance-fresh-foam-arishi-v4-feminino-2588725/",
-    "price": 549.99,
-    "price_text": "R$ 549,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.039689Z"
-  },
-  {
-    "id": "2588738",
-    "source": "promobit",
-    "title": "Cama Box Conjugada Solteiro Probel Advanced com Espuma D28 54x88x188cm Branco e Cinza",
-    "url": "https://www.promobit.com.br/oferta/cama-box-conjugada-solteiro-probel-advanced-com-espuma-d28-54x88x188cm-branco-e-cinza-2588738/",
-    "price": 681.45,
-    "price_text": "R$ 681,45",
-    "store": "casasbahia.com.br",
-    "collected_at": "2026-01-16T01:26:33.039707Z"
-  },
-  {
-    "id": "2588739",
-    "source": "promobit",
-    "title": "Guarda-Roupa Infantil Bartira Ternura com 5 Nichos, 2 Portas, 2 Gavetas",
-    "url": "https://www.promobit.com.br/oferta/guarda-roupa-infantil-bartira-ternura-com-5-nichos-2-portas-2-gavetas-2588739/",
-    "price": 699.0,
-    "price_text": "R$ 699,00",
-    "store": "casasbahia.com.br",
-    "collected_at": "2026-01-16T01:26:33.039725Z"
-  },
-  {
-    "id": "2588734",
-    "source": "promobit",
-    "title": "Rack Madetec Lisboa 136cm Suporta TV de 55\"",
-    "url": "https://www.promobit.com.br/oferta/rack-madetec-lisboa-136cm-suporta-tv-de-55-2588734/",
-    "price": 394.8,
-    "price_text": "R$ 394,80",
-    "store": "casasbahia.com.br",
-    "collected_at": "2026-01-16T01:26:33.039741Z"
-  },
-  {
-    "id": "2588730",
-    "source": "promobit",
-    "title": "Mala Oxer Dobrável Packable",
-    "url": "https://www.promobit.com.br/oferta/mala-oxer-dobravel-packable-2588730/",
-    "price": 99.99,
-    "price_text": "R$ 99,99",
-    "store": "centauro.com.br",
-    "collected_at": "2026-01-16T01:26:33.039758Z"
-  },
-  {
-    "id": "2588720",
-    "source": "promobit",
-    "title": "Smart TV PHILIPS Ambilight 55\" 4K Comando de Voz HDR10+Dolby Atmos - 55PUG8100/78",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-philips-ambilight-55-4k-comando-de-voz-hdr10-dolby-atmos-55pug8100-78-2588720/",
-    "price": 2299.0,
-    "price_text": "R$ 2.299,00",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039776Z"
-  },
-  {
-    "id": "2588733",
-    "source": "promobit",
-    "title": "Geladeira Consul Cycle Defrost 334L Duplex CRD37EB Freezer Supercapacidade e Gelo Extra Branca - 110V",
-    "url": "https://www.promobit.com.br/oferta/geladeira-consul-cycle-defrost-334l-duplex-crd37eb-freezer-supercapacidade-e-gelo-extra-branca-110v-2588733/",
-    "price": 2639.18,
-    "price_text": "R$ 2.639,18",
-    "store": "casasbahia.com.br",
-    "collected_at": "2026-01-16T01:26:33.039794Z"
-  },
-  {
-    "id": "2588722",
-    "source": "promobit",
-    "title": "Tênis Mizuno Space 5 - Masculino",
-    "url": "https://www.promobit.com.br/oferta/tenis-mizuno-space-5-masculino-2588722/",
-    "price": 399.9,
-    "price_text": "R$ 399,90",
-    "store": "centauro.com.br",
-    "collected_at": "2026-01-16T01:26:33.039828Z"
-  },
-  {
-    "id": "2588728",
-    "source": "promobit",
-    "title": "Ferro A Vapor 1300w Azul Kian",
-    "url": "https://www.promobit.com.br/oferta/ferro-a-vapor-1300w-azul-kian-2588728/",
-    "price": 78.9,
-    "price_text": "R$ 78,90",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.039846Z"
-  },
-  {
-    "id": "2588719",
-    "source": "promobit",
-    "title": "Caixa de Som Torre Aiwa Bluetooth 2300W RMS Amplificada - AWS-T2W-02",
-    "url": "https://www.promobit.com.br/oferta/caixa-de-som-torre-aiwa-bluetooth-2300w-rms-amplificada-aws-t2w-02-2588719/",
-    "price": 2399.0,
-    "price_text": "R$ 2.399,00",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039865Z"
-  },
-  {
-    "id": "2588724",
-    "source": "promobit",
-    "title": "Ferro De Passar Cadence 2 Em 1 iro215 Cor Cinza",
-    "url": "https://www.promobit.com.br/oferta/ferro-de-passar-cadence-2-em-1-iro215-cor-cinza-2588724/",
-    "price": 139.99,
-    "price_text": "R$ 139,99",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.039882Z"
-  },
-  {
-    "id": "2588710",
-    "source": "promobit",
-    "title": "Lápis de Olhos Preto Quem disse, Berenice? - 600mg",
-    "url": "https://www.promobit.com.br/oferta/lapis-de-olhos-preto-quem-disse-berenice-600mg-2588710/",
-    "price": 25.9,
-    "price_text": "R$ 25,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.039900Z"
-  },
-  {
-    "id": "2588721",
-    "source": "promobit",
-    "title": "Combo Smart TV 50\" Samsung  UHD 4K U8100F + Samsung Smart TV 43\" UHD 4K U8100F",
-    "url": "https://www.promobit.com.br/oferta/combo-smart-tv-50-samsung-uhd-4k-u8100f-samsung-smart-tv-43-uhd-4k-u8100f-2588721/",
-    "price": 4041.05,
-    "price_text": "R$ 4.041,05",
-    "store": "samsung.com",
-    "collected_at": "2026-01-16T01:26:33.040147Z"
-  },
-  {
-    "id": "2588714",
-    "source": "promobit",
-    "title": "Jaqueta Corta Vento Impermeável WSS Brasil Web Party - Feminino",
-    "url": "https://www.promobit.com.br/oferta/jaqueta-corta-vento-impermeavel-wss-brasil-web-party-feminino-2588714/",
-    "price": 245.69,
-    "price_text": "R$ 245,69",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.040173Z"
-  },
-  {
-    "id": "2588715",
-    "source": "promobit",
-    "title": "Óculos De Sol Saint Germain Dourado Harbor Aviador Uv400 Lente Preto Desenho Espelho",
-    "url": "https://www.promobit.com.br/oferta/oculos-de-sol-saint-germain-dourado-harbor-aviador-uv400-lente-preto-desenho-espelho-2588715/",
-    "price": 183.42,
-    "price_text": "R$ 183,42",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.040194Z"
-  },
-  {
-    "id": "2588706",
-    "source": "promobit",
-    "title": "Bicicleta Colli Fulls Gps 21 Marchas Aro 26 Freio V-Brake Dupla Suspensão",
-    "url": "https://www.promobit.com.br/oferta/bicicleta-colli-fulls-gps-21-marchas-aro-26-freio-v-brake-dupla-suspensao-2588706/",
-    "price": 999.9,
-    "price_text": "R$ 999,90",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.040215Z"
-  },
-  {
-    "id": "2588711",
-    "source": "promobit",
-    "title": "Tênis Adidas Response Runner - Unissex\nA partir de",
-    "url": "https://www.promobit.com.br/oferta/tenis-adidas-response-runner-unissex-2588711/",
-    "price": 161.99,
-    "price_text": "R$161,99",
-    "store": "netshoes.com.br",
-    "collected_at": "2026-01-16T01:26:33.040233Z"
-  },
-  {
-    "id": "2588707",
-    "source": "promobit",
-    "title": "Notebook Gamer Predator Helios Neo 16 AI Intel Ultra 7 255HX RTX 5070 8GB 16GB RAM 6400 MHz 512 GB SSD 16 LED -  PHN16-73-76TF",
-    "url": "https://www.promobit.com.br/oferta/notebook-gamer-predator-helios-neo-16-ai-intel-ultra-7-255hx-rtx-5070-8gb-16gb-ram-6400-mhz-512-gb-ssd-16-led-phn16-73-76tf-2588707/",
-    "price": 18999.9,
-    "price_text": "R$ 18.999,90",
-    "store": "acer.com",
-    "collected_at": "2026-01-16T01:26:33.040285Z"
-  },
-  {
-    "id": "2588704",
-    "source": "promobit",
-    "title": "Rack para TV até 75 Polegadas Madesa Reims 2 Portas 1 Gaveta",
-    "url": "https://www.promobit.com.br/oferta/rack-para-tv-ate-75-polegadas-madesa-reims-2-portas-1-gaveta-2588704/",
-    "price": 379.99,
-    "price_text": "R$379,99",
-    "store": "shopee.com.br",
-    "collected_at": "2026-01-16T01:26:33.040307Z"
-  },
-  {
-    "id": "2588692",
-    "source": "promobit",
-    "title": "Ar Condicionado Split Inverter Tcl Freshin 3.0 12000 Btu/h Frio Tac-12cfg3wi-inv - 220v",
-    "url": "https://www.promobit.com.br/oferta/ar-condicionado-split-inverter-tcl-freshin-30-12000-btu-h-frio-tac-12cfg3wi-inv-220v-2588692/",
-    "price": 3514.0,
-    "price_text": "R$ 3.514,00",
-    "store": "carrefour.com.br",
-    "collected_at": "2026-01-16T01:26:33.040361Z"
-  },
-  {
-    "id": "2588700",
-    "source": "promobit",
-    "title": "Parafusadeira Furadeira A Bateria 38 12v Britânia 127220v - Bpf03",
-    "url": "https://www.promobit.com.br/oferta/parafusadeira-furadeira-a-bateria-38-12v-britania-127220v-bpf03-2588700/",
-    "price": 184.0,
-    "price_text": "R$ 184,00",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.040384Z"
-  },
-  {
-    "id": "2588686",
-    "source": "promobit",
-    "title": "Smart TV 50\" Semp 4K UHD LED Google TV AiPQ Pro - 50S61",
-    "url": "https://www.promobit.com.br/oferta/smart-tv-50-semp-4k-uhd-led-google-tv-aipq-pro-50s61-2588686/",
-    "price": 2165.56,
-    "price_text": "R$ 2.165,56",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T01:26:33.040403Z"
-  },
-  {
-    "id": "2588698",
-    "source": "promobit",
-    "title": "Pilha Recarregável AAA 12V 950mAh TNH3GAE TOSHIBA (Cartela com 4 unid.)",
-    "url": "https://www.promobit.com.br/oferta/pilha-recarregavel-aaa-12v-950mah-tnh3gae-toshiba-cartela-com-4-unid-2588698/",
-    "price": 35.81,
-    "price_text": "R$ 35,81",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.040423Z"
-  },
-  {
-    "id": "2588697",
-    "source": "promobit",
-    "title": "Bombom Recheio Avelã Extra Cacau FLORMEL Zero Açúcar- 18 Unidades",
-    "url": "https://www.promobit.com.br/oferta/bombom-recheio-avela-extra-cacau-flormel-zero-acucar-18-unidades-2588697/",
-    "price": 106.0,
-    "price_text": "R$ 106,00",
-    "store": "amazon.com.br",
-    "collected_at": "2026-01-16T01:26:33.040441Z"
-  },
-  {
-    "id": "2588685",
-    "source": "promobit",
-    "title": "Refil Perfume Feminino Idôle Lancôme EDP - 100ml",
-    "url": "https://www.promobit.com.br/oferta/refil-perfume-feminino-idole-lancome-edp-100ml-2588685/",
-    "price": 799.0,
-    "price_text": "R$ 799,00",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T01:26:33.040460Z"
-  },
-  {
-    "id": "2588694",
-    "source": "promobit",
-    "title": "Samsung Vision AI TV 65\\",
-    "url": "https://www.promobit.com.br/oferta/samsung-vision-ai-tv-65-2588694/",
-    "price": 12358.95,
-    "price_text": "R$ 12.358,95",
-    "store": "samsung.com",
-    "collected_at": "2026-01-16T01:26:33.040478Z"
-  },
-  {
-    "id": "2588681",
-    "source": "promobit",
-    "title": "Perfume Invictus Masculino Paco Rabanne EDT 100ml",
-    "url": "https://www.promobit.com.br/oferta/perfume-invictus-masculino-paco-rabanne-edt-100ml-2588681/",
-    "price": 591.52,
-    "price_text": "R$ 591,52",
-    "store": "magazineluiza.com.br",
-    "collected_at": "2026-01-16T01:26:33.040495Z"
-  },
-  {
-    "id": "2588680",
-    "source": "promobit",
-    "title": "Tênis Aramis Easy Rover",
-    "url": "https://www.promobit.com.br/oferta/tenis-aramis-easy-rover-2588680/",
-    "price": 349.99,
-    "price_text": "R$ 349,99",
-    "store": "mercadolivre.com.br",
-    "collected_at": "2026-01-16T01:26:33.040512Z"
+    "collected_at": "2026-01-16T04:38:26.115028Z"
   }
 ]
