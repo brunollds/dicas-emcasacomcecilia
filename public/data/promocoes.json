@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768578096239,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Aspirador de Pó sem Saco 1300W Smart Electrolux com Filtro HEPA e Bocal para Estofados (ABS03) 110V, Cinza/Verde",
+      "preco": 293.61,
+      "precoAntigo": 599,
+      "info": "ou R$ 329,90 em até 6x de R$ 55,00 sem juros ",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/61x+T0obo8L._AC_SX679_.jpg",
+      "link": "https://amzn.to/4b3ru34",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:41:36.239Z"
+    },
+    {
       "id": 1768577993004,
       "tipo": "promo",
       "loja": "Amazon",
