@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768583856661,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Prancha Modeladora Efeito Sereia 2 em 1, Alisa e Modela Bivolt Multi Care - EB130",
+      "preco": 51.12,
+      "precoAntigo": 111.35,
+      "info": "Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/51lD6ZGVmkL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4qXdn3U",
+      "destaque": false,
+      "timestamp": "2026-01-16T17:17:36.661Z"
+    },
+    {
       "id": 1768583746001,
       "tipo": "promo",
       "loja": "Amazon",
