@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768578463151,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Tênis Masculino New Balance 370v1 Original - Casual",
+      "preco": 287,
+      "precoAntigo": 561.79,
+      "info": "Frete grátis Full • Chegando amanhã",
+      "cupom": "MELIMODA",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_796187-MLB82483255562_022025-F-tnis-masculino-new-balance-370v1-original-casual.webp",
+      "link": "https://mercadolivre.com/sec/1vAdGht",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:47:43.152Z"
+    },
+    {
       "id": 1768578237528,
       "tipo": "promo",
       "loja": "Amazon",
