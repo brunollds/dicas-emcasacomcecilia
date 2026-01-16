@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768579060869,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Calça Legging Lupo Fitness Sustentação Sem Costura Poliamida",
+      "preco": 130.17,
+      "precoAntigo": 169.9,
+      "info": "5x S/ Juros • Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_920455-MLB95966310997_102025-F-calca-legging-lupo-fitness-sustentaco-sem-costura-poliamida.webp",
+      "link": "https://mercadolivre.com/sec/1nrNVjS",
+      "destaque": false,
+      "timestamp": "2026-01-16T15:57:40.869Z"
+    },
+    {
       "id": 1768578693384,
       "tipo": "promo",
       "loja": "Mercado Livre",
