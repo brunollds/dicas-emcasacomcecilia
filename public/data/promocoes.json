@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768523716761,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Chinelo Havaianas Top Unissex Sandalia Original",
+      "preco": 32.9,
+      "precoAntigo": 49.9,
+      "info": "Frete grátis Full • Devolução grátis",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_909296-MLB93948847676_102025-F-chinelo-havaianas-top-unissex-sandalia-original-promoco.webp",
+      "link": "https://mercadolivre.com/sec/28qjmtF",
+      "destaque": false,
+      "timestamp": "2026-01-16T00:35:16.761Z"
+    },
+    {
       "id": 1768523642652,
       "tipo": "promo",
       "loja": "Mercado Livre",
