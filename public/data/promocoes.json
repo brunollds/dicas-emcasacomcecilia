@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768607920652,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Chinelo Havaianas Top Summer Vibes Feminino Praia",
+      "preco": 39.81,
+      "precoAntigo": 69.99,
+      "info": "Frete grátis Full",
+      "cupom": "MELIMODA",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_626024-MLB91732635076_092025-F-chinelo-havaianas-top-summer-vibes-feminino-praia.webp",
+      "link": "https://mercadolivre.com/sec/1ULvG51",
+      "destaque": false,
+      "timestamp": "2026-01-16T23:58:40.652Z"
+    },
+    {
       "id": 1768607843188,
       "tipo": "promo",
       "loja": "Amazon",
