@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768615844289,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Ventilador Arno X-treme 9 Mesa 40cm Ve90",
+      "preco": 194.25,
+      "precoAntigo": 459.99,
+      "info": "6x S/ Juros • Frete grátis Full • Chegando amanhã",
+      "cupom": "SUPER25",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_686594-MLA99930624347_112025-F.webp",
+      "link": "https://mercadolivre.com/sec/25fh8Tb",
+      "destaque": false,
+      "timestamp": "2026-01-17T02:10:44.289Z"
+    },
+    {
       "id": 1768615746409,
       "tipo": "promo",
       "loja": "Mercado Livre",
