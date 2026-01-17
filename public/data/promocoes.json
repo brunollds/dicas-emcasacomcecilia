@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768616599685,
+      "tipo": "promo",
+      "loja": "Magazine Luiza",
+      "produto": "Tenis Casual Original Skatista Nyc Shoes Skate",
+      "preco": 78.9,
+      "precoAntigo": 139.9,
+      "info": "Vários TAMANHOS e CORES disponíveis • Retire na loja",
+      "cupom": null,
+      "imagem": "https://a-static.mlcdn.com.br/800x560/tenis-casual-original-skatista-nyc-shoes-skate/jscalcadosltda/cmptopink41/8ff77773439bbc169d6656a1ae7ff42f.jpeg",
+      "link": "https://divulgador.magalu.com/m2_=LPYV",
+      "destaque": false,
+      "timestamp": "2026-01-17T02:23:19.685Z"
+    },
+    {
       "id": 1768616417397,
       "tipo": "promo",
       "loja": "Amazon",
