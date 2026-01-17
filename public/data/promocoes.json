@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768671518396,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit 3 Camisetas Algodão Dia Dia Sandrini Básica Conforto",
+      "preco": 52.63,
+      "precoAntigo": 95.77,
+      "info": "Pix ou 1x - • Frete grátis Full",
+      "cupom": "MELIMODA",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_644351-MLB100656270338_122025-F-kit-3-camisetas-algodo-dia-dia-sandrini-basica-conforto.webp",
+      "link": "https://mercadolivre.com/sec/28c4r4w",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:38:38.396Z"
+    },
+    {
       "id": 1768671251009,
       "tipo": "promo",
       "loja": "Mercado Livre",
