@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768671817459,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Saco De Lixo PACK LIXO Lavanda 30 Litros - Sacos de lixo perfumardos que neutralizam o odor",
+      "preco": 14.21,
+      "precoAntigo": 21.99,
+      "info": "Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/51Psl4Q9aaL._AC_SX679_.jpg",
+      "link": "https://amzn.to/3Nzmlpv",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:43:37.459Z"
+    },
+    {
       "id": 1768671735455,
       "tipo": "promo",
       "loja": "Amazon",
