@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768668834994,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Smartphone Xiaomi Redmi Note 14 Pro 4G Ocean Blue (Azul Oceano) 8GB RAM 256GB ROM",
+      "preco": 1729,
+      "precoAntigo": 2119.9,
+      "info": "até 12x S/ Juros",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/71D7O7YQs1L._AC_SX679_.jpg",
+      "link": "https://amzn.to/3NQTP2I",
+      "destaque": false,
+      "timestamp": "2026-01-17T16:53:54.994Z"
+    },
+    {
       "id": 1768668533480,
       "tipo": "promo",
       "loja": "Magazine Luiza",
