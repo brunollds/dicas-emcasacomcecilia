@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768670870570,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Cápsula de Café Espresso Star Wars Mestre Yoda TRES 3 Corações 10 unid",
+      "preco": 18.43,
+      "precoAntigo": 26.95,
+      "info": "Recorrência -10% • Mais por Menos: 10% off em 10+ itens - R$16,59 ou R$1,65/und +POR-",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/617TO5Y-9AL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4qWfAwp",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:27:50.570Z"
+    },
+    {
       "id": 1768670587876,
       "tipo": "promo",
       "loja": "Amazon",
