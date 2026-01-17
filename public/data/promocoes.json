@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768609301585,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Conjunto Manalinda Fitness Top E Legging Azul Escuro",
+      "preco": 64.59,
+      "precoAntigo": 199.99,
+      "info": "PIX ou 1X - Frete Grátis",
+      "cupom": "MELIMODA",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_758241-MLB98885808273_112025-F-conjunto-manalinda-fitness-top-e-legging-azul-escuro.webp",
+      "link": "https://mercadolivre.com/sec/2gxDgT1",
+      "destaque": false,
+      "timestamp": "2026-01-17T00:21:41.585Z"
+    },
+    {
       "id": 1768607920652,
       "tipo": "promo",
       "loja": "Mercado Livre",
