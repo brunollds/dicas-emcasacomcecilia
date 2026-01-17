@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768671006148,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Apple iPhone 15 (128 GB) - Azul - Distribuidor Autorizado",
+      "preco": 3869.1,
+      "precoAntigo": 7029,
+      "info": "Pix ou 1x - ou  R$ 4.299 em 10x  R$ 429,90  sem juros",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_831434-MLA96401363339_102025-F.webp",
+      "link": "https://mercadolivre.com/sec/1vJM5Jz",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:30:06.148Z"
+    },
+    {
       "id": 1768670870570,
       "tipo": "promo",
       "loja": "Amazon",
