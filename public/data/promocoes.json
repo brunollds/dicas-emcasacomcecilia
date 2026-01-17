@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768615593803,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "https://amzn.to/4sL8Nrc",
+      "preco": 33.6,
+      "precoAntigo": 44,
+      "info": "Recorrência -10% - Resgate Cupom no APP/ Pagina",
+      "cupom": "PRINCIPIA10",
+      "imagem": "https://m.media-amazon.com/images/I/61v1Sm8OlBL._AC_SX522_.jpg",
+      "link": "https://amzn.to/4sL8Nrc",
+      "destaque": false,
+      "timestamp": "2026-01-17T02:06:33.803Z"
+    },
+    {
       "id": 1768613500755,
       "tipo": "promo",
       "loja": "Amazon",
