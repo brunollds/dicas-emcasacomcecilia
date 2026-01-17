@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768672520003,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Nunca se esqueça: O Menino, a Toupeira, a Raposa, o Cavalo e a Tempestade Capa dura ",
+      "preco": 75.71,
+      "precoAntigo": 119.9,
+      "info": "OFERTA DO DIA - Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/81VhRSuQQtL._SY385_.jpg",
+      "link": "https://amzn.to/4pKCOom",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:55:20.003Z"
+    },
+    {
       "id": 1768672325849,
       "tipo": "promo",
       "loja": "Mercado Livre",
