@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768669319329,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Converse ALL-STAR Pro Blaze Classic Co0608 Curto Sintético Feminino",
+      "preco": 134.49,
+      "precoAntigo": 419.99,
+      "info": "Tam: 33 e 34 - Oferta Relâmpago - R$ 154,99 em 5x S/ Juros • Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_944993-MLB97080607152_112025-F-pro-blaze-classic-co0608-curto-sintetico-feminino.webp",
+      "link": "https://mercadolivre.com/sec/12jwAeN",
+      "destaque": true,
+      "timestamp": "2026-01-17T17:01:59.329Z"
+    },
+    {
       "id": 1768668834994,
       "tipo": "promo",
       "loja": "Amazon",
