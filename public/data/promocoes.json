@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768669535377,
+      "tipo": "promo",
+      "loja": "Magazine Luiza",
+      "produto": "Jequiti Turma Da Mônica Desodorante Colonia Monica 25ml",
+      "preco": 19.85,
+      "precoAntigo": 39.9,
+      "info": "Pix ou 1x • Retire na loja",
+      "cupom": null,
+      "imagem": "https://a-static.mlcdn.com.br/800x560/jequiti-turma-da-monica-desodorante-colonia-monica-25ml/meucheckoutoficial/79p/03038b4e8623a7d970d3125438f6d75f.jpeg",
+      "link": "https://divulgador.magalu.com/wd07r_w8",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:05:35.377Z"
+    },
+    {
       "id": 1768669319329,
       "tipo": "promo",
       "loja": "Mercado Livre",
