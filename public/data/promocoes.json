@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768615746409,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Kit Com 3 Sutiãs Plus Size Reforçado Nadador Sem Bojo",
+      "preco": 45.19,
+      "precoAntigo": 87,
+      "info": "Frete grátis Full",
+      "cupom": "MELIMODA",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_953234-MLB96425043475_102025-F.webp",
+      "link": "https://mercadolivre.com/sec/1PTrwHi",
+      "destaque": false,
+      "timestamp": "2026-01-17T02:09:06.409Z"
+    },
+    {
       "id": 1768615593803,
       "tipo": "promo",
       "loja": "Amazon",
