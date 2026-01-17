@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768691496290,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Boss Bottled Tonic 100 Ml Eau De Toilette De Hugo Boss",
+      "preco": 341,
+      "precoAntigo": 649,
+      "info": "em 9x S/ Juros • Frete grátis Full",
+      "cupom": "BELEZANOMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_852336-MLU75113441497_032024-F.webp",
+      "link": "https://mercadolivre.com/sec/2H6eGND",
+      "destaque": true,
+      "timestamp": "2026-01-17T23:11:36.290Z"
+    },
+    {
       "id": 1768672933512,
       "tipo": "promo",
       "loja": "Shopee",
