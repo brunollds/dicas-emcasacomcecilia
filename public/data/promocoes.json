@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768668279402,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Jogo De Frigideiras Francesas 3 Peças 14 18 24cm Vermelho Nacional",
+      "preco": 48.67,
+      "precoAntigo": 64.9,
+      "info": "Pix ou 1x - Frete grátis Full",
+      "cupom": "DECORMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_972107-MLA99600091198_122025-F.webp",
+      "link": "https://mercadolivre.com/sec/2C4neSi",
+      "destaque": false,
+      "timestamp": "2026-01-17T16:44:39.402Z"
+    },
+    {
       "id": 1768619632493,
       "tipo": "cupom",
       "loja": "Shopee",
