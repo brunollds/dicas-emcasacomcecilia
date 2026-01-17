@@ -1,5 +1,135 @@
 [
   {
+    "id": "placa-mae-gigabyte-b550m-aorus-elite-am4-matx-9b3d",
+    "source": "pelando",
+    "title": "Placa Mãe Gigabyte B550M AORUS Elite AM4 mATX",
+    "url": "https://www.pelando.com.br/d/placa-mae-gigabyte-b550m-aorus-elite-am4-matx-9b3d",
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:52.111596Z"
+  },
+  {
+    "id": "cognac-remy-martin-louis-xiii-700-ml-d3b2",
+    "source": "pelando",
+    "title": "Cognac Remy Martin Louis XIII 700 ml",
+    "url": "https://www.pelando.com.br/d/cognac-remy-martin-louis-xiii-700-ml-d3b2",
+    "price": 18990.0,
+    "price_text": "R$\n18.990",
+    "store": "Casa das Bebidas",
+    "collected_at": "2026-01-17T12:34:52.128299Z"
+  },
+  {
+    "id": "chinelo-adilette-shower-da41",
+    "source": "pelando",
+    "title": "CHINELO ADILETTE SHOWER",
+    "url": "https://www.pelando.com.br/d/chinelo-adilette-shower-da41",
+    "price": 69.99,
+    "price_text": "R$\n69,99",
+    "store": "Adidas",
+    "collected_at": "2026-01-17T12:34:52.144227Z"
+  },
+  {
+    "id": "atadura-crepe-neve-12cm-x-18m-transparente-0f8f",
+    "source": "pelando",
+    "title": "Atadura Crepe Neve 12cm x 1,8m Transparente",
+    "url": "https://www.pelando.com.br/d/atadura-crepe-neve-12cm-x-18m-transparente-0f8f",
+    "price": 0.8,
+    "price_text": "R$\n0,80",
+    "store": "Amazon",
+    "collected_at": "2026-01-17T12:34:52.159685Z"
+  },
+  {
+    "id": "por-rdollar776-chemicolor-desengripante-multiuso-spray-300ml-21b5",
+    "source": "pelando",
+    "title": "[+por- R$7,76] Chemicolor Desengripante Multiuso Spray 300ml",
+    "url": "https://www.pelando.com.br/d/por-rdollar776-chemicolor-desengripante-multiuso-spray-300ml-21b5",
+    "price": 7.76,
+    "price_text": "R$7,76",
+    "store": null,
+    "collected_at": "2026-01-17T12:34:52.165258Z"
+  },
+  {
+    "id": "vonder-rebitador-manual-tipo-alicate-rm-244-8d48",
+    "source": "pelando",
+    "title": "Vonder, Rebitador Manual, Tipo Alicate, Rm 244.",
+    "url": "https://www.pelando.com.br/d/vonder-rebitador-manual-tipo-alicate-rm-244-8d48",
+    "price": 20.12,
+    "price_text": "R$\n20,12",
+    "store": "Amazon",
+    "collected_at": "2026-01-17T12:34:52.180945Z"
+  },
+  {
+    "id": "smartband-samsung-galaxy-fit3-53f4",
+    "source": "pelando",
+    "title": "Smartband Samsung Galaxy Fit3",
+    "url": "https://www.pelando.com.br/d/smartband-samsung-galaxy-fit3-53f4",
+    "price": 201.0,
+    "price_text": "R$\n201",
+    "store": "Netshoes",
+    "collected_at": "2026-01-17T12:34:52.196615Z"
+  },
+  {
+    "id": "aperitivo-bitter-campari-748ml-c03f",
+    "source": "pelando",
+    "title": "Aperitivo Bitter Campari 748ml",
+    "url": "https://www.pelando.com.br/d/aperitivo-bitter-campari-748ml-c03f",
+    "price": 44.19,
+    "price_text": "R$\n44,19",
+    "store": "Amazon",
+    "collected_at": "2026-01-17T12:34:52.211711Z"
+  },
+  {
+    "id": "kit-cachacas-santo-grau-375ml-3-sabores-2c24",
+    "source": "pelando",
+    "title": "Kit Cachaças Santo Grau 375ml (3 Sabores)",
+    "url": "https://www.pelando.com.br/d/kit-cachacas-santo-grau-375ml-3-sabores-2c24",
+    "price": 100.0,
+    "price_text": "R$\n100",
+    "store": "Amazon",
+    "collected_at": "2026-01-17T12:34:52.226759Z"
+  },
+  {
+    "id": "licor-de-whisky-e-abacaxi-ballantines-sunshine-700ml-a689",
+    "source": "pelando",
+    "title": "Licor de Whisky e Abacaxi Ballantine's Sunshine 700ml",
+    "url": "https://www.pelando.com.br/d/licor-de-whisky-e-abacaxi-ballantines-sunshine-700ml-a689",
+    "price": 54.9,
+    "price_text": "R$\n54,90",
+    "store": "Extra Mercado",
+    "collected_at": "2026-01-17T12:34:52.241690Z"
+  },
+  {
+    "id": "teclado-mecanico-fantech-mk853v2-rgb-vermelho-a7db",
+    "source": "pelando",
+    "title": "Teclado Mecânico Fantech MK853V2 RGB Vermelho",
+    "url": "https://www.pelando.com.br/d/teclado-mecanico-fantech-mk853v2-rgb-vermelho-a7db",
+    "price": 149.0,
+    "price_text": "R$\n149",
+    "store": "Pichau",
+    "collected_at": "2026-01-17T12:34:52.257088Z"
+  },
+  {
+    "id": "god-of-war-ragnarok-ps5-edicao-standard-a7a0",
+    "source": "pelando",
+    "title": "God of War Ragnarök - PS5 Edição Standard",
+    "url": "https://www.pelando.com.br/d/god-of-war-ragnarok-ps5-edicao-standard-a7a0",
+    "price": 139.0,
+    "price_text": "R$\n139",
+    "store": "Amazon",
+    "collected_at": "2026-01-17T12:34:52.272491Z"
+  },
+  {
+    "id": "primerec-delta-q-capsulas-de-cafe-qharacter-int-09-xl-dc64",
+    "source": "pelando",
+    "title": "[PRIME+REC] Delta Q Cápsulas de Café Qharacter Int 09 XL",
+    "url": "https://www.pelando.com.br/d/primerec-delta-q-capsulas-de-cafe-qharacter-int-09-xl-dc64",
+    "price": 67.12,
+    "price_text": "R$\n67,12",
+    "store": "Amazon",
+    "collected_at": "2026-01-17T12:34:52.287710Z"
+  },
+  {
     "id": "por-rdollar690-utilix-saco-para-lixo-30l-preto-c-30-unidades-7991",
     "source": "pelando",
     "title": "[+por- R$6,90] Utilix Saco para Lixo 30L Preto c/ 30 Unidades",
@@ -7,7 +137,7 @@
     "price": 6.9,
     "price_text": "R$6,90",
     "store": null,
-    "collected_at": "2026-01-17T08:22:46.213839Z"
+    "collected_at": "2026-01-17T12:34:52.292604Z"
   },
   {
     "id": "rec-whey-100porcento-hd-900g-cookies-e-cream-black-skull-36bf",
@@ -17,7 +147,7 @@
     "price": 75.0,
     "price_text": "R$\n75,00",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.228202Z"
+    "collected_at": "2026-01-17T12:34:52.307292Z"
   },
   {
     "id": "heavy-rain-c70e",
@@ -27,7 +157,7 @@
     "price": 6.0,
     "price_text": "R$\n6,00",
     "store": "GamersGate",
-    "collected_at": "2026-01-17T08:22:46.237889Z"
+    "collected_at": "2026-01-17T12:34:52.317022Z"
   },
   {
     "id": "beyond-two-souls-09c8",
@@ -37,7 +167,7 @@
     "price": 6.0,
     "price_text": "R$\n6,00",
     "store": "GamersGate",
-    "collected_at": "2026-01-17T08:22:46.252862Z"
+    "collected_at": "2026-01-17T12:34:52.331326Z"
   },
   {
     "id": "unravel-two-nintendo-switch-9b41",
@@ -47,7 +177,7 @@
     "price": 32.7,
     "price_text": "R$\n32,70",
     "store": "Nintendo",
-    "collected_at": "2026-01-17T08:22:46.267666Z"
+    "collected_at": "2026-01-17T12:34:52.345509Z"
   },
   {
     "id": "rec-lubrificante-intimo-2-em-1-k-med-203g-c480",
@@ -57,7 +187,7 @@
     "price": 21.0,
     "price_text": "R$\n21,00",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.282233Z"
+    "collected_at": "2026-01-17T12:34:52.359925Z"
   },
   {
     "id": "rdollar-78-cada-kit-5-cameras-a8-yoosee-wi-fi-a-prova-dagua-44ac",
@@ -67,7 +197,7 @@
     "price": 78.0,
     "price_text": "R$ 78",
     "store": null,
-    "collected_at": "2026-01-17T08:22:46.287158Z"
+    "collected_at": "2026-01-17T12:34:52.364917Z"
   },
   {
     "id": "buba-carrinho-de-atividades-0655",
@@ -77,7 +207,7 @@
     "price": 57.69,
     "price_text": "R$\n57,69",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.301741Z"
+    "collected_at": "2026-01-17T12:34:52.380446Z"
   },
   {
     "id": "cozy-time-para-colorir-071d",
@@ -87,7 +217,7 @@
     "price": 5.9,
     "price_text": "R$\n5,90",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.316248Z"
+    "collected_at": "2026-01-17T12:34:52.396277Z"
   },
   {
     "id": "fritadeira-sem-oleo-oster-127v-ofrt520-preto-9c92",
@@ -97,7 +227,7 @@
     "price": 278.0,
     "price_text": "R$\n278",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.331100Z"
+    "collected_at": "2026-01-17T12:34:52.411093Z"
   },
   {
     "id": "trator-passeio-e-pedal-bandeirante-5b0d",
@@ -107,7 +237,7 @@
     "price": 361.0,
     "price_text": "R$\n361",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.345530Z"
+    "collected_at": "2026-01-17T12:34:52.425562Z"
   },
   {
     "id": "smart-tv-50-britania-roku-led-dolby-audio-18f4",
@@ -117,7 +247,7 @@
     "price": 1559.0,
     "price_text": "R$\n1.559",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.359780Z"
+    "collected_at": "2026-01-17T12:34:52.440267Z"
   },
   {
     "id": "papel-higienico-mimmo-folha-dupla-com-24-rolos-30-metros-d940",
@@ -127,7 +257,7 @@
     "price": 19.9,
     "price_text": "R$\n19,90",
     "store": "Angeloni",
-    "collected_at": "2026-01-17T08:22:46.374303Z"
+    "collected_at": "2026-01-17T12:34:52.454522Z"
   },
   {
     "id": "travesseiro-buddemeyer-50x90cm-toque-de-pluma-fbc3",
@@ -137,7 +267,7 @@
     "price": 88.86,
     "price_text": "R$\n88,86",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.388837Z"
+    "collected_at": "2026-01-17T12:34:52.468562Z"
   },
   {
     "id": "bebedouro-de-agua-esmaltec-de-mesa-refrigerado-por-compressor-gelagua-branco-egm30-4614",
@@ -147,7 +277,7 @@
     "price": 500.0,
     "price_text": "R$\n500",
     "store": "Web Continental",
-    "collected_at": "2026-01-17T08:22:46.403286Z"
+    "collected_at": "2026-01-17T12:34:52.482944Z"
   },
   {
     "id": "moedas-fone-de-ouvido-sem-fio-qcy-t13-0896",
@@ -157,7 +287,7 @@
     "price": 92.69,
     "price_text": "R$\n92,69",
     "store": "AliExpress",
-    "collected_at": "2026-01-17T08:22:46.417486Z"
+    "collected_at": "2026-01-17T12:34:52.498262Z"
   },
   {
     "id": "10-unid-ou-rec-ou-por-ou-rdollar-891cada-azeite-andorinha-lata-200ml-17b9",
@@ -167,7 +297,7 @@
     "price": 8.19,
     "price_text": "R$ 8,19",
     "store": null,
-    "collected_at": "2026-01-17T08:22:46.422165Z"
+    "collected_at": "2026-01-17T12:34:52.503237Z"
   },
   {
     "id": "smartwatch-mibro-lite-global-version-c04c",
@@ -177,7 +307,7 @@
     "price": 101.0,
     "price_text": "R$\n101",
     "store": "AliExpress",
-    "collected_at": "2026-01-17T08:22:46.436498Z"
+    "collected_at": "2026-01-17T12:34:52.517680Z"
   },
   {
     "id": "smart-tv-75-4k-hisense-75a6nv-vidaa-u9-9ded",
@@ -187,7 +317,7 @@
     "price": 3239.0,
     "price_text": "R$\n3.239",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.450754Z"
+    "collected_at": "2026-01-17T12:34:52.531689Z"
   },
   {
     "id": "aromatizador-cuide-se-bem-stranger-things-60ml-6108",
@@ -197,7 +327,7 @@
     "price": 27.5,
     "price_text": "R$\n27,50",
     "store": "Boticário",
-    "collected_at": "2026-01-17T08:22:46.465570Z"
+    "collected_at": "2026-01-17T12:34:52.546485Z"
   },
   {
     "id": "rec-principia-gel-facial-2porcento-acido-salicilico-350g-c0f9",
@@ -207,7 +337,7 @@
     "price": 37.48,
     "price_text": "R$\n37,48",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.480539Z"
+    "collected_at": "2026-01-17T12:34:52.562084Z"
   },
   {
     "id": "samsung-galaxy-fit3-smartwatch-cinza-escuro-e41a",
@@ -217,7 +347,7 @@
     "price": 194.0,
     "price_text": "R$\n194",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.495082Z"
+    "collected_at": "2026-01-17T12:34:52.577622Z"
   },
   {
     "id": "switch-keeplink-25gb-8p-1-porta-10g-sfp-gerenciavel-afdc",
@@ -227,7 +357,7 @@
     "price": 355.0,
     "price_text": "R$\n355",
     "store": "AliExpress",
-    "collected_at": "2026-01-17T08:22:46.510053Z"
+    "collected_at": "2026-01-17T12:34:52.593404Z"
   },
   {
     "id": "escova-de-dentes-3-lados-kit-4-unidades-macia-7a2d",
@@ -237,7 +367,7 @@
     "price": 26.91,
     "price_text": "R$\n26,91",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.524235Z"
+    "collected_at": "2026-01-17T12:34:52.608062Z"
   },
   {
     "id": "nescafe-dolce-gusto-genio-s-basic-branco-61ef",
@@ -247,7 +377,7 @@
     "price": 319.0,
     "price_text": "R$\n319",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.538409Z"
+    "collected_at": "2026-01-17T12:34:52.622428Z"
   },
   {
     "id": "lavadora-de-alta-pressao-vonder-lav-1300-90bar-d114",
@@ -257,7 +387,7 @@
     "price": 198.0,
     "price_text": "R$\n198",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.553485Z"
+    "collected_at": "2026-01-17T12:34:52.636872Z"
   },
   {
     "id": "controle-sem-fio-sony-ps-preto-midnight-black-dc67",
@@ -267,7 +397,7 @@
     "price": 329.0,
     "price_text": "R$\n329",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.567688Z"
+    "collected_at": "2026-01-17T12:34:52.651869Z"
   },
   {
     "id": "espelho-organico-70cm-design-moderno-ee5c",
@@ -277,7 +407,7 @@
     "price": 42.42,
     "price_text": "R$\n42,42",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.582274Z"
+    "collected_at": "2026-01-17T12:34:52.666993Z"
   },
   {
     "id": "air-fryer-britania-bfr51-55l-1500w-127v-preta-f05c",
@@ -287,7 +417,7 @@
     "price": 187.0,
     "price_text": "R$\n187",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.596599Z"
+    "collected_at": "2026-01-17T12:34:52.682003Z"
   },
   {
     "id": "panettone-lingua-de-gato-kopenhagen-136kg-17a5",
@@ -297,7 +427,7 @@
     "price": 83.96,
     "price_text": "R$\n83,96",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.611105Z"
+    "collected_at": "2026-01-17T12:34:52.696856Z"
   },
   {
     "id": "fechadura-digital-com-senha-fr-10-preto-intelbras-d130",
@@ -307,7 +437,7 @@
     "price": 156.0,
     "price_text": "R$\n156",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.625552Z"
+    "collected_at": "2026-01-17T12:34:52.711792Z"
   },
   {
     "id": "graveyard-keeper-64fa",
@@ -317,7 +447,7 @@
     "price": 11.99,
     "price_text": "R$\n11,99",
     "store": "Steam",
-    "collected_at": "2026-01-17T08:22:46.639677Z"
+    "collected_at": "2026-01-17T12:34:52.726951Z"
   },
   {
     "id": "rec-principia-creme-facial-karite-glicerina-e-niacinamida-45c0",
@@ -327,7 +457,7 @@
     "price": 29.83,
     "price_text": "R$\n29,83",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.654305Z"
+    "collected_at": "2026-01-17T12:34:52.741674Z"
   },
   {
     "id": "relogio-casio-g-shock-digital-masculino-preto-08e4",
@@ -337,7 +467,7 @@
     "price": 229.0,
     "price_text": "R$\n229",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.667722Z"
+    "collected_at": "2026-01-17T12:34:52.756403Z"
   },
   {
     "id": "2-jogos-alan-wake-remastered-alan-wake-2-deluxe-edition-ps5-midia-fisica-5000",
@@ -347,7 +477,7 @@
     "price": 202.0,
     "price_text": "R$\n202",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.680886Z"
+    "collected_at": "2026-01-17T12:34:52.771316Z"
   },
   {
     "id": "leve-3-rdollar-76-cada-cerveja-premium-heineken-barril-5-litros-f901",
@@ -357,7 +487,7 @@
     "price": 76.0,
     "price_text": "R$ 76",
     "store": null,
-    "collected_at": "2026-01-17T08:22:46.685448Z"
+    "collected_at": "2026-01-17T12:34:52.776249Z"
   },
   {
     "id": "resident-evil-requiem-lacrado-ps5-752d",
@@ -367,7 +497,7 @@
     "price": 245.0,
     "price_text": "R$\n245",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.699053Z"
+    "collected_at": "2026-01-17T12:34:52.791721Z"
   },
   {
     "id": "jogo-resident-evil-requiem-ps5-br-midia-fisica-cdcd",
@@ -377,7 +507,7 @@
     "price": 279.0,
     "price_text": "R$\n279",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.712466Z"
+    "collected_at": "2026-01-17T12:34:52.806775Z"
   },
   {
     "id": "canon-pixma-g3110-multifuncional-com-wi-fi-preto-2ca0",
@@ -387,7 +517,7 @@
     "price": 564.0,
     "price_text": "R$\n564",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.733426Z"
+    "collected_at": "2026-01-17T12:34:52.821601Z"
   },
   {
     "id": "galaxy-buds-core-preto-930b",
@@ -397,7 +527,7 @@
     "price": 194.0,
     "price_text": "R$\n194",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.746734Z"
+    "collected_at": "2026-01-17T12:34:52.835973Z"
   },
   {
     "id": "25porcento-off-mercado-livre-f76b",
@@ -407,7 +537,7 @@
     "price": 70.0,
     "price_text": "R$70",
     "store": null,
-    "collected_at": "2026-01-17T08:22:46.751158Z"
+    "collected_at": "2026-01-17T12:34:52.841087Z"
   },
   {
     "id": "chuteira-futsal-umbro-pro-5-bump-unissex-52ca",
@@ -417,7 +547,7 @@
     "price": 238.0,
     "price_text": "R$\n238",
     "store": "Netshoes",
-    "collected_at": "2026-01-17T08:22:46.764369Z"
+    "collected_at": "2026-01-17T12:34:52.856457Z"
   },
   {
     "id": "sorvete-baunilha-com-chocolate-garoto-825g-0fcc",
@@ -427,17 +557,17 @@
     "price": 7.0,
     "price_text": "R$\n7,00",
     "store": "Americanas",
-    "collected_at": "2026-01-17T08:22:46.777649Z"
+    "collected_at": "2026-01-17T12:34:52.871132Z"
   },
   {
     "id": "10porcento-off-em-principia-na-amazon-cc26",
     "source": "pelando",
     "title": "10% OFF em PRINCIPIA na Amazon",
     "url": "https://www.pelando.com.br/d/10porcento-off-em-principia-na-amazon-cc26",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.802993Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:52.899573Z"
   },
   {
     "id": "amd-ryzen-7-9800x3d-8-nucleos-16-threads-am5-3459",
@@ -447,7 +577,7 @@
     "price": 2610.0,
     "price_text": "R$\n2.610",
     "store": "KaBuM!",
-    "collected_at": "2026-01-17T08:22:46.816694Z"
+    "collected_at": "2026-01-17T12:34:52.916424Z"
   },
   {
     "id": "rec-protetor-facial-principia-fps-60-com-niacinamida-5porcento-2dc5",
@@ -457,7 +587,7 @@
     "price": 33.66,
     "price_text": "R$\n33,66",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.830086Z"
+    "collected_at": "2026-01-17T12:34:52.932558Z"
   },
   {
     "id": "caixa-de-ferramentas-plastica-34cm-vonder-15af",
@@ -467,7 +597,7 @@
     "price": 23.98,
     "price_text": "R$\n23,98",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.843522Z"
+    "collected_at": "2026-01-17T12:34:52.948194Z"
   },
   {
     "id": "torneira-de-banheiro-bico-curvo-dourada-35cm-1ffb",
@@ -477,7 +607,7 @@
     "price": 11.9,
     "price_text": "R$\n11,90",
     "store": "Leroy Merlin",
-    "collected_at": "2026-01-17T08:22:46.857032Z"
+    "collected_at": "2026-01-17T12:34:52.963629Z"
   },
   {
     "id": "softinox-cuba-inox-60x40-com-torneira-escovada-cb98",
@@ -487,7 +617,7 @@
     "price": 244.0,
     "price_text": "R$\n244",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:46.870584Z"
+    "collected_at": "2026-01-17T12:34:52.978716Z"
   },
   {
     "id": "sabonete-liquido-nivea-creme-soft-250ml-02eb",
@@ -497,7 +627,7 @@
     "price": 5.99,
     "price_text": "R$\n5,99",
     "store": "Drogaria São Paulo",
-    "collected_at": "2026-01-17T08:22:46.884168Z"
+    "collected_at": "2026-01-17T12:34:52.993713Z"
   },
   {
     "id": "bota-casual-feminina-com-cano-baixo-vizzano-54c9",
@@ -507,7 +637,7 @@
     "price": 57.0,
     "price_text": "R$\n57,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.897536Z"
+    "collected_at": "2026-01-17T12:34:53.015044Z"
   },
   {
     "id": "mini-milho-em-conserva-la-violetera-295kg-5ece",
@@ -517,7 +647,7 @@
     "price": 39.9,
     "price_text": "R$\n39,90",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.910901Z"
+    "collected_at": "2026-01-17T12:34:53.029979Z"
   },
   {
     "id": "azeitona-verde-gordal-grauda-1kg-ad8e",
@@ -527,7 +657,7 @@
     "price": 29.72,
     "price_text": "R$\n29,72",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.924239Z"
+    "collected_at": "2026-01-17T12:34:53.045322Z"
   },
   {
     "id": "mixed-nuts-agtal-ejoy-zero-acucar-12x25g-b150",
@@ -537,7 +667,7 @@
     "price": 27.65,
     "price_text": "R$\n27,65",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.937607Z"
+    "collected_at": "2026-01-17T12:34:53.060514Z"
   },
   {
     "id": "app-caixa-de-som-aiwa-boombox-plus-200w-bluetooth-b2c0",
@@ -547,7 +677,7 @@
     "price": 1153.0,
     "price_text": "R$\n1.153",
     "store": "Nagem",
-    "collected_at": "2026-01-17T08:22:46.950967Z"
+    "collected_at": "2026-01-17T12:34:53.077877Z"
   },
   {
     "id": "jogo-de-lencol-casal-3-pecas-400-fios-cinza-b953",
@@ -557,7 +687,7 @@
     "price": 25.49,
     "price_text": "R$\n25,49",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.964554Z"
+    "collected_at": "2026-01-17T12:34:53.094198Z"
   },
   {
     "id": "exclusive-reserve-deo-colonia-75ml-1910",
@@ -567,7 +697,7 @@
     "price": 38.22,
     "price_text": "R$\n38,22",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.977858Z"
+    "collected_at": "2026-01-17T12:34:53.108880Z"
   },
   {
     "id": "kit-3-meias-puma-cano-medio-masculino-algodao-8b9d",
@@ -577,7 +707,7 @@
     "price": 27.07,
     "price_text": "R$\n27,07",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:46.991468Z"
+    "collected_at": "2026-01-17T12:34:53.125148Z"
   },
   {
     "id": "marinex-conjunto-assadeiras-ovais-3-pecas-branco-8713",
@@ -587,7 +717,7 @@
     "price": 42.5,
     "price_text": "R$\n42,50",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.004899Z"
+    "collected_at": "2026-01-17T12:34:53.140774Z"
   },
   {
     "id": "moto-racer-4-4ee9",
@@ -597,7 +727,7 @@
     "price": 2.89,
     "price_text": "R$\n2,89",
     "store": "Steam",
-    "collected_at": "2026-01-17T08:22:47.018749Z"
+    "collected_at": "2026-01-17T12:34:53.155891Z"
   },
   {
     "id": "moto-racer-212a",
@@ -607,7 +737,7 @@
     "price": 2.39,
     "price_text": "R$\n2,39",
     "store": "GOG.com",
-    "collected_at": "2026-01-17T08:22:47.027631Z"
+    "collected_at": "2026-01-17T12:34:53.166149Z"
   },
   {
     "id": "kit-10-cuecas-slip-infantil-algodao-mash-tam-p-e6d4",
@@ -617,7 +747,7 @@
     "price": 74.99,
     "price_text": "R$\n74,99",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.040947Z"
+    "collected_at": "2026-01-17T12:34:53.181391Z"
   },
   {
     "id": "kit-10-cuecas-infantis-slip-algodao-usee-brasil-6d06",
@@ -627,7 +757,7 @@
     "price": 39.68,
     "price_text": "R$\n39,68",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.060146Z"
+    "collected_at": "2026-01-17T12:34:53.206009Z"
   },
   {
     "id": "amd-ryzen-5-9600x-6-nucleos-54ghz-c-video-integrado-c0c0",
@@ -637,7 +767,7 @@
     "price": 1298.0,
     "price_text": "R$\n1.298",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.073731Z"
+    "collected_at": "2026-01-17T12:34:53.223049Z"
   },
   {
     "id": "rdollar600-off-em-playstation-vr2-oculos-de-realidade-virtual-vr-para-ps5-selecionado-ac02",
@@ -647,7 +777,7 @@
     "price": 600.0,
     "price_text": "R$600",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.078107Z"
+    "collected_at": "2026-01-17T12:34:53.228559Z"
   },
   {
     "id": "cortina-blackout-3x28m-gelo-casa-laura-9eda",
@@ -657,7 +787,7 @@
     "price": 64.51,
     "price_text": "R$\n64,51",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.091401Z"
+    "collected_at": "2026-01-17T12:34:53.244791Z"
   },
   {
     "id": "lavadora-de-roupas-electrolux-lec15-15kg-branca-premium-care-com-cesto-inox-110v-e7c5",
@@ -667,7 +797,7 @@
     "price": 1899.0,
     "price_text": "R$\n1.899",
     "store": "Nagem",
-    "collected_at": "2026-01-17T08:22:47.104740Z"
+    "collected_at": "2026-01-17T12:34:53.261007Z"
   },
   {
     "id": "cachaca-extra-cabare-premium-15-anos-garrafa-700ml-4872",
@@ -677,7 +807,7 @@
     "price": 186.0,
     "price_text": "R$\n186",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.118035Z"
+    "collected_at": "2026-01-17T12:34:53.277982Z"
   },
   {
     "id": "rdollar600-off-em-console-playstation-5-pro-sony-ssd-2tb-com-controle-sem-fio-dualsense-branco-cae6",
@@ -687,17 +817,17 @@
     "price": 600.0,
     "price_text": "R$600",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.122472Z"
+    "collected_at": "2026-01-17T12:34:53.283711Z"
   },
   {
     "id": "15porcento-off-em-jogo-animal-crossing-new-horizons-para-nintendo-switch-2-015a",
     "source": "pelando",
     "title": "15% OFF em Jogo Animal Crossing New Horizons, para Nintendo Switch 2",
     "url": "https://www.pelando.com.br/d/15porcento-off-em-jogo-animal-crossing-new-horizons-para-nintendo-switch-2-015a",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.151180Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:53.315771Z"
   },
   {
     "id": "freezer-vertical-electrolux-162l-inverter-fei19-fei19-127v-15f5",
@@ -707,7 +837,7 @@
     "price": 1757.0,
     "price_text": "R$\n1.757",
     "store": "Electrolux",
-    "collected_at": "2026-01-17T08:22:47.165065Z"
+    "collected_at": "2026-01-17T12:34:53.332436Z"
   },
   {
     "id": "ventoinha-thermalright-tl-e12b-v3-120mm-2000rpm-70cfm-preto-bd42",
@@ -717,7 +847,7 @@
     "price": 35.99,
     "price_text": "R$\n35,99",
     "store": "Pichau",
-    "collected_at": "2026-01-17T08:22:47.178345Z"
+    "collected_at": "2026-01-17T12:34:53.347992Z"
   },
   {
     "id": "kit-2-sutias-sem-costura-sustentacao-trifil-b84f",
@@ -727,7 +857,7 @@
     "price": 57.59,
     "price_text": "R$\n57,59",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.191538Z"
+    "collected_at": "2026-01-17T12:34:53.364829Z"
   },
   {
     "id": "kit-12-meias-invisiveis-confortaveis-hoahi-9c13",
@@ -737,7 +867,7 @@
     "price": 49.99,
     "price_text": "R$\n49,99",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.204698Z"
+    "collected_at": "2026-01-17T12:34:53.381914Z"
   },
   {
     "id": "cesto-de-roupa-suja-de-bambu-com-tampa-e-alcas-50-litros-kontuz-7fff",
@@ -747,7 +877,7 @@
     "price": 42.41,
     "price_text": "R$\n42,41",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.217991Z"
+    "collected_at": "2026-01-17T12:34:53.398119Z"
   },
   {
     "id": "rdollar50-off-em-jogo-resident-evil-requiem-ps5-5be9",
@@ -757,7 +887,7 @@
     "price": 50.0,
     "price_text": "R$50",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.222563Z"
+    "collected_at": "2026-01-17T12:34:53.403280Z"
   },
   {
     "id": "bandeja-de-cafe-na-cama-bambu-kururua-dobravel-c2af",
@@ -767,7 +897,7 @@
     "price": 25.48,
     "price_text": "R$\n25,48",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.235849Z"
+    "collected_at": "2026-01-17T12:34:53.418782Z"
   },
   {
     "id": "tenis-flexfocus-lite-modern-running-unissex-puma-c5b3",
@@ -777,7 +907,7 @@
     "price": 219.0,
     "price_text": "R$\n219",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.249123Z"
+    "collected_at": "2026-01-17T12:34:53.434228Z"
   },
   {
     "id": "filtro-de-linha-6-tomadas-3m-10a-bivolt-preto-3483",
@@ -787,17 +917,17 @@
     "price": 33.25,
     "price_text": "R$\n33,25",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.262390Z"
+    "collected_at": "2026-01-17T12:34:53.449907Z"
   },
   {
     "id": "cupom-de-pet-45c2",
     "source": "pelando",
     "title": "Cupom 20%off em produtos Pet selecionados",
     "url": "https://www.pelando.com.br/d/cupom-de-pet-45c2",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.286962Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:53.481800Z"
   },
   {
     "id": "kit-3-meias-invisiveis-day-by-day-hoahi-92b6",
@@ -807,7 +937,7 @@
     "price": 20.3,
     "price_text": "R$\n20,30",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.300162Z"
+    "collected_at": "2026-01-17T12:34:53.499712Z"
   },
   {
     "id": "tom-clancys-the-division-2-xbox-one-dd42",
@@ -817,7 +947,7 @@
     "price": 37.45,
     "price_text": "R$\n37,45",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.313521Z"
+    "collected_at": "2026-01-17T12:34:53.515632Z"
   },
   {
     "id": "torneira-prizi-cozinha-dourada-c-ducha-movel-dc8b",
@@ -827,17 +957,17 @@
     "price": 24.9,
     "price_text": "R$\n24,90",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.326703Z"
+    "collected_at": "2026-01-17T12:34:53.535076Z"
   },
   {
     "id": "10porcento-off-em-dragon-quest-vii-reimagined-para-ps5-aa43",
     "source": "pelando",
     "title": "10% OFF em Dragon Quest VII Reimagined para PS5",
     "url": "https://www.pelando.com.br/d/10porcento-off-em-dragon-quest-vii-reimagined-para-ps5-aa43",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.351450Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:53.563641Z"
   },
   {
     "id": "rocadeira-profissional-5x1-gasolina-35hp-75cc-nakasaki-7172",
@@ -847,7 +977,7 @@
     "price": 480.0,
     "price_text": "R$\n480",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.364978Z"
+    "collected_at": "2026-01-17T12:34:53.580211Z"
   },
   {
     "id": "rdollar-1341-por-bright-filtro-de-linha-cfusivel-5-tomadas-90-dias-de-amazon-music-6ed0",
@@ -857,17 +987,17 @@
     "price": 13.41,
     "price_text": "R$ 13,41",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.369428Z"
+    "collected_at": "2026-01-17T12:34:53.586224Z"
   },
   {
     "id": "ebook-quatro-paredes-capitulo-extra-de-mariposa-vermelha-1cde",
     "source": "pelando",
     "title": "eBook: Quatro paredes: Capítulo extra de Mariposa Vermelha",
     "url": "https://www.pelando.com.br/d/ebook-quatro-paredes-capitulo-extra-de-mariposa-vermelha-1cde",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.394306Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:53.616498Z"
   },
   {
     "id": "chaleira-eletrica-aroma-acev01l-vidro-22-litros-1500w-agratto-2462",
@@ -877,7 +1007,7 @@
     "price": 89.0,
     "price_text": "R$\n89,00",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.426566Z"
+    "collected_at": "2026-01-17T12:34:53.633222Z"
   },
   {
     "id": "controle-remoto-pix-p-lg-abk73715664-smart-3d-9a3c",
@@ -887,7 +1017,7 @@
     "price": 5.31,
     "price_text": "R$ 5,31",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.437978Z"
+    "collected_at": "2026-01-17T12:34:53.638396Z"
   },
   {
     "id": "rec-colgate-creme-dental-com-clareamento-luminous-white-glow-70g-2-un-3f13",
@@ -897,7 +1027,7 @@
     "price": 16.58,
     "price_text": "R$\n16,58",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.453781Z"
+    "collected_at": "2026-01-17T12:34:53.654824Z"
   },
   {
     "id": "revista-superposter-switch-2-super-n-editora-europa-cdc0",
@@ -907,7 +1037,7 @@
     "price": 6.37,
     "price_text": "R$\n6,37",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.467977Z"
+    "collected_at": "2026-01-17T12:34:53.670370Z"
   },
   {
     "id": "dock-station-hdssd-sata-2535-usb-30-10tb-7b20",
@@ -917,17 +1047,17 @@
     "price": 118.0,
     "price_text": "R$\n118",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.481656Z"
+    "collected_at": "2026-01-17T12:34:53.686116Z"
   },
   {
     "id": "10porcento-off-em-jogo-mario-tennis-fever-nintendo-switch-2-9484",
     "source": "pelando",
     "title": "10% OFF em Jogo Mario Tennis Fever Nintendo Switch 2",
     "url": "https://www.pelando.com.br/d/10porcento-off-em-jogo-mario-tennis-fever-nintendo-switch-2-9484",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.507496Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:53.714886Z"
   },
   {
     "id": "jogo-resident-evil-9-requiem-ps5-midia-fisica-546f",
@@ -937,7 +1067,7 @@
     "price": 278.0,
     "price_text": "R$\n278",
     "store": "KaBuM!",
-    "collected_at": "2026-01-17T08:22:47.520952Z"
+    "collected_at": "2026-01-17T12:34:53.730644Z"
   },
   {
     "id": "processador-amd-ryzen-5-5600gt-36ghz-6-nucleos-am4-953f",
@@ -947,7 +1077,7 @@
     "price": 799.0,
     "price_text": "R$\n799",
     "store": "KaBuM!",
-    "collected_at": "2026-01-17T08:22:47.534560Z"
+    "collected_at": "2026-01-17T12:34:53.746157Z"
   },
   {
     "id": "kit-5-sacos-protetores-para-lavar-roupas-37a0",
@@ -957,17 +1087,17 @@
     "price": 36.9,
     "price_text": "R$\n36,90",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.547883Z"
+    "collected_at": "2026-01-17T12:34:53.762812Z"
   },
   {
     "id": "50porcento-off-na-2-unidade-em-selecao-de-produtos-de-limpeza-bfb9",
     "source": "pelando",
     "title": "50% OFF na 2° unidade em Seleção de Produtos de Limpeza",
     "url": "https://www.pelando.com.br/d/50porcento-off-na-2-unidade-em-selecao-de-produtos-de-limpeza-bfb9",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.573071Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:53.792060Z"
   },
   {
     "id": "jogo-dlcs-resident-evil-4-gold-edition-steam-pc-1ab4",
@@ -977,7 +1107,7 @@
     "price": 70.96,
     "price_text": "R$\n70,96",
     "store": "Nuuvem",
-    "collected_at": "2026-01-17T08:22:47.587112Z"
+    "collected_at": "2026-01-17T12:34:53.809099Z"
   },
   {
     "id": "ar-condicionado-electrolux-12000-btus-inverter-frio-0498",
@@ -987,7 +1117,7 @@
     "price": 1999.0,
     "price_text": "R$\n1.999",
     "store": "Fast Shop",
-    "collected_at": "2026-01-17T08:22:47.600502Z"
+    "collected_at": "2026-01-17T12:34:53.825189Z"
   },
   {
     "id": "baby-alive-sweet-snacks-tilly-tinker-77ea",
@@ -997,7 +1127,7 @@
     "price": 65.1,
     "price_text": "R$\n65,10",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.613804Z"
+    "collected_at": "2026-01-17T12:34:53.841168Z"
   },
   {
     "id": "lava-loucas-philco-10-servicos-preta-pll10-127-volts-7f92",
@@ -1007,17 +1137,17 @@
     "price": 2036.0,
     "price_text": "R$\n2.036",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.627123Z"
+    "collected_at": "2026-01-17T12:34:53.857290Z"
   },
   {
     "id": "10porcento-off-em-selecao-de-alimentos-rapidos-defc",
     "source": "pelando",
     "title": "10% OFF em Seleção de alimentos rápidos",
     "url": "https://www.pelando.com.br/d/10porcento-off-em-selecao-de-alimentos-rapidos-defc",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.651641Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:53.887210Z"
   },
   {
     "id": "moedas-rdollar-101-qcy-t13-anc-fones-bluetooth-53-com-cancelamento-5dad",
@@ -1027,7 +1157,7 @@
     "price": 101.0,
     "price_text": "R$ 101",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.656094Z"
+    "collected_at": "2026-01-17T12:34:53.892987Z"
   },
   {
     "id": "cama-box-queen-size-bipartida-cama-inbox-moderne-ortopedico-com-camada-especial-de-espuma-d45-63x158x198cm-brancografite-de45",
@@ -1037,7 +1167,7 @@
     "price": 1799.0,
     "price_text": "R$\n1.799",
     "store": "Casas Bahia",
-    "collected_at": "2026-01-17T08:22:47.669335Z"
+    "collected_at": "2026-01-17T12:34:53.908974Z"
   },
   {
     "id": "controle-dualsense-sem-fio-astro-bot-edicao-limitada-6e9d",
@@ -1047,7 +1177,7 @@
     "price": 539.0,
     "price_text": "R$\n539",
     "store": "KaBuM!",
-    "collected_at": "2026-01-17T08:22:47.682374Z"
+    "collected_at": "2026-01-17T12:34:53.924655Z"
   },
   {
     "id": "caixa-bluetooth-waaw-infinite-1000-c-rodas-d760",
@@ -1057,7 +1187,7 @@
     "price": 2951.0,
     "price_text": "R$\n2.951",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.695607Z"
+    "collected_at": "2026-01-17T12:34:53.940444Z"
   },
   {
     "id": "ferro-de-passar-britania-bf07-base-antiaderente-vapor-vertical-reservatorio-azul-220v-e-110v-b586",
@@ -1067,27 +1197,27 @@
     "price": 66.4,
     "price_text": "R$\n66,40",
     "store": "Casas Bahia",
-    "collected_at": "2026-01-17T08:22:47.708752Z"
+    "collected_at": "2026-01-17T12:34:53.955675Z"
   },
   {
     "id": "11porcento-off-em-processador-selecionado-a233",
     "source": "pelando",
     "title": "11% OFF em Processador Selecionado",
     "url": "https://www.pelando.com.br/d/11porcento-off-em-processador-selecionado-a233",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.733350Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:53.985028Z"
   },
   {
     "id": "ganhe-ate-20porcento-off-em-selecao-de-produtos-d531",
     "source": "pelando",
     "title": "Ganhe até 20% OFF em Seleção de Produtos",
     "url": "https://www.pelando.com.br/d/ganhe-ate-20porcento-off-em-selecao-de-produtos-d531",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.757624Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:54.014817Z"
   },
   {
     "id": "fone-soundcore-by-anker-liberty-4-nc-bluetooth-anc-azul-50h-75d6",
@@ -1097,7 +1227,7 @@
     "price": 413.0,
     "price_text": "R$\n413",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.770588Z"
+    "collected_at": "2026-01-17T12:34:54.031393Z"
   },
   {
     "id": "caixa-de-som-bluetooth-jbl-boombox-4-laranja-c1a4",
@@ -1107,7 +1237,7 @@
     "price": 2852.0,
     "price_text": "R$\n2.852",
     "store": "Netshoes",
-    "collected_at": "2026-01-17T08:22:47.783596Z"
+    "collected_at": "2026-01-17T12:34:54.048454Z"
   },
   {
     "id": "cenoura-e-bronze-kit-protetor-solar-corpo-fps-30-200ml-facial-fps-30-50g-e16c",
@@ -1117,7 +1247,7 @@
     "price": 23.0,
     "price_text": "R$\n23,00",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.796639Z"
+    "collected_at": "2026-01-17T12:34:54.065403Z"
   },
   {
     "id": "tenis-new-balance-430-v4-masculino-7dc0",
@@ -1127,7 +1257,7 @@
     "price": 170.0,
     "price_text": "R$\n170",
     "store": "Netshoes",
-    "collected_at": "2026-01-17T08:22:47.809923Z"
+    "collected_at": "2026-01-17T12:34:54.081728Z"
   },
   {
     "id": "rdollar250-off-para-compras-acima-de-rdollar2800-f26f",
@@ -1137,7 +1267,7 @@
     "price": 250.0,
     "price_text": "R$250",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.814269Z"
+    "collected_at": "2026-01-17T12:34:54.087011Z"
   },
   {
     "id": "rdollar100-off-em-pc-gamer-selecionados-70ae",
@@ -1147,7 +1277,7 @@
     "price": 100.0,
     "price_text": "R$100",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.818666Z"
+    "collected_at": "2026-01-17T12:34:54.092348Z"
   },
   {
     "id": "desodorante-rexona-v8-roll-on-50ml-c-2-unidades-30c4",
@@ -1157,7 +1287,7 @@
     "price": 9.99,
     "price_text": "R$\n9,99",
     "store": "Drogarias Pacheco",
-    "collected_at": "2026-01-17T08:22:47.832126Z"
+    "collected_at": "2026-01-17T12:34:54.107647Z"
   },
   {
     "id": "tenis-barreda-decode-adidas-201f",
@@ -1167,7 +1297,7 @@
     "price": 389.0,
     "price_text": "R$\n389",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.845437Z"
+    "collected_at": "2026-01-17T12:34:54.122805Z"
   },
   {
     "id": "kit-la-roche-posay-protetor-solar-fps-80-anthelios-airlicium-40g-gel-de-limpeza-effaclar-concentrado-50g-27d5",
@@ -1177,7 +1307,7 @@
     "price": 53.9,
     "price_text": "R$\n53,90",
     "store": "Drogarias Pacheco",
-    "collected_at": "2026-01-17T08:22:47.858622Z"
+    "collected_at": "2026-01-17T12:34:54.136804Z"
   },
   {
     "id": "aparelho-de-jantar-e-lanche-16-pecas-biona-folk-em-ceramica-estampado-8808",
@@ -1187,7 +1317,7 @@
     "price": 149.0,
     "price_text": "R$\n149",
     "store": "Casas Bahia",
-    "collected_at": "2026-01-17T08:22:47.871857Z"
+    "collected_at": "2026-01-17T12:34:54.150849Z"
   },
   {
     "id": "kit-la-roche-posay-protetor-solar-facial-fps-50-anthelios-airlicium-40g-gel-de-limpeza-effaclar-concentrado-50g-3d22",
@@ -1197,7 +1327,7 @@
     "price": 59.9,
     "price_text": "R$\n59,90",
     "store": "Drogarias Pacheco",
-    "collected_at": "2026-01-17T08:22:47.884953Z"
+    "collected_at": "2026-01-17T12:34:54.165067Z"
   },
   {
     "id": "can-cooler-com-canudo-rose-quartz-ou-296ml-6938",
@@ -1207,7 +1337,7 @@
     "price": 79.0,
     "price_text": "R$\n79,00",
     "store": "Stanley",
-    "collected_at": "2026-01-17T08:22:47.898187Z"
+    "collected_at": "2026-01-17T12:34:54.179769Z"
   },
   {
     "id": "playstation-5-digital-825gb-com-controle-branco-1aec",
@@ -1217,7 +1347,7 @@
     "price": 2999.0,
     "price_text": "R$\n2.999",
     "store": "AliExpress",
-    "collected_at": "2026-01-17T08:22:47.911283Z"
+    "collected_at": "2026-01-17T12:34:54.195103Z"
   },
   {
     "id": "copo-termico-stanley-473ml-verde-hammertone-af80",
@@ -1227,7 +1357,7 @@
     "price": 79.0,
     "price_text": "R$\n79,00",
     "store": "Stanley",
-    "collected_at": "2026-01-17T08:22:47.924570Z"
+    "collected_at": "2026-01-17T12:34:54.209889Z"
   },
   {
     "id": "rdollar200-off-para-compras-acima-de-rdollar2300-30f0",
@@ -1237,7 +1367,7 @@
     "price": 200.0,
     "price_text": "R$200",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.928897Z"
+    "collected_at": "2026-01-17T12:34:54.214961Z"
   },
   {
     "id": "chinelo-casual-masculino-new-summer-kenner-c6ae",
@@ -1247,7 +1377,7 @@
     "price": 55.79,
     "price_text": "R$\n55,79",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:47.942098Z"
+    "collected_at": "2026-01-17T12:34:54.229644Z"
   },
   {
     "id": "fone-bluetooth-samsung-buds-core-c-microfone-5a57",
@@ -1257,7 +1387,7 @@
     "price": 201.0,
     "price_text": "R$\n201",
     "store": "Netshoes",
-    "collected_at": "2026-01-17T08:22:47.955386Z"
+    "collected_at": "2026-01-17T12:34:54.243617Z"
   },
   {
     "id": "jogo-de-talheres-faqueiro-inox-24-pecas-buzios-tramontina-c9cc",
@@ -1267,17 +1397,17 @@
     "price": 64.9,
     "price_text": "R$\n64,90",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.968538Z"
+    "collected_at": "2026-01-17T12:34:54.258524Z"
   },
   {
     "id": "15porcento-off-em-placa-mae-selecionadas-426c",
     "source": "pelando",
     "title": "15% OFF em Placa-mãe selecionadas",
     "url": "https://www.pelando.com.br/d/15porcento-off-em-placa-mae-selecionadas-426c",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:47.993181Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:54.285426Z"
   },
   {
     "id": "rdollar150-off-para-compras-acima-de-rdollar1500-em-selecionados-f237",
@@ -1287,7 +1417,7 @@
     "price": 150.0,
     "price_text": "R$150",
     "store": null,
-    "collected_at": "2026-01-17T08:22:47.997805Z"
+    "collected_at": "2026-01-17T12:34:54.290711Z"
   },
   {
     "id": "water-cooler-arctic-liquid-freezer-iii-360-argb-preto-d2ee",
@@ -1297,7 +1427,7 @@
     "price": 889.0,
     "price_text": "R$\n889",
     "store": "Pichau",
-    "collected_at": "2026-01-17T08:22:48.011287Z"
+    "collected_at": "2026-01-17T12:34:54.304884Z"
   },
   {
     "id": "kaiak-aventura-100ml-rdollar3927-5-vale-bonus-a467",
@@ -1307,7 +1437,7 @@
     "price": 39.27,
     "price_text": "R$\n39,27",
     "store": "Vale Bônus",
-    "collected_at": "2026-01-17T08:22:48.024579Z"
+    "collected_at": "2026-01-17T12:34:54.319416Z"
   },
   {
     "id": "samsung-galaxy-s25-fe-128gb-5g-azul-67-cam-tripla-e757",
@@ -1317,7 +1447,7 @@
     "price": 2474.0,
     "price_text": "R$\n2.474",
     "store": "Magalu",
-    "collected_at": "2026-01-17T08:22:48.037804Z"
+    "collected_at": "2026-01-17T12:34:54.334246Z"
   },
   {
     "id": "suporte-articulado-com-pistao-a-gas-para-monitor-zinnia-nimbo-110-13-pol-a-32-pol-branco-dcf5",
@@ -1327,17 +1457,17 @@
     "price": 64.99,
     "price_text": "R$\n64,99",
     "store": "Pichau",
-    "collected_at": "2026-01-17T08:22:48.051275Z"
+    "collected_at": "2026-01-17T12:34:54.349283Z"
   },
   {
     "id": "cadastre-se-e-ganhe-miniatura-egeo-dolce-10porcento-off-b9d6",
     "source": "pelando",
     "title": "Cadastre-se e ganhe Miniatura Egeo Dolce + 10% OFF",
     "url": "https://www.pelando.com.br/d/cadastre-se-e-ganhe-miniatura-egeo-dolce-10porcento-off-b9d6",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:48.076686Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:54.376640Z"
   },
   {
     "id": "rdollar50-off-em-jogo-saros-edicao-standard-para-ps5-a737",
@@ -1347,7 +1477,7 @@
     "price": 50.0,
     "price_text": "R$50",
     "store": null,
-    "collected_at": "2026-01-17T08:22:48.081236Z"
+    "collected_at": "2026-01-17T12:34:54.382224Z"
   },
   {
     "id": "teclado-mecanico-mancer-black-ghost-v2-rainbow-63be",
@@ -1357,7 +1487,7 @@
     "price": 99.99,
     "price_text": "R$\n99,99",
     "store": "Pichau",
-    "collected_at": "2026-01-17T08:22:48.094676Z"
+    "collected_at": "2026-01-17T12:34:54.398864Z"
   },
   {
     "id": "bluey-o-riacho-839a",
@@ -1367,7 +1497,7 @@
     "price": 9.43,
     "price_text": "R$\n9,43",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:48.107805Z"
+    "collected_at": "2026-01-17T12:34:54.415546Z"
   },
   {
     "id": "headset-gamer-superframe-odin-71-usb-preto-a862",
@@ -1377,7 +1507,7 @@
     "price": 89.99,
     "price_text": "R$\n89,99",
     "store": "Terabyte",
-    "collected_at": "2026-01-17T08:22:48.120836Z"
+    "collected_at": "2026-01-17T12:34:54.431909Z"
   },
   {
     "id": "smart-tv-philips-65-4k-qd-mini-led-ambilight-710f",
@@ -1387,7 +1517,7 @@
     "price": 4649.0,
     "price_text": "R$\n4.649",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:48.133810Z"
+    "collected_at": "2026-01-17T12:34:54.447557Z"
   },
   {
     "id": "smart-tv-samsung-vision-ai-qled-65-4k-qn65q7faagxzd-9598",
@@ -1397,7 +1527,7 @@
     "price": 3639.0,
     "price_text": "R$\n3.639",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:48.146816Z"
+    "collected_at": "2026-01-17T12:34:54.462265Z"
   },
   {
     "id": "jogo-10-potes-800ml-para-alimentos-bpa-free-760c",
@@ -1407,17 +1537,17 @@
     "price": 25.41,
     "price_text": "R$\n25,41",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:48.159906Z"
+    "collected_at": "2026-01-17T12:34:54.476872Z"
   },
   {
     "id": "10porcento-off-em-controles-selecionados-ffa8",
     "source": "pelando",
     "title": "10% OFF em Controles selecionados",
     "url": "https://www.pelando.com.br/d/10porcento-off-em-controles-selecionados-ffa8",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:48.184454Z"
+    "price": 699.0,
+    "price_text": "R$\n699",
+    "store": "Terabyte",
+    "collected_at": "2026-01-17T12:34:54.505883Z"
   },
   {
     "id": "regional-azeite-de-oliva-gallo-400ml-5b8d",
@@ -1427,7 +1557,7 @@
     "price": 19.79,
     "price_text": "R$\n19,79",
     "store": "Magalu",
-    "collected_at": "2026-01-17T08:22:48.197731Z"
+    "collected_at": "2026-01-17T12:34:54.522021Z"
   },
   {
     "id": "camiseta-better-classics-feminina-puma-3b11",
@@ -1437,7 +1567,7 @@
     "price": 59.99,
     "price_text": "R$\n59,99",
     "store": "Puma",
-    "collected_at": "2026-01-17T08:22:48.211059Z"
+    "collected_at": "2026-01-17T12:34:54.537781Z"
   },
   {
     "id": "smart-tv-75-polegadas-hisense-ultra-hd-4k-qled-q6n-com-wi-fi-bluetooth-usb-e-hdmi-75a51hua-22ba",
@@ -1447,7 +1577,7 @@
     "price": 3347.0,
     "price_text": "R$\n3.347",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:48.224212Z"
+    "collected_at": "2026-01-17T12:34:54.553140Z"
   },
   {
     "id": "kit-3-cestos-organizadores-de-bambu-com-forro-branco-0447",
@@ -1457,136 +1587,6 @@
     "price": 38.94,
     "price_text": "R$\n38,94",
     "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:48.237373Z"
-  },
-  {
-    "id": "chinelo-havaianas-top-unissex-varias-cores-b7ac",
-    "source": "pelando",
-    "title": "Chinelo Havaianas Top Unissex – Várias Cores",
-    "url": "https://www.pelando.com.br/d/chinelo-havaianas-top-unissex-varias-cores-b7ac",
-    "price": 26.66,
-    "price_text": "R$\n26,66",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:48.250462Z"
-  },
-  {
-    "id": "pop-soccer-lfc-luis-diaz-7dcf",
-    "source": "pelando",
-    "title": "POP Soccer: LFC Luis Diaz",
-    "url": "https://www.pelando.com.br/d/pop-soccer-lfc-luis-diaz-7dcf",
-    "price": 49.53,
-    "price_text": "R$\n49,53",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:48.263926Z"
-  },
-  {
-    "id": "kit-meia-new-balance-invisivel-3-pares-f024",
-    "source": "pelando",
-    "title": "Kit Meia New Balance Invisível 3 Pares",
-    "url": "https://www.pelando.com.br/d/kit-meia-new-balance-invisivel-3-pares-f024",
-    "price": 22.49,
-    "price_text": "R$\n22,49",
-    "store": "Netshoes",
-    "collected_at": "2026-01-17T08:22:48.277151Z"
-  },
-  {
-    "id": "kit-2-camisetas-masculinas-hering-basicas-44a6",
-    "source": "pelando",
-    "title": "Kit Com 2 Camisetas Masculinas Básicas Relaxed Hering",
-    "url": "https://www.pelando.com.br/d/kit-2-camisetas-masculinas-hering-basicas-44a6",
-    "price": 75.99,
-    "price_text": "R$\n75,99",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:48.290849Z"
-  },
-  {
-    "id": "kit-3-camisetas-slim-gola-v-masculinas-hering-2861",
-    "source": "pelando",
-    "title": "Kit Com 3 Camisetas Masculinas Básicas Slim Gola V Hering",
-    "url": "https://www.pelando.com.br/d/kit-3-camisetas-slim-gola-v-masculinas-hering-2861",
-    "price": 95.95,
-    "price_text": "R$\n95,95",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:48.304679Z"
-  },
-  {
-    "id": "colecao-bobbie-goods-kit-dia-e-noite-completo-e047",
-    "source": "pelando",
-    "title": "Coleção Bobbie Goods - Do dia para a noite + Dias quentes + Isso e aquilo",
-    "url": "https://www.pelando.com.br/d/colecao-bobbie-goods-kit-dia-e-noite-completo-e047",
-    "price": 52.33,
-    "price_text": "R$\n52,33",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:48.317924Z"
-  },
-  {
-    "id": "cabo-usb-c-2m-60w-turbo-nylon-p-android-e-iphone-ac0d",
-    "source": "pelando",
-    "title": "Cabo USB-C 2m 60W Turbo Nylon p/ Android e iPhone",
-    "url": "https://www.pelando.com.br/d/cabo-usb-c-2m-60w-turbo-nylon-p-android-e-iphone-ac0d",
-    "price": 12.98,
-    "price_text": "R$\n12,98",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:48.332493Z"
-  },
-  {
-    "id": "smart-tv-philips-86-4k-com-comando-de-voz-1736",
-    "source": "pelando",
-    "title": "Smart Tv Philips 86 4k 86pug7019 Comando De Voz Playstore",
-    "url": "https://www.pelando.com.br/d/smart-tv-philips-86-4k-com-comando-de-voz-1736",
-    "price": 5300.0,
-    "price_text": "R$\n5.300",
-    "store": "Mercado Livre",
-    "collected_at": "2026-01-17T08:22:48.347552Z"
-  },
-  {
-    "id": "13porcento-off-em-processadores-selecionados-3004",
-    "source": "pelando",
-    "title": "13% OFF em Processadores selecionados",
-    "url": "https://www.pelando.com.br/d/13porcento-off-em-processadores-selecionados-3004",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:48.375714Z"
-  },
-  {
-    "id": "ganhe-5porcento-off-seguindo-a-casas-bahia-no-mercado-livre-4616",
-    "source": "pelando",
-    "title": "Ganhe 5% OFF seguindo a Casas Bahia no Mercado Livre",
-    "url": "https://www.pelando.com.br/d/ganhe-5porcento-off-seguindo-a-casas-bahia-no-mercado-livre-4616",
-    "price": 6.9,
-    "price_text": "R$6,90",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:22:48.401185Z"
-  },
-  {
-    "id": "kit-2-camisetas-infantis-unissex-azul-manga-curta-bb7b",
-    "source": "pelando",
-    "title": "Kit 2 Camisetas Infantis Unissex Azul Manga Curta / HERING",
-    "url": "https://www.pelando.com.br/d/kit-2-camisetas-infantis-unissex-azul-manga-curta-bb7b",
-    "price": 19.19,
-    "price_text": "R$\n19,19",
-    "store": "Hering Outlet",
-    "collected_at": "2026-01-17T08:22:48.414564Z"
-  },
-  {
-    "id": "cama-box-casal-umaflex-loreto-527e",
-    "source": "pelando",
-    "title": "Cama Box Casal Umaflex Loreto",
-    "url": "https://www.pelando.com.br/d/cama-box-casal-umaflex-loreto-527e",
-    "price": 1299.0,
-    "price_text": "R$\n1.299",
-    "store": "Casas Bahia",
-    "collected_at": "2026-01-17T08:22:48.427695Z"
-  },
-  {
-    "id": "camiseta-masculina-manga-curta-com-estampa-rosa-hering-c732",
-    "source": "pelando",
-    "title": "Camiseta Masculina Manga Curta Com Estampa - Rosa / HERING",
-    "url": "https://www.pelando.com.br/d/camiseta-masculina-manga-curta-com-estampa-rosa-hering-c732",
-    "price": 15.99,
-    "price_text": "R$\n15,99",
-    "store": "Hering Outlet",
-    "collected_at": "2026-01-17T08:22:48.440875Z"
+    "collected_at": "2026-01-17T12:34:54.569281Z"
   }
 ]

@@ -1,21 +1,48 @@
 [
   {
+    "id": "gatry-268324",
+    "source": "gatry",
+    "title": "Tênis Nike Revolution 7 Masculino",
+    "url": "https://www.awin1.com/cread.php?awinmid=17652&awinaffid=667929&platform=dl&ued=https%3A%2F%2Fwww.nike.com.br%2Ftenis-nike-revolution-7-masculino-027285.html%3Fcor%3DIN",
+    "price_text": "R$ 229,99",
+    "store": "Nike",
+    "collected_at": "2026-01-17T12:36:03.608176Z"
+  },
+  {
     "id": "gatry-268316",
     "source": "gatry",
     "title": "Robô Aspirador Kabum! Smart 700",
     "url": "https://www.kabum.com.br/produto/155321",
     "price_text": "R$ 799,00",
     "store": "Kabum",
-    "collected_at": "2026-01-17T08:24:28.098942Z"
+    "collected_at": "2026-01-17T12:36:03.621720Z"
   },
   {
-    "id": "gatry-268317",
+    "id": "gatry-268327",
     "source": "gatry",
-    "title": "Concha Y Toro Casillero Del Diablo Cabernet Sauvignon 750ml",
-    "url": "https://amzn.to/49HTzKM",
-    "price_text": "R$ 37,05",
+    "title": "Mochila Com Rodinha Up4You Crinkle G Verde 107134",
+    "url": "https://www.amazon.com.br/Mochila-Rodinha-Up4you-Crinkle-Verde/dp/B0CKGLL5QL?dib=eyJ2IjoiMSJ9.c7FnA3jHyKR-_9WU18QAeuWAFxyHLnkwqX9sgGNRGcAkp4vEZoIMWU0D7ONDIPhNUzg210GTbIKsbR2V0KP8mxj7XPurChn8NFxaeIctBfXxberXaLD7PaWbJav34fgMBMhRqb_UPYKfzPdP5D-wmg.PR_e00F-6ho6a4vzkbm-GzFjJaxnzU_fouklaWc9cSw&dib_tag=se&qid=1768617608&sr=8-194&srs=20967360011&xpid=pNO-VwnRBwVSc&th=1&linkCode=ll1&tag=gatry0b-20&linkId=1b4cc7965b52340ba0538619636d71e4&language=pt_BR&ref_=as_li_ss_tl",
+    "price_text": "R$ 228,79",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:24:28.112577Z"
+    "collected_at": "2026-01-17T12:36:03.635316Z"
+  },
+  {
+    "id": "gatry-255948",
+    "source": "gatry",
+    "title": "WAP Aspirador De Pó Vertical POWER SPEED 2 Em 1, Compacto, 3 Litros, Com Mangueira Extensível, 133mbar 2000W 127V",
+    "url": "https://www.amazon.com.br/Aspirador-Power-Speed-2000W-Vermelho/dp/B07K8VPJHT?tag=gatry0b-20&th=1",
+    "price_text": "R$ 589,90",
+    "store": "Amazon",
+    "collected_at": "2026-01-17T12:36:03.647220Z"
+  },
+  {
+    "id": "gatry-268326",
+    "source": "gatry",
+    "title": "Massageador Elétrico Pistola Muscular Profissional Recarregável 4 Ponteiras",
+    "url": "https://www.amazon.com.br/Massageador-El%C3%A9trico-Profissional-Al%C3%ADvio-Muscular/dp/B0DCZY7KTV?&linkCode=ll1&tag=gatry0b-20&linkId=934b9d5d879e63034318c40b969030b8&language=pt_BR&ref_=as_li_ss_tl",
+    "price_text": "R$ 29,61",
+    "store": "Amazon",
+    "collected_at": "2026-01-17T12:36:03.660216Z"
   },
   {
     "id": "gatry-268325",
@@ -24,16 +51,7 @@
     "url": "https://www.amazon.com.br/Frente-ajust%C3%A1vel-b%C3%A1sica-Weaver-Average/dp/B004FUO08O?&linkCode=ll1&tag=gatry0b-20&linkId=bc07b38a32c373d5ea48b0cb9838e23c&language=pt_BR&ref_=as_li_ss_tl",
     "price_text": "R$ 43,10",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:24:28.125292Z"
-  },
-  {
-    "id": "gatry-268324",
-    "source": "gatry",
-    "title": "Tênis Nike Revolution 7 Masculino",
-    "url": "https://www.awin1.com/cread.php?awinmid=17652&awinaffid=667929&platform=dl&ued=https%3A%2F%2Fwww.nike.com.br%2Ftenis-nike-revolution-7-masculino-027285.html%3Fcor%3DIN",
-    "price_text": "R$ 229,99",
-    "store": "Nike",
-    "collected_at": "2026-01-17T08:24:28.136852Z"
+    "collected_at": "2026-01-17T12:36:03.671496Z"
   },
   {
     "id": "gatry-268323",
@@ -42,7 +60,7 @@
     "url": "https://amzn.to/4pKmO5E",
     "price_text": "R$ 21,99",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:24:28.149784Z"
+    "collected_at": "2026-01-17T12:36:03.690385Z"
   },
   {
     "id": "gatry-268322",
@@ -51,7 +69,7 @@
     "url": "https://amzn.to/4jHxMaI",
     "price_text": "R$ 104,41",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:24:28.161025Z"
+    "collected_at": "2026-01-17T12:36:03.701716Z"
   },
   {
     "id": "gatry-268321",
@@ -60,7 +78,7 @@
     "url": "https://amzn.to/3Lyn8qi",
     "price_text": "R$ 25,28",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:24:28.172484Z"
+    "collected_at": "2026-01-17T12:36:03.713096Z"
   },
   {
     "id": "gatry-268320",
@@ -69,7 +87,7 @@
     "url": "https://amzn.to/4b0j5NP",
     "price_text": "R$ 7,24",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:24:28.183087Z"
+    "collected_at": "2026-01-17T12:36:03.723905Z"
   },
   {
     "id": "gatry-268319",
@@ -78,15 +96,6 @@
     "url": "https://amzn.to/4qSVoeN",
     "price_text": "R$ 292,50",
     "store": "Amazon",
-    "collected_at": "2026-01-17T08:24:28.193834Z"
-  },
-  {
-    "id": "gatry-268318",
-    "source": "gatry",
-    "title": "Garrafa De água Térmica 946mL Everich & Tomic Housewares",
-    "url": "https://amzn.to/3LQgICT",
-    "price_text": "R$ 70,38",
-    "store": "Amazon",
-    "collected_at": "2026-01-17T08:24:28.204897Z"
+    "collected_at": "2026-01-17T12:36:03.734501Z"
   }
 ]
