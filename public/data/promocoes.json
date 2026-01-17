@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768672933512,
+      "tipo": "promo",
+      "loja": "Shopee",
+      "produto": "Calça Legging Max Lupo Fitness Feminina Original Tecido Premium",
+      "preco": 129.99,
+      "precoAntigo": 199.99,
+      "info": "Oferta Relâmpago - Frete grátis c/ Cupom",
+      "cupom": null,
+      "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m3178h7pm50597@resize_w450_nl.webp",
+      "link": "https://s.shopee.com.br/2qOOX4muzT",
+      "destaque": false,
+      "timestamp": "2026-01-17T18:02:13.512Z"
+    },
+    {
       "id": 1768672520003,
       "tipo": "promo",
       "loja": "Amazon",
