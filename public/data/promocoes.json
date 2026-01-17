@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768668533480,
+      "tipo": "promo",
+      "loja": "Magazine Luiza",
+      "produto": "Papel Higiênico Folha Dupla Bracell Familiar 24 Rolos 30m",
+      "preco": 24.6,
+      "precoAntigo": 35.9,
+      "info": "Retire na loja - R$1,27/und",
+      "cupom": null,
+      "imagem": "https://a-static.mlcdn.com.br/800x560/papel-higienico-folha-dupla-bracell-familiar-24-rolos-30m/magazineluiza/238807800/3ba6c8b5abd53b91642886461bcdbb19.jpg",
+      "link": "https://divulgador.magalu.com/7ySpHul0",
+      "destaque": false,
+      "timestamp": "2026-01-17T16:48:53.480Z"
+    },
+    {
       "id": 1768668279402,
       "tipo": "promo",
       "loja": "Mercado Livre",
