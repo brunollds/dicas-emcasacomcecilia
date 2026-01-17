@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768616417397,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "PRINCIPIA, Creme Hidratante Facial 5% Manteiga de Karité + 5% Glicerina + 2% Niacinamida CH-01 com 50g",
+      "preco": 29.83,
+      "precoAntigo": 40.55,
+      "info": "Recorrência -10% - Resgate Cupom no APP/ Pagina",
+      "cupom": "PRINCIPIA10",
+      "imagem": "https://m.media-amazon.com/images/I/61duJU3Ug1L._AC_SX522_.jpg",
+      "link": "https://amzn.to/4bBYMGw",
+      "destaque": false,
+      "timestamp": "2026-01-17T02:20:17.397Z"
+    },
+    {
       "id": 1768616328256,
       "tipo": "promo",
       "loja": "Mercado Livre",
