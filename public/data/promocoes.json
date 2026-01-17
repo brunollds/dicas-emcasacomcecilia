@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768671251009,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Blonde Recharge Shampoo 250ml - Invigo | Wella Professionals",
+      "preco": 51,
+      "precoAntigo": 153.9,
+      "info": "Pix ou 1x - • Frete grátis Full",
+      "cupom": "BELEZANOMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_784893-MLU79077724814_092024-F.webp",
+      "link": "https://mercadolivre.com/sec/32k7UPk",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:34:11.009Z"
+    },
+    {
       "id": 1768671147354,
       "tipo": "promo",
       "loja": "Mercado Livre",
