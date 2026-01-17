@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768671147354,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Segno Impact deo parfum Avon masculino 100ml",
+      "preco": 50.96,
+      "precoAntigo": 149.9,
+      "info": "em 2x S/ Juros - • Frete grátis Full",
+      "cupom": "BELEZANOMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_937252-MLB50879204734_072022-F.webp",
+      "link": "https://mercadolivre.com/sec/2GLC93q",
+      "destaque": true,
+      "timestamp": "2026-01-17T17:32:27.354Z"
+    },
+    {
       "id": 1768671006148,
       "tipo": "promo",
       "loja": "Mercado Livre",
