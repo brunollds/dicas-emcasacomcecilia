@@ -330,7 +330,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4lI3xky",
-        "price": 609.9,
+        "price": 639.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -351,7 +351,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-17 17:23"
+    "last_update": "2026-01-17 22:25"
   },
   {
     "category": "cozinha",
@@ -480,7 +480,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/45d5XkB",
-        "price": 3277.0,
+        "price": 3263.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -501,7 +501,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-16 22:27"
+    "last_update": "2026-01-17 22:25"
   },
   {
     "category": "tecnologia",
@@ -512,7 +512,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/45M6tGn",
-        "price": 5675.0,
+        "price": 5656.0,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -533,7 +533,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-16 22:27"
+    "last_update": "2026-01-17 22:25"
   },
   {
     "category": "tecnologia",
@@ -1208,7 +1208,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4jUM2Mj",
-        "price": 137.02,
+        "price": 119.98,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -1219,7 +1219,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2026-01-17 12:42"
+    "last_update": "2026-01-17 22:28"
   },
   {
     "category": "alimentos",
@@ -1274,7 +1274,7 @@
     "prices": {
       "Amazon": {
         "link": "https://amzn.to/4dcXOQ9",
-        "price": 362.09,
+        "price": 449.9,
         "logo": "images/logos/amazon.png"
       },
       "Shopee": {
@@ -1285,7 +1285,7 @@
     },
     "links": {},
     "price_updated": true,
-    "last_update": "2025-12-25 23:40"
+    "last_update": "2026-01-17 22:28"
   },
   {
     "category": "cozinha",
