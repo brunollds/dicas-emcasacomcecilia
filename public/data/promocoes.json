@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768672325849,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Conjunto Bermuda Feminino Academia Blackout",
+      "preco": 44.96,
+      "precoAntigo": 69.9,
+      "info": "Pix ou 1x - • Frete grátis Full",
+      "cupom": "MELIMODA",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_798579-MLB99122016157_112025-F-conjunto-bermuda-feminino-academia-blackout.webp",
+      "link": "https://mercadolivre.com/sec/2qjgyQ9",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:52:05.849Z"
+    },
+    {
       "id": 1768672224451,
       "tipo": "promo",
       "loja": "Mercado Livre",
