@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768616728978,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Revlon Uniq One Tratamento Capilar 10 Em 1 Leave In 150ml",
+      "preco": 52.36,
+      "precoAntigo": 92.15,
+      "info": "Frete grátis Full",
+      "cupom": "BELEZANOMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_660929-MLA99441430790_112025-F.webp",
+      "link": "https://mercadolivre.com/sec/2fA1vJY",
+      "destaque": false,
+      "timestamp": "2026-01-17T02:25:28.978Z"
+    },
+    {
       "id": 1768616599685,
       "tipo": "promo",
       "loja": "Magazine Luiza",
