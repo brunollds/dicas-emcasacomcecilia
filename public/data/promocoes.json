@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768616328256,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Forno Elétrico Philco 50L Dupla Resistência PFE52P 220V",
+      "preco": 331,
+      "precoAntigo": 529,
+      "info": "8x S/ Juros - 127V por R$ 360 • Frete grátis Full",
+      "cupom": "SUPER25",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_918699-MLA100272216990_122025-F.webp",
+      "link": "https://mercadolivre.com/sec/2Uch35Y",
+      "destaque": false,
+      "timestamp": "2026-01-17T02:18:48.256Z"
+    },
+    {
       "id": 1768616220432,
       "tipo": "promo",
       "loja": "Mercado Livre",
