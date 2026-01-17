@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768672224451,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Short Bermuda Feminina Lupo Corrida Alta Poliamida Bumbum",
+      "preco": 61.2,
+      "precoAntigo": 102.4,
+      "info": "Pix ou 1x - Frete grátis Full",
+      "cupom": "MELIMODA",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_625488-MLB92882286963_092025-F-short-bermuda-feminina-lupo-corrida-alta-poliamida-bumbum.webp",
+      "link": "https://mercadolivre.com/sec/26E85Yk",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:50:24.451Z"
+    },
+    {
       "id": 1768671817459,
       "tipo": "promo",
       "loja": "Amazon",
