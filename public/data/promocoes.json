@@ -1,6 +1,15 @@
 {
   "promocoes": [
     {
+      "id": 1768619632493,
+      "tipo": "cupom",
+      "loja": "Shopee",
+      "descricaoCupom": "Resgate no APP -\n 🎟 R$10 OFF em R$99 OFF\n🎟 R$20 OFF em R$179 OFF",
+      "codigoCupom": "R$10 e R$ 20 OFF",
+      "link": "https://s.shopee.com.br/5q1z7ZUCJV",
+      "timestamp": "2026-01-17T03:13:52.493Z"
+    },
+    {
       "id": 1768617441076,
       "tipo": "promo",
       "loja": "Amazon",
