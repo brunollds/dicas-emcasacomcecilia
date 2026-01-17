@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768671735455,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Cozy Time - Para Colorir",
+      "preco": 5.9,
+      "precoAntigo": 24.9,
+      "info": "Prime: Frete grátis • Mais por Menos: 10% off em 10+ itens - Exclusivo Prime: Mais por Menos: +5% off em Volta às Aulas",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/7119RQqyq6L._SY342_.jpg",
+      "link": "https://amzn.to/3LGjc6H",
+      "destaque": false,
+      "timestamp": "2026-01-17T17:42:15.455Z"
+    },
+    {
       "id": 1768671518396,
       "tipo": "promo",
       "loja": "Mercado Livre",
