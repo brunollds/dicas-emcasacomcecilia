@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768617441076,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "Escova de Dentes 3 Lados Kit 4 Unidades, Cerdas Macias, Limpeza Suave e Eficiente, Remove Placa, Estojo Presente Elegante para Uso Diário e Presentes",
+      "preco": 26.91,
+      "precoAntigo": 39.9,
+      "info": "Prime: Frete grátis",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/719bPjLlgAL._AC_SX679_.jpg",
+      "link": "https://amzn.to/4sLajcS",
+      "destaque": false,
+      "timestamp": "2026-01-17T02:37:21.076Z"
+    },
+    {
       "id": 1768616807858,
       "tipo": "promo",
       "loja": "Mercado Livre",
