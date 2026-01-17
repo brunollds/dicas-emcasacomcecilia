@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768615953923,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Tênis New Balance Bb80 Masculino Casual Urbano Confortável",
+      "preco": 205,
+      "precoAntigo": 535.7,
+      "info": "Pix ou 1x - • Frete grátis Full",
+      "cupom": "SUPER25",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_979957-MLB77429645700_072024-F-tnis-new-balance-bb80-masculino-casual-urbano-confortavel.webp",
+      "link": "https://mercadolivre.com/sec/2LVc1Da",
+      "destaque": false,
+      "timestamp": "2026-01-17T02:12:33.923Z"
+    },
+    {
       "id": 1768615844289,
       "tipo": "promo",
       "loja": "Mercado Livre",
