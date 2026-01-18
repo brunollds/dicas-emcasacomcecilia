@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768702802094,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Deo Parfum Natura Homem Verum 100ml",
+      "preco": 79,
+      "precoAntigo": 239.9,
+      "info": "4x S/ Juros - • Frete grátis Full",
+      "cupom": "MODANOMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_607218-MLU73208686849_122023-F.webp",
+      "link": "https://mercadolivre.com/sec/2G3qKqc",
+      "destaque": true,
+      "timestamp": "2026-01-18T02:20:02.094Z"
+    },
+    {
       "id": 1768702504229,
       "tipo": "promo",
       "loja": "Mercado Livre",
