@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768700785049,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Sutiã Olimpo Poá Sustentação Triangulo Demillus",
+      "preco": 35.69,
+      "precoAntigo": 74.89,
+      "info": "Pix ou 1x - • Frete grátis Full",
+      "cupom": "MELIMODA",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_737519-MLB76222544672_052024-F-suti-olimpo-poa-sustentaco-triangulo-demillus.webp",
+      "link": "https://mercadolivre.com/sec/14cssaQ",
+      "destaque": false,
+      "timestamp": "2026-01-18T01:46:25.049Z"
+    },
+    {
       "id": 1768700664765,
       "tipo": "promo",
       "loja": "Mercado Livre",
