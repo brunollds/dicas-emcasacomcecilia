@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768698416540,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Batata Pringles Stranger Things Bacon 100g",
+      "preco": 8.99,
+      "precoAntigo": 12.99,
+      "info": "Frete grátis Full",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/513j3yT1KGL._AC_SX679_.jpg",
+      "link": "https://amzn.to/49N75wT",
+      "destaque": false,
+      "timestamp": "2026-01-18T01:06:56.540Z"
+    },
+    {
       "id": 1768694943327,
       "tipo": "promo",
       "loja": "Mercado Livre",
