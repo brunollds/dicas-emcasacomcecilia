@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768700120486,
+      "tipo": "promo",
+      "loja": "Amazon",
+      "produto": "L'Oréal Paris Solar Expertise, Protetor Solar Facial The Invisible Fluido FPS60 com Ácido Hialurônico e Tecnologia NETLOCK, Alta Proteção Solar com Ação Anti-Idade, Sem Cor 40g",
+      "preco": 51.58,
+      "precoAntigo": 69.99,
+      "info": "Recorrência -10% • Mais por Menos: 10% off em 10+ itens - R$ 46,42",
+      "cupom": null,
+      "imagem": "https://m.media-amazon.com/images/I/81+AFSbGIsL._AC_SX522_.jpg",
+      "link": "https://amzn.to/4qYja9g",
+      "destaque": false,
+      "timestamp": "2026-01-18T01:35:20.486Z"
+    },
+    {
       "id": 1768698726560,
       "tipo": "promo",
       "loja": "Amazon",
