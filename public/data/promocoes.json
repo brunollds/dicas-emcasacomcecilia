@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768700664765,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Bermuda Termica Penalty Skin Flat X Preto Esportiva",
+      "preco": 36.54,
+      "precoAntigo": 78.9,
+      "info": "Pix ou 1x - Frete grátis Full",
+      "cupom": "MELIMODA",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_987901-MLB87104118412_072025-F-bermuda-termica-penalty-skin-flat-x-preto-esportiva.webp",
+      "link": "https://mercadolivre.com/sec/1q5iqkM",
+      "destaque": false,
+      "timestamp": "2026-01-18T01:44:24.765Z"
+    },
+    {
       "id": 1768700120486,
       "tipo": "promo",
       "loja": "Amazon",
