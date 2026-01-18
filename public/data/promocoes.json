@@ -1,6 +1,20 @@
 {
   "promocoes": [
     {
+      "id": 1768702504229,
+      "tipo": "promo",
+      "loja": "Mercado Livre",
+      "produto": "Tênis Kappa Run 200 Masculino Caminhada Corrida Original",
+      "preco": 60,
+      "precoAntigo": 129.9,
+      "info": "Pix ou 1x - • Frete grátis Full",
+      "cupom": "MODANOMELI",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_882378-MLB85063770519_052025-F-tnis-kappa-run-200-masculino-caminhada-corrida-original.webp",
+      "link": "https://mercadolivre.com/sec/2eyM5f6",
+      "destaque": false,
+      "timestamp": "2026-01-18T02:15:04.229Z"
+    },
+    {
       "id": 1768700785049,
       "tipo": "promo",
       "loja": "Mercado Livre",
